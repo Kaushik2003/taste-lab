@@ -165,11 +165,13 @@ def threads():
 
 # ---------------- tiny markdown → html ----------------
 def inline(s):
-    s = html.escape(s, quote=False)
+    # quote=True: link targets and note names go inside HTML attributes below,
+    # so a quote mark in a note must not be able to end the attribute.
+    s = html.escape(s, quote=True)
     s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
     s = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", s)
     s = re.sub(r"(?<![*\w])\*([^*\n]+)\*(?!\w)", r"<em>\1</em>", s)
-    s = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2" target="_blank">\1</a>', s)
+    s = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2" target="_blank" rel="noopener noreferrer">\1</a>', s)
     s = re.sub(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]", lambda m: f'<a class="wl" data-note="{m.group(1)}">{m.group(2) or m.group(1)}</a>', s)
     return s
 
@@ -239,6 +241,12 @@ def fingerprint():
 
 def esc(s):
     return html.escape(str(s), quote=True)
+
+
+def js_json(v):
+    """JSON that is safe inside a <script> block: no '<', so no '</script>' or '<!--'."""
+    return (json.dumps(v).replace("<", "\\u003c").replace(">", "\\u003e")
+            .replace("\u2028", "\\u2028").replace("\u2029", "\\u2029"))
 
 
 def shorten(text, limit=260):
@@ -562,9 +570,9 @@ def build(due=None):
     gaps_preview = (md("".join(gaps_parts[:2])) + ("<button class='more' data-go='gaps'>See all gaps & patterns</button>" if len(gaps_parts) > 2 else "")
                     if gaps_md else "<p class=empty>Run /gaps in Claude Code after a few papers.</p>")
 
-    js = (JS.replace("__NOTES__", json.dumps(notes).replace("</", "<\\/"))
-            .replace("__ORDER__", json.dumps([p["file"] for p in order]))
-            .replace("__FP__", json.dumps(fp)))
+    js = (JS.replace("__NOTES__", js_json(notes))
+            .replace("__ORDER__", js_json([p["file"] for p in order]))
+            .replace("__FP__", js_json(fp)))
     now = dt.datetime.now().strftime("%a %d %b, %H:%M")
     pct_all = int(100 * len(done) / total) if total else 0
 
@@ -617,8 +625,14 @@ def main():
         print(f"wrote {ROOT / 'dashboard.html'}")
         return
 
+    allowed_hosts = {f"localhost:{args.port}", f"127.0.0.1:{args.port}", "localhost", "127.0.0.1"}
+
     class H(http.server.BaseHTTPRequestHandler):
         def do_GET(self):
+            # Refuse requests whose Host is not this machine. This blocks DNS-rebinding,
+            # where another website points its own name at 127.0.0.1 to read the page.
+            if (self.headers.get("Host") or "").lower() not in allowed_hosts:
+                self.send_response(403); self.end_headers(); return
             path = self.path.split("?")[0]
             if path == "/v":
                 body, ctype = fingerprint().encode(), "text/plain"
@@ -629,6 +643,8 @@ def main():
             self.send_response(200)
             self.send_header("Content-Type", ctype)
             self.send_header("Cache-Control", "no-store")
+            self.send_header("X-Content-Type-Options", "nosniff")
+            self.send_header("Referrer-Policy", "no-referrer")
             self.end_headers()
             self.wfile.write(body)
 
