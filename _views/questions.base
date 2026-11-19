@@ -1,7 +1,7 @@
 filters:
   and:
     - file.inFolder("03-questions")
-    - type == "thread"
+    - type == "question"
 properties:
   file.name:
     displayName: Open note
@@ -22,4 +22,4 @@ views:
       - property: file.name
         direction: ASC
     columnSize:
-      note.title: 306
+      note.title: 546
