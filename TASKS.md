@@ -48,14 +48,9 @@ Our goal now: **write the literature review by 24 November 2026.** No experiment
 
 ## For Claude
 
-- [x] Write notes for the papers the critic review found missing: Rubin 2026 (arXiv 2611.15267), Fleming and Daw (2017), Zeng 2026. Done 2026-11-20.
 - [ ] Write notes for Irie 2022 and Nested Learning (older self-modifying networks). *Waits for:* your "in or out" decision above.
-- [x] Check the numbers in the two drafts against the papers. Done 2026-11-20: all match; see [[2026-11-20 number check]].
 - [ ] Draft the next sections. *Waits for:* your choice of order.
-- [x] Check one number in the Steer2Edit paper against the PDF (Table 10, the drop from 87.8 to 77.3). Done 2026-11-20: it matches.
-- [x] Fix a security problem in the dashboard script (a bad link in a note can run code in the page). Done 2026-11-20: quotes escaped, safe data in the page script, server refuses unknown hosts.
 - [ ] Add a safety check to the daily scout script before it runs every hour. *Waits for:* your "yes".
-- [x] Delete the old extra copy of the repo (the work copy named `worktree-prior-art-landscape`). Done 2026-11-20: it was clean and fully in main. Its branch name is left; it holds no extra work.
 
 ## Later (after the review)
 
@@ -66,6 +61,11 @@ These were research tasks. They wait until the review is done.
 
 ## Done
 
+- [x] 2026-11-20: Claude ran a 5-round review loop:
+  - notes for Rubin 2026, Fleming and Daw 2017 and Zeng 2026. Rubin changed a claim in section 3: the model answers at chance only early in training (89.6% at the released model);
+  - every number in sections 3 and 5 checked against 26 sources, all correct ([[2026-11-20 number check]]); Steer2Edit Table 10 checked in the PDF;
+  - dashboard security fix (a bad link in a note could run code in the page);
+  - old extra copy of the repo removed.
 - [x] 2026-11-20: Claude finished the 7-step review plan in 8 rounds:
   - notes for the 7 core papers (Nelson and Narens, Kadavath, Doya, introspective oversight, Exploring WSP, WeightBench, GUARD);
   - a new search: 6 more notes (Liu survey, Binder, Yax, Shumailov, OMNI, Hughes), with 30 other finds scored in the [[Reading list]];
