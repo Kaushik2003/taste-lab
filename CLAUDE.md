@@ -34,6 +34,14 @@ Testbed: **code readability**. Correctness is held fixed by tests, so taste vari
 | `06-patterns/` | **Harshit's human layer: intuitions, patterns, bets** | **Harshit only** |
 | `07-drafts/` | paper drafts (ICML 2027 workshop target) | both |
 
+## Session protocol
+Several Claude accounts work in this repo. The repo is the only memory they share.
+- **Start:** `git pull`, then read the last 3 entries in `00-inbox/HANDOFF.md`, the newest digest in `05-digests/`, and every thread with `status: active`.
+- **End:** append a HANDOFF entry, then commit with a `Session-Account: <label>` trailer. The label is `$TASTE_LAB_ACCOUNT`; if that's unset, ask before committing.
+- **Prefer new dated files** over editing shared ones, so parallel sessions don't conflict.
+- **Thread edits** get a dated line under the thread's `## Log` (add the section if it's missing) instead of a rewrite.
+- **Never assume something was discussed** unless it's in the repo.
+
 ## Rules for Claude
 - **Never write to `06-patterns/`.** Read it, because it's the best signal of what Harshit finds interesting, and weight your scouting toward it.
 - **Proposals, not decisions.** You can create new threads only as `status: proposed`. Harshit promotes them.

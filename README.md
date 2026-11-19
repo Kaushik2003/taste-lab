@@ -48,13 +48,24 @@ python3 scripts/fetch_arxiv.py --days 7
 | keeping the "what would kill this" list honest | ambition |
 
 ## Automating the scout
-Local cron (laptop must be awake):
+Local cron, catch-up style. Cron calls the script every hour, and it runs once per day, the first time the
+laptop is awake. It exits early if today's digest already exists, and a lock in `/tmp` stops two runs overlapping.
 ```bash
 crontab -e
-# every day 8:17am
-17 8 * * * cd ~/research/taste-lab && ./scripts/scout.sh >> 00-inbox/scout.log 2>&1
+# hourly at :17
+17 * * * * cd ~/Documents/research/taste-lab && PATH=$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin TASTE_LAB_ACCOUNT=laptop-scout ./scripts/scout.sh >> 00-inbox/scout.log 2>&1
 ```
+Cron starts with a bare PATH, so the line adds `~/.local/bin`, where `claude` lives on this machine (`which claude`).
+Keep `PATH=` and `TASTE_LAB_ACCOUNT=` after the `cd`: put in front of `cd`, they only apply to `cd` and never reach the script.
+
 Or push to GitHub and run it as a scheduled cloud task that commits the digest. Ask Claude to set that up.
+
+## Using multiple Claude accounts
+The repo is the only memory shared across accounts (see "Session protocol" in `CLAUDE.md` and `00-inbox/HANDOFF.md`).
+- Before a session, run `export TASTE_LAB_ACCOUNT=<label>` (e.g. `personal`, `work`, `laptop-scout`) so commits carry a
+  `Session-Account:` trailer and you can tell later which account did what.
+- Keep `06-patterns/` and thread framing (promoting, killing, rewording threads) on your personal account.
+  Other accounts can scout, ingest, and draft, but they don't set direction.
 
 ## Current state
 - Threads: see `03-threads/` (T1 valence probe validity is the gating experiment)
