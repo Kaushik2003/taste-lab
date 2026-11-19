@@ -5,7 +5,7 @@
   python3 scripts/dashboard.py                  # just write dashboard.html
   python3 scripts/dashboard.py --due 2026-11-24 # set the deadline countdown
 
-Reads: 01-papers (frontmatter: section, status, relevance), 02-concepts, 03-threads, 05-digests,
+Reads: 01-papers (frontmatter: section, status, relevance), 02-concepts, 03-questions, 05-digests,
 00-inbox/HANDOFF.md, 07-drafts/litreview/{outline,matrix,gaps}.md
 """
 import argparse
@@ -153,10 +153,10 @@ def drafts():
 def threads():
     """Active threads first, then by T-number."""
     out = []
-    for f in (ROOT / "03-threads").glob("*.md"):
+    for f in (ROOT / "03-questions").glob("*.md"):
         fm, body = split_frontmatter(f.read_text(errors="ignore"))
         status = fm.get("status", "")
-        m = re.search(r"-T(\d+)$", f.stem)
+        m = re.match(r"Q(\d+)\b", f.stem)
         out.append({"file": f.stem, "name": title_of(body, f.stem), "status": status, "body": body,
                     "next": first_item(section_of(body, "Next action")),
                     "rank": (status != "active", int(m.group(1)) if m else 99, f.stem)})
@@ -488,7 +488,7 @@ def build(due=None):
         if m:
             words_by_sec[m.group(1)] = words_by_sec.get(m.group(1), 0) + d["words"]
 
-    gaps_md = read_md("07-drafts/litreview/gaps.md") or split_frontmatter(read_md("03-threads/landscape-gap-table.md"))[1]
+    gaps_md = read_md("07-drafts/litreview/gaps.md") or split_frontmatter(read_md("03-questions/Gaps in the field.md"))[1]
     matrix_md = read_md("07-drafts/litreview/matrix.md")
     outline_md = read_md("07-drafts/litreview/outline.md")
     dig = latest("05-digests")

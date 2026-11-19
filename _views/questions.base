@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("03-threads")
+    - file.inFolder("03-questions")
     - type == "thread"
 properties:
   file.name:

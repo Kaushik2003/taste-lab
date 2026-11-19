@@ -12,7 +12,7 @@ section:         # lit review section 1-9, names in dashboard.json
 tier:            # deep | skim (default: deep if relevance is 3)
 tests: []        # divergent | stable | grounded | self-reinforcing
 components: []   # valence | controller | consolidation | anchor | monitoring
-tags: [type/paper]   # + section/N, test/*, component/*, status/*, relevance/N, thread/TN, role/threat|prior-art, then topical tags
+tags: [type/paper]   # + section/N, test/*, component/*, status/*, relevance/N, question/QN, role/threat|prior-art, then topical tags
 links: []   # quoted: ["[[landscape-...]]", "[[concept-note]]"]
 ---
 

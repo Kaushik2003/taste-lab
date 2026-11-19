@@ -69,7 +69,7 @@ The repo is the only memory shared across accounts (see "Session protocol" in `C
   Other accounts can scout, ingest, and draft, but they don't set direction.
 
 ## Current state
-- Threads: see `03-threads/` (T1 valence probe validity is the gating experiment)
+- Threads: see `03-questions/` (Q1 valence probe validity is the gating experiment)
 - Experiment 01 spec: `04-experiments/exp01-valence-probe/spec.md`
 - Reading queue: `00-inbox/reading-queue.md`
 - Target: ICML 2027 workshop (~late May 2027)

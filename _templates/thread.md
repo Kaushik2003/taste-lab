@@ -1,11 +1,11 @@
 ---
-type: thread
+type: question
 title:
 id: T?
 status: proposed   # proposed | active | parked | killed | answered
 owner: harshit
-tags: [type/thread, thread/T?, status/proposed]
-links: ["[[metacognition-monitor-control]]", "[[four-taste-tests]]"]
+tags: [type/question, question/Q?, status/proposed]
+links: ["[[Metacognition - watch and control yourself]]", "[[Four tests for own taste]]"]
 created:
 updated:
 ---

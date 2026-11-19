@@ -44,7 +44,7 @@ Each test checks a different stage of the loop.
 | `00-inbox/` | raw captures, links, fetched candidates | both |
 | `01-papers/` | one note per paper (`_templates/paper.md`) | Claude drafts, Harshit annotates |
 | `02-concepts/` | atomic concept notes, heavily [[linked]] | both |
-| `03-threads/` | open research questions/hypotheses with status | Harshit owns, Claude proposes |
+| `03-questions/` | open research questions/hypotheses with status | Harshit owns, Claude proposes |
 | `04-experiments/` | spec → log → results per experiment | both |
 | `05-digests/` | dated scout reports | Claude |
 | `06-patterns/` | **Harshit's human layer: intuitions, patterns, bets** | **Harshit only** |
@@ -70,7 +70,7 @@ Follow ASD-STE100 (Simplified Technical English) about 80% of the time. Clear me
 - One idea per sentence. Sentences of 20 words or fewer for steps, 25 or fewer for explanations.
 - Simple, common words. Active voice. Start steps with a verb.
 - Explain each technical term the first time you use it, in one plain sentence. No unexplained symbols or short forms (ρ, RepE, d =, AUC, layer-0).
-- Never use a bare code like "T1", "#11" or "C2". Write the plain name first, then the code if needed: "Question 1 (does the model have a signal for code quality?)".
+- Never use a bare code like "Q1", "#11" or "C2". Write the plain name first, then the code if needed: "Question 1 (does the model have a signal for code quality?)".
 - Give the answer or the result first, then the reason. Use lists for steps and choices.
 - No em dashes, no hype words.
 
@@ -86,15 +86,18 @@ Follow ASD-STE100 (Simplified Technical English) about 80% of the time. Clear me
 - Keep digests short. Harshit reads them on his phone: top 3 items, then a "surprise" pick, then one question for him.
 
 ## Conventions
-- Names and titles follow ASD-STE100 (Simplified Technical English): short noun clusters of 3 words or fewer,
-  simple approved words, active voice, no "-ing" words except technical names (e.g. `steering`). Threads end with
-  their ID, because the dashboard reads it from the suffix: `code-quality-signal-T1.md`.
-- Filenames: kebab-case. Papers: `YYYY-firstauthor-shortname.md` (e.g. `2025-zweiger-seal.md`).
+- **File names are plain English, so a person understands them at once.** Spaces are OK. No codes alone, no kebab-case, no jargon.
+  - Questions (`03-questions/`): `Q<number> <plain question, no "?">.md`, e.g. `Q1 Does the model sense code quality.md`.
+    The dashboard reads the number from the `Q` prefix. A stopped question gets `(stopped)` after the number.
+  - Papers (`01-papers/`): `<what the paper shows, 8 words or fewer> (<First author> <Year>).md`,
+    e.g. `Models share one taste for text (Zatuchin 2026).md`. If the paper has a known short name, put it first: `SEAL - ...`.
+  - Concepts (`02-concepts/`): a plain name, e.g. `Good-bad signal probe.md`. Section hubs start with `Field map - `.
+  - In text, call a question by its number and plain name ("Q1, does the model sense code quality?"), never only "Q1".
 - Frontmatter on every note: `type`, `status`, `tags`, `links`.
 - `links` must be quoted so it stays valid YAML and shows in Obsidian's graph: `links: ["[[a]]", "[[b]]"]`, never `links: [[a]], [[b]]`.
   Papers link to their section's `landscape-*` hub and the concept note for each component.
 - Tags are nested and go first, topical tags after: `type/*`, `section/N`, `test/*`, `component/*`, `status/*`,
-  `relevance/N`, `thread/TN`, `role/threat|prior-art`. Keep every list on one line (`scripts/dashboard.py` reads line by line).
+  `relevance/N`, `question/QN`, `role/threat|prior-art`. Keep every list on one line (`scripts/dashboard.py` reads line by line).
   Graph color groups in `.obsidian/graph.json` key off these tags and the folders.
 - `HOME.md` is the Obsidian front page. Keep it in plain English, no commands or jargon. Its tables come from
   `_views/*.base` (Obsidian Bases, built in), not Dataview (not installed). When a paper in "Read this week" is

@@ -4,7 +4,7 @@ id: expNN
 thread: T?
 status: spec   # spec | running | done | abandoned
 compute:
-tags: [type/experiment, thread/T?, status/spec]
+tags: [type/experiment, question/Q?, status/spec]
 links: []   # quoted: ["[[thread-note]]"]
 ---
 

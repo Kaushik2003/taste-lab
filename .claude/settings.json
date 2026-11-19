@@ -9,7 +9,7 @@
       "Edit(./00-inbox/**)",
       "Edit(./01-papers/**)",
       "Edit(./02-concepts/**)",
-      "Edit(./03-threads/**)",
+      "Edit(./03-questions/**)",
       "Edit(./05-digests/**)",
       "Edit(./research.yaml)",
       "Bash(python3 scripts/fetch_arxiv.py:*)",

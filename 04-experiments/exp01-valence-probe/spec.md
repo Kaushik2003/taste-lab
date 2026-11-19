@@ -1,11 +1,11 @@
 ---
 type: experiment
 id: exp01
-thread: T1
+thread: Q1
 status: spec
 compute: 1–2× A100/H100 for 8B, 4× for 32B
-tags: [type/experiment, thread/T1, status/spec]
-links: ["[[code-quality-signal-T1]]"]
+tags: [type/experiment, question/Q1, status/spec]
+links: ["[[Q1 Does the model sense code quality]]"]
 ---
 
 # exp01: Valence probe vs. code readability
@@ -22,7 +22,7 @@ Does an internal valence signal track code readability, beyond cheap confounds?
 - **Readability labels:** blind pairwise ranking by 3 raters (you + 2 friends), plus an automated proxy (cognitive complexity, naming score) as secondary. Don't rely on an LLM judge alone because it shares the model's biases.
 - **Valence directions:** replicate the emotion-concept extraction. Contrast prompts for positive vs. negative valence emotions (satisfaction/delight vs. disgust/frustration), take mean activation differences per layer, and pick the layer by held-out separability.
 - **Readout:** project the model's activations *while reading* each solution (prompt: "Here is a solution: …") onto the valence direction. Average over solution tokens.
-- **Controls (from [[2026-ferrara-all-quiet-pain]] OWMI):** random direction matched in norm; perplexity; length; a shuffled-label probe.
+- **Controls (from [[Models do not report injected pain (Ferrara 2026)]] OWMI):** random direction matched in norm; perplexity; length; a shuffled-label probe.
 
 ## Plan
 - [ ] A1. Generate and filter solutions, build sloppy anchors (1 day)

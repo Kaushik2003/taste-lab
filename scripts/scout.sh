@@ -20,7 +20,7 @@ trap 'rmdir "$LOCK"' EXIT
 echo "=== scout $(date -Iseconds) ==="
 claude -p "/scout" --permission-mode acceptEdits
 if [ -d .git ]; then
-  git add 00-inbox 01-papers 02-concepts 03-threads 05-digests 2>/dev/null || true
+  git add 00-inbox 01-papers 02-concepts 03-questions 05-digests 2>/dev/null || true
   git commit -m "scout: $TODAY" -m "Session-Account: ${TASTE_LAB_ACCOUNT:-unknown}" --quiet || echo "nothing new"
   git push --quiet 2>/dev/null || echo "push failed; retry next run"
 fi

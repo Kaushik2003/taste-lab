@@ -2,7 +2,7 @@
 type: tasks
 status: active
 tags: [type/hub, tasks]
-links: ["[[HOME]]", "[[code-quality-signal-T1]]"]
+links: ["[[HOME]]", "[[Q1 Does the model sense code quality]]"]
 ---
 
 # Tasks
@@ -19,7 +19,7 @@ This is the only list of open work. Claude updates it at the end of each session
   Question 1 asks: "Does the model have an internal signal for code quality?"
   A stop rule says which result makes us stop this question.
   Claude proposes a stricter rule, because a new paper (Gao) makes a weak result easy to explain away.
-  Open [[code-quality-signal-T1]], read the last line under "Log", and write "yes" or "no" under it.
+  Open [[Q1 Does the model sense code quality]], read the last line under "Log", and write "yes" or "no" under it.
   *Done when:* you write "yes" or "no".
 
 - [ ] **Decide if we run a quick test first.**
@@ -37,7 +37,7 @@ This is the only list of open work. Claude updates it at the end of each session
   *Done when:* you tell Claude "outline is OK" or what to change.
 
 - [ ] **Keep or drop the gap table.**
-  [[landscape-gap-table]] lists what other papers do not cover yet. It waits for your decision.
+  [[Gaps in the field]] lists what other papers do not cover yet. It waits for your decision.
   *Done when:* you tell Claude "keep" or "drop".
 
 - [ ] **Read 3 papers.** Start with the 3 papers under "Read this week" on [[HOME]].
@@ -52,5 +52,7 @@ This is the only list of open work. Claude updates it at the end of each session
 - [ ] Delete the old work copy of the repo (`worktree-prior-art-landscape`).
 
 ## Done
+
+- [x] 2026-11-20: Claude gave every note a plain name (Q1 to Q5 for questions; papers show what they found). Claude made this file the one task list.
 
 - [x] 2026-11-20: Claude saved and sent the paper search (17 papers) and the literature review plan to GitHub.
