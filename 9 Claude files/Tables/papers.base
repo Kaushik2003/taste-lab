@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("01-papers")
+    - file.inFolder("2 Papers")
 properties:
   file.name:
     displayName: Open note

@@ -1,4 +1,4 @@
-# 06-patterns: your layer
+# 4 My notes: your layer
 
 Claude reads this folder and never writes here.
 

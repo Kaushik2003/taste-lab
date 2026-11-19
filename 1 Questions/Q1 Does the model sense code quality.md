@@ -39,7 +39,7 @@ On solutions to the same problem that all pass the tests, a valence readout from
 ρ < 0.2 after controlling for perplexity and length, across two model families.
 
 ## Next action
-Run [[04-experiments/exp01-valence-probe/spec|exp01-valence-probe]] stage A on Qwen3.x-8B with ~50 problems × 8 passing solutions each.
+Run [[1 Questions/Q1 experiment - read the signal/Plan|Q1 experiment - read the signal]] stage A on Qwen3.x-8B with ~50 problems × 8 passing solutions each.
 
 ## Log
 - 2026-11-19: created. Pivot: the "grounded" test uses a probe readout first, with trained self-report as a later step.

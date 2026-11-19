@@ -2,7 +2,7 @@
 type: dashboard
 status: active
 tags: [type/hub, dashboard]
-links: ["[[TASKS]]", "[[reading-queue]]", "[[HANDOFF]]", "[[Gaps in the field]]", "[[Q1 Does the model sense code quality]]"]
+links: ["[[TASKS]]", "[[Reading list]]", "[[HANDOFF]]", "[[Gaps in the field]]", "[[Q1 Does the model sense code quality]]"]
 ---
 
 # Home
@@ -20,7 +20,7 @@ We want to know if an AI model can judge its own code: "this code is good" or "t
 The first step is one question and one experiment:
 
 - **Question:** [[Q1 Does the model sense code quality|Does the model have an internal signal for code quality?]]
-- **Experiment:** [[04-experiments/exp01-valence-probe/spec|Experiment 1: read that signal from the model]]
+- **Experiment:** [[1 Questions/Q1 experiment - read the signal/Plan|Experiment 1: read that signal from the model]]
 
 The other questions wait for this one.
 
@@ -35,19 +35,19 @@ Tick the box when you finish.
 
 Finished these? The list below shows what to read next.
 
-![[_views/papers.base#Read next]]
+![[9 Claude files/Tables/papers.base#Read next]]
 
 ## 3. Our research questions
 
 Status words: **active** = we work on it now, **parked** = later, **killed** = we stopped it.
 
-![[_views/questions.base]]
+![[9 Claude files/Tables/questions.base]]
 
 ## 4. Warnings
 
 These papers show ways our idea can fail. Read them before you trust a result.
 
-![[_views/papers.base#Warnings (papers against our idea)]]
+![[9 Claude files/Tables/papers.base#Warnings (papers against our idea)]]
 
 ## 5. The big picture
 
@@ -63,7 +63,7 @@ Where nobody has done the work yet: [[Gaps in the field|Gap table]]
 
 ## 6. Your own ideas
 
-Write your thoughts, hunches and bets in the folder **06-patterns**. Claude reads this folder but never changes it.
+Write your thoughts, hunches and bets in the folder **4 My notes**. Claude reads this folder but never changes it.
 Make a new note there: right-click the folder, then click **New note**.
 
 ## 7. Get help from Claude
@@ -79,9 +79,9 @@ Write a normal sentence to Claude. You do not need special commands. Some exampl
 
 ## More
 
-- [[reading-queue|Full reading list]] (long, use only when the list above is empty)
+- [[Reading list|Full reading list]] (long, use only when the list above is empty)
 - [[HANDOFF|Work log]] (what each Claude session did)
 
 All papers:
 
-![[_views/papers.base#All papers]]
+![[9 Claude files/Tables/papers.base#All papers]]

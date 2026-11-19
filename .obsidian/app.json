@@ -1,7 +1,7 @@
 {
   "defaultViewMode": "preview",
   "userIgnoreFilters": [
-    "_templates/",
+    "9 Claude files/Templates/",
     "CLAUDE.md",
     "scripts/"
   ]

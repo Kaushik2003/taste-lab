@@ -5,8 +5,8 @@
   python3 scripts/dashboard.py                  # just write dashboard.html
   python3 scripts/dashboard.py --due 2026-11-24 # set the deadline countdown
 
-Reads: 01-papers (frontmatter: section, status, relevance), 02-concepts, 03-questions, 05-digests,
-00-inbox/HANDOFF.md, 07-drafts/litreview/{outline,matrix,gaps}.md
+Reads: 2 Papers (frontmatter: section, status, relevance), 3 Ideas, 1 Questions, 9 Claude files/Reports,
+9 Claude files/Inbox/HANDOFF.md, 9 Claude files/Writing/litreview/{outline,matrix,gaps}.md
 """
 import argparse
 import datetime as dt
@@ -95,7 +95,7 @@ def first_item(text):
 
 def load_papers():
     papers = []
-    for p in sorted((ROOT / "01-papers").glob("*.md")):
+    for p in sorted((ROOT / "2 Papers").glob("*.md")):
         fm, body = split_frontmatter(p.read_text(errors="ignore"))
         sec = str(fm.get("section", "")).strip() or "?"
         mine = section_of(body, "Harshit") or section_of(body, "My notes") or section_of(body, "My takeaway")
@@ -131,7 +131,7 @@ def latest(folder, pattern="*.md"):
 
 
 def last_handoff():
-    t = read_md("00-inbox/HANDOFF.md")
+    t = read_md("9 Claude files/Inbox/HANDOFF.md")
     parts = re.split(r"(?=^## \d{4}-\d{2}-\d{2})", t, flags=re.M)
     entries = [x for x in parts if x.startswith("## ")]
     return entries[-1] if entries else ""
@@ -139,7 +139,7 @@ def last_handoff():
 
 def drafts():
     out = []
-    d = ROOT / "07-drafts" / "litreview"
+    d = ROOT / "9 Claude files/Writing" / "litreview"
     if d.exists():
         for f in sorted(d.glob("*.md")):
             if f.stem in {"outline", "matrix", "references", "gaps"} or f.stem.startswith("quiz"):
@@ -153,7 +153,7 @@ def drafts():
 def threads():
     """Active threads first, then by T-number."""
     out = []
-    for f in (ROOT / "03-questions").glob("*.md"):
+    for f in (ROOT / "1 Questions").glob("*.md"):
         fm, body = split_frontmatter(f.read_text(errors="ignore"))
         status = fm.get("status", "")
         m = re.match(r"Q(\d+)\b", f.stem)
@@ -488,14 +488,14 @@ def build(due=None):
         if m:
             words_by_sec[m.group(1)] = words_by_sec.get(m.group(1), 0) + d["words"]
 
-    gaps_md = read_md("07-drafts/litreview/gaps.md") or split_frontmatter(read_md("03-questions/Gaps in the field.md"))[1]
-    matrix_md = read_md("07-drafts/litreview/matrix.md")
-    outline_md = read_md("07-drafts/litreview/outline.md")
-    dig = latest("05-digests")
+    gaps_md = read_md("9 Claude files/Writing/litreview/gaps.md") or split_frontmatter(read_md("3 Ideas/Gaps in the field.md"))[1]
+    matrix_md = read_md("9 Claude files/Writing/litreview/matrix.md")
+    outline_md = read_md("9 Claude files/Writing/litreview/outline.md")
+    dig = latest("9 Claude files/Reports")
     digest_md = dig.read_text(errors="ignore") if dig else ""
     handoff = last_handoff()
     th = threads()
-    concepts = {f.stem: f.read_text(errors="ignore") for f in sorted((ROOT / "02-concepts").glob("*.md"))}
+    concepts = {f.stem: f.read_text(errors="ignore") for f in sorted((ROOT / "3 Ideas").glob("*.md"))}
 
     # notes index for the reader: papers, concepts and threads
     notes = {p["file"]: reader(p, sections) for p in papers}
@@ -554,7 +554,7 @@ def build(due=None):
         + (f"<div class='tnext'><span class='lbl'>Next</span>{inline(t['next'])}</div>" if t["next"] else "") + "</div>"
         for t in th)
     draft_rows = "".join(f"<div class='draft'><span>{esc(d['name'])}</span><b>{d['words']:,}</b></div>" for d in dr) \
-        or "<p class='empty'>No section drafts yet. Put them in 07-drafts/litreview/ (e.g. 03-monitoring.md).</p>"
+        or "<p class='empty'>No section drafts yet. Put them in 9 Claude files/Writing/litreview/ (e.g. 03-monitoring.md).</p>"
     draft_bodies = "".join(f"<details><summary>{esc(d['name'])} · {d['words']:,} words</summary>{md(d['body'])}</details>" for d in dr)
 
     # overview shows only the top of gaps.md (the gap table); the full file is on its own tab
@@ -593,7 +593,7 @@ def build(due=None):
  </div></div></section>
 <section class="tab" id="papers"><div class="tools"><input id="q" placeholder="Search titles, summaries, why it matters, my takeaways…">
 <button class="f on" data-f="all">All</button><button class="f" data-f="unread">Unread</button><button class="f" data-f="read">Read</button><button class="f" data-f="nomine">No takeaway yet</button></div>{cards}</section>
-<section class="tab" id="gaps"><div class="doc">{md(gaps_md) if gaps_md else "<p class=empty>No gaps file yet. Run /gaps in Claude Code; it saves to 07-drafts/litreview/gaps.md.</p>"}</div></section>
+<section class="tab" id="gaps"><div class="doc">{md(gaps_md) if gaps_md else "<p class=empty>No gaps file yet. Run /gaps in Claude Code; it saves to 9 Claude files/Writing/litreview/gaps.md.</p>"}</div></section>
 <section class="tab" id="matrix"><div class="doc" style="max-width:none">{matrix_html}</div></section>
 <section class="tab" id="draft"><div class="doc">{draft_bodies or "<p class=empty>No drafts yet.</p>"}</div></section>
 <section class="tab" id="outline"><div class="doc">{md(outline_md) if outline_md else "<p class=empty>No outline yet.</p>"}</div></section>

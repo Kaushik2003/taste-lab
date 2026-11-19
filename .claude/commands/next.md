@@ -7,7 +7,7 @@ Walk Harshit through the lit review reading list one paper at a time. Arguments:
 
 **Which paper.** If the arguments name a paper (file name or title), use it. Otherwise pick the paper the dashboard's
 "Read next" panel shows, so the two always agree:
-- only notes in `01-papers/` whose `status` is not `read`, `deep` or `done`;
+- only notes in `2 Papers/` whose `status` is not `read`, `deep` or `done`;
 - lowest `section` number first, papers with no section last;
 - inside a section, `tier: deep` before `tier: skim`, then by file name.
 
@@ -17,7 +17,7 @@ Walk Harshit through the lit review reading list one paper at a time. Arguments:
 3. Put his takeaway under `## Harshit's notes`, in his words. Fix typos only. Don't rephrase it or add your own analysis.
    Start the entry with the date: `**YYYY-MM-DD:** ...`. If earlier text is under the heading, keep it and add the new
    entry below. Remove the `<!-- yours -->` placeholder. If the heading is missing, add it at the end of the note.
-4. If the takeaway disagrees with the note, or bears on a thread in `03-questions/`, say so in one line and offer to
+4. If the takeaway disagrees with the note, or bears on a thread in `1 Questions/`, say so in one line and offer to
    add a dated line to that thread's `## Log`. Don't edit the thread without his OK.
 5. Then brief him on the next paper (below), or say the list is done.
 

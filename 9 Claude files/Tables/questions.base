@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("03-questions")
+    - file.inFolder("1 Questions")
     - type == "question"
 properties:
   file.name:

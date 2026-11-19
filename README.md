@@ -24,12 +24,12 @@ python3 scripts/fetch_arxiv.py --days 7
 
 **Daily (Claude, automated, ~5 min of your time)**
 1. `scripts/scout.sh` runs on cron → fetches new arXiv papers matching `research.yaml` → Claude triages
-   → writes `05-digests/YYYY-MM-DD.md` + drafts notes for papers that score ≥2.
-2. You read the digest (top 3 + a surprise pick + one question for you). Reply by jotting in `06-patterns/`.
+   → writes `9 Claude files/Reports/YYYY-MM-DD.md` + drafts notes for papers that score ≥2.
+2. You read the digest (top 3 + a surprise pick + one question for you). Reply by jotting in `4 My notes/`.
 
 **When you study (you)**
 - `/explain <concept>` makes Claude tutor you on something, grounded in the notes.
-- Write your own intuitions in `06-patterns/`, rough. This is where your human pattern-finding goes.
+- Write your own intuitions in `4 My notes/`, rough. This is where your human pattern-finding goes.
   Claude reads it and points its scouting there, but never edits it.
 
 **Weekly (together, ~1 hr)**
@@ -53,7 +53,7 @@ laptop is awake. It exits early if today's digest already exists, and a lock in 
 ```bash
 crontab -e
 # hourly at :17
-17 * * * * cd ~/Documents/research/taste-lab && PATH=$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin TASTE_LAB_ACCOUNT=laptop-scout ./scripts/scout.sh >> 00-inbox/scout.log 2>&1
+17 * * * * cd ~/Documents/research/taste-lab && PATH=$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin TASTE_LAB_ACCOUNT=laptop-scout ./scripts/scout.sh >> 9 Claude files/Inbox/scout.log 2>&1
 ```
 Cron starts with a bare PATH, so the line adds `~/.local/bin`, where `claude` lives on this machine (`which claude`).
 Keep `PATH=` and `TASTE_LAB_ACCOUNT=` after the `cd`: put in front of `cd`, they only apply to `cd` and never reach the script.
@@ -61,15 +61,15 @@ Keep `PATH=` and `TASTE_LAB_ACCOUNT=` after the `cd`: put in front of `cd`, they
 Or push to GitHub and run it as a scheduled cloud task that commits the digest. Ask Claude to set that up.
 
 ## Using multiple Claude accounts
-The repo is the only memory shared across accounts (see "Session protocol" in `CLAUDE.md` and `00-inbox/HANDOFF.md`).
+The repo is the only memory shared across accounts (see "Session protocol" in `CLAUDE.md` and `9 Claude files/Inbox/HANDOFF.md`).
 - Set `TASTE_LAB_ACCOUNT=<label>` (e.g. `personal`, `work`, `laptop-scout`) in `.env` or your shell so commits carry a
   `Session-Account:` trailer and you can tell later which account did what. `cp .env.example .env` to start;
   API keys for any future fetchers go there too. A value set in the shell or the cron line wins over `.env`.
-- Keep `06-patterns/` and thread framing (promoting, killing, rewording threads) on your personal account.
+- Keep `4 My notes/` and thread framing (promoting, killing, rewording threads) on your personal account.
   Other accounts can scout, ingest, and draft, but they don't set direction.
 
 ## Current state
-- Threads: see `03-questions/` (Q1 valence probe validity is the gating experiment)
-- Experiment 01 spec: `04-experiments/exp01-valence-probe/spec.md`
-- Reading queue: `00-inbox/reading-queue.md`
+- Threads: see `1 Questions/` (Q1 valence probe validity is the gating experiment)
+- Experiment 01 spec: `1 Questions/Q1 experiment - read the signal/Plan.md`
+- Reading queue: `2 Papers/Reading list.md`
 - Target: ICML 2027 workshop (~late May 2027)

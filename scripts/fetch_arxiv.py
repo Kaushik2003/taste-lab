@@ -5,7 +5,7 @@ Usage:
   python3 scripts/fetch_arxiv.py --days 2          # default window
   python3 scripts/fetch_arxiv.py --days 14 --max 40
 
-Writes 00-inbox/candidates/YYYY-MM-DD.json and .md, skipping papers already in 01-papers/.
+Writes 9 Claude files/Inbox/candidates/YYYY-MM-DD.json and .md, skipping papers already in 2 Papers/.
 """
 import argparse
 import datetime as dt
@@ -110,7 +110,7 @@ def parse_feed(xml_bytes: bytes) -> list[dict]:
 
 def existing_ids() -> set[str]:
     ids = set()
-    for p in (ROOT / "01-papers").glob("*.md"):
+    for p in (ROOT / "2 Papers").glob("*.md"):
         # only the frontmatter `arxiv:` field counts, so papers merely mentioned in a note still get scouted
         for m in re.finditer(r"^arxiv:\s*(\d{4}\.\d{4,5})", p.read_text(errors="ignore"), re.M):
             ids.add(m.group(1))
@@ -170,7 +170,7 @@ def main():
     # papers matching several buckets float up
     ranked = sorted(seen.values(), key=lambda p: (len(p["matched"]), p["published"]), reverse=True)
     today = dt.date.today().isoformat()
-    outdir = ROOT / "00-inbox" / "candidates"
+    outdir = ROOT / "9 Claude files/Inbox" / "candidates"
     outdir.mkdir(parents=True, exist_ok=True)
     (outdir / f"{today}.json").write_text(json.dumps(ranked, indent=2))
 
@@ -179,7 +179,7 @@ def main():
         lines.append(f"- **{p['title']}** — {', '.join(p['authors'][:3])}{' et al.' if len(p['authors']) > 3 else ''}"
                      f" · {p['published']} · [{p['arxiv_id']}]({p['url']}) · matched: {', '.join(p['matched'])}")
     (outdir / f"{today}.md").write_text("\n".join(lines) + "\n")
-    print(f"{len(ranked)} new candidates → 00-inbox/candidates/{today}.md")
+    print(f"{len(ranked)} new candidates → 9 Claude files/Inbox/candidates/{today}.md")
 
 
 if __name__ == "__main__":

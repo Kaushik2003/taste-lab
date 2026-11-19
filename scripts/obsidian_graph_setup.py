@@ -17,20 +17,20 @@ def c(q, hexs):
 # First match wins, so the most specific groups come first.
 g["colorGroups"] = [
     c("tag:#role/threat", "e5484d"),        # papers that threaten the thesis
-    c("path:03-questions", "f76b15"),         # open research questions
-    c("path:04-experiments", "ffc53d"),
+    c("path:1 Questions", "f76b15"),         # open research questions
+    c("path:1 Questions", "ffc53d"),
     c("tag:#type/landscape", "8e4ec6"),     # section hub notes
-    c("path:02-concepts", "30a46c"),
-    c("path:01-papers", "3e63dd"),
-    c("path:06-patterns", "d6409f"),        # Harshit's layer
-    c("path:00-inbox OR path:05-digests OR file:HOME", "8b8d98"),
+    c("path:3 Ideas", "30a46c"),
+    c("path:2 Papers", "3e63dd"),
+    c("path:4 My notes", "d6409f"),        # Harshit's layer
+    c("path:9 Claude files/Inbox OR path:9 Claude files/Reports OR file:HOME", "8b8d98"),
 ]
 g.update({"collapse-color-groups": False, "repelStrength": 12, "linkDistance": 220,
           "centerStrength": 0.5, "linkStrength": 1, "showArrow": False, "textFadeMultiplier": -1})
 (o / "graph.json").write_text(json.dumps(g, indent=2))
 
 a = json.loads((o / "app.json").read_text())
-a["userIgnoreFilters"] = ["_templates/", "CLAUDE.md", "scripts/"]
+a["userIgnoreFilters"] = ["9 Claude files/Templates/", "CLAUDE.md", "scripts/"]
 (o / "app.json").write_text(json.dumps(a, indent=2))
 
 (o / "types.json").write_text(json.dumps({"types": {

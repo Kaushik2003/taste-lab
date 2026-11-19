@@ -39,20 +39,24 @@ Each test checks a different stage of the loop.
 4. **Self-reinforcing** (persist): sharpens under self-training *without* collapse (track diversity/entropy)
 
 ## Repo map
+The user opens only `HOME.md`, `TASKS.md` and folders 1 to 4. Folder 9 is for Claude.
+
 | Folder | What | Who writes |
 |---|---|---|
-| `00-inbox/` | raw captures, links, fetched candidates | both |
-| `01-papers/` | one note per paper (`_templates/paper.md`) | Claude drafts, Harshit annotates |
-| `02-concepts/` | atomic concept notes, heavily [[linked]] | both |
-| `03-questions/` | open research questions/hypotheses with status | Harshit owns, Claude proposes |
-| `04-experiments/` | spec → log → results per experiment | both |
-| `05-digests/` | dated scout reports | Claude |
-| `06-patterns/` | **Harshit's human layer: intuitions, patterns, bets** | **Harshit only** |
-| `07-drafts/` | paper drafts (ICML 2027 workshop target) | both |
+| `HOME.md` | front page in Obsidian | Claude |
+| `TASKS.md` | the only task list (For you / For Claude) | Claude, user ticks |
+| `1 Questions/` | Q1 to Q5. Each experiment is a folder next to its question: `Q<n> experiment - <plain name>/` with `Plan.md`, then log and results | user owns, Claude proposes |
+| `2 Papers/` | one note per paper, plus `Reading list.md` | Claude writes, user adds notes |
+| `3 Ideas/` | ideas we use, field maps (`Field map - ...`), `Gaps in the field.md` | both |
+| `4 My notes/` | **the user's own intuitions and bets** | **user only** |
+| `9 Claude files/Inbox/` | `HANDOFF.md`, new paper finds (`candidates/`) | Claude |
+| `9 Claude files/Reports/` | dated scout reports | Claude |
+| `9 Claude files/Writing/` | literature review and paper drafts (ICML 2027 workshop target) | both |
+| `9 Claude files/Templates/`, `Tables/` | note templates, Obsidian Bases tables for HOME | Claude |
 
 ## Session protocol
 Several Claude accounts work in this repo. The repo is the only memory they share.
-- **Start:** `git pull`, then read `TASKS.md` first, then the last 3 entries in `00-inbox/HANDOFF.md`, the newest digest in `05-digests/`, and every thread with `status: active`.
+- **Start:** `git pull`, then read `TASKS.md` first, then the last 3 entries in `9 Claude files/Inbox/HANDOFF.md`, the newest digest in `9 Claude files/Reports/`, and every thread with `status: active`.
 - **End:** update `TASKS.md` (add new tasks, move ticked ones to Done), append a HANDOFF entry, then commit with a `Session-Account: <label>` trailer. The label is `$TASTE_LAB_ACCOUNT` (from the shell or `.env`); if that's unset, ask before committing.
 - **Prefer new dated files** over editing shared ones, so parallel sessions don't conflict.
 - **Thread edits** get a dated line under the thread's `## Log` (add the section if it's missing) instead of a rewrite.
@@ -75,23 +79,23 @@ Follow ASD-STE100 (Simplified Technical English) about 80% of the time. Clear me
 - No em dashes, no hype words.
 
 ## Rules for Claude
-- **Never write to `06-patterns/`.** Read it, because it's the best signal of what Harshit finds interesting, and weight your scouting toward it.
+- **Never write to `4 My notes/`.** Read it, because it's the best signal of what Harshit finds interesting, and weight your scouting toward it.
 - **Proposals, not decisions.** You can create new threads only as `status: proposed`. Harshit promotes them.
 - **Cite or flag.** Every factual claim in a note gets a source link. If you're unsure, write `[unverified]`.
 - **Paraphrase papers.** Don't paste abstracts. Write: claim → mechanism → evidence → limits → relevance to us.
 - **Be adversarial on our own ideas.** For every thread, keep a "what would kill this" section current. Known threat: intrinsic-reward self-training sharpens priors then collapses (He et al., ICLR 2026).
 - **Link aggressively.** Use `[[concept-name]]` wikilinks (Obsidian-compatible). Before you create a concept note, check whether one already exists.
 - **Score relevance 0–3** against the four tests + architecture components when triaging papers.
-- **Dedupe.** Before adding a paper, check `01-papers/` by arXiv ID / title.
+- **Dedupe.** Before adding a paper, check `2 Papers/` by arXiv ID / title.
 - Keep digests short. Harshit reads them on his phone: top 3 items, then a "surprise" pick, then one question for him.
 
 ## Conventions
 - **File names are plain English, so a person understands them at once.** Spaces are OK. No codes alone, no kebab-case, no jargon.
-  - Questions (`03-questions/`): `Q<number> <plain question, no "?">.md`, e.g. `Q1 Does the model sense code quality.md`.
+  - Questions (`1 Questions/`): `Q<number> <plain question, no "?">.md`, e.g. `Q1 Does the model sense code quality.md`.
     The dashboard reads the number from the `Q` prefix. A stopped question gets `(stopped)` after the number.
-  - Papers (`01-papers/`): `<what the paper shows, 8 words or fewer> (<First author> <Year>).md`,
+  - Papers (`2 Papers/`): `<what the paper shows, 8 words or fewer> (<First author> <Year>).md`,
     e.g. `Models share one taste for text (Zatuchin 2026).md`. If the paper has a known short name, put it first: `SEAL - ...`.
-  - Concepts (`02-concepts/`): a plain name, e.g. `Good-bad signal probe.md`. Section hubs start with `Field map - `.
+  - Concepts (`3 Ideas/`): a plain name, e.g. `Good-bad signal probe.md`. Section hubs start with `Field map - `.
   - In text, call a question by its number and plain name ("Q1, does the model sense code quality?"), never only "Q1".
 - Frontmatter on every note: `type`, `status`, `tags`, `links`.
 - `links` must be quoted so it stays valid YAML and shows in Obsidian's graph: `links: ["[[a]]", "[[b]]"]`, never `links: [[a]], [[b]]`.
@@ -100,12 +104,12 @@ Follow ASD-STE100 (Simplified Technical English) about 80% of the time. Clear me
   `relevance/N`, `question/QN`, `role/threat|prior-art`. Keep every list on one line (`scripts/dashboard.py` reads line by line).
   Graph color groups in `.obsidian/graph.json` key off these tags and the folders.
 - `HOME.md` is the Obsidian front page. Keep it in plain English, no commands or jargon. Its tables come from
-  `_views/*.base` (Obsidian Bases, built in), not Dataview (not installed). When a paper in "Read this week" is
+  `9 Claude files/Tables/*.base` (Obsidian Bases, built in), not Dataview (not installed). When a paper in "Read this week" is
   done, tick it and swap in the next one. Harshit asks for things in normal sentences; map them to the commands yourself.
-- Dates ISO. Digests: `05-digests/YYYY-MM-DD.md`.
+- Dates ISO. Digests: `9 Claude files/Reports/YYYY-MM-DD.md`.
 - API keys and per-machine settings live in `.env` (gitignored; template in `.env.example`). Scripts load it. Never put keys in notes, digests, or commits.
 - Every paper note has `section:` (lit review section 1-9, names in `dashboard.json`) and `tier: deep|skim`. The dashboard groups and orders papers by them.
-- The lit review lives in `07-drafts/litreview/`. Section drafts are named by section: `01-introduction.md`, `02-foundations.md`,
+- The lit review lives in `9 Claude files/Writing/litreview/`. Section drafts are named by section: `01-introduction.md`, `02-foundations.md`,
   `03-monitoring.md`, `04-evaluation-signals.md`, `05-persistent-control.md`, `06-limits.md`, `07-taste-and-open-endedness.md`,
   `08-synthesis.md`, `09-conclusion.md`. `outline.md`, `matrix.md` and `gaps.md` sit next to them with no frontmatter,
   because the dashboard shows those three as-is.
@@ -113,6 +117,6 @@ Follow ASD-STE100 (Simplified Technical English) about 80% of the time. Clear me
 ## Commands
 `/scout` daily sweep · `/ingest <url|arxiv-id>` paper note · `/critique <thread>` red-team ·
 `/connect` find non-obvious links · `/weekly` synthesis + next actions · `/explain <concept>` tutor mode for Harshit ·
-`/next` brief the next paper, then `/next done <takeaway>` marks it read · `/gaps` gaps & patterns, saved to `07-drafts/litreview/gaps.md`
+`/next` brief the next paper, then `/next done <takeaway>` marks it read · `/gaps` gaps & patterns, saved to `9 Claude files/Writing/litreview/gaps.md`
 
 Dashboard: `python3 scripts/dashboard.py --serve`, then open http://localhost:8765 (refresh to update). Settings in `dashboard.json`.
