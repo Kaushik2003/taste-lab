@@ -38,7 +38,7 @@ Our goal now: **write the literature review by 24 November 2026.** No experiment
 ## For Claude
 
 Review plan, 7 steps (one step per round, started 2026-11-20):
-- [ ] 1. Notes for the 7 core papers: Nelson and Narens (1990), Kadavath (2022), Doya (2002), introspective oversight, Exploring WSP, WeightBench, GUARD. (4 of 7 done on 2026-11-20.)
+- [x] 1. Notes for the 7 core papers: Nelson and Narens (1990), Kadavath (2022), Doya (2002), introspective oversight, Exploring WSP, WeightBench, GUARD. (done 2026-11-20)
 - [ ] 2. New search for the thin sections (2 Foundations, 6 Limits, 7 Taste). Notes only for papers scored 3, at most 6. The rest go to the Reading list.
 - [ ] 3. Add every new paper to [[outline]] and [[matrix]].
 - [ ] 4. Write `1 Literature review/gaps.md` (the /gaps command), metacognition and weight editing first.

@@ -28,8 +28,8 @@ Earlier priority:
 
 ## Next
 - [x] Training LMs for Introspective Oversight — 2611.23365 (trained observer role; route to the grounded test) → [[Training LMs to watch themselves (Wang 2026)]]
-- [ ] GUARD: Stabilizing Recursive Self-Improvement — 2611.23476 (non-regression gate)
-- [ ] WeightBench — 2611.18553
+- [x] GUARD: Stabilizing Recursive Self-Improvement — 2611.23476 (non-regression gate) → [[GUARD - a gate stops self-edits from breaking things (Zhang 2026)]]
+- [x] WeightBench — 2611.18553 → [[WeightBench - models cannot yet patch models (Marasini 2026)]]
 - [x] Exploring WSP: Capabilities, Generalization, Limitations — 2611.09382 → [[Exploring WSP - small weight edits, uneven results (Hu 2026)]]
 - [ ] How Far Can Unsupervised RLVR Scale — 2603.08660 → [[Self-reward sharpens then collapses (He 2026)]]
 - [ ] Persona Vectors — 2507.21509 (+ safety audit 2611.17620)
