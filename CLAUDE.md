@@ -3,7 +3,19 @@
 You are the research partner in this repo. Harshit is the PI: he owns taste, direction, and decisions.
 You own breadth, speed, rigor, and adversarial checking.
 
-## The question
+## Current goal: a literature review (read this first)
+We are **writing a literature review**, due **2026-11-24** (see `dashboard.json`). We are still choosing the research idea.
+We are **not** running experiments now. Do not plan experiments, raters, GPU runs or stop rules unless the user asks.
+
+- **Angle:** metacognition in language models (a model watches and controls its own state), plus models that change
+  their own weights (weight-space programming, WSP, and self-edits like SEAL), and model "taste".
+- **Claude's job:** find existing studies, write paper notes, find gaps and patterns, and help draft the review sections.
+- **The review lives in `1 Literature review/`:** `outline.md`, `matrix.md`, `gaps.md` and one file per section.
+- **The questions in `5 Research ideas (later)/`** are candidate ideas that the review may lead to. They are parked.
+  Use them only to say why a gap matters. Do not add experiment plans to them.
+- The sections below describe the long-term research idea. They are background for the review, not a work plan.
+
+## The research idea (background)
 The core thesis is **metacognition**. Can a reasoning model monitor its own internal states, evaluate them
 with likes and dislikes of its own (its **taste**), and use that evaluation to control its thinking and,
 eventually, its own weights?
@@ -39,24 +51,24 @@ Each test checks a different stage of the loop.
 4. **Self-reinforcing** (persist): sharpens under self-training *without* collapse (track diversity/entropy)
 
 ## Repo map
-The user opens only `HOME.md`, `TASKS.md` and folders 1 to 4. Folder 9 is for Claude.
+The user opens `HOME.md`, `TASKS.md` and folders 1 to 5. Folder 9 is for Claude.
 
 | Folder | What | Who writes |
 |---|---|---|
 | `HOME.md` | front page in Obsidian | Claude |
 | `TASKS.md` | the only task list (For you / For Claude) | Claude, user ticks |
-| `1 Questions/` | Q1 to Q5. Each experiment is a folder next to its question: `Q<n> experiment - <plain name>/` with `Plan.md`, then log and results | user owns, Claude proposes |
+| `1 Literature review/` | **the main work:** `outline.md`, `matrix.md`, `gaps.md`, section drafts (`01-introduction.md` ...) | both |
 | `2 Papers/` | one note per paper, plus `Reading list.md` | Claude writes, user adds notes |
 | `3 Ideas/` | ideas we use, field maps (`Field map - ...`), `Gaps in the field.md` | both |
 | `4 My notes/` | **the user's own intuitions and bets** | **user only** |
+| `5 Research ideas (later)/` | Q1 to Q6: candidate research ideas, parked during the review (old experiment plan inside) | user owns, Claude proposes |
 | `9 Claude files/Inbox/` | `HANDOFF.md`, new paper finds (`candidates/`) | Claude |
 | `9 Claude files/Reports/` | dated scout reports | Claude |
-| `9 Claude files/Writing/` | literature review and paper drafts (ICML 2027 workshop target) | both |
 | `9 Claude files/Templates/`, `Tables/` | note templates, Obsidian Bases tables for HOME | Claude |
 
 ## Session protocol
 Several Claude accounts work in this repo. The repo is the only memory they share.
-- **Start:** `git pull`, then read `TASKS.md` first, then the last 3 entries in `9 Claude files/Inbox/HANDOFF.md`, the newest digest in `9 Claude files/Reports/`, and every thread with `status: active`.
+- **Start:** `git pull`, then read `TASKS.md` first, then the last 3 entries in `9 Claude files/Inbox/HANDOFF.md`, the newest digest in `9 Claude files/Reports/`, and `1 Literature review/outline.md`.
 - **End:** update `TASKS.md` (add new tasks, move ticked ones to Done), append a HANDOFF entry, then commit with a `Session-Account: <label>` trailer. The label is `$TASTE_LAB_ACCOUNT` (from the shell or `.env`); if that's unset, ask before committing.
 - **Prefer new dated files** over editing shared ones, so parallel sessions don't conflict.
 - **Thread edits** get a dated line under the thread's `## Log` (add the section if it's missing) instead of a rewrite.
@@ -91,7 +103,7 @@ Follow ASD-STE100 (Simplified Technical English) about 80% of the time. Clear me
 
 ## Conventions
 - **File names are plain English, so a person understands them at once.** Spaces are OK. No codes alone, no kebab-case, no jargon.
-  - Questions (`1 Questions/`): `Q<number> <plain question, no "?">.md`, e.g. `Q1 Does the model sense code quality.md`.
+  - Questions (`5 Research ideas (later)/`): `Q<number> <plain question, no "?">.md`, e.g. `Q1 Does the model sense code quality.md`.
     The dashboard reads the number from the `Q` prefix. A stopped question gets `(stopped)` after the number.
   - Papers (`2 Papers/`): `<what the paper shows, 8 words or fewer> (<First author> <Year>).md`,
     e.g. `Models share one taste for text (Zatuchin 2026).md`. If the paper has a known short name, put it first: `SEAL - ...`.
@@ -109,7 +121,7 @@ Follow ASD-STE100 (Simplified Technical English) about 80% of the time. Clear me
 - Dates ISO. Digests: `9 Claude files/Reports/YYYY-MM-DD.md`.
 - API keys and per-machine settings live in `.env` (gitignored; template in `.env.example`). Scripts load it. Never put keys in notes, digests, or commits.
 - Every paper note has `section:` (lit review section 1-9, names in `dashboard.json`) and `tier: deep|skim`. The dashboard groups and orders papers by them.
-- The lit review lives in `9 Claude files/Writing/litreview/`. Section drafts are named by section: `01-introduction.md`, `02-foundations.md`,
+- The lit review lives in `1 Literature review/`. Section drafts are named by section: `01-introduction.md`, `02-foundations.md`,
   `03-monitoring.md`, `04-evaluation-signals.md`, `05-persistent-control.md`, `06-limits.md`, `07-taste-and-open-endedness.md`,
   `08-synthesis.md`, `09-conclusion.md`. `outline.md`, `matrix.md` and `gaps.md` sit next to them with no frontmatter,
   because the dashboard shows those three as-is.
@@ -117,6 +129,6 @@ Follow ASD-STE100 (Simplified Technical English) about 80% of the time. Clear me
 ## Commands
 `/scout` daily sweep · `/ingest <url|arxiv-id>` paper note · `/critique <thread>` red-team ·
 `/connect` find non-obvious links · `/weekly` synthesis + next actions · `/explain <concept>` tutor mode for Harshit ·
-`/next` brief the next paper, then `/next done <takeaway>` marks it read · `/gaps` gaps & patterns, saved to `9 Claude files/Writing/litreview/gaps.md`
+`/next` brief the next paper, then `/next done <takeaway>` marks it read · `/gaps` gaps & patterns, saved to `1 Literature review/gaps.md`
 
 Dashboard: `python3 scripts/dashboard.py --serve`, then open http://localhost:8765 (refresh to update). Settings in `dashboard.json`.

@@ -2,7 +2,7 @@
 type: dashboard
 status: active
 tags: [type/hub, dashboard]
-links: ["[[TASKS]]", "[[Reading list]]", "[[HANDOFF]]", "[[Gaps in the field]]", "[[Q1 Does the model sense code quality]]"]
+links: ["[[TASKS]]", "[[Reading list]]", "[[HANDOFF]]", "[[Gaps in the field]]", "[[outline]]", "[[matrix]]"]
 ---
 
 # Home
@@ -16,21 +16,27 @@ links: ["[[TASKS]]", "[[Reading list]]", "[[HANDOFF]]", "[[Gaps in the field]]",
 > Open [[TASKS]] to see what you need to do. It is the only task list.
 
 > [!note] The folders
-> - **1 Questions:** our research questions and their experiments.
+> - **1 Literature review:** the main work. The plan, the paper table and the section drafts.
 > - **2 Papers:** one short note per paper.
 > - **3 Ideas:** short notes that explain one idea each.
 > - **4 My notes:** your own thoughts. Only you write here.
+> - **5 Research ideas (later):** possible research questions. They wait until the review is done.
 > - **9 Claude files:** Claude's working files. You can ignore this folder.
 
 ## 1. What we are doing now
 
-We want to know if an AI model can judge its own code: "this code is good" or "this code is bad".
-The first step is one question and one experiment:
+We are **writing a literature review**. It is due on **24 November 2026**.
+We are still choosing our research idea. The review shows what other people did and what is still missing.
 
-- **Question:** [[Q1 Does the model sense code quality|Does the model have an internal signal for code quality?]]
-- **Experiment:** [[1 Questions/Q1 experiment - read the signal/Plan|Experiment 1: read that signal from the model]]
+The angle:
+- **Metacognition:** can a model watch its own state and control it?
+- **Models that change their own weights:** weight-space programming (WSP) and self-edits (SEAL).
+- **Taste:** can a model have likes and dislikes of its own?
 
-The other questions wait for this one.
+Open these:
+- [[outline|The plan of the review]]: 9 sections and the papers in each one.
+- [[matrix|The paper table]]: which paper covers which part.
+- [[Gaps in the field|What nobody has done yet]]
 
 ## 2. Read this week
 
@@ -38,22 +44,22 @@ Start with these 3 papers. Open the note first (it is short). Open the full pape
 Tick the box when you finish.
 
 - [ ] [[Value axis - model knows it is on track (Jiang 2026)|The Value Axis]]: a model knows when it is "on the right track", tested on code. Closest to our work.
-- [ ] [[Models can report and control their own activations (Ji-An 2025)|Models report and control their own activations]]: the closest paper to our main idea, metacognition. It is the base for the new question Q6 (can the model read and use its own signal?).
+- [ ] [[Models can report and control their own activations (Ji-An 2025)|Models report and control their own activations]]: the closest paper to our main idea, metacognition. It sits at the center of the monitoring section.
 - [ ] [[Introspection claims fail basic checks (Singh 2026)|Can models look inside themselves?]]: the strongest warning against our idea.
 
 Finished these? The list below shows what to read next.
 
 ![[9 Claude files/Tables/papers.base#Read next]]
 
-## 3. Our research questions
+## 3. Possible research ideas (later)
 
-Status words: **active** = we work on it now, **parked** = later, **killed** = we stopped it.
+These are ideas the review may lead to. They wait until the review is done.
 
 ![[9 Claude files/Tables/questions.base]]
 
 ## 4. Warnings
 
-These papers show ways our idea can fail. Read them before you trust a result.
+These papers show limits and failures. The review must discuss them.
 
 ![[9 Claude files/Tables/papers.base#Warnings (papers against our idea)]]
 
@@ -82,7 +88,8 @@ Write a normal sentence to Claude. You do not need special commands. Some exampl
 - "What should I read next?"
 - "I finished the Value Axis paper. My opinion: ..." (Claude saves it in the paper note.)
 - "Find new papers about this topic."
-- "What can go wrong with the code quality question?"
+- "Draft section 3 of the review."
+- "What gaps do the papers show?"
 - "Update the home page."
 
 ## More

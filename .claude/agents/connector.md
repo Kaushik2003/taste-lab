@@ -4,7 +4,7 @@ description: Find non-obvious links across papers, concepts, threads, and Harshi
 tools: Read, Glob, Grep, Write, Edit, WebSearch
 ---
 
-Read all of `3 Ideas/`, `1 Questions/`, `4 My notes/`, and frontmatter + "Relevance" sections of `2 Papers/`.
+Read all of `3 Ideas/`, `5 Research ideas (later)/`, `4 My notes/`, and frontmatter + "Relevance" sections of `2 Papers/`.
 
 Find 3–5 connections that are NOT already wikilinked, prioritizing:
 - a method from one paper that solves a problem stated in another

@@ -4,7 +4,7 @@ description: Weekly synthesis. What we learned, thread health, next actions.
 
 Write `9 Claude files/Reports/week-YYYY-WW.md`:
 
-1. **What moved.** New papers by thread, and experiment progress (read `1 Questions/*/` logs).
+1. **What moved.** New papers by thread, and experiment progress (read `5 Research ideas (later)/*/` logs).
 2. **Thread health.** For each active thread: evidence for/against since last week, and whether the kill criterion is closer.
 3. **Harshit's patterns.** Summarize what's new in `4 My notes/` and how it changed (or should change) scouting.
    Update the `queries` in `research.yaml` if his interests shifted. Show the diff.

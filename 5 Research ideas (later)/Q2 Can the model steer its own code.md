@@ -2,11 +2,11 @@
 type: question
 title: "Q2. Can the model steer its own code?"
 id: Q2
-status: active
+status: parked
 owner: harshit
 created: 2026-11-19
 updated: 2026-11-19
-tags: [type/question, question/Q2, status/active]
+tags: [type/question, question/Q2, status/parked]
 links: ["[[Metacognition - watch and control yourself]]", "[[Four tests for own taste]]"]
 ---
 
@@ -14,7 +14,7 @@ links: ["[[Metacognition - watch and control yourself]]", "[[Four tests for own 
 
 > **In short**
 > - **Question:** Can the model use its own good-or-bad signal to make its code easier to read, with no change to its weights?
-> - **Where it stands:** Active, but waiting. It needs the first result of Question 1 (does the model sense code quality?).
+> - **Where it stands:** Parked while we write the literature review (from 2026-11-20). It needs the first result of Question 1 (does the model sense code quality?).
 > - **Next step:** When stage A of Question 1 passes, plan this experiment. Picking the best of several answers looks more likely to work than steering.
 
 **Words used here**
@@ -81,3 +81,4 @@ Wait. This depends on stage A of Question 1 (does the model sense code quality?)
 - 2026-11-20: renamed from `can-metacognitive-steering-at-inference-time-improve-code-T2` ("Can metacognitive steering at inference time improve code? (Q2)") to an ASD-STE100-style name and title.
 - 2026-11-20: renamed to a plain name (file "Q2 Can the model steer its own code"), so the name is clear at once. Old title: "Can metacognitive steering during inference improve code? (Q2)". Codes T1 to T5 are now Q1 to Q5.
 - 2026-11-20: rewritten in plain English (same facts).
+- 2026-11-20: parked on the user's instruction. The current goal is the literature review, not experiments.

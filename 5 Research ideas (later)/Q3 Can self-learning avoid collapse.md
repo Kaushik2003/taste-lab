@@ -2,11 +2,11 @@
 type: question
 title: "Q3. Can self-learning avoid collapse?"
 id: Q3
-status: active
+status: parked
 owner: harshit
 created: 2026-11-19
 updated: 2026-11-19
-tags: [type/question, question/Q3, status/active]
+tags: [type/question, question/Q3, status/parked]
 links: ["[[Metacognition - watch and control yourself]]", "[[Four tests for own taste]]"]
 ---
 
@@ -14,7 +14,7 @@ links: ["[[Metacognition - watch and control yourself]]", "[[Four tests for own 
 
 > **In short**
 > - **Question:** Can the model train itself on what its own good-or-bad signal likes, and not fall into collapse?
-> - **Where it stands:** Active, but no plan yet. A known paper (He et al.) says this kind of self-training always collapses in the end.
+> - **Where it stands:** Parked while we write the literature review (from 2026-11-20). A known paper (He et al.) says this kind of self-training always collapses in the end.
 > - **Next step:** Write the plan after Question 1 (does the model sense code quality?) and Question 2 (can the model steer its own code?). Read the GUARD paper first.
 
 **Words used here**
@@ -84,3 +84,4 @@ The Log below also proposes a second stop rule: output length or repetition coll
 - 2026-11-20: renamed from `can-learning-from-its-own-judgment-avoid-collapse-T3` ("Can learning from its own judgment avoid collapse? (Q3)") to an ASD-STE100-style name and title.
 - 2026-11-20: renamed to a plain name (file "Q3 Can self-learning avoid collapse"), so the name is clear at once. Old title: "Can a model learn from its own evaluation and not collapse? (Q3)". Codes T1 to T5 are now Q1 to Q5.
 - 2026-11-20: rewritten in plain English (same facts).
+- 2026-11-20: parked on the user's instruction. The current goal is the literature review, not experiments.

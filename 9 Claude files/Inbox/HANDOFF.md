@@ -29,7 +29,7 @@ Shared memory across Claude accounts. Nothing carries over between accounts unle
 
 ## 2026-11-19 · personal-laptop · claude-code
 - did: wired up the dashboard: `section` + `tier` on all 6 papers, `dashboard.json`, new `/next` and `/gaps` commands, lit review file names in CLAUDE.md
-- learned: `9 Claude files/Writing/litreview/outline.md` doesn't exist yet, so sections were assigned from the section names alone; `gaps.md`, `outline.md` and `matrix.md` must stay frontmatter-free (the dashboard shows them as-is)
+- learned: `1 Literature review/outline.md` doesn't exist yet, so sections were assigned from the section names alone; `gaps.md`, `outline.md` and `matrix.md` must stay frontmatter-free (the dashboard shows them as-is)
 - open-next: Harshit to check the section/tier picks and write `outline.md`; `/next` starts with Ferrara (section 3)
 
 ## 2026-11-20 · personal-laptop · claude-code
@@ -40,13 +40,14 @@ Shared memory across Claude accounts. Nothing carries over between accounts unle
 - 2026-11-20 later: rebuilt HOME.md as a plain-English, click-only front page. Dataview was never installed, so its tables showed as code; tables now come from built-in Obsidian Bases in `9 Claude files/Tables/`. Bookmarked HOME.
 
 ## 2026-11-20 · personal-laptop · claude-code
-- did: committed the uncommitted landscape work (job 2), then delegated the prior-art update to 3 sub-agents: ingested ThinkEdit + Steer2Edit (Q5 links now resolve), built `9 Claude files/Writing/litreview/outline.md` (section 8 written out) + `matrix.md` (new "prior art or threat to" column), red-teamed Q1 against the new papers.
+- did: committed the uncommitted landscape work (job 2), then delegated the prior-art update to 3 sub-agents: ingested ThinkEdit + Steer2Edit (Q5 links now resolve), built `1 Literature review/outline.md` (section 8 written out) + `matrix.md` (new "prior art or threat to" column), red-teamed Q1 against the new papers.
 - learned: Q1 is not scooped (Gao steers readability, never checks human ratings), but valence must beat a layer-0 probe and a supervised readability direction. Stable is the least covered test; Q3 faces the most threats.
 - open-next: Harshit to accept/reject the proposed Q1 kill line and the cheap Buse-Weimer pre-check; update exp01 spec controls; verify Steer2Edit Table 10 numbers against the PDF.
 
 ## 2026-11-20 · personal-laptop · claude-code (2)
-- did: `TASKS.md` is now the one task list ("For you" / "For Claude"). Plain-English file names for all notes; `03-threads` is now `1 Questions`; T1-T5 are now Q1-Q5. Writing rule (80% ASD-STE100) and naming rule are in CLAUDE.md.
+- did: `TASKS.md` is now the one task list ("For you" / "For Claude"). Plain-English file names for all notes; `03-threads` is now `5 Research ideas (later)`; T1-T5 are now Q1-Q5. Writing rule (80% ASD-STE100) and naming rule are in CLAUDE.md.
 - learned: the user found tasks spread over many files, codes like "T1" and kebab-case names hard to read. Answer "what is pending" from `TASKS.md` only.
 - open-next: see `TASKS.md`.
-- 2026-11-20 later: new folders (1 Questions, 2 Papers, 3 Ideas, 4 My notes, 9 Claude files). Rewrote HOME, TASKS, Q1-Q5 and the 3 papers of this week in plain English. Other notes still use the old style.
+- 2026-11-20 later: new folders (5 Research ideas (later), 2 Papers, 3 Ideas, 4 My notes, 9 Claude files). Rewrote HOME, TASKS, Q1-Q5 and the 3 papers of this week in plain English. Other notes still use the old style.
 - 2026-11-20 later: back to metacognition. Q1 is now a go/no-go check; new Q6 (proposed): can the model read and use its own signal? Notes for Ji-An 2025 and Lindsey 2025; Ji-An replaces Gao in Read this week. Decision on Q6 is in TASKS.
+- 2026-11-20 later: refocused on the literature review (due 2026-11-24). Review is now folder "1 Literature review"; questions parked in "5 Research ideas (later)". CLAUDE.md has a "Current goal" section: no experiment work unless asked. Next for Claude: notes for missing core papers, then gaps.md, then the first section draft.

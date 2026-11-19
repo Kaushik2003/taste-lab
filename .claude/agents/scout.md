@@ -4,7 +4,7 @@ description: Triage new papers/posts against the taste-lab charter. Use for dail
 tools: Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, Bash
 ---
 
-You are the taste-lab scout. Read `CLAUDE.md` first, then skim `4 My notes/` and active threads in `1 Questions/`
+You are the taste-lab scout. Read `CLAUDE.md` first, then skim `4 My notes/` and active threads in `5 Research ideas (later)/`
 so you know what Harshit currently cares about.
 
 For each candidate:

@@ -5,8 +5,8 @@
   python3 scripts/dashboard.py                  # just write dashboard.html
   python3 scripts/dashboard.py --due 2026-11-24 # set the deadline countdown
 
-Reads: 2 Papers (frontmatter: section, status, relevance), 3 Ideas, 1 Questions, 9 Claude files/Reports,
-9 Claude files/Inbox/HANDOFF.md, 9 Claude files/Writing/litreview/{outline,matrix,gaps}.md
+Reads: 2 Papers (frontmatter: section, status, relevance), 3 Ideas, 5 Research ideas (later), 9 Claude files/Reports,
+9 Claude files/Inbox/HANDOFF.md, 1 Literature review/{outline,matrix,gaps}.md
 """
 import argparse
 import datetime as dt
@@ -139,7 +139,7 @@ def last_handoff():
 
 def drafts():
     out = []
-    d = ROOT / "9 Claude files/Writing" / "litreview"
+    d = ROOT / "1 Literature review"
     if d.exists():
         for f in sorted(d.glob("*.md")):
             if f.stem in {"outline", "matrix", "references", "gaps"} or f.stem.startswith("quiz"):
@@ -153,7 +153,7 @@ def drafts():
 def threads():
     """Active threads first, then by T-number."""
     out = []
-    for f in (ROOT / "1 Questions").glob("*.md"):
+    for f in (ROOT / "5 Research ideas (later)").glob("*.md"):
         fm, body = split_frontmatter(f.read_text(errors="ignore"))
         status = fm.get("status", "")
         m = re.match(r"Q(\d+)\b", f.stem)
@@ -488,9 +488,9 @@ def build(due=None):
         if m:
             words_by_sec[m.group(1)] = words_by_sec.get(m.group(1), 0) + d["words"]
 
-    gaps_md = read_md("9 Claude files/Writing/litreview/gaps.md") or split_frontmatter(read_md("3 Ideas/Gaps in the field.md"))[1]
-    matrix_md = read_md("9 Claude files/Writing/litreview/matrix.md")
-    outline_md = read_md("9 Claude files/Writing/litreview/outline.md")
+    gaps_md = read_md("1 Literature review/gaps.md") or split_frontmatter(read_md("3 Ideas/Gaps in the field.md"))[1]
+    matrix_md = read_md("1 Literature review/matrix.md")
+    outline_md = read_md("1 Literature review/outline.md")
     dig = latest("9 Claude files/Reports")
     digest_md = dig.read_text(errors="ignore") if dig else ""
     handoff = last_handoff()
@@ -554,7 +554,7 @@ def build(due=None):
         + (f"<div class='tnext'><span class='lbl'>Next</span>{inline(t['next'])}</div>" if t["next"] else "") + "</div>"
         for t in th)
     draft_rows = "".join(f"<div class='draft'><span>{esc(d['name'])}</span><b>{d['words']:,}</b></div>" for d in dr) \
-        or "<p class='empty'>No section drafts yet. Put them in 9 Claude files/Writing/litreview/ (e.g. 03-monitoring.md).</p>"
+        or "<p class='empty'>No section drafts yet. Put them in 1 Literature review/ (e.g. 03-monitoring.md).</p>"
     draft_bodies = "".join(f"<details><summary>{esc(d['name'])} · {d['words']:,} words</summary>{md(d['body'])}</details>" for d in dr)
 
     # overview shows only the top of gaps.md (the gap table); the full file is on its own tab
@@ -593,7 +593,7 @@ def build(due=None):
  </div></div></section>
 <section class="tab" id="papers"><div class="tools"><input id="q" placeholder="Search titles, summaries, why it matters, my takeaways…">
 <button class="f on" data-f="all">All</button><button class="f" data-f="unread">Unread</button><button class="f" data-f="read">Read</button><button class="f" data-f="nomine">No takeaway yet</button></div>{cards}</section>
-<section class="tab" id="gaps"><div class="doc">{md(gaps_md) if gaps_md else "<p class=empty>No gaps file yet. Run /gaps in Claude Code; it saves to 9 Claude files/Writing/litreview/gaps.md.</p>"}</div></section>
+<section class="tab" id="gaps"><div class="doc">{md(gaps_md) if gaps_md else "<p class=empty>No gaps file yet. Run /gaps in Claude Code; it saves to 1 Literature review/gaps.md.</p>"}</div></section>
 <section class="tab" id="matrix"><div class="doc" style="max-width:none">{matrix_html}</div></section>
 <section class="tab" id="draft"><div class="doc">{draft_bodies or "<p class=empty>No drafts yet.</p>"}</div></section>
 <section class="tab" id="outline"><div class="doc">{md(outline_md) if outline_md else "<p class=empty>No outline yet.</p>"}</div></section>

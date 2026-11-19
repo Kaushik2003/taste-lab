@@ -11,5 +11,5 @@ Ingest $ARGUMENTS:
    with concrete numbers in Evidence. "Steal this" must name something reusable (code link, metric, dataset).
    Set `section` (lit review section 1-9, names in `dashboard.json`) and `tier` (`deep` if relevance is 3, else `skim`).
 4. Create or update the relevant `3 Ideas/` notes and add wikilinks both ways.
-5. If it affects a thread in `1 Questions/`, add a dated line to that thread's Log and to Evidence for/against.
+5. If it affects a thread in `5 Research ideas (later)/`, add a dated line to that thread's Log and to Evidence for/against.
 6. Report: one-line summary, relevance score, and which threads it touched.

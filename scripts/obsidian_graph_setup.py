@@ -17,8 +17,8 @@ def c(q, hexs):
 # First match wins, so the most specific groups come first.
 g["colorGroups"] = [
     c("tag:#role/threat", "e5484d"),        # papers that threaten the thesis
-    c("path:1 Questions", "f76b15"),         # open research questions
-    c("path:1 Questions", "ffc53d"),
+    c("path:5 Research ideas (later)", "f76b15"),         # open research questions
+    c("path:5 Research ideas (later)", "ffc53d"),
     c("tag:#type/landscape", "8e4ec6"),     # section hub notes
     c("path:3 Ideas", "30a46c"),
     c("path:2 Papers", "3e63dd"),
