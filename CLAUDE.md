@@ -52,11 +52,27 @@ Each test checks a different stage of the loop.
 
 ## Session protocol
 Several Claude accounts work in this repo. The repo is the only memory they share.
-- **Start:** `git pull`, then read the last 3 entries in `00-inbox/HANDOFF.md`, the newest digest in `05-digests/`, and every thread with `status: active`.
-- **End:** append a HANDOFF entry, then commit with a `Session-Account: <label>` trailer. The label is `$TASTE_LAB_ACCOUNT` (from the shell or `.env`); if that's unset, ask before committing.
+- **Start:** `git pull`, then read `TASKS.md` first, then the last 3 entries in `00-inbox/HANDOFF.md`, the newest digest in `05-digests/`, and every thread with `status: active`.
+- **End:** update `TASKS.md` (add new tasks, move ticked ones to Done), append a HANDOFF entry, then commit with a `Session-Account: <label>` trailer. The label is `$TASTE_LAB_ACCOUNT` (from the shell or `.env`); if that's unset, ask before committing.
 - **Prefer new dated files** over editing shared ones, so parallel sessions don't conflict.
 - **Thread edits** get a dated line under the thread's `## Log` (add the section if it's missing) instead of a rewrite.
 - **Never assume something was discussed** unless it's in the repo.
+
+## Tasks: who does what
+`TASKS.md` is the only list of open work. Do not put tasks for the user anywhere else (HANDOFF, thread logs, digests).
+- Two sections: **For you** (only the user can do it: decisions, people, reading) and **For Claude**.
+- Each task for the user: a bold one-line action, 1 to 3 plain sentences on why, a link to the file, and a *Done when:* line.
+- If a Claude task needs the user's OK, write *Waits for:* and put the decision in "For you" too.
+- When the user asks "what is pending" or "what should I do", answer from `TASKS.md` and nothing else.
+
+## Writing style (all replies and notes)
+Follow ASD-STE100 (Simplified Technical English) about 80% of the time. Clear meaning comes first; break a rule only if the result is clearer.
+- One idea per sentence. Sentences of 20 words or fewer for steps, 25 or fewer for explanations.
+- Simple, common words. Active voice. Start steps with a verb.
+- Explain each technical term the first time you use it, in one plain sentence. No unexplained symbols or short forms (ρ, RepE, d =, AUC, layer-0).
+- Never use a bare code like "T1", "#11" or "C2". Write the plain name first, then the code if needed: "Question 1 (does the model have a signal for code quality?)".
+- Give the answer or the result first, then the reason. Use lists for steps and choices.
+- No em dashes, no hype words.
 
 ## Rules for Claude
 - **Never write to `06-patterns/`.** Read it, because it's the best signal of what Harshit finds interesting, and weight your scouting toward it.

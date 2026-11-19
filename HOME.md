@@ -2,7 +2,7 @@
 type: dashboard
 status: active
 tags: [type/hub, dashboard]
-links: ["[[reading-queue]]", "[[HANDOFF]]", "[[landscape-gap-table]]", "[[code-quality-signal-T1]]"]
+links: ["[[TASKS]]", "[[reading-queue]]", "[[HANDOFF]]", "[[landscape-gap-table]]", "[[code-quality-signal-T1]]"]
 ---
 
 # Home
@@ -10,6 +10,9 @@ links: ["[[reading-queue]]", "[[HANDOFF]]", "[[landscape-gap-table]]", "[[code-q
 > [!tip] How to use this page
 > Click any colored link to open a note. To come back here, click **Home** in the bookmarks panel on the left (the bookmark icon).
 > You don't need the terminal. To ask Claude for help, write a normal sentence (see the last section).
+
+> [!important] Your tasks
+> Open [[TASKS]] to see what you need to do. It is the only task list.
 
 ## 1. What we are doing now
 
