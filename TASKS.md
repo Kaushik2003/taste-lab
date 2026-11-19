@@ -18,7 +18,7 @@ This is the only list of open work. Claude updates it at the end of each session
 - [ ] **Decide the new stop rule for Question 1.**
   Question 1 asks: "Does the model have an internal signal for code quality?"
   A stop rule says which result makes us stop this question.
-  Claude proposes a stricter rule, because a new paper (Gao) makes a weak result easy to explain away.
+  Claude proposes a stricter rule. A new paper (Gao 2026, about steering code readability) makes a weak result easy to explain away.
   Open [[Q1 Does the model sense code quality]], read the last line under "Log", and write "yes" or "no" under it.
   *Done when:* you write "yes" or "no".
 
@@ -46,13 +46,13 @@ This is the only list of open work. Claude updates it at the end of each session
 ## For Claude
 
 - [ ] Add the new controls to Experiment 1. *Waits for:* your stop-rule decision.
-- [ ] Check one number in the Steer2Edit paper (Table 10, 87.8 to 77.3) against the PDF.
+- [ ] Check one number in the Steer2Edit paper against the PDF (Table 10, the drop from 87.8 to 77.3).
 - [ ] Fix a security problem in the dashboard script (a bad link in a note can run code in the page).
 - [ ] Add a safety check to the daily scout script before it runs every hour. *Waits for:* your "yes".
-- [ ] Delete the old work copy of the repo (`worktree-prior-art-landscape`).
+- [ ] Delete the old extra copy of the repo (the work copy named `worktree-prior-art-landscape`).
 
 ## Done
 
-- [x] 2026-11-20: Claude gave every note a plain name (Q1 to Q5 for questions; papers show what they found). Claude made this file the one task list.
+- [x] 2026-11-20: Claude gave every note a plain name. Questions are numbered Q1 to Q5, and paper names say what the paper found. Claude made this file the one task list.
 
 - [x] 2026-11-20: Claude saved and sent the paper search (17 papers) and the literature review plan to GitHub.

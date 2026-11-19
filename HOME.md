@@ -7,12 +7,20 @@ links: ["[[TASKS]]", "[[Reading list]]", "[[HANDOFF]]", "[[Gaps in the field]]",
 
 # Home
 
-> [!tip] How to use this page
-> Click any colored link to open a note. To come back here, click **Home** in the bookmarks panel on the left (the bookmark icon).
-> You don't need the terminal. To ask Claude for help, write a normal sentence (see the last section).
+> [!tip] Start here
+> This is the front page. Click any colored link to open a note.
+> To come back, click **Home** in the bookmarks panel on the left (the bookmark icon).
+> You do not need the terminal. To ask Claude for help, write a normal sentence (see the last section).
 
 > [!important] Your tasks
 > Open [[TASKS]] to see what you need to do. It is the only task list.
+
+> [!note] The folders
+> - **1 Questions:** our research questions and their experiments.
+> - **2 Papers:** one short note per paper.
+> - **3 Ideas:** short notes that explain one idea each.
+> - **4 My notes:** your own thoughts. Only you write here.
+> - **9 Claude files:** Claude's working files. You can ignore this folder.
 
 ## 1. What we are doing now
 
@@ -30,8 +38,8 @@ Start with these 3 papers. Open the note first (it is short). Open the full pape
 Tick the box when you finish.
 
 - [ ] [[Value axis - model knows it is on track (Jiang 2026)|The Value Axis]]: a model knows when it is "on the right track", tested on code. Closest to our work.
-- [ ] [[Steer code readability inside the model (Gao 2026)|Readability of code with RepE]]: someone already steered code readability. How are we different?
-- [ ] [[Introspection claims fail basic checks (Singh 2026)|Can LLMs introspect?]]: the strongest warning against our idea.
+- [ ] [[Steer code readability inside the model (Gao 2026)|Steer code readability]]: other researchers already changed code readability from inside the model. How are we different?
+- [ ] [[Introspection claims fail basic checks (Singh 2026)|Can models look inside themselves?]]: the strongest warning against our idea.
 
 Finished these? The list below shows what to read next.
 
@@ -59,12 +67,12 @@ The field has 5 parts. Each note gives a short summary and its papers.
 4. [[Field map - Limits of self-learning|Why self-training often fails]]
 5. [[Field map - Taste and new ideas|Taste and new ideas]]
 
-Where nobody has done the work yet: [[Gaps in the field|Gap table]]
+What nobody has done yet: [[Gaps in the field|Gap table]]
 
 ## 6. Your own ideas
 
 Write your thoughts, hunches and bets in the folder **4 My notes**. Claude reads this folder but never changes it.
-Make a new note there: right-click the folder, then click **New note**.
+To make a new note there, right-click the folder, then click **New note**.
 
 ## 7. Get help from Claude
 
@@ -74,7 +82,7 @@ Write a normal sentence to Claude. You do not need special commands. Some exampl
 - "What should I read next?"
 - "I finished the Value Axis paper. My opinion: ..." (Claude saves it in the paper note.)
 - "Find new papers about this topic."
-- "What can go wrong with question Q1?"
+- "What can go wrong with the code quality question?"
 - "Update the home page."
 
 ## More

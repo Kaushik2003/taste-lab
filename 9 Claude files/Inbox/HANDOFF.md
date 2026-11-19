@@ -48,3 +48,4 @@ Shared memory across Claude accounts. Nothing carries over between accounts unle
 - did: `TASKS.md` is now the one task list ("For you" / "For Claude"). Plain-English file names for all notes; `03-threads` is now `1 Questions`; T1-T5 are now Q1-Q5. Writing rule (80% ASD-STE100) and naming rule are in CLAUDE.md.
 - learned: the user found tasks spread over many files, codes like "T1" and kebab-case names hard to read. Answer "what is pending" from `TASKS.md` only.
 - open-next: see `TASKS.md`.
+- 2026-11-20 later: new folders (1 Questions, 2 Papers, 3 Ideas, 4 My notes, 9 Claude files). Rewrote HOME, TASKS, Q1-Q5 and the 3 papers of this week in plain English. Other notes still use the old style.
