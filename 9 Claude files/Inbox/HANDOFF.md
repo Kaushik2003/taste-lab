@@ -49,3 +49,4 @@ Shared memory across Claude accounts. Nothing carries over between accounts unle
 - learned: the user found tasks spread over many files, codes like "T1" and kebab-case names hard to read. Answer "what is pending" from `TASKS.md` only.
 - open-next: see `TASKS.md`.
 - 2026-11-20 later: new folders (1 Questions, 2 Papers, 3 Ideas, 4 My notes, 9 Claude files). Rewrote HOME, TASKS, Q1-Q5 and the 3 papers of this week in plain English. Other notes still use the old style.
+- 2026-11-20 later: back to metacognition. Q1 is now a go/no-go check; new Q6 (proposed): can the model read and use its own signal? Notes for Ji-An 2025 and Lindsey 2025; Ji-An replaces Gao in Read this week. Decision on Q6 is in TASKS.

@@ -15,6 +15,12 @@ This is the only list of open work. Claude updates it at the end of each session
 
 ## For you
 
+- [ ] **Accept or reject the new question Q6.**
+  Q6 asks: "Can the model read and use its own good-or-bad signal?" This is our main idea, metacognition, and none of Q1 to Q5 tested it.
+  Q1 (does the model sense code quality?) is now only a go/no-go check.
+  Open [[Q6 Can the model read and use its own signal]] and read the "In short" box.
+  *Done when:* you tell Claude "accept Q6" or "reject Q6".
+
 - [ ] **Decide the new stop rule for Question 1.**
   Question 1 asks: "Does the model have an internal signal for code quality?"
   A stop rule says which result makes us stop this question.

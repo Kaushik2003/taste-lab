@@ -38,7 +38,7 @@ Start with these 3 papers. Open the note first (it is short). Open the full pape
 Tick the box when you finish.
 
 - [ ] [[Value axis - model knows it is on track (Jiang 2026)|The Value Axis]]: a model knows when it is "on the right track", tested on code. Closest to our work.
-- [ ] [[Steer code readability inside the model (Gao 2026)|Steer code readability]]: other researchers already changed code readability from inside the model. How are we different?
+- [ ] [[Models can report and control their own activations (Ji-An 2025)|Models report and control their own activations]]: the closest paper to our main idea, metacognition. It is the base for the new question Q6 (can the model read and use its own signal?).
 - [ ] [[Introspection claims fail basic checks (Singh 2026)|Can models look inside themselves?]]: the strongest warning against our idea.
 
 Finished these? The list below shows what to read next.

@@ -1,6 +1,8 @@
 # Reading queue
 
 ## Priority (read this week)
+- [ ] Q6 · Metacognitive Monitoring and Control of Internal Activations (Ji-An, NeurIPS 2025) · arXiv 2505.13763 → [[Models can report and control their own activations (Ji-An 2025)]]
+- [ ] Q6 · Emergent Introspective Awareness (Lindsey 2025) · arXiv 2601.01828 → [[Models sometimes notice injected thoughts (Lindsey 2025)]]
 Landscape must-reads, in cluster order (2026-11-19, see [[Gaps in the field]]):
 - [ ] C1 · Can LLMs Introspect? A Reality Check · arXiv 2605.26242 → [[Introspection claims fail basic checks (Singh 2026)]]
 - [ ] C1 · Reasoning Models Know When They're Right · arXiv 2504.05419 → [[Models know when they are right (Zhang 2025)]]
@@ -30,8 +32,6 @@ Earlier priority:
 - [ ] WeightBench — 2611.18553
 - [ ] Exploring WSP: Capabilities, Generalization, Limitations — 2611.09382
 - [ ] How Far Can Unsupervised RLVR Scale — 2603.08660 → [[Self-reward sharpens then collapses (He 2026)]]
-- [ ] Emergent Introspective Awareness (Lindsey) — 2601.01828
-- [ ] Metacognitive Monitoring & Control of Internal Activations (Ji-An) — 2505.13763
 - [ ] Persona Vectors — 2507.21509 (+ safety audit 2611.17620)
 - [ ] ThinkEdit — 2503.22048 (Q5 prior art: head-level direction removal) → [[ThinkEdit - edit weights to think longer (Sun 2025)]]
 - [ ] Steer2Edit — 2602.09870 (Q5 prior art: steering vector to sparse rank-one edits) → [[Steer2Edit - steering into small weight edits (Sun 2026)]]

@@ -16,6 +16,7 @@ links: ["[[Metacognition - watch and control yourself]]", "[[Four tests for own 
 > - **Question:** Does the model have an inner good-or-bad signal that agrees with people about which code is easy to read?
 > - **Where it stands:** Active. We have no data yet. A decision waits for Harshit (see below).
 > - **Next step:** Run stage A of the Question 1 experiment on one 8B model, with about 50 problems.
+> - **Role:** a go/no-go check. If the signal does not track code quality, we stop early. We do not build a readability paper on it. The metacognition step (the model reads its own signal) is in [[Q6 Can the model read and use its own signal]].
 >
 > **A decision waits for you: a stricter stop rule.** A stop rule says which result makes us drop this question.
 > Claude proposes a stricter rule, because a new paper (Gao) makes a weak result easy to explain away.
@@ -101,3 +102,4 @@ Use about 50 problems, with 8 solutions for each problem that pass all tests.
 - 2026-11-20: proposed (Claude, for Harshit to accept): new kill line. Within-problem partial ρ < 0.2 on natural passing solutions (anchors excluded) after length, perplexity and comment ratio, in two families; or valence adds < 0.05 ρ over a layer-0 probe plus a Gao-style readability direction; or ρ falls inside the 95th percentile of norm-matched random directions. Proposed cheap pre-check: valence vs a public human-rated readability set (Buse-Weimer or Scalabrino, Java) against a layer-0 probe, about one GPU afternoon, before the 2–3 days of rating. exp01 controls to add: layer-0 probe, Gao direction, Jiang value axis, Xu correctness probe, comment-stripped rerun, other-model and human solutions, rater reliability (≥5 blind raters, Krippendorff's alpha). Source: critic pass, see sources [2401.14936](https://arxiv.org/abs/2401.14936), [2404.13076](https://arxiv.org/abs/2404.13076), [2510.16579](https://arxiv.org/abs/2510.16579) [unverified numbers].
 - 2026-11-20: renamed to a plain name (file "Q1 Does the model sense code quality"), so the name is clear at once. Old title: "Does the internal evaluation signal of the model show code quality? (Q1)". Codes T1 to T5 are now Q1 to Q5.
 - 2026-11-20: rewritten in plain English (same facts).
+- 2026-11-20: on the user's instruction, this question is now a go/no-go check only. Reason: the work had moved toward readability probes and away from metacognition. The model-reads-itself step moved to [[Q6 Can the model read and use its own signal]].
