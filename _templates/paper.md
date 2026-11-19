@@ -1,5 +1,6 @@
 ---
 type: paper
+title:
 status: unread   # unread | skimmed | read | deep
 arxiv:
 url:

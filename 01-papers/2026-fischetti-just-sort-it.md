@@ -1,5 +1,6 @@
 ---
 type: paper
+title: "Just sort it! The LP behind rank-one anti-loop edits"
 status: skimmed
 arxiv: 2611.21432
 url: https://arxiv.org/abs/2611.21432

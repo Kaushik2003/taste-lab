@@ -1,5 +1,6 @@
 ---
 type: paper
+title: "SEAL: Self-Adapting Language Models"
 status: read
 arxiv: 2506.10943
 url: https://arxiv.org/abs/2506.10943

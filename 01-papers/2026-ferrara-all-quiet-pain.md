@@ -1,5 +1,6 @@
 ---
 type: paper
+title: "All Quiet on the Neural Front: LMs Do Not Report Injected Pain States"
 status: skimmed
 arxiv: 2611.10123
 url: https://arxiv.org/abs/2611.10123

@@ -1,5 +1,6 @@
 ---
 type: paper
+title: "How Far Can Unsupervised RLVR Scale LLM Training?"
 status: skimmed
 arxiv: 2603.08660
 url: https://arxiv.org/abs/2603.08660

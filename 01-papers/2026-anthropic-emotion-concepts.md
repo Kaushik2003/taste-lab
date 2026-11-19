@@ -1,5 +1,6 @@
 ---
 type: paper
+title: "Emotion Concepts and Their Function in a Large Language Model"
 status: skimmed
 arxiv: 2604.07729
 url: https://www.anthropic.com/research/emotion-concepts-function

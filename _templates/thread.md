@@ -1,5 +1,6 @@
 ---
 type: thread
+title:
 id: T?
 status: proposed   # proposed | active | parked | killed | answered
 owner: harshit
