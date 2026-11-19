@@ -38,3 +38,8 @@ Shared memory across Claude accounts. Nothing carries over between accounts unle
 - open-next: `[[2026-sun-steer2edit]]` and `[[2025-sun-thinkedit]]` (T5) are still unresolved, so ingest them or leave them as visible gaps; run InfraNodus gap detection on the `01-papers` + `02-concepts` folders.
 - 2026-11-20 later: renamed T1–T5 and one concept to ASD-STE100-style names (e.g. `code-quality-signal-T1`, `self-weight-change-T4`, `self-weight-updates`), with STE titles; old names are in each thread's Log. Naming rule added to CLAUDE.md conventions.
 - 2026-11-20 later: rebuilt HOME.md as a plain-English, click-only front page. Dataview was never installed, so its tables showed as code; tables now come from built-in Obsidian Bases in `_views/`. Bookmarked HOME.
+
+## 2026-11-20 · personal-laptop · claude-code
+- did: committed the uncommitted landscape work (job 2), then delegated the prior-art update to 3 sub-agents: ingested ThinkEdit + Steer2Edit (T5 links now resolve), built `07-drafts/litreview/outline.md` (section 8 written out) + `matrix.md` (new "prior art or threat to" column), red-teamed T1 against the new papers.
+- learned: T1 is not scooped (Gao steers readability, never checks human ratings), but valence must beat a layer-0 probe and a supervised readability direction. Stable is the least covered test; T3 faces the most threats.
+- open-next: Harshit to accept/reject the proposed T1 kill line and the cheap Buse-Weimer pre-check; update exp01 spec controls; verify Steer2Edit Table 10 numbers against the PDF.

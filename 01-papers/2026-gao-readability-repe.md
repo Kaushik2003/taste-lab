@@ -4,7 +4,7 @@ title: "Towards the Readability of LLM-Generated Codes through Multitask Represe
 status: skimmed
 arxiv: 2606.06214
 url: https://arxiv.org/abs/2606.06214
-authors: Huifan Gao, Liuhua He, Yinghui Pan, Shenbao Yu, Yifeng Zeng, Shengchao Qin
+authors: Huifan Gao, Liuhua He, Yinghui Pan, Shenbao Yu, Yifeng Zeng, Shengchao Qin, Weidi Sun
 year: 2026
 venue: preprint (cs.SE)
 relevance: 3

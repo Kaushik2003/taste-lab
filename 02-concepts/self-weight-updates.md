@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [type/concept, status/active, self-modification, consolidation]
-links: ["[[2025-zweiger-seal]]", "[[2026-takehi-weight-space-programming]]", "[[2026-fischetti-just-sort-it]]"]
+links: ["[[2025-zweiger-seal]]", "[[2026-takehi-weight-space-programming]]", "[[2026-fischetti-just-sort-it]]", "[[2025-sun-thinkedit]]", "[[2026-sun-steer2edit]]"]
 ---
 
 # Self weight updates

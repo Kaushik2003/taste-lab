@@ -33,6 +33,8 @@ Earlier priority:
 - [ ] Emergent Introspective Awareness (Lindsey) — 2601.01828
 - [ ] Metacognitive Monitoring & Control of Internal Activations (Ji-An) — 2505.13763
 - [ ] Persona Vectors — 2507.21509 (+ safety audit 2611.17620)
+- [ ] ThinkEdit — 2503.22048 (T5 prior art: head-level direction removal) → [[2025-sun-thinkedit]]
+- [ ] Steer2Edit — 2602.09870 (T5 prior art: steering vector to sparse rank-one edits) → [[2026-sun-steer2edit]]
 
 ## Background (when relevant)
 - [ ] Utility Engineering (Mazeika) — 2502.08640
