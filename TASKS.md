@@ -37,9 +37,14 @@ Our goal now: **write the literature review by 24 November 2026.** No experiment
 
 ## For Claude
 
-- [ ] Find the core papers the review still misses, and write notes for them. Metacognition: Nelson and Narens (1990), "Language models (mostly) know what they know" and other self-knowledge work, "Training LMs for introspective oversight". Weight editing: "Exploring WSP", WeightBench, GUARD, Doya (2002).
-- [ ] Write `1 Literature review/gaps.md`: the gaps and patterns across all papers (the /gaps command). Start from [[Gaps in the field]].
-- [ ] Draft the first section. *Waits for:* your choice of section and your OK on the outline.
+Review plan, 7 steps (one step per round, started 2026-11-20):
+- [ ] 1. Notes for the 7 core papers: Nelson and Narens (1990), Kadavath (2022), Doya (2002), introspective oversight, Exploring WSP, WeightBench, GUARD. (4 of 7 done on 2026-11-20.)
+- [ ] 2. New search for the thin sections (2 Foundations, 6 Limits, 7 Taste). Notes only for papers scored 3, at most 6. The rest go to the Reading list.
+- [ ] 3. Add every new paper to [[outline]] and [[matrix]].
+- [ ] 4. Write `1 Literature review/gaps.md` (the /gaps command), metacognition and weight editing first.
+- [ ] 5. Draft section 3 "Monitoring", then section 5 "Persistent control", from the paper notes.
+- [ ] 6. Review both drafts as a critic, fix them, and list open doubts in each.
+- [ ] 7. Update "Read this week" on HOME, add a HANDOFF entry, move ticked items to Done.
 - [ ] Check one number in the Steer2Edit paper against the PDF (Table 10, the drop from 87.8 to 77.3).
 - [ ] Fix a security problem in the dashboard script (a bad link in a note can run code in the page).
 - [ ] Add a safety check to the daily scout script before it runs every hour. *Waits for:* your "yes".
