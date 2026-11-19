@@ -52,7 +52,7 @@ Our goal now: **write the literature review by 24 November 2026.** No experiment
 - [ ] Write notes for Irie 2022 and Nested Learning (older self-modifying networks). *Waits for:* your "in or out" decision above.
 - [x] Check the numbers in the two drafts against the papers. Done 2026-11-20: all match; see [[2026-11-20 number check]].
 - [ ] Draft the next sections. *Waits for:* your choice of order.
-- [ ] Check one number in the Steer2Edit paper against the PDF (Table 10, the drop from 87.8 to 77.3).
+- [x] Check one number in the Steer2Edit paper against the PDF (Table 10, the drop from 87.8 to 77.3). Done 2026-11-20: it matches.
 - [ ] Fix a security problem in the dashboard script (a bad link in a note can run code in the page).
 - [ ] Add a safety check to the daily scout script before it runs every hour. *Waits for:* your "yes".
 - [ ] Delete the old extra copy of the repo (the work copy named `worktree-prior-art-landscape`).

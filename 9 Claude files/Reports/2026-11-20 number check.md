@@ -33,5 +33,5 @@ Not covered: Nelson 1990 and Doya 2002 (no numbers cited), and Steer2Edit (separ
 | Controllable space between 32 and 128 dimensions | [arXiv 2505.13763](https://arxiv.org/abs/2505.13763), Appendix B.2 | Matches. |
 
 ## Still open
-- Steer2Edit Table 10 (87.8 to 77.3): separate task.
+- ~~Steer2Edit Table 10 (87.8 to 77.3)~~: checked in the PDF later the same day. Matches; most of the drop is on GPQA (66.3 to 42.4).
 - The script checks that a number exists in the paper, not that it means the same thing there. Numbers outside the table above were checked that way only.
