@@ -7,6 +7,8 @@ url: https://arxiv.org/abs/2611.21432
 authors: Matteo Fischetti
 year: 2026
 relevance: 2
+section: 5
+tier: skim
 components: [consolidation]
 tags: [weight-space-programming, rank-one-edit]
 ---

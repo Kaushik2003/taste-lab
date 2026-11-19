@@ -57,7 +57,15 @@ Several Claude accounts work in this repo. The repo is the only memory they shar
 - Filenames: kebab-case. Papers: `YYYY-firstauthor-shortname.md` (e.g. `2025-zweiger-seal.md`).
 - Frontmatter on every note: `type`, `status`, `tags`, `links`.
 - Dates ISO. Digests: `05-digests/YYYY-MM-DD.md`.
+- Every paper note has `section:` (lit review section 1-9, names in `dashboard.json`) and `tier: deep|skim`. The dashboard groups and orders papers by them.
+- The lit review lives in `07-drafts/litreview/`. Section drafts are named by section: `01-introduction.md`, `02-foundations.md`,
+  `03-monitoring.md`, `04-evaluation-signals.md`, `05-persistent-control.md`, `06-limits.md`, `07-taste-and-open-endedness.md`,
+  `08-synthesis.md`, `09-conclusion.md`. `outline.md`, `matrix.md` and `gaps.md` sit next to them with no frontmatter,
+  because the dashboard shows those three as-is.
 
 ## Commands
 `/scout` daily sweep · `/ingest <url|arxiv-id>` paper note · `/critique <thread>` red-team ·
-`/connect` find non-obvious links · `/weekly` synthesis + next actions · `/explain <concept>` tutor mode for Harshit
+`/connect` find non-obvious links · `/weekly` synthesis + next actions · `/explain <concept>` tutor mode for Harshit ·
+`/next` brief the next paper, then `/next done <takeaway>` marks it read · `/gaps` gaps & patterns, saved to `07-drafts/litreview/gaps.md`
+
+Dashboard: `python3 scripts/dashboard.py --serve`, then open http://localhost:8765 (refresh to update). Settings in `dashboard.json`.

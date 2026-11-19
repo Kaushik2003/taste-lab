@@ -8,6 +8,8 @@ authors: Takehi, Teoh, Zhang, Khattab (MIT CSAIL)
 year: 2026
 venue: blog / preprint
 relevance: 3
+section: 5
+tier: deep
 tests: []
 components: [consolidation]
 tags: [weight-space-programming, gradient-free, model-repair]

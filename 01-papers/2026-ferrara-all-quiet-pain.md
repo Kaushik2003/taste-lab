@@ -8,6 +8,8 @@ authors: Emilio Ferrara
 year: 2026
 venue: preprint
 relevance: 3
+section: 3
+tier: deep
 tests: [grounded]
 components: [valence, monitoring]
 tags: [introspection, emotion-steering, threat]

@@ -8,6 +8,8 @@ authors: He, Gao, Zhang, Yuan, Zhou, Liu, Ding (Tsinghua)
 year: 2026
 venue: ICLR 2026
 relevance: 3
+section: 6
+tier: deep
 tests: [self-reinforcing]
 components: [anchor]
 tags: [collapse, intrinsic-reward, threat]

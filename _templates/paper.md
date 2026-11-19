@@ -8,6 +8,8 @@ authors:
 year:
 venue:
 relevance: 0     # 0-3
+section:         # lit review section 1-9, names in dashboard.json
+tier:            # deep | skim (default: deep if relevance is 3)
 tests: []        # divergent | stable | grounded | self-reinforcing
 components: []   # valence | controller | consolidation | anchor | monitoring
 tags: []

@@ -8,6 +8,8 @@ authors: Zweiger, Pari, Guo, Akyürek, Kim, Agrawal (MIT)
 year: 2025
 venue: NeurIPS 2025
 relevance: 3
+section: 5
+tier: deep
 tests: [self-reinforcing]
 components: [consolidation]
 tags: [self-edit, weight-update, meta-learning]

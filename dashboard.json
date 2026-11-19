@@ -1,0 +1,15 @@
+{
+  "due": "2026-11-24",
+  "title": "Metacognition in Reasoning Models — Literature Review",
+  "sections": {
+    "1": "Introduction",
+    "2": "Foundations",
+    "3": "Monitoring",
+    "4": "Evaluation signals",
+    "5": "Persistent control",
+    "6": "Limits",
+    "7": "Taste & open-endedness",
+    "8": "Synthesis",
+    "9": "Conclusion"
+  }
+}

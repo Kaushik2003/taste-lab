@@ -8,6 +8,8 @@ authors: Anthropic Interpretability
 year: 2026
 venue: preprint
 relevance: 3
+section: 4
+tier: deep
 tests: [grounded]
 components: [valence]
 tags: [functional-emotions, steering, preference]
