@@ -19,7 +19,7 @@ Purpose: give the frame the rest of the review uses. Nelson & Narens' object lev
 - [[Survey of metacognition in language models (Liu 2026)]] (deep): the survey to position against. It has monitor and control, but no taste and no weight self-edits.
 - [[Neuromodulators set how the brain learns (Doya 2002)]] (skim): the four learning knobs for the controller. Abstract only; no open full text found.
 - Concept notes to draw on: [[Metacognition - watch and control yourself]], [[Neuromodulators as learning settings]], [[Good-bad signal probe]], [[Models that change their own weights]].
-- Still missing: Fleming and Daw (2017), confidence as a second-order inference. It is in the Reading list.
+- [[Confidence is a guess about your own decision (Fleming 2017)]] (deep): confidence as a second-order inference about one's own decision, so it can come apart from performance. Added 2026-11-20.
 
 ## 3. Monitoring
 
@@ -31,6 +31,8 @@ Purpose: what a model's hidden states say about its own work, and whether the mo
 - [[Models know when they are right (Zhang 2025)]] (deep)
 - [[Models do not report injected pain (Ferrara 2026)]] (deep)
 - [[Introspection claims fail basic checks (Singh 2026)]] (deep)
+- [[Probes find injections long before models report them (Rubin 2026)]] (deep): a probe finds injections long before the model reports them; decodable even in random networks. Added 2026-11-20.
+- [[Trained self-prediction without an own-model edge (Zeng 2026)]] (deep): trained self-prediction improves, but with no consistent own-model edge. Added 2026-11-20.
 - [[Outside controller steers thinking modes (Karpf 2026)]] (skim)
 
 ## 4. Evaluation signals

@@ -29,7 +29,7 @@ Motivation* vol. 26 [unverified: volume number], 125–173. [doi:10.1016/S0079-7
   knowing, judgments of learning). Control is information flowing down (how long to study, when to stop searching memory). [unverified: examples from memory]
 - For us: the skeleton of our loop. We add **evaluate** and **persist** (below).
 
-**Fleming & Daw (2017).** "Self-evaluation of decision-making: A general Bayesian framework for metacognitive
+**Fleming & Daw (2017).** Paper note: [[Confidence is a guess about your own decision (Fleming 2017)]]. "Self-evaluation of decision-making: A general Bayesian framework for metacognitive
 computation." *Psychological Review* 124(1), 91–114. [doi:10.1037/rev0000045](https://doi.org/10.1037/rev0000045) · [PMC5178868](https://pmc.ncbi.nlm.nih.gov/articles/PMC5178868/)
 - Claim: one Bayesian model covers both confidence and error detection, and explains why metacognition can be
   better or worse than task performance.
@@ -52,7 +52,7 @@ Control ladder: **reasoning** (pick or revise its own outputs) → **activation*
 ## LLM evidence
 - Monitoring: Ji-An et al. (NeurIPS 2025) show LLMs can report activation directions in-context, but only in a low-dimensional "metacognitive space". Lindsey (2026, concept injection) shows Claude Opus 4/4.1 sometimes detect and name injected concepts.
 - Control: both papers show models can shift their own activations when asked. Effects are stronger in deeper layers and larger models.
-- Against: [[Models do not report injected pain (Ferrara 2026)]] and 2611.15267 show the states are decodable while self-report is at chance in open models.
+- Against: [[Models do not report injected pain (Ferrara 2026)]] and [[Probes find injections long before models report them (Rubin 2026)]] show the states are decodable before, or without, self-report in open models.
 
 **Why it matters:** The whole project is this loop: monitor → evaluate → control → persist. Each of the [[Four tests for own taste]] checks one stage.
 

@@ -66,7 +66,7 @@ They repeat three earlier experiments with stronger controls.
 
 ## Relevance to taste-lab
 - It sets the bar for the third of our four tests, **grounded** (the model's report must match a signal inside it), in [[Four tests for own taste]]. If our model's "I like this code" report agrees with a valence probe (a probe for a good/bad signal), a reviewer will ask if an input-only probe agrees just as well. For code that is likely, because readability is visible in the text.
-- It supports our choice to start with probes in [[Q1 Does the model sense code quality|Q1, does the model sense code quality?]]. It also fits [[Models do not report injected pain (Ferrara 2026)]] and [Rubin et al. 2611.15267](https://arxiv.org/abs/2611.15267). Together they say: you can read the states from the hidden numbers, but the model's spoken reports are weak or come from surface cues.
+- It supports our choice to start with probes in [[Q1 Does the model sense code quality|Q1, does the model sense code quality?]]. It also fits [[Models do not report injected pain (Ferrara 2026)]] and [[Probes find injections long before models report them (Rubin 2026)]]. Together they say: you can read the states from the hidden numbers long before the model can report them, and the model's spoken reports are weak, depend on the setting, or come from surface cues.
 - It threatens any sentence in our paper like "the model monitors its own taste". Safer wording: "a probed internal signal that the model's behavior depends on".
 - Fleming and Daw's second-order view (see [[Metacognition - watch and control yourself]]) uses the same split, so we can cite both together.
 

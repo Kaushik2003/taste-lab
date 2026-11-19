@@ -7,6 +7,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Monitoring and control between two levels (Nelson 1990)]] | 2 | deep | – | – | ? | – | monitor, control | prior art for the whole loop (frame) |
 | [[Models mostly know what they know (Kadavath 2022)]] | 2 | deep | – | – | ? | – | monitor | prior art Q1, Q6 |
 | [[Models predict themselves better than others do (Binder 2024)]] | 2 | deep | – | – | ✓ | – | monitor | prior art Q6 (cross-model control) |
+| [[Confidence is a guess about your own decision (Fleming 2017)]] | 2 | deep | – | – | ? | – | monitor, evaluate | prior art for the whole loop (second-order frame) |
 | [[Trained confidence tracks consistency, not accuracy (Yax 2026)]] | 2 | deep | – | – | ✓ | – | monitor | threat Q1, Q6 (consistency confound) |
 | [[Survey of metacognition in language models (Liu 2026)]] | 2 | deep | – | – | ? | – | monitor, control | prior art for the review (shows taste and persist are missing) |
 | [[Neuromodulators set how the brain learns (Doya 2002)]] | 2 | skim | – | – | – | – | control | prior art Q2, Q3 (controller knobs) |
@@ -16,6 +17,8 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Models know when they are right (Zhang 2025)]] | 3 | deep | – | – | ? | – | monitor, control | prior art Q2 (baseline), Q1 |
 | [[Models do not report injected pain (Ferrara 2026)]] | 3 | deep | – | – | ✓ | – | monitor, evaluate | threat Q1 (self-report route; supports probe route) |
 | [[Introspection claims fail basic checks (Singh 2026)]] | 3 | deep | – | – | ✓ | – | monitor | threat Q1 (grounded claim) |
+| [[Probes find injections long before models report them (Rubin 2026)]] | 3 | deep | – | – | ✓ | – | monitor | threat Q1 (probe accuracy is a low bar) |
+| [[Trained self-prediction without an own-model edge (Zeng 2026)]] | 3 | deep | – | – | ✓ | – | monitor | threat Q6 (no own-model edge) |
 | [[Outside controller steers thinking modes (Karpf 2026)]] | 3 | skim | – | – | – | – | monitor, control | prior art Q2 (name and design overlap) |
 | [[Emotion directions drive choices in Claude (Anthropic 2026)]] | 4 | deep | – | – | ✓ | – | evaluate | prior art Q1 |
 | [[Hidden good-bad feeling changes choices (Berg 2026)]] | 4 | deep | – | – | ✓ | ? | evaluate, control | prior art Q1 (grounded design); threat Q3 (DPO does not move valence) |

@@ -54,7 +54,7 @@ Models can learn to predict their own behavior in ways that go beyond what anoth
 - Works only on simple properties of short answers. Fails on complex tasks and does not generalize to related self-awareness tasks (authors, Sec. 1 and 4).
 - The own-model advantage is about behavior, not about a named internal state. It does not show what the model reads.
 - Accuracy is low in absolute terms (about 50%).
-- A 2026 paper cited by [[Training LMs to watch themselves (Wang 2026)]] reports that trained self-prediction does not always show an own-model advantage (Zeng et al., 2026) [unverified: not read].
+- A 2026 study trained Llama-3.1-8B and Qwen3-8B on self-prediction and found no consistent own-model advantage: the stronger Qwen often predicts Llama better than Llama does ([[Trained self-prediction without an own-model edge (Zeng 2026)]]).
 
 ## Relevance to taste-lab
 **Relevance 3.** Section 2, foundations of self-knowledge; also feeds section 3.

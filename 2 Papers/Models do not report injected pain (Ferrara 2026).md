@@ -29,7 +29,7 @@ links: ["[[Field map - Models read their own state]]", "[[Good-bad signal probe]
 ## Relevance to taste-lab: **important, reshapes Q1**
 - Zero-shot verbal introspection of valence **fails** in open models at our scale. The "grounded" test can't rely on self-report out of the box.
 - But the signal exists and is learnable to report. So either (a) wire a probe readout in as an internal signal, or (b) *train* introspection (LoRA, or an observer role as in 2611.23365).
-- Consistent with 2611.15267: a probe decodes perturbation location at 98% while zero-shot answers are at chance.
+- Partly consistent with [[Probes find injections long before models report them (Rubin 2026)]]: a probe decodes the injection site at 98% early in training while the model's answer is at chance. But at the released base model the answer reaches 89.6% when the injection is at layer 0, so report failure depends on the setting.
 
 ## Steal this
 The OWMI protocol (sham runs, matched random perturbations, text-only control). This is the control set our grounded test needs.

@@ -52,8 +52,8 @@ Earlier priority:
 Notes were written for 6 papers scored 3: [[Survey of metacognition in language models (Liu 2026)]], [[Models predict themselves better than others do (Binder 2024)]], [[Trained confidence tracks consistency, not accuracy (Yax 2026)]], [[Training on own outputs erases rare data (Shumailov 2024)]], [[OMNI - models judge which tasks are interesting (Zhang 2023)]], [[Open-ended means novel and learnable to an observer (Hughes 2024)]].
 
 Scored 3, but over the cap of 6 notes (write these next):
-- [ ] A Closer Look at Language Model Introspection — 2611.15267 (section 3: a linear probe finds the injection site at 98.3% while the model stays at chance; location is decodable even in random networks)
-- [ ] Fleming and Daw 2017, Self-evaluation of decision-making: a Bayesian framework for metacognition — Psychological Review 124(1) (section 2: confidence as a second-order inference)
+- [x] A Closer Look at Language Model Introspection — 2611.15267, note: [[Probes find injections long before models report them (Rubin 2026)]]. Correction: the model is at chance only early in training; 89.6% at the released base.
+- [x] Fleming and Daw 2017, Self-evaluation of decision-making — Psychological Review 124(1), note: [[Confidence is a guess about your own decision (Fleming 2017)]]
 
 Scored 2 (relevant, read if time allows):
 - [ ] Self-Rewarded RL for Better-Structured Medical Explanations — 2611.24650 (sections 6 and 7: self-reward aimed at style, not correctness)

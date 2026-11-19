@@ -44,8 +44,8 @@ Updated 2026-11-20 (two gap rows corrected after the critic review of the sectio
 | Section | Papers | Read | Note |
 |---|---|---|---|
 | 1 Introduction | 0 | 0 | **Under 2.** Needs no new papers; draw on sections 2 and 8. |
-| 2 Foundations | 6 | 0 | Was 0 this morning. Fleming and Daw (2017) still missing. Doya note is abstract only. |
-| 3 Monitoring | 7 | 0 | Rubin 2026 (shallow injection reports) still to add. |
+| 2 Foundations | 7 | 1 | Fleming and Daw (2017) added 2026-11-20. Doya note is abstract only. |
+| 3 Monitoring | 9 | 1 | Rubin 2026 and Zeng 2026 added 2026-11-20. Rubin: the model reports at chance only early in training. |
 | 4 Evaluation signals | 5 | 0 | All signals are correctness signals. Xu 2026 is unread. |
 | 5 Persistent control | 9 | 2 | Best covered. All editors are outside models. |
 | 6 Limits | 6 | 0 | Strong on threats; one design that works (hard check plus gate). |

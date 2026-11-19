@@ -24,7 +24,7 @@ links: ["[[Metacognition - watch and control yourself]]", "[[Four tests for own 
 - 2026-09 · [Aoki et al.](https://arxiv.org/abs/2609.00904) · Neurofeedback redone so the target can't be guessed from the text: control effects are small (all d < 0.5) and inconsistent across models.
 - 2026-09 · [[Outside controller steers thinking modes (Karpf 2026)]] · An outside controller reads a frozen 1T model's residual stream, picks a thinking regime, and adds steering vectors learned from scientists' corrections. Qualitative results only.
 - 2026-09 · [MetaCtrl](https://arxiv.org/abs/2609.37304) · A separate 4B controller, trained with RL, reads the reasoning text and tells a frozen reasoner to continue, shorten, skip or stop: +5.7 points with 47% fewer tokens on R1-Distill-Qwen-7B (Table 1).
-- 2026-11 · [Rubin et al.](https://arxiv.org/abs/2611.15267) + [[Models do not report injected pain (Ferrara 2026)]] · A linear probe reads injected states at 98 to 100% while the model's own zero-shot answer stays at chance.
+- 2026-11 · [[Probes find injections long before models report them (Rubin 2026)]] + [[Models do not report injected pain (Ferrara 2026)]] · A linear probe reads injected states at 98 to 100%. In Rubin, the model's own answer is at chance early in training but reaches 89.6% at the released base model (injection at layer 0); in Ferrara, open models never name the pain state.
 - 2026-11 · [Wang et al.](https://arxiv.org/abs/2611.23365) · A trained "observer" role inside the same model answers questions about the assistant's behavior with mean AUROC 0.907, above activation oracles at 0.796 (abstract).
 
 ## Current best result
