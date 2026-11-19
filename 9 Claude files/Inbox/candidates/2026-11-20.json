@@ -1,0 +1,592 @@
+[
+  {
+    "arxiv_id": "2611.24650",
+    "title": "Self-Rewarded Reinforcement Learning for Better-Structured Medical Explanations in Small Language Models",
+    "authors": [
+      "Prakhar Mishra",
+      "Bhavya Yajush Awasthi",
+      " Tanuja",
+      " Nishant"
+    ],
+    "published": "2026-11-18",
+    "summary": "Small language models (SLMs) can run on commodity hardware and support privacy-preserving, on-premises clinical deployment, but their medical explanations are often short and poorly structured compared with large language models. Recent supervised approaches such as Meerkat transfer chain-of-thought reasoning into 7B-8B backbones, yet their training objective does not directly target the style or organization of the generated rationales. Building on the instruction-tuned Mistral-7B backbone, we investigate whether a lightweight reinforcement learning (RL) step can improve explanation structure without human preference labels.We apply Proximal Policy Optimization (PPO) with LoRA adaptation to 2,000 Meerkat-derived medical prompts, guided by a simple self-supervised reward that favors longer, lexically diverse, and well-punctuated responses while penalizing very short ones. Training for about 170 PPO steps on a single NVIDIA A100 GPU yields a stable increase in the average reward. Quantitative and qualitative comparisons show that the RL-tuned model produces longer, more organized, multi-point explanations while preserving the underlying medical content.We discuss the promise and the limitations of self-rewarded RL for shaping the style of medical explanations.",
+    "url": "http://arxiv.org/abs/2611.24650v1",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "matched": [
+      "taste_and_intrinsic_reward"
+    ]
+  },
+  {
+    "arxiv_id": "2611.23106",
+    "title": "Natural Language Programming: Rethinking Language, Memory, and Cognition in the Era of Generative AI",
+    "authors": [
+      "Giovanni Adorni",
+      "Daniele Grosso"
+    ],
+    "published": "2026-11-17",
+    "summary": "Generative Artificial Intelligence is transforming the role of natural language in computational systems. In classical Natural Language Processing (NLP), language was treated as an object of computation: something to analyse, classify, translate, or generate. Large Language Models (LLMs) challenge this perspective, enabling natural language to function increasingly as an executable cognitive medium through which humans structure reasoning, orchestrate problem solving, and regulate hybrid human/AI workflows. This paper introduces Natural Language Programming (NLPg) as a theoretical and epistemological extension of traditional NLP. Rather than focusing on language understanding alone, NLPg conceptualises prompts as dynamic cognitive artefacts that externalise goals, constraints, assumptions, validation criteria, and intermediate reasoning states. Prompting is thus not merely a technical interaction technique, but a form of dialogic cognitive programming operating within distributed human/AI memory architectures. Building on theories of distributed cognition, extended mind, metacognition, and dialogic learning, the paper proposes the notion of Dialogic Working Memory, describing how prompts and conversational states function as temporary external memory structures supporting reasoning continuity and reflective regulation. We further map existing memory architectures (BTMA, SKGE, RMR) onto this framework, illustrating how episodic, semantic, and metacognitive layers support long-horizon conversational coherence. Finally, implications for computational linguistics and AI/mediated knowledge systems are discussed, suggesting a post symbolic and post interface paradigm in which natural language operates simultaneously as communication medium, executable specification, cognitive scaffold, and distributed memory architecture.",
+    "url": "http://arxiv.org/abs/2611.23106v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "matched": [
+      "metacognition"
+    ]
+  },
+  {
+    "arxiv_id": "2611.23615",
+    "title": "Weight Space Programming for Vision Language Model Repair",
+    "authors": [
+      "Avinash Goutham Aluguvelly"
+    ],
+    "published": "2026-11-17",
+    "summary": "In weight-space programming, a language model edits a network's weights directly, without gradients. We ask what a successful repair of this kind relies on. We plant faults in the weights of two vision-language models, SmolVLM-256M and LFM2-VL-450M, and check each edit made by a coding agent against the original weights. Without being told where to look, the agent finds rescaled rows in the projector and noise in the vision encoder of both models, infers the unknown scale factors, restores most or all of the rescaled weights to their exact original values, and returns accuracy to near its original level; programs that it writes from such weights repair unseen checkpoints of the same model without feedback. These repairs depend on a trace of how the faults were computed. The original weights have 16-bit precision, and faults computed in 32-bit arithmetic leave low bits that only the damaged weights carry. Rounding those bits away leaves each model's answers to our test questions unchanged, and the agent, unaided, then restores no weight exactly: on SmolVLM it no longer finds the damage, and in a single session on LFM2-VL its only gain comes from rescaling answer-token embeddings, which changes how often the model answers yes. Marking the damaged weights again in their low bits brings the edits back to them. Rounded weights still hold statistical evidence of the rescaling, in the distribution of stored values and in row norms, and one sentence in the prompt that names such a statistic directs the agent's edits to the damaged rows on both models. Swapped rows or columns, which leave the set of stored values unchanged, are not found unaided on either model within our session budgets. We recommend that studies of weight repair report the number format of the weights and include a rounded control.",
+    "url": "http://arxiv.org/abs/2611.23615v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.22228",
+    "title": "What Does Weight-Space Programming Add to Diffusion Editing? Program Construction versus Score-Guided Refinement",
+    "authors": [
+      "Zitian Gao",
+      "Jingyi Xu",
+      "Ziqi Han",
+      "Chengkai Lei",
+      "Ye Liu",
+      "Liangliang Shi"
+    ],
+    "published": "2026-11-17",
+    "summary": "Weight-space programming (WSP) lets a language model construct executable weight updates for another network. We study diffusion concept editing through an interface in which programs define training contexts, preservation constraints and update directions, while a shared numerical fitter selects their coefficients. We compare generated programs with published editors, a shared-panel hand-written baseline and budget-matched search over conventional edits on 24 TIMED test edits for Stable Diffusion 1.4. The preregistered rewrite pipeline shows no advantage over the strong baseline. In an exploratory comparison, one-shot Astra programs improve fresh-scene VLM joint success, which requires subject presence together with whole-image target matching, by +10.0 points over the shared-panel baseline, while CLIP relative match shows no detectable change. These programs organise adjustable directions around protected text-state subspaces. Probing and rewriting the Astra programs then raises CLIP by +6.2 points while joint success changes by -9.7. On a fixed 144-image sample, five additional evaluators give point estimates in the same directions under whole-image target matching; checks of subject-local change give less decisive differences. Together, these results identify useful behaviour in complete generated programs and show that score-guided revision need not preserve it: program construction and revision should be evaluated as distinct stages of a WSP pipeline.",
+    "url": "http://arxiv.org/abs/2611.22228v1",
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.23445",
+    "title": "Why Sub-4-Bit Vision CNNs Collapse and Where Mixed-Precision Recovery Stops",
+    "authors": [
+      "Michael Schroeder"
+    ],
+    "published": "2026-11-17",
+    "summary": "Deep vision models operating in resource-constrained environments depend heavily on low-bit quantization, yet compressing weights below 4 bits frequently induces catastrophic accuracy collapse. While mixed-precision recovery strategies aim to rescue accuracy by selectively retaining high-precision parameters, the fundamental mechanics of where and why these models collapse remain poorly understood. In this study, we systematically analyze the anatomy of quantization collapse across standard Vision CNNs (including ResNet and EfficientNet backbones) evaluated on the full 50,000-image ImageNet-1k validation set. First, we map the exact progression of degradation, demonstrating that collapse is highly non-linear and concentrated in late-stage pointwise projections and depthwise layers. Second, we introduce a structured, multi-step recovery waterfall that evaluates selective integer precision (INT4/INT8) and selective floating-point scales. We show that keeping less than 5% of critical layer activations in 8-bit precision recovers up to 92% of the accuracy lost during aggressive sub-4-bit compression. Finally, we bridge the hardware reality gap by evaluating deployment performance on standard ARM and x86 CPU architectures. We show that while low-bit quantization reduces memory storage requirements, standard runtime software bit-unpacking introduces a 1.48x to 21.5x execution slowdown depending on batch size, highlighting a critical trade-off between model footprint and actual edge throughput. Our findings provide a practical blueprint for navigating the limits of sub-4-bit deployment without sacrificing hardware performance.",
+    "url": "http://arxiv.org/abs/2611.23445v1",
+    "categories": [
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "matched": [
+      "collapse_and_limits"
+    ]
+  },
+  {
+    "arxiv_id": "2611.21958",
+    "title": "Weight-space programming for tractor guidance controller: large language models natively write neural network weights that steer a real tractor",
+    "authors": [
+      "Timo Oksanen"
+    ],
+    "published": "2026-11-16",
+    "summary": "Weight-space programming is a process where a large language model reads and writes the weights of a neural network directly, guided by a natural language specification, without an optimiser or gradient descent. This study applies it to automatic tractor guidance, where a 253-parameter neural network steers along paths of lines and arcs and must be adapted when the machine changes, such as a slower steering actuator. GPT-6 Astra and Claude Fable 5.1 (also 5.2) edited the network for our research tractor using a small budget of simulated evaluations to repair a network trained for another tractor and write a controller into a network with zero weights. We compared them with an evolution strategy, gradient descent and pure pursuit in simulation and on the real tractor. Both models read the network and analysed the closed loop with control theory correctly, and Fable's repair without simulation succeeded only occasionally. With simulated feedback, both models repaired the trained network in single sessions and wrote a working controller from zero weights, whereas from zero the evolution strategy found none. The controllers written from zero were sparse and in a classical cascaded structure; one model edited the trained network while the other replaced it. Gradient descent reached higher accuracy with far more simulation, and all language model controllers steered the real tractor without intervention, with errors of the same order as pure pursuit. Language models can program the weights of a neural controller directly, much as control engineers design one. We call this Weight-Space Engineering.",
+    "url": "http://arxiv.org/abs/2611.21958v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.RO",
+      "eess.SY"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.20566",
+    "title": "Weight-Space Programming Changes How an LLM Uses Python for Computational Biology",
+    "authors": [
+      "Makoto Sato"
+    ],
+    "published": "2026-11-16",
+    "summary": "Weight-space programming allows a language model to edit another model's weights without gradient-based training. We used Claude Opus 5.5 to edit Qwen3.5-0.8B and investigated how the edits changed its use of Python on computational biology problems. We compared four initial edited checkpoints with the original model on 50 test problems across three test seeds, yielding 600 paired evaluations. Strictly correct answers increased from 44 to 77, and technically correct answers, which included correct final values rejected for formatting, increased from 64 to 100. Repeated Python calls decreased from 1,834 to 1,044. Among the 64 pairs in which only the edited response was technically correct, the original model had already computed the correct value in 36 but did not submit a technically correct final answer. The edited model corrected the computation in 13 of the 64 pairs. With six additional checkpoints on the same 50 problems, technically correct answers rose from 96 to 154 across 900 pairs. We explored three selected problems with ten test seeds for each of ten checkpoints. On the melting-temperature problem, correct Python outputs decreased from 60 to 22 while technically correct final answers increased from 0 to 18. Weight editing changed both the calculations Qwen ran and whether it submitted a correct answer.",
+    "url": "http://arxiv.org/abs/2611.20566v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "q-bio.QM"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.20691",
+    "title": "SpeCal: Spectral Calibration for Unsupervised RLVR",
+    "authors": [
+      "Kai Tang",
+      "Xing Zheng",
+      "Haobo Wang",
+      "Guangcheng Zhu",
+      "Shenzhi Yang",
+      "Zhengqing Zang",
+      "Yingfan Ma",
+      "Cheng Peng",
+      "Bowen Song",
+      "Weiqiang Wang"
+    ],
+    "published": "2026-11-16",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) has substantially improved the reasoning abilities of large language models, but its dependence on ground-truth answers or external verifiers limits its ability to exploit abundant unlabeled reasoning data. Unsupervised RLVR alleviates this bottleneck by deriving scalar rewards from the model's own rollouts. However, the reliability of such self-generated supervision varies substantially across rollout groups and individual responses, while existing methods construct or refine their rewards mainly from decoded outcomes and reward statistics. These endpoint signals reveal what answers the model produces, but provide limited information about whether the underlying rollout representations form a reliable structure for learning. Our key observation is that hidden-state spectra offer a complementary view of supervision reliability by characterizing both the organization of a rollout group and the support received by each rollout within that group. Based on this observation, we propose SpeCal, a bi-level spectral calibration framework for unsupervised RLVR. At the group level, SpeCal combines spectral mass with a Gaussian band-pass gate over normalized entropy-based effective rank, favoring rollout groups with substantial representation variation whose effective dimensionality lies in a preferred regime. At the rollout level, the same group effective rank determines how many dominant directions are retained in a leave-one-out spectral subspace formed by the remaining rollouts, within which the conditional support of each held-out rollout is measured. The resulting signals calibrate the original reward-induced advantages at the group and rollout levels without redefining the underlying unlabeled reward.",
+    "url": "http://arxiv.org/abs/2611.20691v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "matched": [
+      "collapse_and_limits"
+    ]
+  },
+  {
+    "arxiv_id": "2611.20174",
+    "title": "Weights & Caches: LLMs Can Program Tabular Foundation Models",
+    "authors": [
+      "Shi Bin Hoo",
+      "Magnus Buehler",
+      "Omar Swelam",
+      "Frank Hutter",
+      "Lennart Purucker"
+    ],
+    "published": "2026-11-15",
+    "summary": "Neural networks are typically programmed through optimization, rather than by explicitly specifying their computations. Recent work on weight-space programming suggests that large language models (LLMs) can instead reason about and manipulate neural-network weights directly. In this work, we show that LLMs can directly program statistical computations in tabular foundation models (TFMs), whose parameters enable inference across different datasets. We investigate three complementary settings using GPT-6 Astra, without gradient-based optimization. First, Astra directly programs nanoTabPFN from zero-initialized weights, achieving a mean ROC AUC of 0.849 across 20 TabArena datasets, compared to 0.876 for a pretrained baseline. Second, Astra diagnoses and repairs a signed-product regression failure in pretrained TabPFN-3.5, restoring near-perfect predictions on held-out synthetic datasets while preserving performance on TabArena-Lite, with only a 0.08% average relative increase in error. Third, it writes KV-cache-editing programs that steer TabPFN-3.5's predictions on unseen synthetic datasets, demonstrating transformations such as reversing linear trends and converting sine waves into approximate square waves, without modifying model weights. Together, our findings suggest that LLM-driven programming could complement gradient-based optimization across TFMs' development and usage, while offering a new way to investigate and intervene in their internal computations.",
+    "url": "http://arxiv.org/abs/2611.20174v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.17620",
+    "title": "Safety Side Effects of Preventative Persona Steering: An Empirical Audit",
+    "authors": [
+      "Sabrina Tang",
+      "Nikolai Vo",
+      "Carson Murillo",
+      "Chira Sukumarnpiti",
+      "Sarah Wilson"
+    ],
+    "published": "2026-11-13",
+    "summary": "High-level behaviors such as sycophancy and hallucination correspond to directions in a model's activation space (Chen et al., 2025). These directions, known as persona vectors, can suppress undesirable traits either at inference time, subtracting the vector during generation, or through preventative steering, adding the vector during fine-tuning, so the optimizer never needs to encode the trait in weights, then removing the vector at evaluation. Chen et al. (2025) recommend preventative steering because it preserves Massive Multitask Language Understanding (MMLU) accuracy, but validations of this recommendation have measured capability alone. We primarily evaluate results on preventative steering of sycophancy and hallucination vectors on three models, measuring three safety benchmarks alongside trait expression, coherence, and MMLU. Our findings show that preventative steering still changes refusal behavior, but by an amount that depends on the trait and does not establish that preventative persona steering is safety-neutral, and steering methods should be evaluated on several safety benchmarks.",
+    "url": "http://arxiv.org/abs/2611.17620v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "matched": [
+      "valence_and_preference"
+    ]
+  },
+  {
+    "arxiv_id": "2611.17834",
+    "title": "PaperCritic: Training AI Reviewers to Assess the Soundness of Papers",
+    "authors": [
+      "Hyun Ryu",
+      "Ji Yong Cho",
+      "Eunho Yang",
+      "Moontae Lee",
+      "June Yong Yang",
+      "Sean Welleck",
+      "Carolyn Rose"
+    ],
+    "published": "2026-11-13",
+    "summary": "As AI conference submissions grow rapidly, AI reviewers are being considered as an alternative. However, simply imitating human reviewing is problematic because reviewing serves multiple purposes, including evaluating papers' soundness, interestingness, and clarity, the last two of which are subjective. In this work, we focus solely on evaluating soundness, the most important and objective criterion, and define the learning objective as jointly maximizing (1) precision, based on the soundness and substantiveness of review points, and (2) recall, the coverage of high-quality reference review points. Under this problem formulation, we construct a quality-labeled review point dataset, PaperSound-23K, using 1K ICLR submissions and 23K human-written and LLM-generated review points. Using this dataset, we train an AI reviewer model, PaperCritic, through reinforcement learning with the F1 score of precision and recall as the reward. Our experiments show that PaperCritic outperforms frontier models and models trained with other AI reviewer training methods on an in-domain test set. Surprisingly, learning to review ICLR submissions also transfers to reviewing Nature-family papers and even to out-of-domain reviewing tasks (e.g., code review, legal contract review, and feedback on story writing).",
+    "url": "http://arxiv.org/abs/2611.17834v1",
+    "categories": [
+      "cs.CL"
+    ],
+    "matched": [
+      "taste_and_intrinsic_reward"
+    ]
+  },
+  {
+    "arxiv_id": "2611.17395",
+    "title": "Can LLMs Write Backdoors? An Empirical Security Study of Weight-Space Programming",
+    "authors": [
+      "Zhaojia Wang",
+      "Jiucui Lu",
+      "Zheng Li"
+    ],
+    "published": "2026-11-12",
+    "summary": "Recent advances in weight-space programming (WSP) have demonstrated that large language models (LLMs) can directly inspect and modify neural network weights without conventional gradient-based training. While this capability opens new possibilities for model improvement, it also raises an important security question: Can LLMs exploit weight-space programming to inject backdoors into neural networks? To answer this question, we present an empirical security study of LLM-driven weight-space programming for backdoor injection. Specifically, we investigate whether general-purpose LLMs can directly modify the weights of target models according to natural-language instructions, without accessing task-specific data, performing forward passes, or computing gradients. We evaluate five LLMs as weight editors across three target architectures: an MLP on MNIST, ResNet-18 on CIFAR-10, and Qwen2.5-0.5B-Instruct on AG News. Our experiments reveal three key findings. First, LLM-driven weight editing can successfully inject backdoors across different architectures while largely preserving clean performance. Second, successful attacks can require remarkably few parameter modifications, including only six parameters for the MLP and 0.02% of the weights for a fine-tuned Qwen model. Third, editing capabilities vary substantially across LLMs and target architectures: although all five LLMs successfully backdoor the MLP, only GPT-6 Astra succeeds across all three targets. These findings highlight an emerging security risk of weight-space programming and underscore the importance of safeguarding LLM-driven weight editing.",
+    "url": "http://arxiv.org/abs/2611.17395v1",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.15267",
+    "title": "A Closer Look at Language Model Introspection: Probing Information and Reporting",
+    "authors": [
+      "Dustin Rubin",
+      "Vincenzo Timmel",
+      "Xufeng He",
+      "Aritra Saha",
+      "JooMan Kim",
+      "Vijay Madisetti"
+    ],
+    "published": "2026-11-11",
+    "summary": "One way to study language-model introspection is to test whether models can identify where their activations have been perturbed. We train a simple linear classifier to identify the perturbed sentence from the model's activations, then compare its predictions with the model's own answers across pretraining and injection strengths. This tests whether the model is being asked to report information that is already easy to recover. If so, successful localization may be less demanding than it first appears and may not extend to the broader uses that motivate introspection research, such as faithfully explaining a model's reasoning or helping researchers assess the reliability of its answers. With an injection four times the typical activation norm at layer 0 and probe readout at layer 24 in OLMo 3 32B, the supervised probe reaches 98.3 % accuracy after 8.4 billion training tokens, while the model's zero-shot answer remains at chance (11.1 %). At the released base checkpoint, these accuracies reach 99.1 % and 89.6 %, respectively. Across 7B and 32B, location is already decodable in randomly initialized networks, showing that the architecture can support these traces without pretraining. In these experiments, location information lies close enough to the surface for a simple linear probe to recover it, so successful reporting need not imply broader access to the model's internal computation.",
+    "url": "http://arxiv.org/abs/2611.15267v2",
+    "categories": [
+      "cs.CL"
+    ],
+    "matched": [
+      "metacognition"
+    ]
+  },
+  {
+    "arxiv_id": "2611.15172",
+    "title": "Where Language-Model Vocabulary Rose on Stack Exchange",
+    "authors": [
+      "Fengming Liu"
+    ],
+    "published": "2026-11-11",
+    "summary": "Stack Overflow banned answers generated by ChatGPT five days after the model's release, and many other Stack Exchange sites announced similar rules. I measure the vocabulary of the answers posted afterwards, 3.8 million answers on 170 sites from 2019 to 2024. A fixed list of 56 words that language models overuse rose about 14 percent above its pre-2023 trend, while the highest of 1,000 frequency-matched lists of ordinary words rose about 7 percent. In a screen of 15 site traits measured before the release, the strongest predictor of where the rise happened was the share of answers that received a body edit within 30 days of posting. On the least edited third of sites the list rose about 29 percent relative to matched controls, and on the most edited third it did not change. The gradient is also present among answers that were never edited. It follows the share of answers edited by their own authors, and the share edited by others adds little once that share is held fixed. Use of the model is unobserved, so these results cannot separate lower use on sites with a high self-edit share from any effect of editing on what the vocabulary records. Any vocabulary-based estimate for the network as a whole therefore pools sites where the marker vocabulary rose sharply with sites where it did not change.",
+    "url": "http://arxiv.org/abs/2611.15172v1",
+    "categories": [
+      "cs.CL",
+      "cs.CY",
+      "cs.SI"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.14387",
+    "title": "Blurring the Block Boundaries: Overlapping Block Denoising for Efficient Diffusion Language Models",
+    "authors": [
+      "Amir Mann",
+      "Jonathan Fhima",
+      "Shaked Brody",
+      "Or Avitan",
+      "Asif Zamir",
+      "Shahar Tsiper",
+      "Niv Nayman"
+    ],
+    "published": "2026-11-10",
+    "summary": "Diffusion Language Models (DLMs) have emerged as effective alternatives to autoregressive models for latency-critical tasks, enabling faster token generation. Recent advances employ block diffusion with self-editing capabilities, where each block refines tokens iteratively before advancing to the next one. Yet each block is only as fast as its slowest token, and the next block cannot start before it. We suggest Blurring the Block Boundaries (B3), a novel method with which two blocks are refined in parallel within a shared forward pass. B3 calibrates itself on the fly, opening the next block only once the model is ready to start generating it. It is a training-free and hyperparameter-free acceleration method which seamlessly integrates within any self-editing block diffusion model. Evaluated on state-of-the-art DLMs across 10 diverse datasets spanning varied tasks and difficulty levels, B3 results in on par generation quality and 11.5-14.5% speedup compared to the base model, pushing the Pareto frontier for latency-quality trade-offs in DLM inference.",
+    "url": "http://arxiv.org/abs/2611.14387v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.14210",
+    "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+    "authors": [
+      "Hadi Salloum",
+      "Ammar Ali"
+    ],
+    "published": "2026-11-10",
+    "summary": "Weight-space programming, introduced in recent MIT work by Takehi et al., enables a frontier LLM agent to read a network's weights and write a repair. Their GPT-6 Astra agent corrected the reasoning loops of Qwen3.5-0.8B without gradients, using 158 agent turns, 89.7 million tokens, and 50 forward-pass requests. Our method, Tree-Ising, casts this repair as a sparse discrete optimization problem over the model's own BF16 weights. Forward statistics define an objective that weakens a loop direction, strengthens a concluding direction, and preserves the layer's output on productive tokens. Within a state-tree representation, where lossless BF16 storage acts as a special case, the admissible edits are sign flips and exponent shifts that preserve all shared group exponents and mantissas. We decompose this objective exactly into independent QUBO (Ising) problems, one per output row, which we solve on a GPU using simulated annealing or quantum-inspired simulated bifurcation. On the agent's two layers, Tree-Ising achieves 54.6% on MATH-500, outperforming the agent's edit (51.7%) under the same evaluation protocol, while the base model scores 7.9% as reported. The simulated bifurcation solver yields a statistically indistinguishable repair at 55.1%. Both solvers outperform the agent edit across all five math benchmarks, with statistically significant improvements on MATH-500 and GSM8K after correcting for multiple comparisons. Our approach modifies 13% to 17% fewer weights and reduces BF16 bit flips by a factor of 2.2 to 2.3. It requires only four forward-pass requests and zero LLM tokens, with the annealing recipe costing about $0.90 in GPU time. On Qwen3.5-2B, with layers and dose selected using only the base model, the same recipe increases greedy GSM8K accuracy from 21.6% to 69.4%. As a proof of concept, we execute an eight-variable repair subproblem using QAOA on an IBM Heron processor.",
+    "url": "http://arxiv.org/abs/2611.14210v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.13758",
+    "title": "Mixed Signals: Weight-Space Programming for EEG and ECG",
+    "authors": [
+      "Dara Varam",
+      "Taraneh Aminosharieh Najafi",
+      "David Atienza"
+    ],
+    "published": "2026-11-10",
+    "summary": "Weight-space programming allows language models to read a trained neural network's weights and edit them. This opens the door to ``training'' by reasoning rather than through gradient descent. Prior work has demonstrated its functionality and promise for game-playing networks and fixing specific failures in language models, even extending to diffusion models. In this work, we present its applicability to models trained on biosignal data, specifically EEG and ECG data. We show that frontier models are not only able to debug specific faults planted in biosignal-based models without being told what these faults are, but are even capable of writing all the weights of a network from scratch, given only the architecture, the task, and a minimal set of training subjects. In particular, in one set of experiments, a language model was able to match standard gradient-descent training using $6\\times$ fewer training subjects, through reasoning alone and without any gradient descent step. Networks written by Claude Opus 5.5 also scored higher than classic hand-crafted EEG pipelines (alpha band power, and common spatial patterns with linear discriminant analysis) when built from the same 5 subjects. We also highlight some of the limitations, which include the inability of language models to improve already well-trained classification models, and their incapacity to reliably recognize, from the weights alone, the task a network was trained on. Overall, our results indicate that weight-space programming can be useful for small networks, such as those deployed on edge devices and wearables, but the concept still requires further investigation before it can be used in practice.",
+    "url": "http://arxiv.org/abs/2611.13758v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "eess.SP"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.14382",
+    "title": "Cognitive Mapping of Learning by Thinking Mechanisms in Large Language Models",
+    "authors": [
+      "Dong Han",
+      "Jin Zhang",
+      "Kunyue Yang"
+    ],
+    "published": "2026-11-10",
+    "summary": "Large language models (LLMs) increasingly exhibit capabilities that resemble human Learning by Thinking (LbT), the acquisition of new insight through internal processes such as explanation and reasoning, without new external input. A systematic account of the cognitive mechanisms behind these capabilities, and of their limits, remains underdeveloped. This paper proposes a Cognitive LbT Framework that maps four mechanisms (Reflective Reasoning, Synthetic Memory Formation, Internal Simulation, and Conceptual Self-Organization) onto computational processes in LLMs. Drawing on representative methods, including chain-of-thought prompting, self-consistency, self-reflection, Tree-of-Thoughts search, Self-Instruct, and self-taught reasoning, the analysis argues that selected methods can functionally approximate aspects of these mechanisms and can improve performance on some tasks without additional labeled examples, although this does not always constitute durable learning in model parameters. For example, Self-Instruct generated approximately 52,000 instructions from 175 seed tasks and reported a 33% absolute improvement on Super-NaturalInstructions (Y. Wang et al., 2023). The same mechanisms also produce characteristic failures, including hallucination diffusion, model collapse, concept drift, and high computational cost. These failures are not isolated technical defects but follow from four structural asymmetries between LLMs and human cognition: the identity of generator and monitor, closed learning loops without external grounding, symbolic rather than sensorimotor simulation, and the cost of inference-time computation. The framework yields testable propositions about when LbT in LLMs should succeed or fail and offers a structured basis for designing more reliable autonomous learning systems.",
+    "url": "http://arxiv.org/abs/2611.14382v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "matched": [
+      "collapse_and_limits"
+    ]
+  },
+  {
+    "arxiv_id": "2611.11881",
+    "title": "When Does Physics Beat Data? Data-Efficient Traffic State Estimation with Amortized PINNs",
+    "authors": [
+      "Anna Lazareva",
+      "Alexander Tarakanov"
+    ],
+    "published": "2026-11-09",
+    "summary": "Traffic state estimation (TSE) reconstructs traffic density at unmonitored locations from a sparse set of sensors. Data-driven models work well when sensors are dense but degrade sharply as coverage thins. We show that imposing the Lighthill-Whitham-Richards conservation law as a physics-informed prior makes TSE more data-efficient. On four real corridors (NGSIM, I-80, PeMS04, PeMS08), physics-informed estimators generalise to held-out sensors where data-driven models, including classical and deep kriging, overfit the observed ones. On the two shock-rich corridors the effect is a clear crossover: as more sensors are held out, data-driven models collapse while the physics-informed estimator degrades gracefully, leading the no-physics network by about 26-38% at 85-90% held out and the strongest classical kriging by about 10-21% at 90%. A matched smoothness prior does not reproduce the gain, and an extended Kalman filter on the same LWR model is outperformed on the shock corridors, so the advantage comes from how the conservation law is imposed. Finally, one loss-conditional PINN removes the per-corridor loss-weight search, matching a 20-point search at about 5x lower cost.",
+    "url": "http://arxiv.org/abs/2611.11881v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "matched": [
+      "collapse_and_limits"
+    ]
+  },
+  {
+    "arxiv_id": "2611.11172",
+    "title": "Do Benign-Trained Hidden-State Probes Detect Tool Errors Under Adversarial Conditions?",
+    "authors": [
+      "Bibek Bhandari",
+      "Kshitij Lingthep"
+    ],
+    "published": "2026-11-08",
+    "summary": "Repeatedly training language models on their own generated data may create a synthetic-data feedback loop in which errors and distributional biases are reintroduced into subsequent training datasets. This paper studies that process in biomedical question answering (QA) using PubMedQA and two Qwen2.5 model sizes, 0.5B and 3B parameters. The study compares a recursive synthetic-data condition, in which generation G(k+1) is trained on answers produced by G(k), against a Human-Control condition that repeatedly uses the original human training data. The study evaluates across four generations from G0-G3 with two random seeds (42 and 123) and a fixed evaluation set of 1,000 expert-labeled samples. The evaluation includes disease and chemical entity F1, context-supported rate, lexical and semantic similarity, answer length, repetition rate, and other evaluation metrics. The Recursive condition for both model sizes and both seeds showed larger declines than the Human-Control condition in disease entity F1, chemical entity F1, context-supported rate, ROUGE-L, and cosine similarity. Under the fixed no-repeat 3-gram decoding constraint, the main observed behavioral change was increased answer length, while the measured 3-gram repetition rate did not increase. The magnitude of the difference-in-change was larger for the 3B model than for the 0.5B model. This difference was particularly apparent in disease F1, context-supported rate, cosine similarity, and answer length. These results show domain-specific changes associated with using recursive synthetic-data training in biomedical QA, but do not establish clinical hallucination rates or universal model collapse.",
+    "url": "http://arxiv.org/abs/2611.11172v2",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "matched": [
+      "collapse_and_limits"
+    ]
+  },
+  {
+    "arxiv_id": "2611.12954",
+    "title": "Physics2Weight: Direct Neural Network Architecture and Weight Generation from Physical Laws Using Large Language Models",
+    "authors": [
+      "Shogo Sato",
+      "Tomoyasu Shimada",
+      "Kazuhiko Murasaki",
+      "Takashi Sano"
+    ],
+    "published": "2026-11-07",
+    "summary": "Recent advances in large language models (LLMs) have enabled weight-space programming (WSP), which directly generates neural network weights without gradient-based optimization. However, extending WSP to physical problems remains challenging, particularly in achieving both solution accuracy and physical consistency. In this paper, we propose Physics2Weight (PtW), a framework that extends WSP to solving partial differential equations by directly generating neural network weights and editing architectures based on governing equations and initial and boundary conditions. PtW introduces physics-constrained prompting and physics-guided architecture editing, combined with iterative weight refinement from WSP, to improve solution accuracy and physical consistency without gradient-based optimization. Experiments on four PDEs, namely the heat, advection, Burgers', and Allen--Cahn equations, demonstrate lower solution errors than conventional physics-informed neural networks, while revealing limitations in satisfying the governing equations for nonlinear PDEs.",
+    "url": "http://arxiv.org/abs/2611.12954v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.10450",
+    "title": "The Truth Beneath the Tokens: Prompt-Space Recovery of Knowledge Edits in Language Models",
+    "authors": [
+      "Manit Baser",
+      "Rachel Yeo Hui Min",
+      "Aditya Nawal",
+      "Dinil Mon Divakaran",
+      "Mohan Gurusamy"
+    ],
+    "published": "2026-11-07",
+    "summary": "Model editing provides an efficient way to update factual knowledge in transformer models. Recent approaches reverse edits by modifying, masking, or decomposing model weights, but make recovery dependent on weight-space interventions. We instead show that pre-edit knowledge can be recovered through input-space interventions alone, without modifying the edited model's weights. We introduce Memento, a prompt-space mechanism for auditing residual knowledge that learns a reusable recovery signal to steer an edited model toward its pre-edit response. Memento supports both continuous recovery prefixes and discrete textual prompts for standard text interfaces. Across three LLMs and five editing techniques, Memento recovers 80.07% of held-out edited facts, achieving a 9.58% relative improvement over baselines, suggesting that editing may suppress the facts without fully eliminating their recoverability. We further investigate whether prompt-space recovery extends beyond model editing. On pristine, unedited LLMs, Memento improves average factual recall by 53.9% relative to standard inference. These results demonstrate the potential of prompt-space recovery for auditing residual knowledge in edited models and investigating the gap between factual knowledge and its accessibility during inference. We will release our source code.",
+    "url": "http://arxiv.org/abs/2611.10450v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.10445",
+    "title": "DiSARM: Diverse and Surprising Association Rule Mining with Large Language Models",
+    "authors": [
+      "Lijia Liu",
+      "Hisashi Kashima"
+    ],
+    "published": "2026-11-07",
+    "summary": "Exploratory Data Analysis (EDA) aims to discover informative patterns in large datasets. For transactional data, Association Rule Mining (ARM) is an established approach that facilitates EDA by efficiently generating candidate patterns. Beyond efficient mining, identifying informative rules has also been extensively studied through both objective and subjective interestingness measures. Recent advances in Large Language Models (LLMs) offer new opportunities for assessing subjective interestingness using world knowledge. Nevertheless, relying solely on LLMs raises concerns about scalability and statistical reliability. Building on prior ARM research, we propose a hybrid framework, DiSARM, that leverages the world knowledge of LLMs to assess the subjective interestingness of rules, while maintaining statistical reliability and promoting diversity among the selected rules. Across three transactional datasets, experiments demonstrate that DiSARM effectively combines statistical reliability with surprise and diversity, offering a promising approach to ADE from transactional data.",
+    "url": "http://arxiv.org/abs/2611.10445v1",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "matched": [
+      "taste_and_intrinsic_reward"
+    ]
+  },
+  {
+    "arxiv_id": "2611.10831",
+    "title": "Multimodal Models Can See, But Can They Think? A Study of Turkish Visual Reasoning",
+    "authors": [
+      "Berke Bunyamin Sule",
+      "Yavuz Selim Aygan",
+      "Ahmed Zeer",
+      "Elif Ince",
+      "Ali Mert Temizsoy",
+      "Ozgur Agar",
+      "Himmet Toprak Kesgin",
+      "Muzaffer Kaan Yuce",
+      "Mehmet Fatih Amasyali"
+    ],
+    "published": "2026-11-07",
+    "summary": "Vision-Language Models have had massive leaps in recent years. Yet, when tested on high-level cognitive tasks like pattern completion, abstract logic, and relational reasoning, they still fall short. This limitation stems from the models' lack of ability to find out underlying rules and maintain constant intermediate steps, rather than merely deciding on the correct option. To research these shortcomings, this study analyzes visual reasoning performance throughout a multilingual evaluation framework encompassing the B\u0130LSEM, MM-IQ, Visual Puzzles, and PuzzleVQA datasets. We evaluate various data mixing strategies and supervised fine-tuning (SFT) methods. We observed that a correct answer does not always mean the reasoning chain is valid. Because of this, we adopt an LLM-as-a-Judge approach to assess the quality of reasoning beyond final answer accuracy. Our experimental results reveal that baseline models often exhibit more stable reasoning compared to fine-tuned counterparts. Most importantly, we observe that SFT can lead to model collapse, manifesting as infinite text loops or empty outputs. The study concludes that current VLMs still struggle with abstract visual reasoning.",
+    "url": "http://arxiv.org/abs/2611.10831v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "matched": [
+      "collapse_and_limits"
+    ]
+  },
+  {
+    "arxiv_id": "2611.10089",
+    "title": "META-IR: Meta-Introspective Reasoning for Adaptive Safety Alignment in LLM",
+    "authors": [
+      "Mahabubur Rahman Miraj",
+      "Hongyu Huang",
+      "Nankun Mu",
+      "Chao Chen",
+      "Shanqin Yi"
+    ],
+    "published": "2026-11-06",
+    "summary": "Large Language Models (LLMs) remain vulnerable to jailbreak attacks and harmful-content prompts, particularly under adversarial distribution shifts where static alignment pipelines fail to generalize. Although introspective methods such as STAIR strengthen refusal consistency, they depend on fixed self-evaluation policies that cannot rapidly adapt to evolving manipulation strategies. To overcome these limitations, this paper introduces META-IR, a meta-introspective reasoning framework that enhances safety alignment through meta-learning-driven adaptation. It employs a dual-loop architecture: an inner introspective loop that performs structured risk analysis, self-assessment, and reflective correction via SI-MCTS, and an outer meta-learning loop that optimizes the introspection policy across diverse jailbreak task families to enable rapid generalization to unseen attacks. A dynamic jailbreak simulation module further exposes the model to progressively harder adversarial prompts, enabling continual self-improvement without human supervision. Experiments across multiple models (Llama-3.1-8B-Instruct and Qwen-2-7B-Instruct) and a broad suite of safety, helpfulness, generalization, and introspection metrics demonstrate that META-IR substantially improves adaptation speed, robustness, and reasoning stability compared with all baseline models. These results establish META-IR as an effective pathway toward building LLMs capable of sustained, adaptive safety alignment under dynamic and evolving threat environments.",
+    "url": "http://arxiv.org/abs/2611.10089v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "matched": [
+      "metacognition"
+    ]
+  },
+  {
+    "arxiv_id": "2611.09014",
+    "title": "Did I See It or Think It? Probing Reality Monitoring in Vision-Language Models with Concept Injection",
+    "authors": [
+      "Tina Khezresmaeilzadeh",
+      "Seyedarmin Azizi",
+      "Mehdi Kamal",
+      "Massoud Pedram"
+    ],
+    "published": "2026-11-06",
+    "summary": "Recent work tests whether language models can introspect by injecting a concept direction into their activations and asking whether they notice it and can name it. These studies are text-only. Vision-language models (VLMs) face an additional problem, known in cognitive psychology as reality monitoring: they must keep internally generated content separate from what they actually see. We therefore ask: can VLMs distinguish injected concepts from image content? We introduce a paradigm that varies the image and the injected concept independently. On each trial, the model reports what it sees, whether a thought was injected, and what that thought is. This design scores both whether the model identifies the concept and which source it assigns to it. Across six VLMs, only Gemma-3-27B reliably identifies injected concepts (35% vs. 3% for steering alone), with almost no false alarms. Even then, the source it reports is fragile. Strong or visual-pathway injections are reported as seen, and a visible object nearly eliminates correct thought reports. The same failure appears in ordinary captioning, where injected objects appear in up to 87% of captions of real photographs. Evaluating multimodal self-reports therefore requires checking both their content and their reported source.",
+    "url": "http://arxiv.org/abs/2611.09014v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "matched": [
+      "metacognition"
+    ]
+  },
+  {
+    "arxiv_id": "2611.09376",
+    "title": "Can LLMs Debug Robots by Editing Their Weights?",
+    "authors": [
+      "Jusheng Zhang",
+      "Keze Wang",
+      "Liang Lin"
+    ],
+    "published": "2026-11-06",
+    "summary": "A language model can repair a robot policy's lexical instruction grounding by editing just 65 token-embedding rows. We bring weight-space programming to robot foundation policies: GPT-6 Astra reads weights and uses a CPU workspace and budgeted simulator feedback, without gradient updates or new demonstrations. Three independent sessions on $\u03c0_{0.5}$ all improve success on 765 held-out paraphrases; the best raises success from 86.3\\% to 92.0\\% (48 repairs, four regressions; exact paired $p=1.31\\times10^{-10}$). Among the 335 instructions containing edited tokens, success rises from 74.3\\% to 87.5\\%; the other 430 episodes have zero outcome changes. Matched random-direction edits do not help. Full replacement using the editor's own lexicon explains much of the gain but produces more regressions; its direct difference from the editor is not significant at 0.05. Across 13 further robot sessions, the editor declines 12 candidates; the sole retained edit does not show a significant held-out gain. Separately, benchmark metadata lowers FastWAM success from 70.0\\% to 48.6\\%, while the evaluated VLA's aggregate rate is unchanged. The evidence supports precise lexical repair, not general acquisition of missing robot capabilities.",
+    "url": "http://arxiv.org/abs/2611.09376v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "matched": [
+      "self_modification"
+    ]
+  },
+  {
+    "arxiv_id": "2611.08892",
+    "title": "Richness Is Not Evenness: Ordered Renyi Crossings under Self-Training",
+    "authors": [
+      "Pranjal Srivastava"
+    ],
+    "published": "2026-11-06",
+    "summary": "Recursive self-training of language models, a setting studied in model collapse, can reduce vocabulary while making frequent words, mostly function words, less dominant. We fine-tune English GPT-2 on its own output for nine generations, vary the training-data sampling temperature, and measure every model with one fixed sampler. As training temperature rises, Renyi entropy changes turn from loss to gain at distinct temperatures: min-entropy first, then collision entropy, Shannon entropy and observed richness. Between the outer crossings, word types fall while the most-common word becomes less dominant. Untruncated training at T = 1 lies in this interval: at 13,000 words, generation 9 has 24% fewer types than generation 0 yet collision entropy is 0.91 bits higher. The ordering persists with a finer grid, different measurement samplers, a fixed word budget and five fresh training seeds. Min-entropy again crosses before richness in four further settings (in Hindi only at interpolated roots) and in 12 of 13 distinct measurements under eight text representations. Next-token identities and a categorical simulation isolate decoding and sampling effects; the crossing order remains empirical. Fine-tuning on human text can produce the same split while likelihood improves, and no single order's sign reliably identifies worse likelihood across the tested settings. We recommend reporting entropy profiles at stated budgets with an independent quality measure.",
+    "url": "http://arxiv.org/abs/2611.08892v1",
+    "categories": [
+      "cs.CL"
+    ],
+    "matched": [
+      "collapse_and_limits"
+    ]
+  },
+  {
+    "arxiv_id": "2611.09448",
+    "title": "Not All Entropy Is Equal: Reward-Conditioned Entropy Allocation in Reinforcement Learning with Verifiable Rewards",
+    "authors": [
+      "Song Yu",
+      "Li Li",
+      "Zhenming Wu"
+    ],
+    "published": "2026-11-06",
+    "summary": "Policy entropy is widely used to diagnose exploration and collapse in reinforcement learning with verifiable rewards (RLVR), yet its magnitude does not consistently track reasoning performance across optimization objectives. We argue that this ambiguity arises because global token entropy conflates uncertainty in successful and failed trajectories, diversity across correct solution strategies, and variation among realizations of the same strategy. We introduce \\textbf{Reward-Conditioned Entropy Allocation (RCEA)}, a hierarchical diagnostic framework that separates complete-trajectory entropy from average token entropy, conditions uncertainty on verifier outcome and process validity, measures correct-solution-mode retention, and connects these population-level quantities to local covariance-driven updates. In controlled sweeps over six RLVR objectives at two model scales, entropy trajectories do not induce a stable ordering of reasoning accuracy. Token entropy is higher for verifier-failed than successful trajectories under both broad separately aggregated estimates and a common-question paired analysis, whose confidence intervals exclude equality at 10 of 12 displayed endpoints. A local covariance approximation predicts the direction of adjacent-checkpoint entropy change in 95.5\\% of nonfailed transitions; a reward-stratified endpoint proxy further shows that positive chosen-token covariance is more tail-concentrated within failed prefixes. Every reportable trained endpoint exhibits some contraction in independently audited correct-solution-mode breadth, whose positive association with large-\\(k\\) coverage remains exploratory. These results show that entropy collapse should be diagnosed by which uncertainty is removed, rather than by global entropy alone.",
+    "url": "http://arxiv.org/abs/2611.09448v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "matched": [
+      "collapse_and_limits"
+    ]
+  },
+  {
+    "arxiv_id": "2611.10110",
+    "title": "Homeopathic Learning: Diluting poisoned fine-tuning data can strengthen its effect",
+    "authors": [
+      "Matt Clarke",
+      "Jan Dubi\u0144ski",
+      "James Chua",
+      "Simon Schrodi",
+      "Owain Evans",
+      "Alex Cloud"
+    ],
+    "published": "2026-11-06",
+    "summary": "We study homeopathic learning, a phenomenon where poisoned training data with little effect on its own can create a hidden backdoor once clean, contrasting data is added. In our experiments, a model fine-tuned only on a \"poison\" dataset associated with a trait T (such as speaking German or being misaligned) does not learn T. Surprisingly, adding similarly formatted \"clean\" data not associated with T causes the model to learn T. This effect requires that the poison data have an identifying \"trigger\" feature that is absent from the clean data. We demonstrate this effect in a variety of settings: subliminal learning of backdoor behaviors, inoculation prompting of reward hacking transcripts, generalization from archaic bird names, and an MNIST classifier with mislabeled data. We propose a simple regression model as an explanation. In the poison data, the task and trigger always co-occur, and regularization favors attributing T to the task. Clean data without the trigger causes T to be attributed to the trigger instead. Consequently, the same training examples can have little effect as part of one training set but create a misalignment backdoor in another. This finding exposes a potential limitation of safety methods that audit or filter training data in isolation.",
+    "url": "http://arxiv.org/abs/2611.10110v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "matched": [
+      "author:Evans, Owain"
+    ]
+  }
+]

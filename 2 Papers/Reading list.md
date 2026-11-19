@@ -24,7 +24,7 @@ Earlier priority:
 - [ ] All Quiet on the Neural Front — arXiv 2611.10123 (OWMI controls) → [[Models do not report injected pain (Ferrara 2026)]]
 - [ ] Sparks of Weight-Space Programming — MIT CSAIL blog, Nov 2 2026
 - [ ] SEAL — arXiv 2506.10943 + code → [[SEAL - models write their own training data (Zweiger 2025)]]
-- [ ] Doya 2002, Metalearning and neuromodulation — Neural Networks 15(4–6)
+- [x] Doya 2002, Metalearning and neuromodulation — Neural Networks 15(4–6) → [[Neuromodulators set how the brain learns (Doya 2002)]]
 
 ## Next
 - [x] Training LMs for Introspective Oversight — 2611.23365 (trained observer role; route to the grounded test) → [[Training LMs to watch themselves (Wang 2026)]]
@@ -38,12 +38,33 @@ Earlier priority:
 
 ## Background (when relevant)
 - [ ] Utility Engineering (Mazeika) — 2502.08640
-- [ ] OMNI interestingness — 2306.01711
+- [x] OMNI interestingness — 2306.01711 → [[OMNI - models judge which tasks are interesting (Zhang 2023)]]
 - [ ] Learning to Reason w/o External Rewards (INTUITOR) — 2505.19590
 - [ ] Modern Self-Referential Weight Matrix (Irie) — ICML 2022
 - [ ] Nested Learning / Hope (Google) — NeurIPS 2025
-- [ ] Model collapse (Shumailov) — Nature 2024
+- [x] Model collapse (Shumailov) — Nature 2024 → [[Training on own outputs erases rare data (Shumailov 2024)]]
 - [ ] Alignment faking (Greenblatt) — 2412.14093
 - [ ] AI Can Learn Scientific Taste — 2603.14473 · IdeaTaste — 2611.03424
 - [ ] Rényi crossings under self-training — 2611.08892
 - [ ] Self-evolving agents survey (Gao et al., TMLR 2026) — 2507.21046
+
+## Search of 2026-11-20 (scored from the abstract only, 0 to 3)
+Notes were written for 6 papers scored 3: [[Survey of metacognition in language models (Liu 2026)]], [[Models predict themselves better than others do (Binder 2024)]], [[Trained confidence tracks consistency, not accuracy (Yax 2026)]], [[Training on own outputs erases rare data (Shumailov 2024)]], [[OMNI - models judge which tasks are interesting (Zhang 2023)]], [[Open-ended means novel and learnable to an observer (Hughes 2024)]].
+
+Scored 3, but over the cap of 6 notes (write these next):
+- [ ] A Closer Look at Language Model Introspection — 2611.15267 (section 3: a linear probe finds the injection site at 98.3% while the model stays at chance; location is decodable even in random networks)
+- [ ] Fleming and Daw 2017, Self-evaluation of decision-making: a Bayesian framework for metacognition — Psychological Review 124(1) (section 2: confidence as a second-order inference)
+
+Scored 2 (relevant, read if time allows):
+- [ ] Self-Rewarded RL for Better-Structured Medical Explanations — 2611.24650 (sections 6 and 7: self-reward aimed at style, not correctness)
+- [ ] SpeCal: Spectral Calibration for Unsupervised RLVR — 2611.20691 (section 6: which self-rewards to trust)
+- [ ] Did I See It or Think It? Reality monitoring in vision-language models — 2611.09014 (section 3: concept injection vs image content)
+- [ ] Tree-Ising: Repairing LMs with bit-level edits — 2611.14210 (section 5: an optimizer replaces the WSP agent, like Fischetti)
+- [ ] What Does WSP Add to Diffusion Editing? — 2611.22228 (section 5: preregistered, no advantage over a strong baseline)
+- [ ] WSP for Vision Language Model Repair — 2611.23615 (section 5: agent restores planted faults to exact values)
+- [ ] Can LLMs Write Backdoors? WSP security study — 2611.17395 (section 6: risk of weight self-edits)
+- [ ] Not All Entropy Is Equal (reward-conditioned entropy) — 2611.09448 (section 6: entropy as a collapse signal is ambiguous)
+
+Scored 1 (WSP applications and side topics): 2611.20566 (WSP for computational biology), 2611.09376 (WSP for robot policies), 2611.21958 (WSP for a tractor controller), 2611.13758 (WSP for EEG and ECG), 2611.20174 (WSP for tabular models), 2611.12954 (Physics2Weight), 2611.10089 (META-IR), 2611.14382 (learning by thinking), 2611.10445 (DiSARM interestingness), 2611.15172 (model vocabulary on Stack Exchange), 2611.17834 (PaperCritic), 2611.10110 (homeopathic learning), 2611.11172 (synthetic-data feedback loop), 2611.10450 (recovering edited knowledge).
+
+Scored 0: 2611.23106, 2611.23445, 2611.14387, 2611.11881, 2611.10831.
