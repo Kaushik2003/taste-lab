@@ -3,7 +3,7 @@ type: paper
 title: "Weight-Space Programming (WSP)"
 status: read
 arxiv: (blog post, Nov 2 2026, "Sparks of Weight-Space Programming")
-url: search "Sparks of Weight-Space Programming MIT CSAIL"
+url: https://rikiyat.github.io/blog/weight-space-programming/
 authors: Takehi, Teoh, Zhang, Khattab (MIT CSAIL)
 year: 2026
 venue: blog / preprint

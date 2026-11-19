@@ -98,7 +98,7 @@ Signals from the model about itself do drive **learning** in one family of metho
 
 ## Open doubts (critic review, 2026-11-20)
 
-1. **Built from notes, not papers.** Most numbers come from our paper notes. Only two of the cited notes are marked "read"; the rest are "skimmed". Each number should be checked against the paper before submission.
+1. **Built from notes, not papers.** Checked 2026-11-20: every number in this section was found in its source paper, and the key ones were read in context (see [[2026-11-20 number check]]). Most numbers come from our paper notes. Only two of the cited notes are marked "read"; the rest are "skimmed". Each number should be checked against the paper before submission.
 2. **Claude-only positive result.** The strongest in-context introspection result ([[Models sometimes notice injected thoughts (Lindsey 2025)]]) is on closed Claude models. The negative re-check is on open models. The two do not test the same systems, and the draft must not present one as refuting the other.
 3. **Privileged access may be "more data about this model".** The cross-model controls in [[Training LMs to watch themselves (Wang 2026)]] use larger models from other families. A same-size, same-family control is missing in every paper we have.
 4. ~~**Possible missing counter-evidence:** Zeng 2026 and Rubin 2026 cited second hand.~~ Resolved 2026-11-20: both now have notes ([[Trained self-prediction without an own-model edge (Zeng 2026)]], [[Probes find injections long before models report them (Rubin 2026)]]). Rubin changed the claim: the model's answer is at chance only early in training, not at the released model.
@@ -108,3 +108,4 @@ Signals from the model about itself do drive **learning** in one family of metho
 
 ## Log
 - 2026-11-20: Rubin 2026 and Zeng 2026 notes added; the two [unverified] claims replaced. Rubin correction: the model reports at chance only at an early checkpoint (89.6% at the released base).
+- 2026-11-20: numbers checked against the papers. All found; observer scores, neurofeedback dimensions, pain trials and injection rate read in context.

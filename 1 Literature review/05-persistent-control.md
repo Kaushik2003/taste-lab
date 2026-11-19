@@ -41,7 +41,7 @@ If a behavior lives along one direction in the hidden states, it can be removed 
 ## 5.2 Weight-space programming: an agent edits weights by reasoning
 
 A different route lets a strong model read weights and write edits.
-- **The original result.** GPT-6 Astra edited about 0.016% of Qwen3.5-0.8B's weights and raised MATH-500 from 7.9% to 48.1%, mostly by stopping repetitive reasoning loops. It also wrote small control networks from zero that beat a 100M-step reinforcement-learning agent on 3 games ([[WSP - a model reads and edits weights (Takehi 2026)]]). It struggles when the fault is spread across the network.
+- **The original result.** GPT-6 Astra edited about 0.016% of Qwen3.5-0.8B's weights and raised MATH-500 from 7.9% to 48.1%, mostly by stopping repetitive reasoning loops. The low starting score is itself a loop effect: 93% of the base model's MATH-500 answers hit the 32,768-token limit, and 33% still do after the edit. It also wrote small control networks from zero that beat a 100M-step reinforcement-learning agent on 3 games ([[WSP - a model reads and edits weights (Takehi 2026)]]). It struggles when the fault is spread across the network.
 - **The anti-loop edit is simple.** The key edit acts like a nearly constant push along one direction, and a sort over 8 low-variance neurons replaces the agent's choice with the same result: 67.0% vs 67.4%, against 9.5% unedited ([[A simple sort replaces the anti-loop edit (Fischetti 2026)]]).
 - **Independent replication.** On Qwen3.5-0.8B and 9B, held-out gains reach 29.45 points on MATH-500 from changing 1,023 parameter values, and a math edit transfers to other tasks (for example +20.10 on SciBench). But results vary across runs, 6 of 16 runs keep the original weights because no edit could be confirmed, gains are smaller on the 9B model, and one 9B math candidate lowered held-out accuracy despite a development gain ([[Exploring WSP - small weight edits, uneven results (Hu 2026)]]).
 - **Under strict audits, patching mostly fails.** On 42 audited tasks with metered forward passes, the best fully tested agent (Claude Opus 5.5) scores 0.535 overall but 0.404 on fixing networks. On the 4 reasoning-loop tasks only two agents score above zero at all ([[WeightBench - models cannot yet patch models (Marasini 2026)]]). Three caveats weaken this result: all scores are lower bounds because flagged runs score zero until a human reviews them (11 of 77 Opus runs were flagged); half the tasks have no reference solution that uses only what the agent can access; and each task ran once or twice on one seed.
@@ -55,7 +55,7 @@ SEAL lets the model write its own fine-tuning data and settings ("self-edits"). 
 Its limits for our frame:
 - The reward is external (downstream task score). The model learns how to learn, not what it values.
 - Each step needs an inner fine-tune, which is expensive, and forgetting across many edits is a known problem ([[SEAL - models write their own training data (Zweiger 2025)]]).
-- The headline ARC gain in our note needs a check against the paper's protocol [unverified].
+- The headline ARC result is narrow. SEAL's self-edits succeed 72.5% of the time against 20% for self-edits from the untrained model and 0% for in-context learning. But the test is 8 ARC tasks, picked because a well-tuned test-time training run can solve them, with 5 self-edits per task, on Llama-3.2-1B-Instruct ([[SEAL - models write their own training data (Zweiger 2025)]], Sec. 4.1, Table 1).
 
 ## 5.4 Who chooses the change?
 
@@ -95,8 +95,11 @@ This is where persistence meets metacognition, and the evidence is thin.
 ## Open doubts (critic review, 2026-11-20)
 
 1. **Older self-modifying work is missing.** Self-referential weight matrices (Irie 2022), fast weights and Nested Learning (2025) need notes. Without them, the claim "no model edits its own weights" may read as ignorance of the field.
-2. **Numbers to check against the papers:** the Steer2Edit accuracy drop (87.8 to 77.3, a check is already in TASKS); the SEAL ARC gain (our note says to check the protocol); the WSP math gain (7.9% to 48.1%).
+2. ~~**Numbers to check against the papers:**~~ Checked 2026-11-20 (see [[2026-11-20 number check]]): WSP and SEAL numbers match; SEAL protocol now stated. Steer2Edit is a separate task. Original note: the Steer2Edit accuracy drop (87.8 to 77.3, a check is already in TASKS); the SEAL ARC gain (our note says to check the protocol); the WSP math gain (7.9% to 48.1%).
 3. **One benchmark carries the "editors don't know their limits" claim.** The WeightBench limits track has 5 tasks, one seed and unreviewed flagged runs. It is a strong hint, not a settled result.
 4. **Weight-space programming moves fast.** The November 2026 arXiv batch alone has more than 10 WSP application papers (Reading list, scored 1 to 2). One preregistered study finds no advantage for diffusion editing (arXiv 2611.22228) [unverified: abstract only]. The section may need a short paragraph on that wider field.
 5. **Distributed change is thin.** SEAL is the only paper on self-directed distributed change. Continual-learning and forgetting work is not covered at all.
 6. **"Near-binary behaviors" is our reading.** The claim that rank-one edits suit near-binary behaviors better than graded ones comes from the notes' limits sections, not from a test in any paper.
+
+## Log
+- 2026-11-20: numbers checked against the papers (WSP blog, SEAL, TFTV, ThinkEdit, WSP follow-ups, WeightBench, Arditi, GUARD). All match. Added the SEAL ARC protocol and the WSP token-limit caveat.

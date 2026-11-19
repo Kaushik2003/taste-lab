@@ -29,7 +29,7 @@ augmentation and optimizer settings), then an SFT/LoRA update is applied. Outer 
 rewards the self-edits whose updated model does better on a downstream eval τ.
 
 ## Evidence
-Knowledge incorporation and few-shot ARC subset. Reported ARC jump of roughly 20% → 72% on a Llama-3.2-1B setup (selected tasks) [check the paper for the exact protocol].
+Knowledge incorporation and few-shot ARC subset. ARC: self-edit success rate 72.5% vs 20% (self-edits without RL training), 0% (in-context learning) and 100% (oracle test-time training). Llama-3.2-1B-Instruct, 11 training tasks and 8 evaluation tasks, all filtered to be solvable by tuned test-time training; 5 self-edits per evaluation task ([arXiv 2506.10943](https://arxiv.org/abs/2506.10943), Sec. 4.1, Table 1). Checked 2026-11-20.
 
 ## Limits
 - The reward is **external** (downstream task performance), so the model learns to learn, not what it likes.
