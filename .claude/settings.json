@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "Edit(./00-inbox/**)",
+      "Edit(./01-papers/**)",
+      "Edit(./02-concepts/**)",
+      "Edit(./03-threads/**)",
+      "Edit(./05-digests/**)",
+      "Edit(./research.yaml)",
+      "Bash(python3 scripts/fetch_arxiv.py:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)"
+    ],
+    "deny": [
+      "Edit(./06-patterns/**)",
+      "Bash(rm:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

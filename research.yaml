@@ -1,0 +1,51 @@
+# Watchlist for scripts/fetch_arxiv.py and /scout
+# Edit freely. Queries use arXiv API syntax (ti: title, abs: abstract, au: author).
+
+categories: [cs.LG, cs.CL, cs.AI, q-bio.NC, cs.NE]
+
+queries:
+  metacognition:
+    - 'abs:"metacognition" AND abs:"language model"'
+    - 'abs:introspection AND abs:"language model"'
+    - 'abs:"self-knowledge" AND abs:"language model"'
+  self_modification:
+    - 'abs:"self-adapting" OR abs:"self-edit"'
+    - 'abs:"weight-space" AND abs:edit'
+    - 'abs:"self-referential" AND abs:weight'
+    - 'abs:"test-time training" AND abs:"language model"'
+    - 'abs:"continual learning" AND abs:"self-improv*"'
+  valence_and_preference:
+    - 'abs:"emotion" AND abs:"steering" AND abs:"language model"'
+    - 'abs:"emergent values" OR abs:"utility engineering"'
+    - 'abs:"persona vector*" OR abs:"representation engineering"'
+  taste_and_intrinsic_reward:
+    - 'abs:"intrinsic reward" AND abs:"language model"'
+    - 'abs:"self-rewarding" OR abs:"internal feedback"'
+    - 'abs:taste AND (abs:"AI" OR abs:"language model")'
+    - 'abs:interestingness OR abs:"open-endedness"'
+  collapse_and_limits:
+    - 'abs:"model collapse"'
+    - 'abs:"unsupervised RLVR" OR abs:"entropy collapse"'
+  neuromodulation:
+    - 'abs:neuromodulation AND (abs:"reinforcement learning" OR abs:"neural network")'
+  code_quality:
+    - '(abs:"code readability" OR abs:"code quality") AND abs:"language model"'
+
+# Authors/labs whose new papers always get surfaced
+authors:
+  - Lindsey, Jack
+  - Zweiger, Adam
+  - Khattab, Omar
+  - Irie, Kazuki
+  - Clune, Jeff
+  - Evans, Owain
+  - Hendrycks, Dan
+  - Doya, Kenji
+
+# Blogs/pages Claude should check during /scout via web search (not fetched by script)
+watch_sites:
+  - transformer-circuits.pub
+  - anthropic.com/research
+  - research.google/blog
+  - alignmentforum.org
+  - jyopari.github.io      # SEAL authors
