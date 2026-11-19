@@ -41,7 +41,7 @@ Review plan, 7 steps (one step per round, started 2026-11-20):
 - [x] 1. Notes for the 7 core papers: Nelson and Narens (1990), Kadavath (2022), Doya (2002), introspective oversight, Exploring WSP, WeightBench, GUARD. (done 2026-11-20)
 - [x] 2. New search for the thin sections (2 Foundations, 6 Limits, 7 Taste). 6 notes written; 30 arXiv finds and 2 extra papers scored 3 are in the Reading list. (done 2026-11-20)
 - [x] 3. Add every new paper to [[outline]] and [[matrix]]. (done 2026-11-20: 15 rows added, 38 in all)
-- [ ] 4. Write `1 Literature review/gaps.md` (the /gaps command), metacognition and weight editing first.
+- [x] 4. Write `1 Literature review/gaps.md` (the /gaps command), metacognition and weight editing first. (done 2026-11-20: 13 gaps)
 - [ ] 5. Draft section 3 "Monitoring", then section 5 "Persistent control", from the paper notes.
 - [ ] 6. Review both drafts as a critic, fix them, and list open doubts in each.
 - [ ] 7. Update "Read this week" on HOME, add a HANDOFF entry, move ticked items to Done.
