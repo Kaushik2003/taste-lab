@@ -36,16 +36,22 @@ The angle:
 Open these:
 - [[outline|The plan of the review]]: 9 sections and the papers in each one.
 - [[matrix|The paper table]]: which paper covers which part.
-- [[Gaps in the field|What nobody has done yet]]
+- [[gaps|What nobody has done yet]] (13 gaps, updated 20 November)
+- First drafts: [[03-monitoring|Section 3, Monitoring]] and [[05-persistent-control|Section 5, Persistent control]]. Each ends with a list of open doubts.
 
 ## 2. Read this week
 
 Start with these 3 papers. Open the note first (it is short). Open the full paper only if you want more.
 Tick the box when you finish.
 
-- [ ] [[Value axis - model knows it is on track (Jiang 2026)|The Value Axis]]: a model knows when it is "on the right track", tested on code. Closest to our work.
-- [ ] [[Models can report and control their own activations (Ji-An 2025)|Models report and control their own activations]]: the closest paper to our main idea, metacognition. It sits at the center of the monitoring section.
-- [ ] [[Introspection claims fail basic checks (Singh 2026)|Can models look inside themselves?]]: the strongest warning against our idea.
+- [ ] [[Survey of metacognition in language models (Liu 2026)|The 2026 survey of metacognition in language models]]: the review we must position against. It covers "watch" and "control", but never taste and never models that change their own weights. Those two parts are our space.
+- [ ] [[Training LMs to watch themselves (Wang 2026)|A model trained to watch itself]]: the strongest new evidence that a model reads its own behavior better than other models do. It is about behavior, not inner states.
+- [ ] [[WeightBench - models cannot yet patch models (Marasini 2026)|WeightBench]]: strong models cannot yet fix language models by editing weights, and cannot tell an impossible edit from a hard one. This joins our two topics.
+
+Still open from last week (read if you have time):
+- [ ] [[Models can report and control their own activations (Ji-An 2025)|Models report and control their own activations]]
+- [ ] [[Introspection claims fail basic checks (Singh 2026)|Can models look inside themselves?]]
+- [x] [[Value axis - model knows it is on track (Jiang 2026)|The Value Axis]] (done)
 
 Finished these? The list below shows what to read next.
 

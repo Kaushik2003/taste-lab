@@ -26,25 +26,31 @@ Our goal now: **write the literature review by 24 November 2026.** No experiment
   Tell Claude if a topic must be added or removed. Examples: "add uncertainty and calibration", "drop the maths papers".
   *Done when:* you tell Claude the scope, or "scope is OK".
 
-- [ ] **Read the 3 papers under "Read this week" on [[HOME]].**
-  Ji-An (models report their own activations), Jiang (value axis) and Singh (introspection checks).
+- [ ] **Read the 3 new papers under "Read this week" on [[HOME]].**
+  The 2026 metacognition survey (Liu), the model trained to watch itself (Wang) and WeightBench (Marasini).
   After each one, tell Claude your opinion in one or two sentences. Claude saves it in the paper note.
+  You ticked the Value Axis paper: tell Claude your opinion of it too.
   *Done when:* you tick them on HOME.
 
-- [ ] **Pick the section Claude drafts first.**
-  Claude suggests section 3, "Monitoring", because it is the center of the metacognition angle.
-  *Done when:* you tell Claude the section.
+- [ ] **Read the two section drafts and their open doubts.**
+  Section 3 [[03-monitoring]] and section 5 [[05-persistent-control]] are first drafts, built from paper notes only.
+  Each ends with a list of open doubts. Say which doubts matter and whether the main line of each section is right.
+  *Done when:* you tell Claude "draft OK" or what to change, for each section.
+
+- [ ] **Decide if older self-modifying networks are in the review.**
+  Section 5 says no language model edits its own weights by reading them. But older networks learn to rewrite their own weights (Irie 2022, Nested Learning 2025).
+  If they are in scope, Claude writes notes for them and section 5 gets one more paragraph. If not, the review must say why.
+  *Done when:* you say "in" or "out".
+
+- [ ] **Pick the next sections to draft.**
+  Due date is 24 November. Claude suggests section 2 "Foundations" (6 notes now) and section 6 "Limits" next, then 4 and 7.
+  *Done when:* you tell Claude the order.
 
 ## For Claude
 
-Review plan, 7 steps (one step per round, started 2026-11-20):
-- [x] 1. Notes for the 7 core papers: Nelson and Narens (1990), Kadavath (2022), Doya (2002), introspective oversight, Exploring WSP, WeightBench, GUARD. (done 2026-11-20)
-- [x] 2. New search for the thin sections (2 Foundations, 6 Limits, 7 Taste). 6 notes written; 30 arXiv finds and 2 extra papers scored 3 are in the Reading list. (done 2026-11-20)
-- [x] 3. Add every new paper to [[outline]] and [[matrix]]. (done 2026-11-20: 15 rows added, 38 in all)
-- [x] 4. Write `1 Literature review/gaps.md` (the /gaps command), metacognition and weight editing first. (done 2026-11-20: 13 gaps)
-- [x] 5. Draft section 3 "Monitoring", then section 5 "Persistent control", from the paper notes. (done 2026-11-20: draft 1 of each)
-- [x] 6. Review both drafts as a critic, fix them, and list open doubts in each. (done 2026-11-20: 2 overclaims fixed, 7 and 6 open doubts listed)
-- [ ] 7. Update "Read this week" on HOME, add a HANDOFF entry, move ticked items to Done.
+- [ ] Write notes for the papers the critic review found missing: Rubin 2026 (arXiv 2611.15267), Fleming and Daw (2017), Zeng 2026. *Irie 2022 and Nested Learning wait for:* your "in or out" decision above.
+- [ ] Check the numbers in the two drafts against the papers (most come from skimmed notes). Start with the WSP math gain, the SEAL ARC gain and the observer scores.
+- [ ] Draft the next sections. *Waits for:* your choice of order.
 - [ ] Check one number in the Steer2Edit paper against the PDF (Table 10, the drop from 87.8 to 77.3).
 - [ ] Fix a security problem in the dashboard script (a bad link in a note can run code in the page).
 - [ ] Add a safety check to the daily scout script before it runs every hour. *Waits for:* your "yes".
@@ -58,6 +64,15 @@ These were research tasks. They wait until the review is done.
 - Find 5 people to rate code, and add the new controls to the Q1 experiment.
 
 ## Done
+
+- [x] 2026-11-20: Claude finished the 7-step review plan in 8 rounds:
+  - notes for the 7 core papers (Nelson and Narens, Kadavath, Doya, introspective oversight, Exploring WSP, WeightBench, GUARD);
+  - a new search: 6 more notes (Liu survey, Binder, Yax, Shumailov, OMNI, Hughes), with 30 other finds scored in the [[Reading list]];
+  - [[outline]] and [[matrix]] updated (38 papers);
+  - [[gaps]] written (13 gaps);
+  - first drafts of section 3 and section 5, reviewed by Claude as a critic, with open doubts listed;
+  - "Read this week" on HOME updated.
+- [x] 2026-11-20: You picked section 3 and then section 5 to draft first (in the review plan you gave Claude).
 
 - [x] 2026-11-20: Claude moved the review to the top (folder "1 Literature review") and parked the research questions in "5 Research ideas (later)".
 - [x] 2026-11-20: Claude wrote notes for Ji-An 2025 and Lindsey 2025, two core metacognition papers.

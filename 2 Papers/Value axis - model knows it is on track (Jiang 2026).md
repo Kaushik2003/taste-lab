@@ -1,7 +1,7 @@
 ---
 type: paper
 title: "The Value Axis: Language Models Encode Whether They're on the Right Track"
-status: skimmed
+status: read
 arxiv: 2606.17056
 url: https://arxiv.org/abs/2606.17056
 authors: Nick Jiang, Isaac Kauvar, Jack Lindsey
@@ -12,7 +12,7 @@ section: 4
 tier: deep
 tests: [grounded, self-reinforcing]
 components: [valence, controller, monitoring]
-tags: [type/paper, section/4, test/grounded, test/self-reinforcing, component/valence, component/controller, component/monitoring, status/skimmed, relevance/3, question/Q2, question/Q1, value-axis, steering, code, dpo, confidence, backtracking]
+tags: [type/paper, section/4, test/grounded, test/self-reinforcing, component/valence, component/controller, component/monitoring, status/read, relevance/3, question/Q2, question/Q1, value-axis, steering, code, dpo, confidence, backtracking]
 links: ["[[Good-bad signal probe]]", "[[Field map - Models judge good and bad]]", "[[Q1 Does the model sense code quality]]", "[[Q2 Can the model steer its own code]]", "[[Neuromodulators as learning settings]]", "[[Metacognition - watch and control yourself]]", "[[Four tests for own taste]]"]
 ---
 
