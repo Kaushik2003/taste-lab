@@ -1,10 +1,10 @@
 ---
 type: concept
-tags: [self-modification, consolidation]
-links: [[2025-zweiger-seal]], [[2026-takehi-weight-space-programming]], [[2026-fischetti-just-sort-it]]
+tags: [type/concept, status/active, self-modification, consolidation]
+links: ["[[2025-zweiger-seal]]", "[[2026-takehi-weight-space-programming]]", "[[2026-fischetti-just-sort-it]]"]
 ---
 
-# Self-directed weight updates
+# Self weight updates
 
 **Definition (plain):** The model itself decides what changes in its weights, as opposed to an external optimizer on a fixed dataset.
 

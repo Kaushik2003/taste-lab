@@ -12,7 +12,8 @@ section: 4
 tier: deep
 tests: [grounded]
 components: [valence]
-tags: [functional-emotions, steering, preference]
+tags: [type/paper, section/4, test/grounded, component/valence, status/skimmed, relevance/3, functional-emotions, steering, preference]
+links: ["[[landscape-evaluation-signals]]", "[[valence-readout]]", "[[four-taste-tests]]"]
 ---
 
 # Emotion Concepts and Their Function in a Large Language Model

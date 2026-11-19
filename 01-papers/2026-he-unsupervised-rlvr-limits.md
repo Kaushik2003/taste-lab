@@ -12,7 +12,8 @@ section: 6
 tier: deep
 tests: [self-reinforcing]
 components: [anchor]
-tags: [collapse, intrinsic-reward, threat]
+tags: [type/paper, role/threat, section/6, test/self-reinforcing, component/anchor, status/skimmed, relevance/3, collapse, intrinsic-reward]
+links: ["[[landscape-self-improvement-limits]]", "[[anti-collapse-anchor]]", "[[four-taste-tests]]"]
 ---
 
 # How Far Can Unsupervised RLVR Scale LLM Training?

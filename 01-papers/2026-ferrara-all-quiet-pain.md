@@ -12,7 +12,8 @@ section: 3
 tier: deep
 tests: [grounded]
 components: [valence, monitoring]
-tags: [introspection, emotion-steering, threat]
+tags: [type/paper, role/threat, section/3, test/grounded, component/valence, component/monitoring, status/skimmed, relevance/3, introspection, emotion-steering]
+links: ["[[landscape-metacognitive-monitoring]]", "[[valence-readout]]", "[[metacognition-monitor-control]]", "[[four-taste-tests]]"]
 ---
 
 # All Quiet on the Neural Front: LMs Do Not Report Injected Pain States

@@ -3,3 +3,6 @@
 .DS_Store
 __pycache__/
 dashboard.html
+
+# per-machine settings and API keys (template: .env.example)
+.env

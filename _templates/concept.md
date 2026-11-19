@@ -1,7 +1,7 @@
 ---
 type: concept
-tags: []
-links: []
+tags: [type/concept, status/active]
+links: []   # quoted: ["[[note-name]]"]
 ---
 
 # {{concept}}

@@ -3,6 +3,14 @@
 # the first time the laptop is awake. Works with whichever Claude account is logged in.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+# Load .env (gitignored) without overriding anything already set, e.g. by the cron line.
+if [ -f .env ]; then
+  while IFS='=' read -r k v || [ -n "$k" ]; do
+    [[ $k =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]] || continue
+    v="${v%\"}"; v="${v#\"}"
+    [ -z "${!k+x}" ] && export "$k=$v"
+  done < .env
+fi
 TODAY=$(date +%F)
 git pull --rebase --quiet 2>/dev/null || true
 [ -f "05-digests/$TODAY.md" ] && exit 0

@@ -4,6 +4,8 @@ id: exp01
 thread: T1
 status: spec
 compute: 1–2× A100/H100 for 8B, 4× for 32B
+tags: [type/experiment, thread/T1, status/spec]
+links: ["[[code-quality-signal-T1]]"]
 ---
 
 # exp01: Valence probe vs. code readability

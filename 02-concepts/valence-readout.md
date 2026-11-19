@@ -1,7 +1,7 @@
 ---
 type: concept
-tags: [valence, emotion, preference]
-links: [[2026-anthropic-emotion-concepts]], [[2026-ferrara-all-quiet-pain]], [[four-taste-tests]]
+tags: [type/concept, status/active, valence, emotion, preference]
+links: ["[[2026-anthropic-emotion-concepts]]", "[[2026-ferrara-all-quiet-pain]]", "[[four-taste-tests]]"]
 ---
 
 # Valence readout

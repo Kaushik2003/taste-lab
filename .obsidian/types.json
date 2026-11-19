@@ -1,0 +1,9 @@
+{
+  "types": {
+    "links": "multitext",
+    "tests": "multitext",
+    "components": "multitext",
+    "tags": "tags",
+    "aliases": "aliases"
+  }
+}

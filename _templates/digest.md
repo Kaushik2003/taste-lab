@@ -2,6 +2,7 @@
 type: digest
 date:
 sources_scanned: 0
+tags: [type/digest]
 ---
 
 # Scout — {{date}}

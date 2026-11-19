@@ -1,7 +1,7 @@
 ---
 type: concept
-tags: [evaluation, taste]
-links: [[valence-readout]], [[anti-collapse-anchor]]
+tags: [type/concept, status/active, evaluation, taste]
+links: ["[[valence-readout]]", "[[anti-collapse-anchor]]"]
 ---
 
 # Four tests for self-originated taste

@@ -1,0 +1,50 @@
+filters:
+  and:
+    - file.inFolder("01-papers")
+properties:
+  file.name:
+    displayName: Open note
+  note.title:
+    displayName: Paper
+  note.relevance:
+    displayName: Importance (0-3)
+  note.status:
+    displayName: Status
+  note.year:
+    displayName: Year
+views:
+  - type: table
+    name: Read next
+    filters:
+      and:
+        - status != "read"
+    order:
+      - file.name
+      - title
+      - relevance
+    sort:
+      - property: relevance
+        direction: DESC
+      - property: section
+        direction: ASC
+    limit: 5
+  - type: table
+    name: Warnings (papers against our idea)
+    filters:
+      and:
+        - file.hasTag("role/threat")
+    order:
+      - file.name
+      - title
+      - year
+  - type: table
+    name: All papers
+    order:
+      - file.name
+      - title
+      - relevance
+      - status
+      - year
+    sort:
+      - property: relevance
+        direction: DESC

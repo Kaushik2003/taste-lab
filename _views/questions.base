@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.inFolder("03-threads")
+    - type == "thread"
+properties:
+  file.name:
+    displayName: Open note
+  note.title:
+    displayName: Question
+  note.status:
+    displayName: Status
+views:
+  - type: table
+    name: Our questions
+    order:
+      - file.name
+      - title
+      - status
+    sort:
+      - property: status
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      note.title: 306

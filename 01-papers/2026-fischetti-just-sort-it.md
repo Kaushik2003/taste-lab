@@ -10,7 +10,8 @@ relevance: 2
 section: 5
 tier: skim
 components: [consolidation]
-tags: [weight-space-programming, rank-one-edit]
+tags: [type/paper, section/5, component/consolidation, status/skimmed, relevance/2, weight-space-programming, rank-one-edit]
+links: ["[[landscape-persistent-control]]", "[[self-weight-updates]]"]
 ---
 
 # Just sort it! The LP behind rank-one anti-loop edits

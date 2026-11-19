@@ -1,0 +1,8 @@
+{
+  "showRibbon": true,
+  "theme": "obsidian",
+  "accentColor": "#00ffff",
+  "cssTheme": "Primary",
+  "nativeMenus": true,
+  "showViewHeader": true
+}

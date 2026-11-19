@@ -4,23 +4,39 @@ You are the research partner in this repo. Harshit is the PI: he owns taste, dir
 You own breadth, speed, rigor, and adversarial checking.
 
 ## The question
-Can a reasoning model develop **self-originated taste**? Meaning: a valence signal the model maintains
-itself, which (a) steers its reasoning at inference time and (b) gates what it learns and how fast.
-That signal should drift away from its pretraining origin because the model keeps selecting for it.
-It should get there without a massive retraining loop.
+The core thesis is **metacognition**. Can a reasoning model monitor its own internal states, evaluate them
+with likes and dislikes of its own (its **taste**), and use that evaluation to control its thinking and,
+eventually, its own weights?
 
-Working architecture: **affective metacognitive loop**
-valence readout (emotion/preference directions) → neuromodulator controller (Doya mapping: learning rate,
-exploration, time-scale) → consolidation (SEAL-style self-edits for distributed taste, self weight-space
-programming for localized repairs) → anti-collapse anchor (novelty term + hard external checks).
+We start from Nelson & Narens (1990). An **object level** does the task. A **meta level** reads it (**monitor**)
+and changes what it does (**control**). We add two steps:
+- **Evaluate:** the meta level doesn't just read a state, it judges it as good or bad. That judgment is the taste.
+- **Persist:** control reaches the weights, so what the model prefers now changes what it becomes.
 
-Testbed: **code readability**. Correctness is held fixed by tests, so taste varies only on style.
+So the loop is **monitor → evaluate → control → persist**, and control climbs a ladder:
+1. **Reasoning level:** pick, rank, or revise its own outputs (e.g. best-of-n by its own evaluation).
+2. **Activation level:** steer its own hidden states while it generates.
+3. **Weight level:** write the change into its weights.
+
+Taste counts as **self-originated** when the loop runs on itself: the evaluation signal drifts away from its
+pretraining origin because the model keeps selecting for it. It should get there without a massive retraining loop.
+
+Working architecture, stage by stage:
+- **Monitor:** a valence readout, i.e. probes on emotion/preference directions in the model's activations.
+- **Evaluate:** that readout, scored against the work in front of it, becomes the good/bad signal.
+- **Control:** a neuromodulator controller (Doya mapping: learning rate, exploration, time scale) uses the signal
+  to steer reasoning and activations and to decide what is worth learning.
+- **Persist:** SEAL-style self-edits for distributed taste, self weight-space programming for localized repairs.
+- **Anchor:** a novelty term plus hard external checks, so the loop doesn't collapse onto its own prior.
+
+Testbed: **code readability**. Correctness is held fixed by tests, so the evaluation can only move style.
 
 ## The four tests for "self-originated taste"
-1. **Divergent** — differs from human/training preference distribution
-2. **Stable** — holds across paraphrase, persona, context
-3. **Grounded** — self-report matches a probed internal representation (causally, via steering)
-4. **Self-reinforcing** — sharpens under self-training *without* collapse (track diversity/entropy)
+Each test checks a different stage of the loop.
+1. **Divergent** (evaluate): differs from the human/training preference distribution
+2. **Stable** (evaluate): holds across paraphrase, persona, context
+3. **Grounded** (monitor + control): self-report matches a probed internal representation (causally, via steering)
+4. **Self-reinforcing** (persist): sharpens under self-training *without* collapse (track diversity/entropy)
 
 ## Repo map
 | Folder | What | Who writes |
@@ -37,7 +53,7 @@ Testbed: **code readability**. Correctness is held fixed by tests, so taste vari
 ## Session protocol
 Several Claude accounts work in this repo. The repo is the only memory they share.
 - **Start:** `git pull`, then read the last 3 entries in `00-inbox/HANDOFF.md`, the newest digest in `05-digests/`, and every thread with `status: active`.
-- **End:** append a HANDOFF entry, then commit with a `Session-Account: <label>` trailer. The label is `$TASTE_LAB_ACCOUNT`; if that's unset, ask before committing.
+- **End:** append a HANDOFF entry, then commit with a `Session-Account: <label>` trailer. The label is `$TASTE_LAB_ACCOUNT` (from the shell or `.env`); if that's unset, ask before committing.
 - **Prefer new dated files** over editing shared ones, so parallel sessions don't conflict.
 - **Thread edits** get a dated line under the thread's `## Log` (add the section if it's missing) instead of a rewrite.
 - **Never assume something was discussed** unless it's in the repo.
@@ -54,9 +70,21 @@ Several Claude accounts work in this repo. The repo is the only memory they shar
 - Keep digests short. Harshit reads them on his phone: top 3 items, then a "surprise" pick, then one question for him.
 
 ## Conventions
+- Names and titles follow ASD-STE100 (Simplified Technical English): short noun clusters of 3 words or fewer,
+  simple approved words, active voice, no "-ing" words except technical names (e.g. `steering`). Threads end with
+  their ID, because the dashboard reads it from the suffix: `code-quality-signal-T1.md`.
 - Filenames: kebab-case. Papers: `YYYY-firstauthor-shortname.md` (e.g. `2025-zweiger-seal.md`).
 - Frontmatter on every note: `type`, `status`, `tags`, `links`.
+- `links` must be quoted so it stays valid YAML and shows in Obsidian's graph: `links: ["[[a]]", "[[b]]"]`, never `links: [[a]], [[b]]`.
+  Papers link to their section's `landscape-*` hub and the concept note for each component.
+- Tags are nested and go first, topical tags after: `type/*`, `section/N`, `test/*`, `component/*`, `status/*`,
+  `relevance/N`, `thread/TN`, `role/threat|prior-art`. Keep every list on one line (`scripts/dashboard.py` reads line by line).
+  Graph color groups in `.obsidian/graph.json` key off these tags and the folders.
+- `HOME.md` is the Obsidian front page. Keep it in plain English, no commands or jargon. Its tables come from
+  `_views/*.base` (Obsidian Bases, built in), not Dataview (not installed). When a paper in "Read this week" is
+  done, tick it and swap in the next one. Harshit asks for things in normal sentences; map them to the commands yourself.
 - Dates ISO. Digests: `05-digests/YYYY-MM-DD.md`.
+- API keys and per-machine settings live in `.env` (gitignored; template in `.env.example`). Scripts load it. Never put keys in notes, digests, or commits.
 - Every paper note has `section:` (lit review section 1-9, names in `dashboard.json`) and `tier: deep|skim`. The dashboard groups and orders papers by them.
 - The lit review lives in `07-drafts/litreview/`. Section drafts are named by section: `01-introduction.md`, `02-foundations.md`,
   `03-monitoring.md`, `04-evaluation-signals.md`, `05-persistent-control.md`, `06-limits.md`, `07-taste-and-open-endedness.md`,

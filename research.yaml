@@ -8,6 +8,10 @@ queries:
     - 'abs:"metacognition" AND abs:"language model"'
     - 'abs:introspection AND abs:"language model"'
     - 'abs:"self-knowledge" AND abs:"language model"'
+    - 'abs:"metacognitive control"'
+    - 'abs:"confidence" AND abs:"self-monitoring"'
+    - 'abs:"feeling of knowing" OR abs:"metamemory"'
+    - 'abs:"self-model" AND abs:"neural network"'
   self_modification:
     - 'abs:"self-adapting" OR abs:"self-edit"'
     - 'abs:"weight-space" AND abs:edit'
@@ -41,6 +45,9 @@ authors:
   - Evans, Owain
   - Hendrycks, Dan
   - Doya, Kenji
+  - Fleming, Stephen M.
+  - Binder, Felix
+  - Li, Ji-An
 
 # Blogs/pages Claude should check during /scout via web search (not fetched by script)
 watch_sites:

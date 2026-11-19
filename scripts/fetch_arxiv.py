@@ -10,6 +10,7 @@ Writes 00-inbox/candidates/YYYY-MM-DD.json and .md, skipping papers already in 0
 import argparse
 import datetime as dt
 import json
+import os
 import re
 import sys
 import time
@@ -21,6 +22,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 API = "https://export.arxiv.org/api/query"
 NS = {"a": "http://www.w3.org/2005/Atom"}
+
+
+def load_env(path: Path = ROOT / ".env") -> None:
+    """Read KEY=value lines from .env into os.environ. Shell values win. API keys belong there, never in notes."""
+    if not path.exists():
+        return
+    for raw in path.read_text().splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        os.environ.setdefault(k.strip(), v.strip().strip("'\""))
 
 
 # ---------- minimal YAML reader (enough for research.yaml; uses PyYAML if present) ----------
@@ -117,6 +130,7 @@ def main():
     ap.add_argument("--max", type=int, default=25, help="max results per query")
     ap.add_argument("--dry", action="store_true", help="print queries only")
     args = ap.parse_args()
+    load_env()
 
     cfg = load_config(ROOT / "research.yaml")
     cats = cfg.get("categories") or []

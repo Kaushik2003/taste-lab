@@ -1,0 +1,8 @@
+{
+  "defaultViewMode": "preview",
+  "userIgnoreFilters": [
+    "_templates/",
+    "CLAUDE.md",
+    "scripts/"
+  ]
+}

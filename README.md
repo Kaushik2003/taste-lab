@@ -62,8 +62,9 @@ Or push to GitHub and run it as a scheduled cloud task that commits the digest. 
 
 ## Using multiple Claude accounts
 The repo is the only memory shared across accounts (see "Session protocol" in `CLAUDE.md` and `00-inbox/HANDOFF.md`).
-- Before a session, run `export TASTE_LAB_ACCOUNT=<label>` (e.g. `personal`, `work`, `laptop-scout`) so commits carry a
-  `Session-Account:` trailer and you can tell later which account did what.
+- Set `TASTE_LAB_ACCOUNT=<label>` (e.g. `personal`, `work`, `laptop-scout`) in `.env` or your shell so commits carry a
+  `Session-Account:` trailer and you can tell later which account did what. `cp .env.example .env` to start;
+  API keys for any future fetchers go there too. A value set in the shell or the cron line wins over `.env`.
 - Keep `06-patterns/` and thread framing (promoting, killing, rewording threads) on your personal account.
   Other accounts can scout, ingest, and draft, but they don't set direction.
 

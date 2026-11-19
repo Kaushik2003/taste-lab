@@ -12,7 +12,8 @@ section: 5
 tier: deep
 tests: [self-reinforcing]
 components: [consolidation]
-tags: [self-edit, weight-update, meta-learning]
+tags: [type/paper, section/5, test/self-reinforcing, component/consolidation, status/read, relevance/3, self-edit, weight-update, meta-learning]
+links: ["[[landscape-persistent-control]]", "[[self-weight-updates]]", "[[four-taste-tests]]"]
 ---
 
 # SEAL: Self-Adapting Language Models

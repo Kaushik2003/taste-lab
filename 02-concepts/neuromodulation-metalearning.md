@@ -1,7 +1,7 @@
 ---
 type: concept
-tags: [neuroscience, metalearning, controller]
-links: [[valence-readout]]
+tags: [type/concept, status/active, neuroscience, metalearning, controller]
+links: ["[[valence-readout]]"]
 ---
 
 # Neuromodulation as metalearning (Doya 2002)
@@ -18,4 +18,4 @@ Emotions act as control knobs on learning, not as decoration.
 
 **Steal:** Lifelong RL via neuromodulation (arXiv 2408.08446) for implementation patterns.
 
-**Related:** [[self-directed-weight-updates]], [[anti-collapse-anchor]]
+**Related:** [[self-weight-updates]], [[anti-collapse-anchor]]

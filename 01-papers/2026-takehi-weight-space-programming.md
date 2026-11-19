@@ -12,7 +12,8 @@ section: 5
 tier: deep
 tests: []
 components: [consolidation]
-tags: [weight-space-programming, gradient-free, model-repair]
+tags: [type/paper, section/5, component/consolidation, status/read, relevance/3, weight-space-programming, gradient-free, model-repair]
+links: ["[[landscape-persistent-control]]", "[[self-weight-updates]]"]
 ---
 
 # Weight-Space Programming (WSP)

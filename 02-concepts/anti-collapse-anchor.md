@@ -1,7 +1,7 @@
 ---
 type: concept
-tags: [collapse, stability]
-links: [[2026-he-unsupervised-rlvr-limits]]
+tags: [type/concept, status/active, collapse, stability]
+links: ["[[2026-he-unsupervised-rlvr-limits]]"]
 ---
 
 # Anti-collapse anchor
