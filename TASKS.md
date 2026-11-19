@@ -43,7 +43,7 @@ Review plan, 7 steps (one step per round, started 2026-11-20):
 - [x] 3. Add every new paper to [[outline]] and [[matrix]]. (done 2026-11-20: 15 rows added, 38 in all)
 - [x] 4. Write `1 Literature review/gaps.md` (the /gaps command), metacognition and weight editing first. (done 2026-11-20: 13 gaps)
 - [x] 5. Draft section 3 "Monitoring", then section 5 "Persistent control", from the paper notes. (done 2026-11-20: draft 1 of each)
-- [ ] 6. Review both drafts as a critic, fix them, and list open doubts in each.
+- [x] 6. Review both drafts as a critic, fix them, and list open doubts in each. (done 2026-11-20: 2 overclaims fixed, 7 and 6 open doubts listed)
 - [ ] 7. Update "Read this week" on HOME, add a HANDOFF entry, move ticked items to Done.
 - [ ] Check one number in the Steer2Edit paper against the PDF (Table 10, the drop from 87.8 to 77.3).
 - [ ] Fix a security problem in the dashboard script (a bad link in a note can run code in the page).
