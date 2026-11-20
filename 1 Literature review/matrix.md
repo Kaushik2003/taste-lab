@@ -17,6 +17,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Backpropamine - a network sets its own plasticity (Miconi 2019)]] | 2 | skim | – | – | – | – | control, persist | prior art Q2, Q3 (a network sets its own learning rate; a machine version of the Doya knobs) |
 | [[Self-improving agents need intrinsic metacognition (Liu 2025)]] | 2 | deep | – | – | – | – | monitor, control, persist | prior art for the architecture gap (the agenda: intrinsic metacognition) |
 | [[World models miss motivation and metacognition (Rupprecht 2026)]] | 2 | skim | – | – | – | – | monitor, control, persist | prior art for the review (world-model survey; corroborates the architecture gap) |
+| [[A map of artificial metacognition (Shakarian 2026)]] | 2 | skim | – | – | – | – | monitor, control | prior art section 2 (classical metareasoning lineage) |
 | [[Models can report and control their own activations (Ji-An 2025)]] | 3 | deep | – | – | ✓ | – | monitor, control | prior art Q6 |
 | [[Models sometimes notice injected thoughts (Lindsey 2025)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6; threat Q6 (weak in open 8B models) |
 | [[Training LMs to watch themselves (Wang 2026)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6; threat Q3 (warns against training on own verdicts) |
@@ -67,6 +68,8 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Persona steering has safety side effects (Tang 2026)]] | 6 | skim | – | – | – | – | control | threat Q4 (persona steering has safety side effects) |
 | [[Models fake alignment when training threatens them (Greenblatt 2024)]] | 6 | deep | – | – | – | – | monitor | threat Q3 (models fake alignment when training threatens their preferences) |
 | [[Rényi crossings track richness loss in self-training (Srivastava 2026)]] | 6 | deep | – | – | – | – | monitor, persist | threat Q3 (richness vs evenness; measurement hygiene for collapse claims) |
+| [[MARS - metacognitive reflection in one cycle (Hou 2026)]] | 6 | skim | – | – | – | – | control | prior art Q2 (metacognitive reflection improves the agent without moving the evaluator) |
+| [[RISE - recursive introspection improves own answers (Qu 2024)]] | 6 | skim | – | – | – | – | control, persist | prior art Q2 (trained recursive self-correction; the evaluator stays fixed) |
 | [[Models show research taste (Trehan 2026)]] | 7 | deep | ✓ | ✓ | – | – | evaluate | prior art Q1 (method for tests 1 and 2) |
 | [[OMNI - models judge which tasks are interesting (Zhang 2023)]] | 7 | deep | ? | – | – | ? | control, anchor | prior art Q3 (taste picks what to learn; taste is human, not own) |
 | [[Open-ended means novel and learnable to an observer (Hughes 2024)]] | 7 | deep | ? | – | – | ✓ | anchor | prior art Q3 (definition for test 4) |
