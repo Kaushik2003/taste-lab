@@ -1,0 +1,14 @@
+---
+type: draft
+status: draft
+tags: [type/draft, litreview, section/9]
+links: ["[[code-quality-signal-T1]]", "[[inference-time-steering-T2]]", "[[self-training-collapse-T3]]", "[[landscape-gap-table]]"]
+---
+
+# 9. Conclusion
+
+This review followed one loop - monitor, evaluate, control, persist, anchored against collapse - through the current literature on metacognition in reasoning models. Each stage exists in isolation. Hidden states carry readable, behaviorally active signals about the model's own work, but the readers are external probes and the signals track correctness. Evaluation signals that causally shift preference and choice exist - emotion vectors, hidden valence, a value axis - but none has been validated on a quality beyond correctness, and the one readability signal was measured only through the model's own judgments. Writing a direction into weights is solved and crowded, but someone else always picks the direction. Self-signals left unconstrained sharpen and collapse or get hacked; the loops that work lean on a hard external check. Taste can be measured, but measured taste defaults to a shared machine prior, not an own one.
+
+The defensible claim is therefore narrow. No published work shows a model reading an evaluation signal from its own activations and using it - not an experimenter's direction, not an outside judge - to choose what it generates and what it learns, on a quality its external checks do not measure. The safer wording for the grounded component, after Section 3's controls, is "a probed internal signal that the model's behavior depends on", tested causally by steering, never self-report.
+
+Code readability among solutions that all pass the tests is the clean place to close the loop, because correctness is fixed and only judgment can move style. The research sequence follows from the evidence. First, the gating experiment: does a valence readout track blind human readability rankings among passing solutions, beating layer-0 probes, readability directions and correctness-value baselines, after length, perplexity and comment density are partialled out ([[code-quality-signal-T1]], exp01)? If it does, the second step is inference-time control, with the evidence favoring best-of-n selection by the readout over direct steering, audited against a hidden readability anchor for judge hacking ([[inference-time-steering-T2]]). Only then does self-training on the signal become worth testing, behind tests, a novelty term, collapse metrics and a matched random-reward control ([[self-training-collapse-T3]]). If the gating experiment fails - the readout does not track readability beyond cheap confounds - every downstream thread loses its evaluator, and the honest contribution becomes the negative result with the strongest controls in the literature.

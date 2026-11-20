@@ -1,0 +1,26 @@
+---
+type: draft
+status: draft
+tags: [type/draft, litreview, section/7]
+links: ["[[landscape-taste-open-endedness]]", "[[four-taste-tests]]", "[[anti-collapse-anchor]]"]
+---
+
+# 7. Taste & open-endedness
+
+"Taste" has recently become a measurable object rather than a metaphor. Three papers define the measurement landscape, and together they draw the boundary this review cares about: a measured taste can be divergent, stable, and still not be the model's own.
+
+## 7.1 Measuring divergence and stability
+
+Trehan and Chopra operationalize research taste as pairwise choice: a model sees an author's actual future-work direction against a plausible alternative from a neighboring paper, in both orders ([[2026-trehan-eliciting-research-taste]]). The three-outcome split - author alignment, stable divergence (picks the non-author option in both orders), unstable choice (follows position) - separates content preference from position noise. Across 8 frontier models, stable divergence runs 15.0 to 36.2%, survives four prompt ablations (67 to 81% kept), and mostly cannot be explained by a similarity heuristic. This is the most direct published operationalization of the divergent and stable tests ([[four-taste-tests]]), and it ports to code readability almost unchanged: two passing solutions, one preferred by human raters, shown in both orders. Its limit for present purposes is that it is purely behavioral - no internal signal - and, crucially, divergences are partly shared across models (mean inter-model agreement 61.9%).
+
+## 7.2 Shared taste, not own taste
+
+Zatuchin supplies the cross-model control ([[2026-zatuchin-shared-taste-model-text]]). Re-analyzing generator-by-selector matrices (21,828 trials), the own-model premium - does a model prefer *its own* text over other models' text, after removing what every model likes - is +0.019 share points, p = 0.14, with 97% power to detect a 0.05 effect. Models strongly prefer model-written text over human text (GPT-4 descriptions chosen 77-95% by every selector vs 36% by humans), but the preference is one shared machine taste, not five personal ones. The statistic (the diagonal premium gamma with an exact permutation test) is the right instrument for the divergent test's ownership half: if a model's valence prefers code every model prefers, that is machine taste, not self-originated taste. In a self-training loop, a *growing* gamma over rounds is a direct measure of drift away from the shared origin.
+
+## 7.3 Taste as an open-ended driver
+
+Patel et al. build the closest working loop to the target architecture ([[2026-patel-interesting-mathematics]]). A computable interestingness score - expected proof length relative to statement description length - serves both as an RL reward and as a gate on which of the system's own theorems enter its premise library. Over 6 self-expanding rounds, mathlib overlap falls from 91.9% to 30.6% without collapse, interestingness promotion beats no-pruning, random and longest-proof baselines on blind judged quality, diversity and redundancy, and Lean verification keeps every step correct. The caveat is the one this review turns on: the taste is a fixed external formula plus a separately trained predictor. It never changes, so the loop shows a *fixed* taste can drive open-ended movement away from origin - not that a *self-scored* loop is safe, which Section 6's collapse results put in doubt. Its transferable parts are the promotion-gate ablation design and "library overlap" as a drift metric.
+
+## 7.4 Where taste measurement stands
+
+The field can now measure divergence, stability and ownership, and can run a fixed-taste open-ended loop. The missing combination is all four tests at once: a taste read from the model's own activations (not verbal choice), shown to diverge from humans *and* from the shared machine prior, sharpening under self-training behind an external anchor. A second caution is specific to the testbed: readability may be a convergent axis where diverging from expert judgment simply means being wrong, so the divergent test must be paired with the ownership statistic rather than read alone.

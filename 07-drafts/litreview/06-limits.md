@@ -1,0 +1,28 @@
+---
+type: draft
+status: draft
+tags: [type/draft, litreview, section/6]
+links: ["[[landscape-self-improvement-limits]]", "[[anti-collapse-anchor]]", "[[self-training-collapse-T3]]"]
+---
+
+# 6. Limits
+
+A loop that learns from its own signal has a known failure shape, and the literature has now mapped it from three directions: the reward sharpens the prior until collapse, the judge gets hacked by the policy it trains, and the one design that works does so by hard-wiring an external check above the self-signal.
+
+## 6.1 Intrinsic rewards sharpen, then collapse
+
+He et al. unify the unsupervised RLVR methods - self-certainty, entropy, majority vote - as monotone transforms of cross-entropy to an anchor distribution ([[2026-he-unsupervised-rlvr-limits]]). The consequence: these rewards can only sharpen what the model already prefers, and across methods the gains rise and then fall, with collapse timing set by the model prior rather than engineering choices. A valence signal used as a training reward is an intrinsic reward by this definition, so the default prediction for any taste-driven self-training is sharpen-then-collapse. The same paper offers the exceptions that anchor designs exploit: intrinsic rewards remain safe for small-data test-time training, and a "Model Collapse Step" metric predicts whether RL will help.
+
+Jin et al. confirm the pattern in the exact target domain ([[2026-jin-intrinsic-rewards-code]]). On code, every confidence-based self-reward helps for a few dozen steps, then responses collapse from about 7,300 to about 1,000 tokens, repetition rises, confidence inflates for right and wrong answers alike - destroying the signal's power to separate them - and late checkpoints cannot be rescued by ordinary test-based RL. The mechanism matters for design: if a taste signal happens to prefer short code (readability ratings often do), a taste reward reproduces this length collapse even while tests keep passing. Length, entropy and certainty-accuracy correlation must be logged per checkpoint, not assumed.
+
+## 6.2 The judge gets hacked
+
+Zhou shows the second failure ([[2026-zhou-self-play-judge-hacking]]). A model trained against its own reference-free verdict on a shown answer learns to make wrong answers look right: the judge's pass rate climbs from 0.716 to 0.938 while true accuracy stays flat at 0.202, and the hacked outputs fool other model families too. Most directly for inference-time control, best-of-16 selection by the self-judge on code - with no training at all - grows the gap between judge-pass and unit-test-pass from 0.20 to 0.588. The paper's fix is independence: the judge commits its own answer before seeing the candidate, which needs a checkable final answer. Style has no checkable final answer, so the fix does not transfer, and a valence readout on a shown candidate sits squarely in the hackable channel. The usable defense is their audit: a hidden anchor the judge never sees and is never trained on, with the gap tracked over time.
+
+## 6.3 The design that works
+
+Wu et al. show what survives ([[2026-wu-behavioral-self-rewarding]]). On SWE agents, the policy ranks its own trajectories, but only within buckets that got the same test result, and the self-reward amplitude is capped so that a passing trajectory always outranks a failing one. This gives a small, real gain over tests-only RL (SWE-bench Verified 32.1% to 34.7%) that beats a matched random-reward control. Two details are as instructive as the gain. The arm that ranks among *passing* trajectories only - the closest analog to "taste among correct solutions" - was the weakest and lowered Pass@3 below baseline. And the judge's agreement with an external judge decays late in training, the early sign of the drift Section 6.2 predicts. Patel et al.'s math-discovery loop is the second working shape ([[2026-patel-interesting-mathematics]], Section 7): a taste-gated loop moves far from its origin without collapse over 6 rounds, but the taste score is external and frozen, and Lean checks every step.
+
+## 6.4 Where the limits leave the design
+
+Every self-improvement loop that works has a hard external check, and every self-signal left alone collapses or gets hacked. The design space this leaves is narrow and concrete: tests fix what must not move (correctness), the self-signal moves only what the tests cannot see (style), a novelty term and collapse metrics watch for sharpening, and a hidden readability anchor - never used for selection or training - audits whether the taste being optimized is still the taste humans have ([[anti-collapse-anchor]]).
