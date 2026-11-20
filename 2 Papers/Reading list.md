@@ -50,15 +50,15 @@ Earlier priority:
 - [ ] Steer2Edit — 2602.09870 (Q5 prior art: steering vector to sparse rank-one edits) → [[Steer2Edit - steering into small weight edits (Sun 2026)]]
 
 ## Background (when relevant)
-- [ ] Utility Engineering (Mazeika) — 2502.08640
+- [x] Utility Engineering (Mazeika) — 2502.08640 → [[Model values form coherent utilities that can be steered (Mazeika 2025)]]
 - [x] OMNI interestingness — 2306.01711 → [[OMNI - models judge which tasks are interesting (Zhang 2023)]]
 - [ ] Learning to Reason w/o External Rewards (INTUITOR) — 2505.19590
 - [ ] Modern Self-Referential Weight Matrix (Irie) — ICML 2022 · arXiv 2202.05780, verified 2026-11-20 → [[SRWM - a weight matrix that rewrites itself (Irie 2022)]]
 - [ ] Nested Learning / Hope (Google) — NeurIPS 2025 · arXiv 2512.24695, verified 2026-11-20 → [[Nested Learning - a model that learns its own update rule (Behrouz 2025)]]
 - [x] Model collapse (Shumailov) — Nature 2024 → [[Training on own outputs erases rare data (Shumailov 2024)]]
-- [ ] Alignment faking (Greenblatt) — 2412.14093
+- [x] Alignment faking (Greenblatt) — 2412.14093 → [[Models fake alignment when training threatens them (Greenblatt 2024)]]
 - [ ] AI Can Learn Scientific Taste — 2603.14473 · IdeaTaste — 2611.03424
-- [ ] Rényi crossings under self-training — 2611.08892
+- [x] Rényi crossings under self-training — 2611.08892 → [[Rényi crossings track richness loss in self-training (Srivastava 2026)]]
 - [ ] Self-evolving agents survey (Gao et al., TMLR 2026) — 2507.21046
 
 ## Search of 2026-11-20 (scored from the abstract only, 0 to 3)
