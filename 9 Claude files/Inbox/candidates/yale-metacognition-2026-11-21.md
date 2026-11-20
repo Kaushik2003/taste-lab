@@ -188,7 +188,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Fine-Tuning Language Models to Know What They Know** — Park et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2602.02605)
 - [ ] **Pangu Embedded: An Efficient Dual-System LLM Reasoner with Metacognition** — Chen et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2505.22375)
 - [ ] **Toward Autonomy: Metacognitive Learning for Enhanced AI Performance** — Conway-Smith and West · AAAI Symposium Series 2024 · [paper](https://doi.org/10.1609/aaaiss.v3i1.31270)
-- [ ] **Meta-R1: Empowering Large Reasoning Models with Metacognition** — Dong et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2508.17291)
+- [x] **Meta-R1: Empowering Large Reasoning Models with Metacognition** — Dong et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2508.17291) → [[An explicit meta-level makes reasoning controllable (Dong 2025)]]
 - [ ] **Towards Interpretable and Consistent Multi-Step Mathematical Reasoning in Large Language Models** — Huang et al. · AIIM 2025 · [paper](https://doi.org/10.1109/AIIM67611.2025.11232978)
 - [ ] **Thinking About Thinking: SAGE-nano's Inverse Reasoning for Self-Aware Language Models** — Jha et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2507.00092)
 - [ ] **Adapting Like Humans: A Metacognitive Agent with Test-Time Reasoning** — Li et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2511.23262)
@@ -206,12 +206,12 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Towards Understanding Metacognition in Large Reasoning Models** — Li et al. · OpenReview 2026 · [paper](https://openreview.net/pdf?id=JGG9EdHyZc)
 - [ ] **Teaching Large Reasoning Models Effective Reflection** — Wang et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.12720)
 - [ ] **When Is Thinking Enough? Early Exit via Sufficiency Assessment for Efficient Reasoning** — Xiang et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2604.06787)
-- [ ] **EpiCaR: Knowing What You Don't Know Matters for Better Reasoning in LLMs** — Yeom et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.06786)
+- [x] **EpiCaR: Knowing What You Don't Know Matters for Better Reasoning in LLMs** — Yeom et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.06786) → [[Train reasoning and calibration together or lose both (Yeom 2026)]]
 - [ ] **ROI-Reasoning: Rational Optimization for Inference via Pre-Computation Meta-Cognition** — Zhao et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.03822)
-- [ ] **Metacognitive Reuse: Turning Recurring LLM Reasoning Into Concise Behaviors** — Didolkar et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2509.13237)
-- [ ] **From 'Aha Moments' to Controllable Thinking: Toward Meta-Cognitive Reasoning in Large Reasoning Models via Decoupled Reasoning and Control** — Ha et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2508.04460)
+- [x] **Metacognitive Reuse: Turning Recurring LLM Reasoning Into Concise Behaviors** — Didolkar et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2509.13237) → [[Reusable behaviors distilled from own traces (Didolkar 2025)]]
+- [x] **From 'Aha Moments' to Controllable Thinking: Toward Meta-Cognitive Reasoning in Large Reasoning Models via Decoupled Reasoning and Control** — Ha et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2508.04460) → [[Decoupled reasoning and control beats entangled thinking (Ha 2025)]]
 - [ ] **Meta-Awareness Enhances Reasoning Models: Self-Alignment Reinforcement Learning** — Kim et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2510.03259)
-- [ ] **CoRE: Enhancing Metacognition with Label-Free Self-Evaluation in LRMs** — Li et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2507.06087)
+- [x] **CoRE: Enhancing Metacognition with Label-Free Self-Evaluation in LRMs** — Li et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2507.06087) → [[Hidden-state geometry flags redundant reasoning (Li 2025)]]
 - [ ] **Dynamic Cognitive Orchestration: Eliciting Metacognitive Planning in Large Language Models** — Shakoo and Sameti · OpenReview 2025 · [paper](https://openreview.net/forum?id=1GoQe3r0Lv)
 - [ ] **Cog-Rethinker: Hierarchical Metacognitive Reinforcement Learning for LLM Reasoning** — Sun et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2510.15979)
 - [ ] **Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models** — Yang et al. · NeurIPS 2024 · [paper](https://proceedings.neurips.cc/paper_files/paper/2024/file/cde328b7bf6358f5ebb91fe9c539745e-Paper-Conference.pdf)
@@ -224,11 +224,11 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Deep Reasoning in General Purpose Agents via Structured Meta-Cognition** — Light et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2605.11388)
 - [ ] **RefRea: Reference-Guided Reasoning with Meta-Cognition for Accurate Language Model Agents** — Mai et al. · AAAI 2026 · [paper](https://doi.org/10.1609/aaai.v40i38.40522)
 - [ ] **Deep Search with Hierarchical Meta-Cognitive Monitoring Inspired by Cognitive Neuroscience** — Sun et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.23188)
-- [ ] **Metacognition for Unknown Situations and Environments (MUSE)** — Valiente and Pilly · Neural Networks 2026 · [paper](https://doi.org/10.1016/j.neunet.2025.108131)
-- [ ] **ReMA: Learning to Meta-Think for LLMs with Multi-Agent Reinforcement Learning** — Wan et al. · NeurIPS 2026 · [paper](https://proceedings.neurips.cc/paper_files/paper/2025/file/b83514e453ff03741a5fb3e5e49f709b-Paper-Conference.pdf)
+- [x] **Metacognition for Unknown Situations and Environments (MUSE)** — Valiente and Pilly · Neural Networks 2026 · [paper](https://doi.org/10.1016/j.neunet.2025.108131) → [[MUSE - a world model that predicts its own failure (Valiente 2024)]]
+- [x] **ReMA: Learning to Meta-Think for LLMs with Multi-Agent Reinforcement Learning** — Wan et al. · NeurIPS 2026 · [paper](https://proceedings.neurips.cc/paper_files/paper/2025/file/b83514e453ff03741a5fb3e5e49f709b-Paper-Conference.pdf) → [[Two agents learn to think about thinking (Wan 2025)]]
 - [ ] **Adaptive Collaboration with Humans: Metacognitive Policy Optimization for Multi-Agent LLMs with Continual Learning** — Yang et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2603.07972)
 - [ ] **MetaMind: Modeling Human Social Thoughts with Metacognitive Multi-Agent Systems** — Zhang et al. · NeurIPS 2026 · [paper](https://proceedings.neurips.cc/paper_files/paper/2025/file/257be12f31dfa7cc158dda99822c6fd1-Paper-Conference.pdf)
-- [ ] **MAGELLAN: Metacognitive Predictions of Learning Progress Guide Autotelic LLM Agents in Large Goal Spaces** — Gaven et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2502.07709)
+- [x] **MAGELLAN: Metacognitive Predictions of Learning Progress Guide Autotelic LLM Agents in Large Goal Spaces** — Gaven et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2502.07709) → [[MAGELLAN - an agent predicts its own learning progress (Gaven 2025)]]
 - [ ] **Metacognitive Self-Correction for Multi-Agent System via Prototype-Guided Next-Execution Reconstruction** — Shen et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2510.14319)
 - [ ] **RoboData: Toward Trustable Question Answering over Ontologies Through Metacognitive Agentic Epistemology** — Musumeci et al. · Wikidata Workshop (ISWC) 2025 · [paper](https://wikidataworkshop.github.io/2025/papers/paper10.pdf)
 - [ ] **Meta-Thinking in LLMs via Multi-Agent Reinforcement Learning: A Survey** — Bilal et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2504.14520)
@@ -286,7 +286,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Thinking About Thinking: Metacognitive Influence Tracing for Reliable LLM Reasoning** — Cui et al. · OpenReview 2025 · [paper](https://openreview.net/pdf?id=aJShPeHb5z)
 - [ ] **Meta-of-Thought: Reasoning About Reasoning in Large Language Models** — Haque · Authorea Preprints 2025 · [paper](https://doi.org/10.36227/techrxiv.175756693.33854887/v1)
 - [ ] **Towards Interpretable and Consistent Multi-Step Mathematical Reasoning in Large Language Models** — Huang et al. · AIIM 2025 · [paper](https://doi.org/10.1109/AIIM67611.2025.11232978)
-- [ ] **Language Models Coupled with Metacognition Can Outperform Reasoning Models** — Khandelwal et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2508.17959)
+- [x] **Language Models Coupled with Metacognition Can Outperform Reasoning Models** — Khandelwal et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2508.17959) → [[A metacognitive coach lets a fast model beat a reasoner (Khandelwal 2025)]]
 - [ ] **ReflectEvo: Improving Meta Introspection of Small LLMs by Learning Self-Reflection** — Li et al. · ACL Findings 2025 · [paper](https://aclanthology.org/2025.findings-acl.871/)
 - [ ] **Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction** — Liu et al. · NAACL 2025 · [paper](https://aclanthology.org/2025.naacl-long.502/)
 - [ ] **Before You \<think\>, Monitor: Implementing Flavell's Metacognitive Framework in LLMs** — Oh · arXiv 2025 · [paper](https://arxiv.org/pdf/2510.16374)

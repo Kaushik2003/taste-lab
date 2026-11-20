@@ -27,11 +27,14 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Wenda Xu, Guanglei Zhu, Xuandong Zhao, Liangming Pan, Lei Li, William Yang Wang (2024). *Pride and Prejudice: LLM Amplifies Self-Bias in Self-Refinement*. ACL 2024. https://arxiv.org/abs/2402.11436
 - Yuxiao Qu, Tianjun Zhang, Naman Garg, Aviral Kumar (2024). *Recursive Introspection: Teaching Language Model Agents How to Self-Improve (RISE)*. ICML 2024 Workshop. https://arxiv.org/abs/2407.18219
 - Ali Behrouz, Meisam Razaviyayn, Peilin Zhong, Vahab Mirrokni (2025). *Nested Learning: The Illusion of Deep Learning Architectures*. NeurIPS 2025. https://arxiv.org/abs/2512.24695
+- Aniket Didolkar, Nicolas Ballas, Sanjeev Arora, Anirudh Goyal (2025). *Metacognitive Reuse: Turning Recurring LLM Reasoning Into Concise Behaviors*. arXiv preprint. https://arxiv.org/abs/2509.13237
 - Anqi Zhang, Yulin Chen, Jane Pan, Chen Zhao, Aurojit Panda, Jinyang Li, He He (NYU, NYU Shanghai) (2025). *Reasoning Models Know When They're Right: Probing Hidden States for Self-Verification*. preprint (COLM 2025 [unverified]). https://arxiv.org/abs/2504.05419
 - Casey O. Barkan, Sid Black, Oliver Sourbut (2025). *Do Large Language Models Know What They Are Capable Of?*. arXiv preprint. https://arxiv.org/abs/2512.24661
 - Christopher Ackerman (2025). *Evidence for Limited Metacognition in LLMs*. arXiv preprint. https://arxiv.org/abs/2509.21545
 - Chung-En Sun, Ge Yan, Tsui-Wei Weng (2025). *ThinkEdit: Interpretable Weight Editing to Mitigate Overly Short Thinking in Reasoning Models*. EMNLP 2025. https://arxiv.org/abs/2503.22048
 - Dillon Plunkett, Adam Morris, Keerthi Reddy, Jorge Morales (2025). *Self-Interpretability: LLMs Can Describe Complex Internal Processes that Drive Their Decisions*. preprint (v2 10 Nov 2025). https://arxiv.org/abs/2505.17120
+- Haonan Dong, Haoran Ye, Wenhao Zhu, Kehan Jiang, Guojie Song (2025). *Meta-R1: Empowering Large Reasoning Models with Metacognition*. arXiv preprint. https://arxiv.org/abs/2508.17291
+- Haoxi Li, Sikai Bai, Jie Zhang, Song Guo (2025). *CoRE: Enhancing Metacognition with Label-free Self-evaluation in LRMs*. arXiv preprint. https://arxiv.org/abs/2507.06087
 - Huan-ang Gao, Jiayi Geng, Wenyue Hua, Mengkang Hu, Xinzhe Juan, Hongzhang Liu, Shilong Liu, Jiahao Qiu, Xuan Qi, Yiran Wu, Hongru Wang, Han Xiao, Yuhang Zhou et al. (2025). *A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve*. arXiv preprint (survey). https://arxiv.org/abs/2507.21046
 - Iulia M. Comsa, Murray Shanahan (2025). *Does It Make Sense to Speak of Introspection in Large Language Models?*. arXiv preprint. https://arxiv.org/abs/2506.05068
 - Jack Lindsey (2025). *Emergent Introspective Awareness in Large Language Models*. Transformer Circuits Thread (Anthropic), 2025-10-29; arXiv 2601.01828, 2026-01-05. https://transformer-circuits.pub/2025/introspection/index.html
@@ -45,12 +48,15 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Maxime Griot, Coralie Hemptinne, Jean Vanderdonckt, Demet Yuksel (2025). *Large Language Models Lack Essential Metacognition for Reliable Medical Reasoning*. Nature Communications. https://doi.org/10.1038/s41467-024-55628-6
 - Pradyumna Shyama Prasad, Minh Nhat Nguyen (2025). *When Two LLMs Debate, Both Think They'll Win*. arXiv preprint. https://arxiv.org/abs/2505.19184
 - Roy Eisenstadt, Itamar Zimerman, Lior Wolf (2025). *Overclocking LLM Reasoning: Monitoring and Controlling Thinking Path Lengths in LLMs*. arXiv preprint. https://arxiv.org/abs/2506.07240
+- Rui Ha, Rui Pu, Chaozhuo Li, Li Sun, Sen Su (2025). *From Aha Moments to Controllable Thinking: Toward Meta-Cognitive Reasoning in Large Reasoning Models via Decoupled Reasoning and Control*. arXiv preprint. https://arxiv.org/abs/2508.04460
 - Runjin Chen, Andy Arditi, Henry Sleight, Owain Evans, Jack Lindsey (2025). *Persona Vectors: Monitoring and Controlling Character Traits in Language Models*. arXiv preprint. https://arxiv.org/abs/2507.21509
 - Stefan Szeider (2025). *What Do LLM Agents Do When Left Alone? Evidence of Spontaneous Meta-Cognitive Patterns*. arXiv preprint. https://arxiv.org/abs/2509.21224
 - Tennison Liu, Mihaela van der Schaar (2025). *Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning*. preprint (position paper). https://arxiv.org/abs/2506.05109
 - Thea Aviss (2025). *State Stream Transformer (SST): Emergent Metacognitive Behaviours Through Latent State Persistence*. arXiv preprint. https://arxiv.org/abs/2501.18356
+- Vedant Khandelwal, Francesca Rossi, Keerthiram Murugesan, Erik Miehling, Murray Campbell (2025). *Language Models Coupled with Metacognition Can Outperform Reasoning Models*. arXiv preprint. https://arxiv.org/abs/2508.17959
 - Xiaojian Li, Haoyuan Shi, Rongwu Xu, Wei Xu (2025). *AI Awareness*. arXiv preprint (review). https://arxiv.org/abs/2504.20084
 - Xuandong Zhao, Zhewei Kang, Aosong Feng, Sergey Levine, Dawn Song (2025). *Learning to Reason without External Rewards (INTUITOR)*. arXiv preprint. https://arxiv.org/abs/2505.19590
+- Ziyu Wan, Yunxiang Li, Xiaoyu Wen, Yan Song, Hanjing Wang (2025). *ReMA: Learning to Meta-think for LLMs with Multi-Agent Reinforcement Learning*. NeurIPS 2025. https://arxiv.org/abs/2503.09501
 - Zweiger, Pari, Guo, Akyürek, Kim, Agrawal (MIT) (2025). *SEAL: Self-Adapting Language Models*. NeurIPS 2025. https://arxiv.org/abs/2506.10943
 - Aayush Marasini, Barsat Khadka, Nick Rahimi (2026). *WeightBench: Evaluating Language Models as Weight-Space Programmers*. arXiv preprint. https://arxiv.org/abs/2611.18553
 - Alex Lin Wang, Linus Yifeng Tang, Dami Choi, Neil Chowdhury (2026). *Training Language Models for Introspective Oversight*. arXiv preprint. https://arxiv.org/abs/2611.23365
@@ -75,6 +81,7 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - He, Gao, Zhang, Yuan, Zhou, Liu, Ding (Tsinghua) (2026). *How Far Can Unsupervised RLVR Scale LLM Training?*. ICLR 2026. https://arxiv.org/abs/2603.08660
 - Huifan Gao, Liuhua He, Yinghui Pan, Shenbao Yu, Yifeng Zeng, Shengchao Qin, Weidi Sun (2026). *Towards the Readability of LLM-Generated Codes through Multitask Representation Engineering*. preprint (cs.SE). https://arxiv.org/abs/2606.06214
 - Jason Liang, Dylan Waldner, Risto Miikkulainen (2026). *Values Shape What Self-Improving Coding Agents Build*. arXiv preprint. https://arxiv.org/abs/2611.23067
+- Jewon Yeom, Jaewon Sok, Seonghyeon Park, Jeongjae Park, Taesup Kim (2026). *EpiCaR: Knowing What You Don't Know Matters for Better Reasoning in LLMs*. arXiv preprint. https://arxiv.org/abs/2601.06786
 - Jiajun Fan, Neil He, Changyi Yang, Andy Mao, Xi Zhu, Chaoran Cheng, Kaiqu Liang, Shuaike Shen, Zetian Li, Ruihan Guo, Ge Liu (2026). *Language Models Can Rewrite Their Own Weights*. arXiv preprint. https://arxiv.org/abs/2611.21885
 - Jingqi Tong, Mingzhe Li, Hangcheng Li, Yongzhuo Yang, Yurong Mou, Weijie Ma, Hongji Chen, Xiaoran Liu, Qinyuan Cheng, Ming Zhang, Qiguang Chen, Weifeng Ge, Qipeng Guo et al. (2026). *AI Can Learn Scientific Taste*. arXiv preprint. https://arxiv.org/abs/2603.14473
 - Jon-Paul Cacioli (2026). *The Metacognitive Monitoring Battery: A Cross-Domain Benchmark for LLM Self-Monitoring*. arXiv preprint. https://arxiv.org/abs/2604.15702
