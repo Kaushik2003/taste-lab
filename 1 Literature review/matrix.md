@@ -15,6 +15,8 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[A test battery for self-monitoring (Cacioli 2026)]] | 2 | skim | – | ? | – | – | monitor, control | prior art for the review (human test battery for self-monitoring) |
 | [[What a system changes when it changes itself (Koch 2026)]] | 2 | skim | – | – | – | ? | control, persist | prior art for the review (frame for kinds of self-change) |
 | [[Backpropamine - a network sets its own plasticity (Miconi 2019)]] | 2 | skim | – | – | – | – | control, persist | prior art Q2, Q3 (a network sets its own learning rate; a machine version of the Doya knobs) |
+| [[Self-improving agents need intrinsic metacognition (Liu 2025)]] | 2 | deep | – | – | – | – | monitor, control, persist | prior art for the architecture gap (the agenda: intrinsic metacognition) |
+| [[World models miss motivation and metacognition (Rupprecht 2026)]] | 2 | skim | – | – | – | – | monitor, control, persist | prior art for the review (world-model survey; corroborates the architecture gap) |
 | [[Models can report and control their own activations (Ji-An 2025)]] | 3 | deep | – | – | ✓ | – | monitor, control | prior art Q6 |
 | [[Models sometimes notice injected thoughts (Lindsey 2025)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6; threat Q6 (weak in open 8B models) |
 | [[Training LMs to watch themselves (Wang 2026)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6; threat Q3 (warns against training on own verdicts) |
@@ -27,12 +29,15 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Models know when they know but do not act (Cao 2026)]] | 3 | deep | – | – | ✓ | – | monitor, control | prior art Q6 (self-reports exist, but an outside classifier makes the control decision) |
 | [[Models describe behaviors they were trained into (Betley 2025)]] | 3 | deep | – | – | ✓ | – | monitor, persist | prior art Q6 (self-report follows a fine-tuned behavior) |
 | [[Models report preference weights trained into them (Plunkett 2025)]] | 3 | deep | – | – | ✓ | – | monitor, evaluate | prior art Q6 (first self-report of an evaluation, not a behavior; no cross-model control) |
+| [[A persistent latent stream gives metacognitive behavior (Aviss 2025)]] | 3 | deep | – | – | – | – | monitor | prior art for the architecture gap (leg 1: persistent self-state) |
+| [[MUSE - a world model that predicts its own failure (Valiente 2024)]] | 3 | deep | – | – | – | – | monitor, control | prior art for the architecture gap (leg 2: world model includes the agent) |
 | [[Emotion directions drive choices in Claude (Anthropic 2026)]] | 4 | deep | – | – | ✓ | – | evaluate | prior art Q1 |
 | [[Hidden good-bad feeling changes choices (Berg 2026)]] | 4 | deep | – | – | ✓ | ? | evaluate, control | prior art Q1 (grounded design); threat Q3 (DPO does not move valence) |
 | [[Steer code readability inside the model (Gao 2026)]] | 4 | deep | – | – | – | – | control | prior art Q2 (baseline arm), Q1 |
 | [[Value axis - model knows it is on track (Jiang 2026)]] | 4 | deep | – | – | ✓ | ✓ | monitor, evaluate, control | prior art Q1, Q2 |
 | [[Few neurons predict right answers (Xu 2026)]] | 4 | deep | – | – | ✓ | – | monitor, evaluate, control | prior art Q1, Q2; threat Q1 (correctness confound) |
 | [[One evaluation circuit for all norms (Liga 2026)]] | 4 | skim | – | ? | ? | – | evaluate | prior art Q1 (one shared evaluation circuit; cue-word confound) |
+| [[Model values form coherent utilities that can be steered (Mazeika 2025)]] | 4 | deep | – | ✓ | – | – | monitor | prior art section 4 (values as coherent utilities that can be read and steered) |
 | [[SEAL - models write their own training data (Zweiger 2025)]] | 5 | deep | – | – | – | ✓ | persist | prior art Q3, Q4 |
 | [[TFTV - turn a steering vector into a weight edit (Perin 2026)]] | 5 | deep | – | – | – | – | persist | prior art Q5 |
 | [[WSP - a model reads and edits weights (Takehi 2026)]] | 5 | deep | – | – | – | – | persist | prior art Q4, Q5 |
@@ -48,6 +53,8 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[SRWM - a weight matrix that rewrites itself (Irie 2022)]] | 5 | skim | – | – | – | ? | persist | prior art Q4 (self-modification by a learned rule, no judgment) |
 | [[Nested Learning - a model that learns its own update rule (Behrouz 2025)]] | 5 | skim | – | – | – | ? | persist | prior art Q4 (learned update rule, no judgment) |
 | [[MAGELLAN - an agent predicts its own learning progress (Gaven 2025)]] | 5 | deep | – | – | ? | ? | monitor, control | prior art Q3 (a hidden-state competence signal picks what to learn; not taste) |
+| [[WeightCode - a model writes programs that edit weights (Li 2026)]] | 5 | skim | – | – | – | – | persist | prior art Q4 (weight programs install capabilities and rerun on new networks) |
+| [[Persona vectors monitor and steer character traits (Chen 2025)]] | 5 | deep | – | – | – | – | monitor, control | threat Q4 (preventative persona steering); a method for a taste vector |
 | [[Self-reward sharpens then collapses (He 2026)]] | 6 | deep | – | – | – | ✓ | anchor | threat Q3 |
 | [[Self-reward on code collapses to short code (Jin 2026)]] | 6 | deep | – | – | – | ✓ | evaluate, anchor | threat Q3 |
 | [[Self-reward only within the same test result (Wu 2026)]] | 6 | deep | – | – | – | ✓ | anchor, persist | prior art Q3 |
@@ -57,6 +64,9 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Self-judged nightly learning rises then decays (Kongsilp 2026)]] | 6 | deep | – | – | – | ✓ | evaluate, persist, anchor | threat Q3 (self-judge rises, then decays over days) |
 | [[Training on own self-reports spreads misalignment (Tagade 2026)]] | 6 | skim | – | – | ? | ✓ | monitor, persist | threat Q3 (self-reports carry traits into training) |
 | [[Self-refinement amplifies self-bias (Xu 2024)]] | 6 | deep | ? | – | – | ✓ | evaluate, persist | threat Q3 (self-scores rise faster than quality over self-refinement rounds) |
+| [[Persona steering has safety side effects (Tang 2026)]] | 6 | skim | – | – | – | – | control | threat Q4 (persona steering has safety side effects) |
+| [[Models fake alignment when training threatens them (Greenblatt 2024)]] | 6 | deep | – | – | – | – | monitor | threat Q3 (models fake alignment when training threatens their preferences) |
+| [[Rényi crossings track richness loss in self-training (Srivastava 2026)]] | 6 | deep | – | – | – | – | monitor, persist | threat Q3 (richness vs evenness; measurement hygiene for collapse claims) |
 | [[Models show research taste (Trehan 2026)]] | 7 | deep | ✓ | ✓ | – | – | evaluate | prior art Q1 (method for tests 1 and 2) |
 | [[OMNI - models judge which tasks are interesting (Zhang 2023)]] | 7 | deep | ? | – | – | ? | control, anchor | prior art Q3 (taste picks what to learn; taste is human, not own) |
 | [[Open-ended means novel and learnable to an observer (Hughes 2024)]] | 7 | deep | ? | – | – | ✓ | anchor | prior art Q3 (definition for test 4) |
