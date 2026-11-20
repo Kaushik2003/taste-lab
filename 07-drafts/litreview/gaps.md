@@ -28,4 +28,4 @@ Output of a `/gaps` pass over the vault: 27 paper notes, 11 concept notes, 5 thr
 - Stable test: one paper, behavioral only, 80 pairs, one model family deep. Needs an internal-signal replication and more samples per order.
 - Section 2 foundations now have notes ([[1990-nelson-metamemory]], [[2002-doya-metalearning-neuromodulation]], [[2017-fleming-self-evaluation]]); details flagged [unverified] need PDF verification.
 - Reading queue "Next" holds ~10 papers not yet ingested (introspective oversight, GUARD, WeightBench, persona vectors, INTUITOR). Several likely move threat counts in the matrix.
-- The two 2026 surveys ("Metacognition in LLMs" arXiv:2607.11881, unified world models arXiv:2604.16592) are not yet ingested; they define the review's citation baseline for sections 1-2 and the world-model side of G5.
+- The two 2026 surveys are ingested: [[2026-liu-metacognition-survey]] (citation backbone for sections 1-2; its GitHub paper list doubles as a loop backfill source) and [[2026-rupprecht-world-models-survey]] (20-author CAT survey concluding motivation + metacognition are the under-researched world-model functions - independent corroboration of G5).
