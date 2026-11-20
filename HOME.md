@@ -32,6 +32,7 @@ The angle:
 - **Metacognition:** can a model watch its own state and control it?
 - **Models that change their own weights:** weight-space programming (WSP) and self-edits (SEAL).
 - **Taste:** can a model have likes and dislikes of its own?
+- **World models:** a model's inner picture of the world and of itself. Added 20 November; where it fits is still open.
 
 Open these:
 - [[outline|The plan of the review]]: 9 sections and the papers in each one.
@@ -41,12 +42,13 @@ Open these:
 
 ## 2. Read this week
 
-Start with these 3 papers. Open the note first (it is short). Open the full paper only if you want more.
+Start with these 4 papers. Open the note first (it is short). Open the full paper only if you want more.
 Tick the box when you finish.
 
 - [ ] [[Survey of metacognition in language models (Liu 2026)|The 2026 survey of metacognition in language models]]: the review we must position against. It covers "watch" and "control", but never taste and never models that change their own weights. Those two parts are our space.
 - [ ] [[Training LMs to watch themselves (Wang 2026)|A model trained to watch itself]]: the strongest new evidence that a model reads its own behavior better than other models do. It is about behavior, not inner states.
 - [ ] [[WeightBench - models cannot yet patch models (Marasini 2026)|WeightBench]]: strong models cannot yet fix language models by editing weights, and cannot tell an impossible edit from a hard one. This joins our two topics.
+- [ ] [[A model rewrites its own weights (Fan 2026)|A model rewrites its own weights]] (new today): a 27B model edits its own weights after it reads its own hidden states. Graded answers still decide which edits to keep. This changed section 5 and the first gap.
 
 Still open from last week (read if you have time):
 - [ ] [[Models can report and control their own activations (Ji-An 2025)|Models report and control their own activations]]

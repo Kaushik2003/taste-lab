@@ -1,7 +1,7 @@
 ---
 type: paper
 title: "Self-Evaluation of Decision-Making: A General Bayesian Framework for Metacognitive Computation"
-status: read
+status: skimmed
 arxiv:
 url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5178868/
 doi: 10.1037/rev0000045
@@ -13,7 +13,7 @@ section: 2
 tier: deep
 tests: [grounded]
 components: [monitoring]
-tags: [type/paper, section/2, test/grounded, component/monitoring, status/read, relevance/3, role/prior-art, metacognition, confidence, error-detection, bayesian, foundations, cognitive-science]
+tags: [type/paper, section/2, test/grounded, component/monitoring, status/skimmed, relevance/3, role/prior-art, metacognition, confidence, error-detection, bayesian, foundations, cognitive-science]
 links: ["[[Metacognition - watch and control yourself]]", "[[Field map - Models read their own state]]", "[[Monitoring and control between two levels (Nelson 1990)]]", "[[Models mostly know what they know (Kadavath 2022)]]", "[[Trained confidence tracks consistency, not accuracy (Yax 2026)]]", "[[Four tests for own taste]]"]
 ---
 

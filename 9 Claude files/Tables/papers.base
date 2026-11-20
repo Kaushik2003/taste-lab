@@ -18,6 +18,7 @@ views:
     filters:
       and:
         - status != "read"
+        - "!this.file.hasLink(file)"
     order:
       - file.name
       - title
@@ -28,6 +29,8 @@ views:
       - property: section
         direction: ASC
     limit: 5
+    columnSize:
+      file.name: 356
   - type: table
     name: Warnings (papers against our idea)
     filters:
@@ -37,6 +40,8 @@ views:
       - file.name
       - title
       - year
+    columnSize:
+      file.name: 401
   - type: table
     name: All papers
     order:

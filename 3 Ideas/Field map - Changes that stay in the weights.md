@@ -32,7 +32,7 @@ Steering to weights: [[TFTV - turn a steering vector into a weight edit (Perin 2
 Search-based repair: [Tree-Ising](https://arxiv.org/abs/2611.14210) gets Qwen3.5-0.8B to 55.1% on MATH-500 (base 7.9%, WSP agent 51.7%).
 
 ## Biggest open problem
-In every working method someone else picks the direction: experimenter prompts plus an external judge (TFTV, Steer2Edit, Arditi) or a frontier agent (WSP). No paper shows a model choosing the direction from its own evaluation signal and then writing it into its weights. Also missing: what fraction of a fixed steering gain a weight edit keeps at matched strength, and whether repeated edits stay stable ([Schessl 2026](https://arxiv.org/abs/2607.24805): stacked closed-form edits end 61 to 71% of the edit size away from one-shot composition).
+In most working methods someone else picks the direction: experimenter prompts plus an external judge (TFTV, Steer2Edit, Arditi) or a frontier agent (WSP). One 27B model now picks a direction from its own hidden states and writes it into its own weights, but graded answers decide which edits to keep ([[A model rewrites its own weights (Fan 2026)]]). No paper shows a model choosing the direction from its own evaluation signal and then writing it into its weights. Also missing: what fraction of a fixed steering gain a weight edit keeps at matched strength, and whether repeated edits stay stable ([Schessl 2026](https://arxiv.org/abs/2607.24805): stacked closed-form edits end 61 to 71% of the edit size away from one-shot composition).
 
 ## Leading groups
 - MIT CSAIL (Takehi, Khattab; Zweiger, Pari, Agrawal, Kim): [[WSP - a model reads and edits weights (Takehi 2026)]], [[SEAL - models write their own training data (Zweiger 2025)]].
@@ -56,3 +56,6 @@ In every working method someone else picks the direction: experimenter prompts p
 4. **skim** [Exploring WSP](https://arxiv.org/abs/2611.09382) · the "Math (Primary)" edit: one rank-one column edit with reversed-direction and random-direction controls, a ready control design for Q5.
 5. **skim** [Tree-Ising](https://arxiv.org/abs/2611.14210) · §3.2-3.3: directions from forward passes turned into a sparse edit, the recipe a model could run on itself (Q4).
 6. **skim** [Forgetting Is Not a Fix](https://arxiv.org/abs/2607.24805) · the four findings on stacked closed-form edits. Read before planning repeated self-edits (Q3, Q5).
+
+## Log
+- 2026-11-20: added self-rewriting ([[A model rewrites its own weights (Fan 2026)]]) to the open problem. The gap is now the judgment, not the choice of edit.

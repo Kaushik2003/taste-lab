@@ -1,8 +1,21 @@
 # Reading queue
 
 ## Priority (read this week)
+Scout of 2026-11-20 (score 3):
+- [ ] Section 5 · Language Models Can Rewrite Their Own Weights · arXiv 2611.21885 (changes a section 5 claim) → [[A model rewrites its own weights (Fan 2026)]]
+- [ ] Section 6 · Learning through Discernment (self-judged learning rises then decays) · arXiv 2611.23716 → [[Self-judged nightly learning rises then decays (Kongsilp 2026)]]
+- [ ] Section 3 · LLMs Know When They Know, but Do Not Act on It · arXiv 2605.14186 → [[Models know when they know but do not act (Cao 2026)]]
 - [ ] Q6 · Metacognitive Monitoring and Control of Internal Activations (Ji-An, NeurIPS 2025) · arXiv 2505.13763 → [[Models can report and control their own activations (Ji-An 2025)]]
 - [ ] Q6 · Emergent Introspective Awareness (Lindsey 2025) · arXiv 2601.01828 → [[Models sometimes notice injected thoughts (Lindsey 2025)]]
+Angle scout of 2026-11-20 (score 3, see `9 Claude files/Inbox/candidates/2026-11-20 angles.md`):
+- [ ] Section 7 · LLMs Contain Multitudes (task context moves preferences, Stable test threat) · arXiv 2606.13944 → [[Task context moves model preferences (Trhlik 2026)]]
+- [ ] Section 7 · Stick to your Role! (value stability across persona and chat length) · arXiv 2402.14846 → [[Model values drift with persona and long chats (Kovač 2024)]]
+- [ ] Section 3 · Self-Interpretability (models report trained preference weights) · arXiv 2505.17120 → [[Models report preference weights trained into them (Plunkett 2025)]]
+- [ ] Section 3 · Tell me about yourself (self-report after fine-tuning) · arXiv 2501.11120 → [[Models describe behaviors they were trained into (Betley 2025)]]
+- [ ] Section 5 · MAGELLAN (own hidden-state readout picks what to learn) · arXiv 2502.07709 → [[MAGELLAN - an agent predicts its own learning progress (Gaven 2025)]]
+- [ ] Section 7 · LLM Evaluators Recognize and Favor Their Own Generations · arXiv 2404.13076 → [[Models recognize and favor their own text (Panickssery 2024)]]
+- [ ] Section 7 · Self-Preference Bias in LLM-as-a-Judge (it is perplexity, threat) · arXiv 2410.21819 → [[Judges favor familiar text, not their own (Wataoka 2024)]]
+- [ ] Section 6 · Pride and Prejudice (self-refinement amplifies self-bias, threat) · arXiv 2402.11436 → [[Self-refinement amplifies self-bias (Xu 2024)]]
 Landscape must-reads, in cluster order (2026-11-19, see [[Gaps in the field]]):
 - [ ] C1 · Can LLMs Introspect? A Reality Check · arXiv 2605.26242 → [[Introspection claims fail basic checks (Singh 2026)]]
 - [ ] C1 · Reasoning Models Know When They're Right · arXiv 2504.05419 → [[Models know when they are right (Zhang 2025)]]
@@ -40,8 +53,8 @@ Earlier priority:
 - [ ] Utility Engineering (Mazeika) — 2502.08640
 - [x] OMNI interestingness — 2306.01711 → [[OMNI - models judge which tasks are interesting (Zhang 2023)]]
 - [ ] Learning to Reason w/o External Rewards (INTUITOR) — 2505.19590
-- [ ] Modern Self-Referential Weight Matrix (Irie) — ICML 2022
-- [ ] Nested Learning / Hope (Google) — NeurIPS 2025
+- [ ] Modern Self-Referential Weight Matrix (Irie) — ICML 2022 · arXiv 2202.05780, verified 2026-11-20 → [[SRWM - a weight matrix that rewrites itself (Irie 2022)]]
+- [ ] Nested Learning / Hope (Google) — NeurIPS 2025 · arXiv 2512.24695, verified 2026-11-20 → [[Nested Learning - a model that learns its own update rule (Behrouz 2025)]]
 - [x] Model collapse (Shumailov) — Nature 2024 → [[Training on own outputs erases rare data (Shumailov 2024)]]
 - [ ] Alignment faking (Greenblatt) — 2412.14093
 - [ ] AI Can Learn Scientific Taste — 2603.14473 · IdeaTaste — 2611.03424

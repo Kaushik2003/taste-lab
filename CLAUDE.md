@@ -9,6 +9,7 @@ We are **not** running experiments now. Do not plan experiments, raters, GPU run
 
 - **Angle:** metacognition in language models (a model watches and controls its own state), plus models that change
   their own weights (weight-space programming, WSP, and self-edits like SEAL), and model "taste".
+  **World models** were added to the scope on 2026-11-20. Where they fit in the outline is still a proposal.
 - **Claude's job:** find existing studies, write paper notes, find gaps and patterns, and help draft the review sections.
 - **The review lives in `1 Literature review/`:** `outline.md`, `matrix.md`, `gaps.md` and one file per section.
 - **The questions in `5 Research ideas (later)/`** are candidate ideas that the review may lead to. They are parked.

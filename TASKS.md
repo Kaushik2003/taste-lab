@@ -16,21 +16,13 @@ Our goal now: **write the literature review by 24 November 2026.** No experiment
 
 ## For you
 
-- [ ] **Check the plan of the review.**
-  Open [[outline]]. It has 9 sections and the papers in each one.
-  Check the sections, their order, and where each paper sits.
-  *Done when:* you tell Claude "outline is OK" or what to change.
-
-- [ ] **Say what is in and out of the review.**
-  The angle now: metacognition, models that change their own weights (WSP, SEAL), and model taste.
-  Tell Claude if a topic must be added or removed. Examples: "add uncertainty and calibration", "drop the maths papers".
-  *Done when:* you tell Claude the scope, or "scope is OK".
-
-- [ ] **Read the 3 new papers under "Read this week" on [[HOME]].**
-  The 2026 metacognition survey (Liu), the model trained to watch itself (Wang) and WeightBench (Marasini).
+- [ ] **Read the papers under "Read this week" on [[HOME]].**
+  First the 3 new ones: the 2026 metacognition survey (Liu), the model trained to watch itself (Wang) and WeightBench (Marasini).
+  Also the new one from today's scout: a model that rewrites its own weights (Fan 2026). It changed section 5 and gap 1.
+  Then, if you have time, the 2 left from last week: models that report their own activations (Ji-An) and the introspection checks (Singh).
   After each one, tell Claude your opinion in one or two sentences. Claude saves it in the paper note.
   You ticked the Value Axis paper: tell Claude your opinion of it too.
-  *Done when:* you tick them on HOME.
+  *Done when:* you tick the 4 new ones on HOME.
 
 - [ ] **Read the two section drafts and their open doubts.**
   Section 3 [[03-monitoring]] and section 5 [[05-persistent-control]] are first drafts, built from paper notes only.
@@ -38,9 +30,22 @@ Our goal now: **write the literature review by 24 November 2026.** No experiment
   *Done when:* you tell Claude "draft OK" or what to change, for each section.
 
 - [ ] **Decide if older self-modifying networks are in the review.**
-  Section 5 says no language model edits its own weights by reading them. But older networks learn to rewrite their own weights (Irie 2022, Nested Learning 2025).
-  If they are in scope, Claude writes notes for them and section 5 gets one more paragraph. If not, the review must say why.
+  Section 5 now cites one language model that edits its own weights (Fan 2026). Older networks also learn to rewrite their own weights (Irie 2022, Nested Learning 2025).
+  The notes now exist: Claude's search wrote them on 2026-11-20 before you decided ([[SRWM - a weight matrix that rewrites itself (Irie 2022)]], [[Nested Learning - a model that learns its own update rule (Behrouz 2025)]]). Both change themselves by a learned rule, with no judgment of good and bad.
+  If "in", section 5 gets one more paragraph. If "out", Claude removes the two notes and the review says why in one sentence.
   *Done when:* you say "in" or "out".
+
+- [ ] **Check the new main gap.**
+  Today's scout found a model that edits its own weights after it reads its own hidden states (Fan 2026).
+  So Claude changed gap 1: the gap is now "no model edits itself by its own judgment of good and bad". Section 5, the outline and the paper table now say this too.
+  Open [[gaps]] (first row) and section 5.2 in [[05-persistent-control]].
+  *Done when:* you tell Claude "new gap OK" or how to change it.
+
+- [ ] **Decide what the Stable test means.**
+  Two new papers show that a model's preferences move when the task context changes (37% of cases) or when it plays a persona. Rewording moves them much less (10%).
+  So "stable across context" may be too strict. The other choice: stable across wording only, and accept that fine-grained taste depends on context.
+  See the Stable row in [[gaps]] and [[Task context moves model preferences (Trhlik 2026)]].
+  *Done when:* you tell Claude "across context" or "across wording only".
 
 - [ ] **Pick the next sections to draft.**
   Due date is 24 November. Claude suggests section 2 "Foundations" (6 notes now) and section 6 "Limits" next, then 4 and 7.
@@ -48,7 +53,8 @@ Our goal now: **write the literature review by 24 November 2026.** No experiment
 
 ## For Claude
 
-- [ ] Write notes for Irie 2022 and Nested Learning (older self-modifying networks). *Waits for:* your "in or out" decision above.
+- [ ] Search for papers on world models and propose where they fit in the [[outline]]. World models were added to the scope on 2026-11-20. Two likely links: a self-model (the meta level's model of the object level), and a model that predicts the effect of a self-edit before it writes the edit. Then ask you to confirm the placement.
+- [ ] Add one paragraph on older self-modifying networks to section 5, or remove the Irie and Nested Learning notes. *Waits for:* your "in or out" decision above.
 - [ ] Draft the next sections. *Waits for:* your choice of order.
 - [ ] Add a safety check to the daily scout script before it runs every hour. *Waits for:* your "yes".
 
@@ -61,6 +67,9 @@ These were research tasks. They wait until the review is done.
 
 ## Done
 
+- [x] 2026-11-20: Claude searched 6 new angles and wrote 12 notes (8 at the top score). [[outline]], [[gaps]] and [[matrix]] are updated. Report: [[2026-11-20 angles]].
+- [x] 2026-11-20: You checked the [[outline]]: it is OK for now.
+- [x] 2026-11-20: You set the scope: metacognition, models that change their own weights, model taste, and now **world models** too.
 - [x] 2026-11-20: Claude ran a 5-round review loop:
   - notes for Rubin 2026, Fleming and Daw 2017 and Zeng 2026. Rubin changed a claim in section 3: the model answers at chance only early in training (89.6% at the released model);
   - every number in sections 3 and 5 checked against 26 sources, all correct ([[2026-11-20 number check]]); Steer2Edit Table 10 checked in the PDF;
