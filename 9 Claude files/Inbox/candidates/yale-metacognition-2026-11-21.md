@@ -96,12 +96,12 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 
 ## Neurofeedback-Based Methods
 
-- [ ] **Indications of Belief-Guided Agency and Meta-Cognitive Monitoring in Large Language Models** — Yalon et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2602.02467)
+- [x] **Indications of Belief-Guided Agency and Meta-Cognitive Monitoring in Large Language Models** — Yalon et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2602.02467) → [[Beliefs form in latent space and drive choices (Yalon 2026)]]
 
 ## Confidence-Based Methods
 
 - [ ] **Auditing Meta-Cognitive Hallucinations in Reasoning Large Language Models** — Lu et al. · NeurIPS 2026 · [paper](https://proceedings.neurips.cc/paper_files/paper/2025/file/ee0e336e2423430ef86071300299e074-Paper-Conference.pdf)
-- [ ] **Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens** — Ma et al. · EMNLP 2025 · [paper](https://aclanthology.org/2025.emnlp-main.171/)
+- [x] **Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens** — Ma et al. · EMNLP 2025 · [paper](https://aclanthology.org/2025.emnlp-main.171/) → [[Intrinsic metacognition needs a good lens (Ma 2025)]]
 
 ## Interpretability-Based Methods
 
@@ -110,11 +110,11 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 
 ## Task-Specific Methods
 
-- [ ] **Evidence for Limited Metacognition in LLMs** — Ackerman · arXiv 2025 · [paper](https://arxiv.org/pdf/2509.21545)
+- [x] **Evidence for Limited Metacognition in LLMs** — Ackerman · arXiv 2025 · [paper](https://arxiv.org/pdf/2509.21545) → [[Frontier models use their own confidence strategically (Ackerman 2025)]]
 - [ ] **Large Linguistic Models: Investigating LLMs' Metalinguistic Abilities** — Begus et al. · IEEE Transactions on Artificial Intelligence 2025 · [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11022724)
-- [ ] **Does It Make Sense to Speak of Introspection in Large Language Models?** — Comsa and Shanahan · arXiv 2025 · [paper](https://arxiv.org/pdf/2506.05068)
+- [x] **Does It Make Sense to Speak of Introspection in Large Language Models?** — Comsa and Shanahan · arXiv 2025 · [paper](https://arxiv.org/pdf/2506.05068) → [[Introspection needs a causal link to count (Comsa 2025)]]
 - [ ] **When Two LLMs Debate, Both Think They'll Win** — Prasad and Nguyen · arXiv 2025 · [paper](https://arxiv.org/pdf/2505.19184)
-- [ ] **Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving** — Didolkar et al. · NeurIPS 2024 · [paper](https://proceedings.neurips.cc/paper_files/paper/2024/file/2318d75a06437eaa257737a5cf3ab83c-Paper-Conference.pdf)
+- [x] **Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving** — Didolkar et al. · NeurIPS 2024 · [paper](https://proceedings.neurips.cc/paper_files/paper/2024/file/2318d75a06437eaa257737a5cf3ab83c-Paper-Conference.pdf) → [[Models name the skills a problem needs (Didolkar 2024)]]
 - [ ] **Beyond Traditional AI IQ Metrics: Metacognition and Benchmarking for LLMs, AGI, and ASI** — Uzwyshyn · ResearchGate 2024 · [paper](https://doi.org/10.13140/RG.2.2.36817.34400)
 
 ## Benchmarks
@@ -251,7 +251,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 
 - [ ] **Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs** — Liu et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2606.32032)
 - [ ] **MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs** — Liu et al. · EMNLP 2025 · [paper](https://aclanthology.org/2025.emnlp-main.1505/)
-- [ ] **Improving Metacognition and Uncertainty Communication in Language Models** — Steyvers et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2510.05126)
+- [x] **Improving Metacognition and Uncertainty Communication in Language Models** — Steyvers et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2510.05126) → [[Fine-tuned uncertainty reports transfer across domains (Steyvers 2025)]]
 
 ## Hallucination Reduction
 
@@ -267,7 +267,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Whether LLMs Know If They Know: Identifying Knowledge Boundaries via Debiased Historical In-Context Learning** — Lv et al. · ACL Findings 2025 · [paper](https://aclanthology.org/2025.findings-acl.999/)
 - [ ] **Physics-Informed Metacognition: Improving LLMs Self-Knowledge via Physical Constraints** — Roy and Roy · EurIPS Workshop on Metacognition in Generative AI 2025 · [paper](https://openreview.net/forum?id=LF4RSTZUtA)
 - [ ] **Do Large Language Models Know How Much They Know?** — Prato et al. · EMNLP 2024 · [paper](https://aclanthology.org/2024.emnlp-main.348/)
-- [ ] **Do Large Language Models Know What They Don't Know?** — Yin et al. · ACL Findings 2023 · [paper](https://aclanthology.org/2023.findings-acl.551.pdf)
+- [x] **Do Large Language Models Know What They Don't Know?** — Yin et al. · ACL Findings 2023 · [paper](https://aclanthology.org/2023.findings-acl.551.pdf) → [[Models partly know what they do not know (Yin 2023)]]
 
 ## Resistance to Persuasion
 

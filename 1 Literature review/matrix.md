@@ -18,6 +18,8 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Self-improving agents need intrinsic metacognition (Liu 2025)]] | 2 | deep | – | – | – | – | monitor, control, persist | prior art for the architecture gap (the agenda: intrinsic metacognition) |
 | [[World models miss motivation and metacognition (Rupprecht 2026)]] | 2 | skim | – | – | – | – | monitor, control, persist | prior art for the review (world-model survey; corroborates the architecture gap) |
 | [[A map of artificial metacognition (Shakarian 2026)]] | 2 | skim | – | – | – | – | monitor, control | prior art section 2 (classical metareasoning lineage) |
+| [[Models name the skills a problem needs (Didolkar 2024)]] | 2 | deep | – | – | – | – | monitor | prior art for the review (declarative metacognitive knowledge: naming own skills) |
+| [[Introspection needs a causal link to count (Comsa 2025)]] | 2 | deep | – | – | ✓ | – | monitor | prior art for the review (the causal-link criterion for introspection) |
 | [[Models can report and control their own activations (Ji-An 2025)]] | 3 | deep | – | – | ✓ | – | monitor, control | prior art Q6 |
 | [[Models sometimes notice injected thoughts (Lindsey 2025)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6; threat Q6 (weak in open 8B models) |
 | [[Training LMs to watch themselves (Wang 2026)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6; threat Q3 (warns against training on own verdicts) |
@@ -32,6 +34,11 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Models report preference weights trained into them (Plunkett 2025)]] | 3 | deep | – | – | ✓ | – | monitor, evaluate | prior art Q6 (first self-report of an evaluation, not a behavior; no cross-model control) |
 | [[A persistent latent stream gives metacognitive behavior (Aviss 2025)]] | 3 | deep | – | – | – | – | monitor | prior art for the architecture gap (leg 1: persistent self-state) |
 | [[MUSE - a world model that predicts its own failure (Valiente 2024)]] | 3 | deep | – | – | – | – | monitor, control | prior art for the architecture gap (leg 2: world model includes the agent) |
+| [[Frontier models use their own confidence strategically (Ackerman 2025)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6 (strategic deployment of own confidence; behavioral, no self-report) |
+| [[Beliefs form in latent space and drive choices (Yalon 2026)]] | 3 | deep | – | – | ✓ | – | monitor, evaluate | prior art Q6 (belief dominance causes action; the full modulate-cause-report chain) |
+| [[Intrinsic metacognition needs a good lens (Ma 2025)]] | 3 | deep | – | – | – | – | monitor | prior art Q6 (step-level intrinsic metacognition; the lens is the bottleneck) |
+| [[Fine-tuned uncertainty reports transfer across domains (Steyvers 2025)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6 (trained calibrated uncertainty generalizes across domains) |
+| [[Models partly know what they do not know (Yin 2023)]] | 3 | skim | – | – | – | – | monitor | prior art for the review (knowledge boundary; SelfAware) |
 | [[Emotion directions drive choices in Claude (Anthropic 2026)]] | 4 | deep | – | – | ✓ | – | evaluate | prior art Q1 |
 | [[Hidden good-bad feeling changes choices (Berg 2026)]] | 4 | deep | – | – | ✓ | ? | evaluate, control | prior art Q1 (grounded design); threat Q3 (DPO does not move valence) |
 | [[Steer code readability inside the model (Gao 2026)]] | 4 | deep | – | – | – | – | control | prior art Q2 (baseline arm), Q1 |

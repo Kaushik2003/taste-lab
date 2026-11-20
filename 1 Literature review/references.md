@@ -10,7 +10,9 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Kazuki Irie, Imanol Schlag, Róbert Csordás, Jürgen Schmidhuber (2022). *A Modern Self-Referential Weight Matrix That Learns to Modify Itself*. ICML 2022 (PMLR 162:9660-9677). https://arxiv.org/abs/2202.05780
 - Saurav Kadavath, Tom Conerly, Amanda Askell, Tom Henighan, Dawn Drain, Ethan Perez, et al. (36 authors, last Jared Kaplan) (2022). *Language Models (Mostly) Know What They Know*. arXiv preprint (Anthropic). https://arxiv.org/abs/2207.05221
 - Jenny Zhang, Joel Lehman, Kenneth Stanley, Jeff Clune (2023). *OMNI: Open-endedness via Models of human Notions of Interestingness*. ICLR 2024. https://arxiv.org/abs/2306.01711
+- Yin et al. [unverified: full author list] (2023). *Do Large Language Models Know What They Don't Know?*. ACL Findings 2023. https://aclanthology.org/2023.findings-acl.551/
 - Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes Gurnee, Neel Nanda (2024). *Refusal in Language Models Is Mediated by a Single Direction*. NeurIPS 2024 [unverified]. https://arxiv.org/abs/2406.11717
+- Aniket Didolkar, Anirudh Goyal, Nan Rosemary Ke, Siyuan Guo, Michal Valko, Timothy Lillicrap, Danilo Rezende, Yoshua Bengio, Michael Mozer, Sanjeev Arora (2024). *Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving*. NeurIPS 2024. https://arxiv.org/abs/2405.12205
 - Arjun Panickssery, Samuel R. Bowman, Shi Feng (2024). *LLM Evaluators Recognize and Favor Their Own Generations*. NeurIPS 2024. https://arxiv.org/abs/2404.13076
 - Edward Hughes, Michael Dennis, Jack Parker-Holder, Feryal Behbahani, Aditi Mavalankar, Yuge Shi, Tom Schaul, Tim Rocktäschel (2024). *Open-Endedness is Essential for Artificial Superhuman Intelligence*. ICML 2024 (position paper) [unverified venue]. https://arxiv.org/abs/2406.04268
 - Felix J. Binder, James Chua, Tomek Korbak, Henry Sleight, John Hughes, Robert Long, Ethan Perez, Miles Turpin, Owain Evans (2024). *Looking Inward: Language Models Can Learn About Themselves by Introspection*. ICLR 2025. https://arxiv.org/abs/2410.13787
@@ -23,13 +25,17 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Yuxiao Qu, Tianjun Zhang, Naman Garg, Aviral Kumar (2024). *Recursive Introspection: Teaching Language Model Agents How to Self-Improve (RISE)*. ICML 2024 Workshop. https://arxiv.org/abs/2407.18219
 - Ali Behrouz, Meisam Razaviyayn, Peilin Zhong, Vahab Mirrokni (2025). *Nested Learning: The Illusion of Deep Learning Architectures*. NeurIPS 2025. https://arxiv.org/abs/2512.24695
 - Anqi Zhang, Yulin Chen, Jane Pan, Chen Zhao, Aurojit Panda, Jinyang Li, He He (NYU, NYU Shanghai) (2025). *Reasoning Models Know When They're Right: Probing Hidden States for Self-Verification*. preprint (COLM 2025 [unverified]). https://arxiv.org/abs/2504.05419
+- Christopher Ackerman (2025). *Evidence for Limited Metacognition in LLMs*. arXiv preprint. https://arxiv.org/abs/2509.21545
 - Chung-En Sun, Ge Yan, Tsui-Wei Weng (2025). *ThinkEdit: Interpretable Weight Editing to Mitigate Overly Short Thinking in Reasoning Models*. EMNLP 2025. https://arxiv.org/abs/2503.22048
 - Dillon Plunkett, Adam Morris, Keerthi Reddy, Jorge Morales (2025). *Self-Interpretability: LLMs Can Describe Complex Internal Processes that Drive Their Decisions*. preprint (v2 10 Nov 2025). https://arxiv.org/abs/2505.17120
+- Iulia M. Comsa, Murray Shanahan (2025). *Does It Make Sense to Speak of Introspection in Large Language Models?*. arXiv preprint. https://arxiv.org/abs/2506.05068
 - Jack Lindsey (2025). *Emergent Introspective Awareness in Large Language Models*. Transformer Circuits Thread (Anthropic), 2025-10-29; arXiv 2601.01828, 2026-01-05. https://transformer-circuits.pub/2025/introspection/index.html
 - Jan Betley, Xuchan Bao, Martín Soto, Anna Sztyber-Betley, James Chua, Owain Evans (2025). *Tell me about yourself: LLMs are aware of their learned behaviors*. ICLR 2025. https://arxiv.org/abs/2501.11120
 - Li Ji-An, Hua-Dong Xiong, Robert C. Wilson, Marcelo G. Mattar, Marcus K. Benna (2025). *Language Models Are Capable of Metacognitive Monitoring and Control of Their Internal Activations*. NeurIPS 2025 (main track). https://arxiv.org/abs/2505.13763
 - Loris Gaven, Thomas Carta, Clément Romac, Cédric Colas, Sylvain Lamprier, Olivier Sigaud, Pierre-Yves Oudeyer (2025). *MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces*. ICML 2025 (PMLR 267). https://arxiv.org/abs/2502.07709
+- Ma et al. [unverified: full author list] (2025). *Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens*. EMNLP 2025. https://aclanthology.org/2025.emnlp-main.171/
 - Mantas Mazeika, Xuwang Yin, Rishub Tamirisa, Jaehyuk Lim, Bruce W. Lee, Richard Ren, Long Phan, Norman Mu, Adam Khoja, Oliver Zhang, Dan Hendrycks (2025). *Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs*. preprint (v2). https://arxiv.org/abs/2502.08640
+- Mark Steyvers, Catarina Belem, Padhraic Smyth (2025). *Generalization of Fine-Tuned Uncertainty Communication and Metacognition in Large Language Models*. arXiv preprint. https://arxiv.org/abs/2510.05126
 - Runjin Chen, Andy Arditi, Henry Sleight, Owain Evans, Jack Lindsey (2025). *Persona Vectors: Monitoring and Controlling Character Traits in Language Models*. arXiv preprint. https://arxiv.org/abs/2507.21509
 - Tennison Liu, Mihaela van der Schaar (2025). *Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning*. preprint (position paper). https://arxiv.org/abs/2506.05109
 - Thea Aviss (2025). *State Stream Transformer (SST): Emergent Metacognitive Behaviours Through Latent State Persistence*. arXiv preprint. https://arxiv.org/abs/2501.18356
@@ -58,12 +64,13 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Jiajun Fan, Neil He, Changyi Yang, Andy Mao, Xi Zhu, Chaoran Cheng, Kaiqu Liang, Shuaike Shen, Zetian Li, Ruihan Guo, Ge Liu (2026). *Language Models Can Rewrite Their Own Weights*. arXiv preprint. https://arxiv.org/abs/2611.21885
 - Jon-Paul Cacioli (2026). *The Metacognitive Monitoring Battery: A Cross-Domain Benchmark for LLM Self-Monitoring*. arXiv preprint. https://arxiv.org/abs/2604.15702
 - Junru Hu, Cheng Tang, Wei Li, Hongze Zhu, Chun-Mei Feng, Qi Zhang, Yirong Chen, Ming Hu (2026). *Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations*. arXiv preprint. https://arxiv.org/abs/2611.09382
-- Matteo Fischetti (2026). *Just sort it! The LP behind rank-one anti-loop edits*. https://arxiv.org/abs/2611.21432
+- Matteo Fischetti (2026). *Just sort it! The LP behind rank-one anti-loop edits*. . https://arxiv.org/abs/2611.21432
 - Minghe Zhang, Xuetao Kang, Yifei Ming, Yanfei Chen, Han Yu, Yufan Zhuang, Chen-Yu Lee (2026). *GUARD: Stabilizing Recursive Self-Improvement with Regret Guidance*. arXiv preprint. https://arxiv.org/abs/2611.23476
 - Nick Jiang, Isaac Kauvar, Jack Lindsey (2026). *The Value Axis: Language Models Encode Whether They're on the Right Track*. preprint. https://arxiv.org/abs/2606.17056
 - Nicolas Chapados, Jean-François Gagné, Nouha Dziri (2026). *Metrics-in-the-Loop: Complexity Feedback Reshapes Agent-Written Code*. arXiv preprint. https://arxiv.org/abs/2611.23817
 - Nicolas Yax, Stefano Palminteri, Pierre-Yves Oudeyer (2026). *LLMs learn different forms of metacognition when trained to predict their own accuracy*. arXiv preprint. https://arxiv.org/abs/2609.33886
 - Niket Patel, Ahmad Rammal, Amaury Hayat, Remi Munos, Julia Kempe (FAIR at Meta; CERMICS ENPC; NYU) (2026). *Learning to Discover Interesting Mathematics*. preprint. https://arxiv.org/abs/2609.28603
+- Noam Steinmetz Yalon, Ariel Goldstein, Liad Mudrik, Mor Geva (2026). *Indications of Belief-Guided Agency and Meta-Cognitive Monitoring in Large Language Models*. arXiv preprint. https://arxiv.org/abs/2602.02467
 - Paulo Shakarian (2026). *Toward Artificial Metacognition*. AAAI 2026. https://doi.org/10.1609/aaai.v40i48.42135
 - Pranjal Srivastava (2026). *Richness Is Not Evenness: Ordered Rényi Crossings under Self-Training*. arXiv preprint. https://arxiv.org/abs/2611.08892
 - Qi Cao, Yufan Wang, Peijia Qin, Shuhao Zhang, Pengtao Xie (2026). *LLMs Know When They Know, but Do Not Act on It: A Metacognitive Harness for Test-time Scaling*. arXiv preprint. https://arxiv.org/abs/2605.14186
