@@ -2,30 +2,54 @@
 
 Auto-compiled from `01-papers/` frontmatter for the lit review export. Verify author lists against the PDFs before submission.
 
-- Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes Gurnee, Neel Nanda (2024). *Refusal in Language Models Is Mediated by a Single Direction*. NeurIPS 2024 [unverified]. https://arxiv.org/abs/2406.11717
-- Anqi Zhang, Yulin Chen, Jane Pan, Chen Zhao, Aurojit Panda, Jinyang Li, He He (NYU, NYU Shanghai) (2025). *Reasoning Models Know When They're Right: Probing Hidden States for Self-Verification*. preprint (COLM 2025 [unverified]). https://arxiv.org/abs/2504.05419
-- Anthropic Interpretability (2026). *Emotion Concepts and Their Function in a Large Language Model*. preprint. https://arxiv.org/abs/2604.07729
-- Bo Li, Taoyong Cui, Bob Zhang, Mengran Li, Chengyang Zhang, Yang Zhang, Pheng Ann Heng, Wanli Ouyang, Zhenfei Yin, Yingcheng Wu, Ling Yang (2026). *WeightCode: Installing New Capabilities into Neural Networks via Weight-Space Programming*. preprint. https://arxiv.org/abs/2611.25476
-- Cameron Berg, Caspar Kaiser (2026). *Language Models Act on Hidden Valence*. preprint. https://arxiv.org/abs/2609.35591
-- Chenyu Zhou (Institute of Science Tokyo) (2026). *More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges*. arXiv preprint. https://arxiv.org/abs/2607.05904
-- Chung-En Sun, Ge Yan, Tsui-Wei Weng (2025). *ThinkEdit: Interpretable Weight Editing to Mitigate Overly Short Thinking in Reasoning Models*. EMNLP 2025. https://arxiv.org/abs/2503.22048
-- Chung-En Sun, Ge Yan, Zimo Wang, Tsui-Wei Weng (2026). *Steer2Edit: From Activation Steering to Component-Level Editing*. NeurIPS 2026. https://arxiv.org/abs/2602.09870
-- Dhruv Trehan, Paras Chopra (Lossfunk) (2026). *Eliciting Research Taste in LLMs through Future Research Direction Choice*. preprint. https://arxiv.org/abs/2611.19794
-- Dmitrij Żatuchin (EUAS Tallinn; Rankfor.AI) (2026). *A Shared Taste for Model-Written Text: The Generator-by-Selector Matrices of \"AI-AI Bias\" Show No Detectable Own-Model Premium*. preprint. https://arxiv.org/abs/2610.00369
-- Emilio Ferrara (2026). *All Quiet on the Neural Front: LMs Do Not Report Injected Pain States*. preprint. https://arxiv.org/abs/2611.10123
-- Gabriel J. Perin, Lucas Boscaini, André Araujo, Nina S. T. Hirata (University of São Paulo, Google, Google DeepMind) (2026). *Training-Free Task Vectors for LLM Behavioral Control (TFTV)*. preprint (v3, Oct 2026). https://arxiv.org/abs/2609.09054
-- Guowei Xu, Mert Yuksekgonul, James Zou (2026). *Sparse Reward Subsystem in Large Language Models*. NeurIPS 2026. https://arxiv.org/abs/2602.00986
-- He, Gao, Zhang, Yuan, Zhou, Liu, Ding (Tsinghua) (2026). *How Far Can Unsupervised RLVR Scale LLM Training?*. ICLR 2026. https://arxiv.org/abs/2603.08660
-- Huifan Gao, Liuhua He, Yinghui Pan, Shenbao Yu, Yifeng Zeng, Shengchao Qin, Weidi Sun (2026). *Towards the Readability of LLM-Generated Codes through Multitask Representation Engineering*. preprint (cs.SE). https://arxiv.org/abs/2606.06214
-- Kenji Doya (2002). *Metalearning and Neuromodulation*. Neural Networks 15(4-6), 495-506. https://doi.org/10.1016/S0893-6080(02)00044-8
-- Matteo Fischetti (2026). *Just sort it! The LP behind rank-one anti-loop edits*. . https://arxiv.org/abs/2611.21432
-- Nick Jiang, Isaac Kauvar, Jack Lindsey (2026). *The Value Axis: Language Models Encode Whether They're on the Right Track*. preprint. https://arxiv.org/abs/2606.17056
-- Niket Patel, Ahmad Rammal, Amaury Hayat, Remi Munos, Julia Kempe (FAIR at Meta; CERMICS ENPC; NYU) (2026). *Learning to Discover Interesting Mathematics*. preprint. https://arxiv.org/abs/2609.28603
-- Shashwat Singh, Tal Linzen, Shauli Ravfogel (2026). *Can LLMs Introspect? A Reality Check*. COLM 2026 (per arXiv comment). https://arxiv.org/abs/2605.26242
-- Stephen M. Fleming, Nathaniel D. Daw (2017). *Self-evaluation of decision-making: A general Bayesian framework for metacognitive computation*. Psychological Review 124(1), 91-114. https://doi.org/10.1037/rev0000045
-- Takehi, Teoh, Zhang, Khattab (MIT CSAIL) (2026). *Weight-Space Programming (WSP)*. blog / preprint. https://arxiv.org/abs/(blog post, Nov 2 2026, "Sparks of Weight-Space Programming")
 - Thomas O. Nelson, Louis Narens (1990). *Metamemory: A Theoretical Framework and New Findings*. Psychology of Learning and Motivation vol. 26 [unverified: volume number], 125-173. https://doi.org/10.1016/S0079-7421(08)60053-5
-- Vincent Karpf, Joseph Reth, Eike Gerhardt, Audrey Wang, Anna Butz, Jiehao Xing, Jialing Song, Larry Callahan (2026). *Metacognitive Steering: Learning the Structure of Scientific Judgment*. preprint. https://arxiv.org/abs/2609.16245
-- Xiaolong Jin, Xuandong Zhao, Wenbo Guo, Xiangyu Zhang, Dawn Song (Purdue, UC Berkeley, UC Santa Barbara) (2026). *When Do Intrinsic Rewards Work for Code Reasoning? A Comprehensive Study*. arXiv preprint. https://arxiv.org/abs/2606.20881
-- Yiran Wu, Andrew Zhao, Yurui Chang, Qingyun Wu, Xuan Feng (Penn State, Microsoft Research, AG2AI) (2026). *Beyond Binary Verifiable Rewards: Behavioral Self-Rewarding for SWE Agents*. arXiv preprint. https://arxiv.org/abs/2610.12598
+- Kenji Doya (2002). *Metalearning and Neuromodulation*. Neural Networks 15(4-6), 495-506. https://doi.org/10.1016/S0893-6080(02)00044-8
+- Stephen M. Fleming, Nathaniel D. Daw (2017). *Self-evaluation of decision-making: A general Bayesian framework for metacognitive computation*. Psychological Review 124(1), 91-114. https://doi.org/10.1037/rev0000045
+- Kazuki Irie, Imanol Schlag, Róbert Csordás, Jürgen Schmidhuber (KAUST / IDSIA) (2022). *A Modern Self-Referential Weight Matrix That Learns to Modify Itself*. ICML 2022. https://arxiv.org/abs/2202.05780
+- Jenny Zhang, Joel Lehman, Kenneth Stanley, Jeff Clune (UBC / Vector Institute / Stochastic Labs / Maven) (2023). *OMNI: Open-endedness via Models of human Notions of Interestingness*. preprint. https://arxiv.org/abs/2306.01711
+- Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes Gurnee, Neel Nanda (2024). *Refusal in Language Models Is Mediated by a Single Direction*. NeurIPS 2024 [unverified]. https://arxiv.org/abs/2406.11717
+- Ryan Greenblatt, Carson Denison, Benjamin Wright, Fabien Roger, Monte MacDiarmid, Sam Marks, Johannes Treutlein et al. (Anthropic / Redwood / NYU / Mila) (2024). *Alignment Faking in Large Language Models*. preprint. https://arxiv.org/abs/2412.14093
+- Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Yarin Gal, Nicolas Papernot, Ross Anderson (Oxford / Cambridge / Toronto et al.) (2024). *AI Models Collapse When Trained on Recursively Generated Data*. Nature 631. https://www.nature.com/articles/s41586-024-07566-y
+- Rodolfo Valiente, Praveen K. Pilly (HRL Laboratories) (2024). *Competence-Aware AI Agents with Metacognition for Unknown Situations and Environments (MUSE)*. preprint (v2, Nov 2025). https://arxiv.org/abs/2411.13537
+- Thea Aviss (2025). *State Stream Transformer (SST): Emergent Metacognitive Behaviours Through Latent State Persistence*. preprint. https://arxiv.org/abs/2501.18356
+- Ali Behrouz, Peilin Zhong, Vahab Mirrokni (Google Research) (2025). *Nested Learning: The Illusion of Deep Learning Architectures (Hope)*. NeurIPS 2025. https://arxiv.org/abs/2512.24695
+- Runjin Chen, Andy Arditi, Henry Sleight, Owain Evans, Jack Lindsey (Anthropic Fellows / UT Austin / Constellation / Truthful AI / UC Berkeley / Anthropic) (2025). *Persona Vectors: Monitoring and Controlling Character Traits in Language Models*. preprint. https://arxiv.org/abs/2507.21509
+- Huan-ang Gao, Jiayi Geng, Wenyue Hua et al. (CMU / Princeton / SJTU / UIUC et al.) (2025). *A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve*. TMLR 2026 (survey). https://arxiv.org/abs/2507.21046
+- Li Ji-An, Hua-Dong Xiong, Robert C. Wilson, Marcelo G. Mattar, Marcus K. Benna (2025). *Language Models Are Capable of Metacognitive Monitoring and Control of Their Internal Activations*. preprint (v2, Oct 2025). https://arxiv.org/abs/2505.13763
+- Tennison Liu, Mihaela van der Schaar (Cambridge) (2025). *Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning*. preprint (position paper). https://arxiv.org/abs/2506.05109
+- Mantas Mazeika, Xuwang Yin, Rishub Tamirisa, Jaehyuk Lim, Bruce W. Lee, Richard Ren, Long Phan, Norman Mu, Adam Khoja, Oliver Zhang, Dan Hendrycks (CAIS / UPenn / Berkeley) (2025). *Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs*. preprint (v2). https://arxiv.org/abs/2502.08640
+- Chung-En Sun, Ge Yan, Tsui-Wei Weng (2025). *ThinkEdit: Interpretable Weight Editing to Mitigate Overly Short Thinking in Reasoning Models*. EMNLP 2025. https://arxiv.org/abs/2503.22048
+- Anqi Zhang, Yulin Chen, Jane Pan, Chen Zhao, Aurojit Panda, Jinyang Li, He He (NYU, NYU Shanghai) (2025). *Reasoning Models Know When They're Right: Probing Hidden States for Self-Verification*. preprint (COLM 2025 [unverified]). https://arxiv.org/abs/2504.05419
+- Xuandong Zhao, Zhewei Kang, Aosong Feng, Sergey Levine, Dawn Song (UC Berkeley / Yale) (2025). *Learning to Reason without External Rewards (INTUITOR)*. preprint. https://arxiv.org/abs/2505.19590
 - Zweiger, Pari, Guo, Akyürek, Kim, Agrawal (MIT) (2025). *SEAL: Self-Adapting Language Models*. NeurIPS 2025. https://arxiv.org/abs/2506.10943
+- Anthropic Interpretability (2026). *Emotion Concepts and Their Function in a Large Language Model*. preprint. https://arxiv.org/abs/2604.07729
+- Cameron Berg, Caspar Kaiser (2026). *Language Models Act on Hidden Valence*. preprint. https://arxiv.org/abs/2609.35591
+- Emilio Ferrara (2026). *All Quiet on the Neural Front: LMs Do Not Report Injected Pain States*. preprint. https://arxiv.org/abs/2611.10123
+- Matteo Fischetti (2026). *Just sort it! The LP behind rank-one anti-loop edits*. . https://arxiv.org/abs/2611.21432
+- Huifan Gao, Liuhua He, Yinghui Pan, Shenbao Yu, Yifeng Zeng, Shengchao Qin, Weidi Sun (2026). *Towards the Readability of LLM-Generated Codes through Multitask Representation Engineering*. preprint (cs.SE). https://arxiv.org/abs/2606.06214
+- He, Gao, Zhang, Yuan, Zhou, Liu, Ding (Tsinghua) (2026). *How Far Can Unsupervised RLVR Scale LLM Training?*. ICLR 2026. https://arxiv.org/abs/2603.08660
+- Junru Hu, Cheng Tang, Wei Li, Hongze Zhu, Chun-Mei Feng, Qi Zhang, Yirong Chen, Ming Hu (Shanghai AI Lab, Tongji, Fudan) (2026). *Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations*. preprint. https://arxiv.org/abs/2611.09382
+- Nick Jiang, Isaac Kauvar, Jack Lindsey (2026). *The Value Axis: Language Models Encode Whether They're on the Right Track*. preprint. https://arxiv.org/abs/2606.17056
+- Xiaolong Jin, Xuandong Zhao, Wenbo Guo, Xiangyu Zhang, Dawn Song (Purdue, UC Berkeley, UC Santa Barbara) (2026). *When Do Intrinsic Rewards Work for Code Reasoning? A Comprehensive Study*. arXiv preprint. https://arxiv.org/abs/2606.20881
+- Vincent Karpf, Joseph Reth, Eike Gerhardt, Audrey Wang, Anna Butz, Jiehao Xing, Jialing Song, Larry Callahan (2026). *Metacognitive Steering: Learning the Structure of Scientific Judgment*. preprint. https://arxiv.org/abs/2609.16245
+- Bo Li, Taoyong Cui, Bob Zhang, Mengran Li, Chengyang Zhang, Yang Zhang, Pheng Ann Heng, Wanli Ouyang, Zhenfei Yin, Yingcheng Wu, Ling Yang (2026). *WeightCode: Installing New Capabilities into Neural Networks via Weight-Space Programming*. preprint. https://arxiv.org/abs/2611.25476
+- Jack Lindsey (Anthropic) (2026). *Emergent Introspective Awareness in Large Language Models*. preprint. https://arxiv.org/abs/2601.01828
+- Gabrielle Kaili-May Liu, Areeb Gani, Jacqueline Lu, Jordan Thomas, Mark Steyvers, Arman Cohan (Yale / UC Irvine) (2026). *Metacognition in LLMs: Foundations, Progress, and Opportunities*. preprint (survey). https://arxiv.org/abs/2607.11881
+- Aayush Marasini, Barsat Khadka, Nick Rahimi (U. Southern Mississippi) (2026). *WeightBench: Evaluating Language Models as Weight-Space Programmers*. preprint. https://arxiv.org/abs/2611.18553
+- Niket Patel, Ahmad Rammal, Amaury Hayat, Remi Munos, Julia Kempe (FAIR at Meta; CERMICS ENPC; NYU) (2026). *Learning to Discover Interesting Mathematics*. preprint. https://arxiv.org/abs/2609.28603
+- Gabriel J. Perin, Lucas Boscaini, André Araujo, Nina S. T. Hirata (University of São Paulo, Google, Google DeepMind) (2026). *Training-Free Task Vectors for LLM Behavioral Control (TFTV)*. preprint (v3, Oct 2026). https://arxiv.org/abs/2609.09054
+- Timothy Rupprecht et al. (20 authors; Northeastern et al.) (2026). *Human Cognition in Machines: A Unified Perspective of World Models*. preprint (survey). https://arxiv.org/abs/2604.16592
+- Shashwat Singh, Tal Linzen, Shauli Ravfogel (2026). *Can LLMs Introspect? A Reality Check*. COLM 2026 (per arXiv comment). https://arxiv.org/abs/2605.26242
+- Pranjal Srivastava (U. Michigan) (2026). *Richness Is Not Evenness: Ordered Rényi Crossings under Self-Training*. preprint. https://arxiv.org/abs/2611.08892
+- Chung-En Sun, Ge Yan, Zimo Wang, Tsui-Wei Weng (2026). *Steer2Edit: From Activation Steering to Component-Level Editing*. NeurIPS 2026. https://arxiv.org/abs/2602.09870
+- Takehi, Teoh, Zhang, Khattab (MIT CSAIL) (2026). *Weight-Space Programming (WSP)*. blog / preprint. https://arxiv.org/abs/(blog post, Nov 2 2026, "Sparks of Weight-Space Programming")
+- Sabrina Tang, Nikolai Vo, Carson Murillo, Chira Sukumarnpiti, Sarah Wilson (UCI / Toledo / UCSD / BCC / Google) (2026). *Safety Side Effects of Preventative Persona Steering: An Empirical Audit*. preprint. https://arxiv.org/abs/2611.17620
+- Jingqi Tong, Mingzhe Li, Hangcheng Li et al. (Fudan / Shanghai Innovation Institute / OpenMOSS / Tsinghua) (2026). *AI Can Learn Scientific Taste*. preprint. https://arxiv.org/abs/2603.14473
+- Dhruv Trehan, Paras Chopra (Lossfunk) (2026). *Eliciting Research Taste in LLMs through Future Research Direction Choice*. preprint. https://arxiv.org/abs/2611.19794
+- Alex Lin Wang, Linus Yifeng Tang, Dami Choi, Neil Chowdhury (Transluce / MATS / Thinking Machines) (2026). *Training Language Models for Introspective Oversight*. preprint. https://arxiv.org/abs/2611.23365
+- Yiran Wu, Andrew Zhao, Yurui Chang, Qingyun Wu, Xuan Feng (Penn State, Microsoft Research, AG2AI) (2026). *Beyond Binary Verifiable Rewards: Behavioral Self-Rewarding for SWE Agents*. arXiv preprint. https://arxiv.org/abs/2610.12598
+- Guowei Xu, Mert Yuksekgonul, James Zou (2026). *Sparse Reward Subsystem in Large Language Models*. NeurIPS 2026. https://arxiv.org/abs/2602.00986
+- Dmitrij Żatuchin (EUAS Tallinn; Rankfor.AI) (2026). *A Shared Taste for Model-Written Text: The Generator-by-Selector Matrices of \"AI-AI Bias\" Show No Detectable Own-Model Premium*. preprint. https://arxiv.org/abs/2610.00369
+- Minghe Zhang, Xuetao Kang, Yifei Ming, Yanfei Chen, Han Yu, Yufan Zhuang, Chen-Yu Lee (Google Cloud) (2026). *GUARD: Stabilizing Recursive Self-Improvement with Regret Guidance*. preprint. https://arxiv.org/abs/2611.23476
+- Shanshan Zhong, Chen Xu, Jingjie Ning, Zhengzhong Liu, Aviral Kumar, Chenyan Xiong (CMU / MBZUAI) (2026). *IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?*. preprint. https://arxiv.org/abs/2611.03424
+- Chenyu Zhou (Institute of Science Tokyo) (2026). *More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges*. arXiv preprint. https://arxiv.org/abs/2607.05904
