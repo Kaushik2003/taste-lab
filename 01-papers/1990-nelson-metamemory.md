@@ -6,7 +6,7 @@ arxiv:
 url: https://doi.org/10.1016/S0079-7421(08)60053-5
 authors: Thomas O. Nelson, Louis Narens
 year: 1990
-venue: Psychology of Learning and Motivation vol. 26 [unverified: volume number], 125-173
+venue: Psychology of Learning and Motivation vol. 26, 125-173
 relevance: 3
 section: 2
 tier: deep
@@ -26,7 +26,7 @@ Metacognition is two levels joined by two flows of information. The meta level's
 ## Mechanism
 - **Monitoring (object -> meta):** feelings of knowing, judgments of learning, confidence: the meta level reads the object level's state.
 - **Control (meta -> object):** how long to study, when to stop searching memory, which strategy to use next: the meta level changes what the object level does.
-[unverified: examples from memory, check against the paper]
+(Verified against the chapter PDF, 2026-11-21: two levels joined by monitoring (object -> meta) and control (meta -> object) flows, meta level holds a dynamic model of the object level; control initiates/continues/terminates object-level actions.)
 
 ## Relevance to taste-lab
 The skeleton of our loop, and the frame the whole review hangs on ([[metacognition-monitor-control]]). We add two steps Nelson & Narens do not have: **evaluate** (the meta level judges the state as good or bad; that judgment is the taste) and **persist** (control reaches the weights). Our control ladder (reasoning -> activation -> weights) is an expansion of their single control flow.
