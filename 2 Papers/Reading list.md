@@ -45,7 +45,7 @@ Earlier priority:
 - [x] WeightBench — 2611.18553 → [[WeightBench - models cannot yet patch models (Marasini 2026)]]
 - [x] Exploring WSP: Capabilities, Generalization, Limitations — 2611.09382 → [[Exploring WSP - small weight edits, uneven results (Hu 2026)]]
 - [ ] How Far Can Unsupervised RLVR Scale — 2603.08660 → [[Self-reward sharpens then collapses (He 2026)]]
-- [ ] Persona Vectors — 2507.21509 (+ safety audit 2611.17620)
+- [x] Persona Vectors — 2507.21509 → [[Persona vectors monitor and steer character traits (Chen 2025)]]; safety audit 2611.17620 → [[Persona steering has safety side effects (Tang 2026)]]
 - [ ] ThinkEdit — 2503.22048 (Q5 prior art: head-level direction removal) → [[ThinkEdit - edit weights to think longer (Sun 2025)]]
 - [ ] Steer2Edit — 2602.09870 (Q5 prior art: steering vector to sparse rank-one edits) → [[Steer2Edit - steering into small weight edits (Sun 2026)]]
 
