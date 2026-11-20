@@ -10,6 +10,8 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Kazuki Irie, Imanol Schlag, Róbert Csordás, Jürgen Schmidhuber (2022). *A Modern Self-Referential Weight Matrix That Learns to Modify Itself*. ICML 2022 (PMLR 162:9660-9677). https://arxiv.org/abs/2202.05780
 - Saurav Kadavath, Tom Conerly, Amanda Askell, Tom Henighan, Dawn Drain, Ethan Perez, et al. (36 authors, last Jared Kaplan) (2022). *Language Models (Mostly) Know What They Know*. arXiv preprint (Anthropic). https://arxiv.org/abs/2207.05221
 - Jenny Zhang, Joel Lehman, Kenneth Stanley, Jeff Clune (2023). *OMNI: Open-endedness via Models of human Notions of Interestingness*. ICLR 2024. https://arxiv.org/abs/2306.01711
+- Leer et al. [unverified: full author list] (2023). *Violation of Expectation via Metacognitive Prompting Reduces Theory of Mind Prediction Error in Large Language Models*. arXiv preprint. https://arxiv.org/abs/2310.06983
+- Xiaonan Li, Xipeng Qiu (2023). *MoT: Memory-of-Thought Enables ChatGPT to Self-Improve*. EMNLP 2023. https://aclanthology.org/2023.emnlp-main.392/
 - Yin et al. [unverified: full author list] (2023). *Do Large Language Models Know What They Don't Know?*. ACL Findings 2023. https://aclanthology.org/2023.findings-acl.551/
 - Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes Gurnee, Neel Nanda (2024). *Refusal in Language Models Is Mediated by a Single Direction*. NeurIPS 2024 [unverified]. https://arxiv.org/abs/2406.11717
 - Aniket Didolkar, Anirudh Goyal, Nan Rosemary Ke, Siyuan Guo, Michal Valko, Timothy Lillicrap, Danilo Rezende, Yoshua Bengio, Michael Mozer, Sanjeev Arora (2024). *Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving*. NeurIPS 2024. https://arxiv.org/abs/2405.12205
@@ -40,6 +42,7 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Runjin Chen, Andy Arditi, Henry Sleight, Owain Evans, Jack Lindsey (2025). *Persona Vectors: Monitoring and Controlling Character Traits in Language Models*. arXiv preprint. https://arxiv.org/abs/2507.21509
 - Tennison Liu, Mihaela van der Schaar (2025). *Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning*. preprint (position paper). https://arxiv.org/abs/2506.05109
 - Thea Aviss (2025). *State Stream Transformer (SST): Emergent Metacognitive Behaviours Through Latent State Persistence*. arXiv preprint. https://arxiv.org/abs/2501.18356
+- Xiaojian Li, Haoyuan Shi, Rongwu Xu, Wei Xu (2025). *AI Awareness*. arXiv preprint (review). https://arxiv.org/abs/2504.20084
 - Xuandong Zhao, Zhewei Kang, Aosong Feng, Sergey Levine, Dawn Song (2025). *Learning to Reason without External Rewards (INTUITOR)*. arXiv preprint. https://arxiv.org/abs/2505.19590
 - Zweiger, Pari, Guo, Akyürek, Kim, Agrawal (MIT) (2025). *SEAL: Self-Adapting Language Models*. NeurIPS 2025. https://arxiv.org/abs/2506.10943
 - Aayush Marasini, Barsat Khadka, Nick Rahimi (2026). *WeightBench: Evaluating Language Models as Weight-Space Programmers*. arXiv preprint. https://arxiv.org/abs/2611.18553
@@ -48,6 +51,7 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Arush Tagade, Shaoheng Zhou, Jiaxin Wen, Shi Feng (2026). *Self-Modeling Interventions can Modulate Emergent Misalignment*. arXiv preprint. https://arxiv.org/abs/2606.23700
 - Bo Li, Taoyong Cui, Bob Zhang, Mengran Li, Chengyang Zhang, Yang Zhang, Pheng Ann Heng, Wanli Ouyang, Zhenfei Yin, Yingcheng Wu, Ling Yang (2026). *WeightCode: Installing New Capabilities into Neural Networks via Weight-Space Programming*. arXiv preprint. https://arxiv.org/abs/2611.25476
 - Cameron Berg, Caspar Kaiser (2026). *Language Models Act on Hidden Valence*. preprint. https://arxiv.org/abs/2609.35591
+- Caspar Kaiser, Sean Enderby (2026). *No Reliable Evidence of Self-Reported Sentience in Small Large Language Models*. arXiv preprint. https://arxiv.org/abs/2601.15334
 - Chenyu Zhou (Institute of Science Tokyo) (2026). *More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges*. arXiv preprint. https://arxiv.org/abs/2607.05904
 - Chung-En Sun, Ge Yan, Zimo Wang, Tsui-Wei Weng (2026). *Steer2Edit: From Activation Steering to Component-Level Editing*. NeurIPS 2026. https://arxiv.org/abs/2602.09870
 - Davide Liga, Liuwen Yu, Matteo Magnini (2026). *Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models*. arXiv preprint. https://arxiv.org/abs/2611.21705

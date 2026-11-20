@@ -219,7 +219,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 ## Metacognition for LLM Agents
 
 - [ ] **To Retrieve or To Think? An Agentic Approach for Context Evolution** — Chen et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.08747)
-- [ ] **Learn Like Humans: Use Meta-Cognitive Reflection for Efficient Self-Improvement** — Hou et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.11974)
+- [x] **Learn Like Humans: Use Meta-Cognitive Reflection for Efficient Self-Improvement** — Hou et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.11974) → [[MARS - metacognitive reflection in one cycle (Hou 2026)]]
 - [ ] **Learning How to Remember: A Meta-Cognitive Management Method for Structured and Transferable Agent Memory** — Liang et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.07470)
 - [ ] **Deep Reasoning in General Purpose Agents via Structured Meta-Cognition** — Light et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2605.11388)
 - [ ] **RefRea: Reference-Guided Reasoning with Meta-Cognition for Accurate Language Model Agents** — Mai et al. · AAAI 2026 · [paper](https://doi.org/10.1609/aaai.v40i38.40522)
@@ -305,8 +305,8 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 
 - [ ] **Learn Like Humans: Use Meta-Cognitive Reflection for Efficient Self-Improvement** — Hou et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.11974)
 - [ ] **Galaxy: A Cognition-Centered Framework for Proactive, Privacy-Preserving, and Self-Evolving LLM Agents** — Bao et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2508.03991)
-- [ ] **Recursive Introspection: Teaching LLM Agents How to Self-Improve** — Qu et al. · ICML Workshop 2024 · [paper](https://openreview.net/forum?id=UPoQqreegH)
-- [ ] **MoT: Memory-of-Thought Enables ChatGPT to Self-Improve** — Li and Qiu · EMNLP 2023 · [paper](https://aclanthology.org/2023.emnlp-main.392.pdf)
+- [x] **Recursive Introspection: Teaching LLM Agents How to Self-Improve** — Qu et al. · ICML Workshop 2024 · [paper](https://openreview.net/forum?id=UPoQqreegH) → [[RISE - recursive introspection improves own answers (Qu 2024)]]
+- [x] **MoT: Memory-of-Thought Enables ChatGPT to Self-Improve** — Li and Qiu · EMNLP 2023 · [paper](https://aclanthology.org/2023.emnlp-main.392.pdf) → [[MoT - models improve by remembering their own good thinking (Li 2023)]]
 - [ ] **Agents Require Metacognitive and Strategic Reasoning to Succeed in the Coming Labor Markets** — Zhang et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2505.20120)
 - [ ] **Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study** — Ning et al. · NeurIPS 2024 · [paper](https://proceedings.neurips.cc/paper_files/paper/2024/file/8340b085045cf13f1f0b6c2c4cc0a89c-Paper-Conference.pdf)
 
@@ -364,8 +364,8 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 
 ## AI Metacognition
 
-- [ ] **Toward Artificial Metacognition** — Shakarian · AAAI 2026 · [paper](https://ojs.aaai.org/index.php/AAAI/article/view/42135/46096)
-- [ ] **No Reliable Evidence of Self-Reported Sentience in Small Large Language Models** — Kaiser and Enderby · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.15334)
+- [x] **Toward Artificial Metacognition** — Shakarian · AAAI 2026 · [paper](https://ojs.aaai.org/index.php/AAAI/article/view/42135/46096) → [[A map of artificial metacognition (Shakarian 2026)]]
+- [x] **No Reliable Evidence of Self-Reported Sentience in Small Large Language Models** — Kaiser and Enderby · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.15334) → [[Small models deny sentience and their internals agree (Kaiser 2026)]]
 - [ ] **Consciousness and AI: A Meta-Reflective Framework** — Erbe · SSRN 2025 · [paper](https://ssrn.com/abstract=5854902)
 - [ ] **Knowing (Not) to Know: Explainable Artificial Intelligence and Human Metacognition** — Von Zahn et al. · Information Systems Research 2025 · [paper](https://doi.org/10.1287/isre.2024.1431)
 - [ ] **A Treasure Map to Metacognition** — Wright · AGI Conference 2025 · [paper](https://doi.org/10.1007/978-3-032-00800-8_29)
@@ -383,14 +383,14 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 
 - [ ] **Meta-Metacognition: Processes Underlying Judgments About Metacognition** — Schwartz et al. · New Ideas in Psychology 2026 · [paper](https://doi.org/10.1016/j.newideapsych.2026.101254)
 - [ ] **Common Computations for Metacognition and Meta-Metacognition** — Zheng et al. · Neuroscience of Consciousness 2023 · [paper](https://doi.org/10.1093/nc/niad023)
-- [ ] **Violation of Expectation via Metacognitive Prompting Reduces Theory of Mind Prediction Error in Large Language Models** — Leer et al. · arXiv 2023 · [paper](https://arxiv.org/pdf/2310.06983)
+- [x] **Violation of Expectation via Metacognitive Prompting Reduces Theory of Mind Prediction Error in Large Language Models** — Leer et al. · arXiv 2023 · [paper](https://arxiv.org/pdf/2310.06983) → [[Metacognitive prompting cuts theory-of-mind errors (Leer 2023)]]
 
 ## Risks & Ethics
 
 - [ ] **The AI Cognitive Trojan Horse: How Large Language Models May Bypass Human Epistemic Vigilance** — Maynard · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.07085)
 - [ ] **Meta-Reflective Capacities, Normative Commitments, and Responsible AI** — Fleig-Goldstein · arXiv 2025 · [paper](https://arxiv.org/abs/2501.01505)
 - [ ] **Imagining and Building Wise Machines: The Centrality of AI Metacognition** — Johnson et al. · Trends in Cognitive Sciences 2025 · [paper](https://doi.org/10.1016/j.tics.2026.01.002)
-- [ ] **AI Awareness** — Li et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2504.20084)
+- [x] **AI Awareness** — Li et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2504.20084) → [[AI awareness as a measurable capacity (Li 2025)]]
 - [ ] **Human Versus Artificial Social Cognition and Metacognition: The Normative Difference** — Tison and Zawidzki · AI and Ethics 2025 · [paper](https://doi.org/10.1007/s43681-025-00774-w)
 - [ ] **Escalation Risks from Language Models in Military and Diplomatic Decision-Making** — Rivera et al. · FAccT 2024 · [paper](https://dl.acm.org/doi/10.1145/3630106.3658942)
 - [ ] **Metacognition, Accountability and Legal Personhood of AI** — Ribeiro et al. · Multidisciplinary Perspectives on AI and the Law (Book Chapter) 2023 · [paper](https://doi.org/10.1007/978-3-031-41264-6_9)
