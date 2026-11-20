@@ -113,7 +113,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [x] **Evidence for Limited Metacognition in LLMs** — Ackerman · arXiv 2025 · [paper](https://arxiv.org/pdf/2509.21545) → [[Frontier models use their own confidence strategically (Ackerman 2025)]]
 - [ ] **Large Linguistic Models: Investigating LLMs' Metalinguistic Abilities** — Begus et al. · IEEE Transactions on Artificial Intelligence 2025 · [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11022724)
 - [x] **Does It Make Sense to Speak of Introspection in Large Language Models?** — Comsa and Shanahan · arXiv 2025 · [paper](https://arxiv.org/pdf/2506.05068) → [[Introspection needs a causal link to count (Comsa 2025)]]
-- [ ] **When Two LLMs Debate, Both Think They'll Win** — Prasad and Nguyen · arXiv 2025 · [paper](https://arxiv.org/pdf/2505.19184)
+- [x] **When Two LLMs Debate, Both Think They'll Win** — Prasad and Nguyen · arXiv 2025 · [paper](https://arxiv.org/pdf/2505.19184) → [[Both sides of a debate think they will win (Prasad 2025)]]
 - [x] **Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving** — Didolkar et al. · NeurIPS 2024 · [paper](https://proceedings.neurips.cc/paper_files/paper/2024/file/2318d75a06437eaa257737a5cf3ab83c-Paper-Conference.pdf) → [[Models name the skills a problem needs (Didolkar 2024)]]
 - [ ] **Beyond Traditional AI IQ Metrics: Metacognition and Benchmarking for LLMs, AGI, and ASI** — Uzwyshyn · ResearchGate 2024 · [paper](https://doi.org/10.13140/RG.2.2.36817.34400)
 
@@ -122,7 +122,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **The metacognitive monitoring battery: A cross-domain benchmark for LLM self-monitoring** — Cacioli et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2604.15702)
 - [ ] **Towards Meta-Cognitive Knowledge Editing for Multimodal LLMs** — Fan et al. · The Web Conference 2026 · [paper](https://doi.org/10.1145/3774904.3792531)
 - [ ] **Me, Myself, and π : Evaluating and Explaining LLM Introspection** — Naphade et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2603.20276)
-- [ ] **Large Language Models Lack Essential Metacognition for Reliable Medical Reasoning** — Griot et al. · Nature Communications 2025 · [paper](https://doi.org/10.1038/s41467-024-55628-6)
+- [x] **Large Language Models Lack Essential Metacognition for Reliable Medical Reasoning** — Griot et al. · Nature Communications 2025 · [paper](https://doi.org/10.1038/s41467-024-55628-6) → [[Medical models cannot say what they do not know (Griot 2025)]]
 - [ ] **ObjexMT: Objective Extraction and Metacognitive Calibration for LLM-as-a-Judge Under Multi-Turn Jailbreaks** — Kim et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2508.16889)
 - [ ] **Awareness in LLMs Improves Through Collaboration** — Passaro et al. · EurIPS Workshop on Metacognition in Generative AI 2025 · [paper](https://openreview.net/forum?id=SLdSqX3Rno)
 - [ ] **From Remembering to Metacognition: Do Existing Benchmarks Accurately Evaluate LLMs?** — Zhang et al. · EMNLP Findings 2025 · [paper](https://aclanthology.org/2025.findings-emnlp.724/)
@@ -130,7 +130,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 ## 📊 2. Current Findings on Metacognition in LLMs
 
 - [ ] **Emergent Mechanisms of Self-Awareness in LLMs** — Bozoukov et al. · XAI4Science Workshop (NeurIPS) 2025 · [paper](https://openreview.net/pdf?id=6GGhnrQ2EV)
-- [ ] **Looking Inward: Language Models Can Learn About Themselves by Introspection** — Binder et al. · ICLR 2025 · [paper](https://openreview.net/forum?id=eb5pkwIB5i)
+- [x] **Looking Inward: Language Models Can Learn About Themselves by Introspection** — Binder et al. · ICLR 2025 · [paper](https://openreview.net/forum?id=eb5pkwIB5i) → [[Models predict themselves better than others do (Binder 2024)]]
 - [ ] **Do Large Language Models Know How Much They Know?** — Prato et al. · EMNLP 2024 · [paper](https://aclanthology.org/2024.emnlp-main.348/)
 - [ ] **Feeling the Strength but Not the Source: Partial Introspection in LLMs** — Hahami et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2512.12411)
 - [ ] **Judgments of Learning Distinguish Humans from Large Language Models in Predicting Memory** — Huff and Ulakci · Scientific Reports 2025 · [paper](https://doi.org/10.1038/s41598-025-22290-x)
@@ -144,37 +144,37 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Metacognition and Uncertainty Communication in Humans and Large Language Models** — Steyvers and Peters · Current Directions in Psychological Science 2025 · [paper](https://doi.org/10.1177/09637214251391158)
 - [ ] **What Large Language Models Know and What People Think They Know** — Steyvers et al. · Nature Machine Intelligence 2025 · [paper](https://doi.org/10.1038/s42256-024-00976-7)
 - [ ] **Metacognitive Monitoring: A Human Ability Beyond Generative Artificial Intelligence** — Huff and Ulakci · arXiv 2024 · [paper](https://arxiv.org/pdf/2410.13392)
-- [ ] **Large Language Models Lack Essential Metacognition for Reliable Medical Reasoning** — Griot et al. · Nature Communications 2025 · [paper](https://doi.org/10.1038/s41467-024-55628-6)
+- [x] **Large Language Models Lack Essential Metacognition for Reliable Medical Reasoning** — Griot et al. · Nature Communications 2025 · [paper](https://doi.org/10.1038/s41467-024-55628-6) → [[Medical models cannot say what they do not know (Griot 2025)]]
 - [ ] **Quantifying Uncert-AI-nty: Testing the Accuracy of LLMs' Confidence Judgments** — Cash et al. · Memory & Cognition 2026 · [paper](https://doi.org/10.3758/s13421-025-01755-4)
 - [ ] **Can LLMs Estimate Cognitive Complexity of Reading Comprehension Items?** — Hwang et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2510.25064)
 - [ ] **When Small Models Are Right for Wrong Reasons: Process Verification for Trustworthy Agents** — Advani · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.00513)
-- [ ] **Do Large Language Models Know What They Are Capable Of?** — Barkan et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2512.24661)
-- [ ] **Tell Me About Yourself: LLMs Are Aware of Their Learned Behaviors** — Betley et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2501.11120)
+- [x] **Do Large Language Models Know What They Are Capable Of?** — Barkan et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2512.24661) → [[Models are overconfident about their own abilities (Barkan 2025)]]
+- [x] **Tell Me About Yourself: LLMs Are Aware of Their Learned Behaviors** — Betley et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2501.11120) → [[Models describe behaviors they were trained into (Betley 2025)]]
 - [ ] **Do AI Know What They Know? Exploring Metacognition in LLMs** — Iqbal · Intelligent Data Analysis 2023 · [paper](https://doi.org/10.1177/1088467X261436903)
 - [ ] **Line of Duty: Evaluating LLM Self-Knowledge via Consistency in Feasibility Boundaries** — Kale and Nadadur · TrustNLP Workshop (ACL) 2025 · [paper](https://aclanthology.org/2025.trustnlp-main.10/)
 - [ ] **From Human to Model Overconfidence: Evaluating Confidence Dynamics in Large Language Models** — Wen et al. · NeurIPS Workshop on Behavioral Machine Learning 2024 · [paper](https://openreview.net/pdf?id=y9UdO5cmHs)
-- [ ] **Causal Evidence that Language Models use Confidence to Drive Behavior** — Kumaran et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2603.22161)
+- [x] **Causal Evidence that Language Models use Confidence to Drive Behavior** — Kumaran et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2603.22161) → [[Models act on their own confidence (Kumaran 2026)]]
 - [ ] **Cognitive Foundations for Reasoning and Their Manifestation in LLMs** — Karapugta et al. · HCAIR Workshop (ICLR) 2026 · [paper](https://openreview.net/forum?id=rRSiiKAxCx)
 - [ ] **Beyond Confidence: Rethinking Self-Assessments for Performance Prediction in LLMs** — Bhattacharyya et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2605.07806)
 - [ ] **MIRROR: A Hierarchical Benchmark for Metacognitive Calibration in Large Language Models** — Wang et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2604.19809)
-- [ ] **LLMs Know When They Know, but Do Not Act on It: A Metacognitive Harness for Test-time Scaling** — Cao et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2605.14186)
+- [x] **LLMs Know When They Know, but Do Not Act on It: A Metacognitive Harness for Test-time Scaling** — Cao et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2605.14186) → [[Models know when they know but do not act (Cao 2026)]]
 - [ ] **Vulnerability of LLMs' Belief Systems? LLMs Belief Resistance Check Through Strategic Persuasive Conversation Interventions** — Huang et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.13590)
 - [ ] **LLMs as Signal Detectors: Sensitivity, Bias, and the Temperature-Criterion Analogy** — Cacioli · arXiv 2026 · [paper](https://arxiv.org/pdf/2603.14893)
 - [ ] **Rescaling Confidence: What Scale Design Reveals About LLM Metacognition** — Dai · arXiv 2026 · [paper](https://arxiv.org/pdf/2603.09309)
 - [ ] **Mind the Confidence Gap: Overconfidence, Calibration, and Distractor Effects in Large Language Models** — Chhikara · arXiv 2025 · [paper](https://arxiv.org/pdf/2502.11028)
 - [ ] **Addressing Uncertainty in LLMs to Enhance Reliability in Generative AI** — Kaur et al. · NeurIPS Safe Generative AI Workshop 2024 · [paper](https://openreview.net/pdf?id=Z3DS4Pcxct)
 - [ ] **Worth the Weight: Modern LLMs Demonstrate Accurate Metacognitive Knowledge of Decision Weights in Multi-Attribute Choice** — Cash and Oppenheimer · PsyArXiv 2025 · [paper](https://osf.io/r73ez)
-- [ ] **What Do LLM Agents Do When Left Alone? Evidence of Spontaneous Meta-Cognitive Patterns** — Szeider · arXiv 2025 · [paper](https://arxiv.org/pdf/2509.21224)
+- [x] **What Do LLM Agents Do When Left Alone? Evidence of Spontaneous Meta-Cognitive Patterns** — Szeider · arXiv 2025 · [paper](https://arxiv.org/pdf/2509.21224) → [[Agents left alone study themselves (Szeider 2025)]]
 - [ ] **Generative AI as a Metacognitive Agent: A Comparative Mixed-Method Study with Human Participants on ICF-Mimicking Exam Performance** — Pavlovic et al. · arXiv 2024 · [paper](https://arxiv.org/pdf/2405.05285)
 - [ ] **Introspective Machines: Are LLMs Better at Self-Reflection Than Humans?** — Cappelen and Dever · Philosophical Perspectives 2024 · [paper](https://doi.org/10.1111/phpe.12201)
 - [ ] **Privileged Self-Access Matters for Introspection in AI** — Song et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2508.14802)
 - [ ] **System Prompt Learning in Large Language Models: Cross-Disciplinary Parallels with Human Cognition** — Pajo · ResearchGate 2025 · [paper](https://doi.org/10.13140/RG.2.2.33480.23049)
 - [ ] **Language Models Fail to Introspect About Their Knowledge of Language** — Song et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2503.07513)
-- [ ] **When Two LLMs Debate, Both Think They'll Win** — Prasad and Nguyen · arXiv 2025 · [paper](https://arxiv.org/pdf/2505.19184)
-- [ ] **Metacognitive Myopia in Large Language Models** — Scholten et al. · arXiv 2024 · [paper](https://arxiv.org/pdf/2408.05568)
-- [ ] **Towards Understanding the Cognitive Habits of Large Reasoning Models** — Dong et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2506.21571)
+- [x] **When Two LLMs Debate, Both Think They'll Win** — Prasad and Nguyen · arXiv 2025 · [paper](https://arxiv.org/pdf/2505.19184) → [[Both sides of a debate think they will win (Prasad 2025)]]
+- [x] **Metacognitive Myopia in Large Language Models** — Scholten et al. · arXiv 2024 · [paper](https://arxiv.org/pdf/2408.05568) → [[Metacognitive myopia as a frame for model bias (Scholten 2024)]]
+- [x] **Towards Understanding the Cognitive Habits of Large Reasoning Models** — Dong et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2506.21571) → [[Reasoning models show habits of mind (Dong 2025)]]
 - [ ] **From Latent Signals to Reflection Behavior: Tracing Meta-Cognitive Activation Trajectory in R1-Style LLMs** — Du et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2602.01999)
-- [ ] **Overclocking LLM Reasoning: Monitoring and Controlling Thinking Path Lengths in LLMs** — Eisenstadt et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2506.07240)
+- [x] **Overclocking LLM Reasoning: Monitoring and Controlling Thinking Path Lengths in LLMs** — Eisenstadt et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2506.07240) → [[Models track and can be steered in thinking length (Eisenstadt 2025)]]
 - [ ] **Cognitive Foundations for Reasoning and Their Manifestation in LLMs** — Kargupta et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2511.16660)
 - [ ] **Reasoning Models Generate Societies of Thought** — Kim et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.10825)
 - [ ] **Understanding R1-Zero-Like Training: A Critical Perspective** — Liu et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2503.20783)
@@ -196,7 +196,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Monitor-Generate-Verify (MGV): Formalising Metacognitive Theory for Language Model Reasoning** — Oh and Gobet · arXiv 2025 · [paper](https://arxiv.org/pdf/2511.04341)
 - [ ] **Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning** — Yan et al. · ICML 2025 · [paper](https://openreview.net/forum?id=RrvhbxO2hd)
 - [ ] **MIRA: An LLM-Driven Dual-Loop Architecture for Metacognitive Reward Design** — Zhang et al. · Systems 2025 · [paper](https://doi.org/10.3390/systems13121124)
-- [ ] **Metacognitive Myopia in Large Language Models** — Scholten et al. · arXiv 2024 · [paper](https://arxiv.org/pdf/2408.05568)
+- [x] **Metacognitive Myopia in Large Language Models** — Scholten et al. · arXiv 2024 · [paper](https://arxiv.org/pdf/2408.05568) → [[Metacognitive myopia as a frame for model bias (Scholten 2024)]]
 
 ## Metacognition for Reasoning Models
 
