@@ -30,9 +30,9 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Confidence and Accuracy of Near-Threshold Discrimination Responses** — Kunimoto et al. · Consciousness and Cognition 2001 · [paper](https://doi.org/10.1006/ccog.2000.0494)
 - [ ] **A Conceptual Analysis of Five Measures of Metacognitive Monitoring** — Schraw · Metacognition and Learning 2009 · [paper](https://doi.org/10.1007/s11409-008-9031-3)
 - [ ] **Literature Review on Metacognition and Its Measurement** — Akturk and Sahin · Procedia-Social and Behavioral Sciences 2011 · [paper](https://doi.org/10.1016/j.sbspro.2011.04.364)
-- [ ] **A Signal Detection Theoretic Approach for Estimating Metacognitive Sensitivity from Confidence Ratings** — Maniscalco and Lau · Consciousness and Cognition 2012 · [paper](https://doi.org/10.1016/j.concog.2011.09.021)
+- [x] **A Signal Detection Theoretic Approach for Estimating Metacognitive Sensitivity from Confidence Ratings** — Maniscalco and Lau · Consciousness and Cognition 2012 · [paper](https://doi.org/10.1016/j.concog.2011.09.021) → [[Meta-d-prime - sensitivity relative to task performance (Maniscalco 2012)]]
 - [ ] **Measures of Metacognition on Signal-Detection Theoretic Models** — Barrett et al. · Psychological Methods 2013 · [paper](https://doi.org/10.1037/a0033268)
-- [ ] **How to Measure Metacognition** — Fleming and Lau · Frontiers in Human Neuroscience 2014 · [paper](https://doi.org/10.3389/fnhum.2014.00443)
+- [x] **How to Measure Metacognition** — Fleming and Lau · Frontiers in Human Neuroscience 2014 · [paper](https://doi.org/10.3389/fnhum.2014.00443) → [[Bias-free measurement of metacognition (Fleming 2014)]]
 - [ ] **Metacognitive Information Theory** — Dayan · Open Mind 2023 · [paper](https://doi.org/10.1162/opmi_a_00091)
 - [ ] **Common Computations for Metacognition and Meta-Metacognition** — Zheng et al. · Neuroscience of Consciousness 2023 · [paper](https://doi.org/10.1093/nc/niad023)
 - [ ] **Information-Theoretic Measures of Metacognition: Bounds and Relation to Group Performance** — Meyen et al. · Open Mind 2025 · [paper](https://doi.org/10.1162/OPMI.a.40)
@@ -89,10 +89,10 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 
 - [ ] **Measuring the Metacognition of AI** — Servajean and Servajean · arXiv 2026 · [paper](https://arxiv.org/pdf/2603.29693)
 - [ ] **Metacognitive Sensitivity for Test-Time Dynamic Model Selection** — Trinh et al. · CogInterp Workshop 2026 · [paper](https://openreview.net/pdf?id=wROFSZZXu9)
-- [ ] **Judgments of Learning Distinguish Humans from Large Language Models in Predicting Memory** — Huff and Ulakci · Scientific Reports 2025 · [paper](https://doi.org/10.1038/s41598-025-22290-x)
+- [x] **Judgments of Learning Distinguish Humans from Large Language Models in Predicting Memory** — Huff and Ulakci · Scientific Reports 2025 · [paper](https://doi.org/10.1038/s41598-025-22290-x) → [[LLM judgments of learning do not predict memory (Huff 2025)]]
 - [ ] **Do LLMs Dream of Electric Emotions? Towards Quantifying Metacognition and Generalizing the Teacher-Student Model Using Ensembles of LLMs** — Sethi et al. · CIKM 2025 · [paper](https://doi.org/10.1145/3746252.3760839)
 - [ ] **Decoupling Metacognition from Cognition: A Framework for Quantifying Metacognitive Ability in LLMs** — Wang et al. · AAAI 2025 · [paper](https://ojs.aaai.org/index.php/AAAI/article/view/34723)
-- [ ] **Metacognitive Monitoring: A Human Ability Beyond Generative Artificial Intelligence** — Huff and Ulakci · arXiv 2024 · [paper](https://arxiv.org/pdf/2410.13392)
+- [x] **Metacognitive Monitoring: A Human Ability Beyond Generative Artificial Intelligence** — Huff and Ulakci · arXiv 2024 · [paper](https://arxiv.org/pdf/2410.13392) → [[LLM judgments of learning do not predict memory (Huff 2025)]]
 
 ## Neurofeedback-Based Methods
 
@@ -131,9 +131,9 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 
 - [ ] **Emergent Mechanisms of Self-Awareness in LLMs** — Bozoukov et al. · XAI4Science Workshop (NeurIPS) 2025 · [paper](https://openreview.net/pdf?id=6GGhnrQ2EV)
 - [x] **Looking Inward: Language Models Can Learn About Themselves by Introspection** — Binder et al. · ICLR 2025 · [paper](https://openreview.net/forum?id=eb5pkwIB5i) → [[Models predict themselves better than others do (Binder 2024)]]
-- [ ] **Do Large Language Models Know How Much They Know?** — Prato et al. · EMNLP 2024 · [paper](https://aclanthology.org/2024.emnlp-main.348/)
+- [x] **Do Large Language Models Know How Much They Know?** — Prato et al. · EMNLP 2024 · [paper](https://aclanthology.org/2024.emnlp-main.348/) → [[Do models know how much they know (Prato 2024)]]
 - [ ] **Feeling the Strength but Not the Source: Partial Introspection in LLMs** — Hahami et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2512.12411)
-- [ ] **Judgments of Learning Distinguish Humans from Large Language Models in Predicting Memory** — Huff and Ulakci · Scientific Reports 2025 · [paper](https://doi.org/10.1038/s41598-025-22290-x)
+- [x] **Judgments of Learning Distinguish Humans from Large Language Models in Predicting Memory** — Huff and Ulakci · Scientific Reports 2025 · [paper](https://doi.org/10.1038/s41598-025-22290-x) → [[LLM judgments of learning do not predict memory (Huff 2025)]]
 - [ ] **Meta-Cognitive Analysis: Evaluating Declarative and Procedural Knowledge in Datasets and Large Language Models** — Li et al. · LREC-COLING 2024 · [paper](https://aclanthology.org/2024.lrec-main.980/)
 - [ ] **Meta-Memory for Large Language Models** — Liang et al., · IEEE Transactions on Audio, Speech and Language Processing 2026 · [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11515167)
 - [ ] **Decoupling Metacognition from Cognition: A Framework for Quantifying Metacognitive Ability in LLMs** — Wang et al. · AAAI 2025 · [paper](https://ojs.aaai.org/index.php/AAAI/article/view/34723)
@@ -143,7 +143,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs** — Liu et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2606.32032)
 - [ ] **Metacognition and Uncertainty Communication in Humans and Large Language Models** — Steyvers and Peters · Current Directions in Psychological Science 2025 · [paper](https://doi.org/10.1177/09637214251391158)
 - [x] **What Large Language Models Know and What People Think They Know** — Steyvers et al. · Nature Machine Intelligence 2025 · [paper](https://doi.org/10.1038/s42256-024-00976-7) → [[People over-trust what models know (Steyvers 2025)]]
-- [ ] **Metacognitive Monitoring: A Human Ability Beyond Generative Artificial Intelligence** — Huff and Ulakci · arXiv 2024 · [paper](https://arxiv.org/pdf/2410.13392)
+- [x] **Metacognitive Monitoring: A Human Ability Beyond Generative Artificial Intelligence** — Huff and Ulakci · arXiv 2024 · [paper](https://arxiv.org/pdf/2410.13392) → [[LLM judgments of learning do not predict memory (Huff 2025)]]
 - [x] **Large Language Models Lack Essential Metacognition for Reliable Medical Reasoning** — Griot et al. · Nature Communications 2025 · [paper](https://doi.org/10.1038/s41467-024-55628-6) → [[Medical models cannot say what they do not know (Griot 2025)]]
 - [ ] **Quantifying Uncert-AI-nty: Testing the Accuracy of LLMs' Confidence Judgments** — Cash et al. · Memory & Cognition 2026 · [paper](https://doi.org/10.3758/s13421-025-01755-4)
 - [ ] **Can LLMs Estimate Cognitive Complexity of Reading Comprehension Items?** — Hwang et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2510.25064)
@@ -266,7 +266,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Self-Aware Language Models: A Taxonomy and Evaluation of Epistemic Uncertainty and Hallucination Mitigation** — Tiwari and Gupta · Research Square 2026 · [paper](https://doi.org/10.21203/rs.3.rs-8589677/v1)
 - [ ] **Whether LLMs Know If They Know: Identifying Knowledge Boundaries via Debiased Historical In-Context Learning** — Lv et al. · ACL Findings 2025 · [paper](https://aclanthology.org/2025.findings-acl.999/)
 - [ ] **Physics-Informed Metacognition: Improving LLMs Self-Knowledge via Physical Constraints** — Roy and Roy · EurIPS Workshop on Metacognition in Generative AI 2025 · [paper](https://openreview.net/forum?id=LF4RSTZUtA)
-- [ ] **Do Large Language Models Know How Much They Know?** — Prato et al. · EMNLP 2024 · [paper](https://aclanthology.org/2024.emnlp-main.348/)
+- [x] **Do Large Language Models Know How Much They Know?** — Prato et al. · EMNLP 2024 · [paper](https://aclanthology.org/2024.emnlp-main.348/) → [[Do models know how much they know (Prato 2024)]]
 - [x] **Do Large Language Models Know What They Don't Know?** — Yin et al. · ACL Findings 2023 · [paper](https://aclanthology.org/2023.findings-acl.551.pdf) → [[Models partly know what they do not know (Yin 2023)]]
 
 ## Resistance to Persuasion
