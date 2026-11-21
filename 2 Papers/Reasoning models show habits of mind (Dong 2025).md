@@ -13,7 +13,7 @@ tier: skim
 tests: [divergent]
 components: [monitoring]
 tags: [type/paper, section/2, test/divergent, component/monitoring, status/skimmed, relevance/2, role/prior-art, metacognition, reasoning, habits-of-mind, benchmark]
-links: ["[[Metacognition - watch and control yourself]]", "[[Reasoning models generate societies of thought (Kim 2026)]]"]
+links: ["[[Metacognition - watch and control yourself]]"]
 ---
 
 # Towards Understanding the Cognitive Habits of Large Reasoning Models
