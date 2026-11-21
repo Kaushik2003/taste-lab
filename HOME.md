@@ -37,8 +37,11 @@ The angle:
 Open these:
 - [[outline|The plan of the review]]: 9 sections and the papers in each one.
 - [[matrix|The paper table]]: which paper covers which part.
-- [[gaps|What nobody has done yet]] (13 gaps, updated 20 November)
-- First drafts: [[03-monitoring|Section 3, Monitoring]] and [[05-persistent-control|Section 5, Persistent control]]. Each ends with a list of open doubts.
+- [[gaps|What nobody has done yet]] (14 gaps, updated 21 November)
+- [[08-synthesis|Section 8, Synthesis]]: where the whole argument comes together. Read this first if you read one section.
+- First drafts that wait for your review: [[03-monitoring|Section 3, Monitoring]] and [[05-persistent-control|Section 5, Persistent control]]. Each ends with a list of open doubts.
+
+**Where things stand (21 November):** all 9 sections have a draft in **1 Literature review**. There are 119 paper notes in **2 Papers**. Sections 1, 2, 4, 6, 7, 8 and 9 were deepened on 21 November. Sections 3 and 5 are untouched and wait for your "draft OK".
 
 ## 2. Read this week
 
