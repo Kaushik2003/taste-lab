@@ -48,6 +48,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Medical models cannot say what they do not know (Griot 2025)]] | 3 | skim | – | – | – | – | monitor | motivation for the review (clinical monitoring gap) |
 | [[Models are overconfident about their own abilities (Barkan 2025)]] | 3 | skim | – | – | – | – | monitor, control | prior art for the review (monitoring fails, control rule fine) |
 | [[Models track and can be steered in thinking length (Eisenstadt 2025)]] | 3 | skim | – | – | ✓ | – | monitor, control | prior art Q6 (decode-then-steer progress signal) |
+| [[A metacognitive coach lets a fast model beat a reasoner (Khandelwal 2025)]] | 3 | skim | – | – | – | – | monitor, control | prior art for the review (external monitor substitutes for capability) |
 | [[Emotion directions drive choices in Claude (Anthropic 2026)]] | 4 | deep | – | – | ✓ | – | evaluate | prior art Q1 |
 | [[Hidden good-bad feeling changes choices (Berg 2026)]] | 4 | deep | – | – | ✓ | ? | evaluate, control | prior art Q1 (grounded design); threat Q3 (DPO does not move valence) |
 | [[Steer code readability inside the model (Gao 2026)]] | 4 | deep | – | – | – | – | control | prior art Q2 (baseline arm), Q1 |
@@ -55,6 +56,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Few neurons predict right answers (Xu 2026)]] | 4 | deep | – | – | ✓ | – | monitor, evaluate, control | prior art Q1, Q2; threat Q1 (correctness confound) |
 | [[One evaluation circuit for all norms (Liga 2026)]] | 4 | skim | – | ? | ? | – | evaluate | prior art Q1 (one shared evaluation circuit; cue-word confound) |
 | [[Model values form coherent utilities that can be steered (Mazeika 2025)]] | 4 | deep | – | ✓ | – | – | monitor | prior art section 4 (values as coherent utilities that can be read and steered) |
+| [[Hidden-state geometry flags redundant reasoning (Li 2025)]] | 4 | deep | – | – | ✓ | – | monitor | prior art Q1 (label-free internal signal for self-evaluation) |
 | [[SEAL - models write their own training data (Zweiger 2025)]] | 5 | deep | – | – | – | ✓ | persist | prior art Q3, Q4 |
 | [[TFTV - turn a steering vector into a weight edit (Perin 2026)]] | 5 | deep | – | – | – | – | persist | prior art Q5 |
 | [[WSP - a model reads and edits weights (Takehi 2026)]] | 5 | deep | – | – | – | – | persist | prior art Q4, Q5 |
@@ -74,6 +76,10 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Persona vectors monitor and steer character traits (Chen 2025)]] | 5 | deep | – | – | – | – | monitor, control | threat Q4 (preventative persona steering); a method for a taste vector |
 | [[A survey of self-evolving agents (Gao 2025)]] | 5 | skim | – | – | – | – | control, persist | prior art for the review (the what/when/how/where map of self-evolution) |
 | [[Agents left alone study themselves (Szeider 2025)]] | 5 | skim | ✓ | ✓ | – | – | consolidation | prior art G5 (persistent self-state yields unprompted self-inquiry) |
+| [[Reusable behaviors distilled from own traces (Didolkar 2025)]] | 5 | deep | – | ✓ | – | – | consolidation | prior art Q3 (own traces -> behavior handbook -> SFT) |
+| [[An explicit meta-level makes reasoning controllable (Dong 2025)]] | 5 | skim | – | – | – | – | monitor, control | prior art G5 (engineered object/meta split) |
+| [[Decoupled reasoning and control beats entangled thinking (Ha 2025)]] | 5 | skim | – | – | – | – | control | prior art G5 (control trained separately via CSPO) |
+| [[Two agents learn to think about thinking (Wan 2025)]] | 5 | deep | – | – | – | – | control | prior art G5 (MARL meta-agent learns oversight) |
 | [[Self-reward sharpens then collapses (He 2026)]] | 6 | deep | – | – | – | ✓ | anchor | threat Q3 |
 | [[Self-reward on code collapses to short code (Jin 2026)]] | 6 | deep | – | – | – | ✓ | evaluate, anchor | threat Q3 |
 | [[Self-reward only within the same test result (Wu 2026)]] | 6 | deep | – | – | – | ✓ | anchor, persist | prior art Q3 |
@@ -91,6 +97,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[INTUITOR - self-certainty is reward enough to learn reasoning (Zhao 2025)]] | 6 | deep | – | – | – | ✓ | control, persist | prior art Q3 (the intrinsic-reward baseline: self-certainty alone matches RLVR) |
 | [[MoT - models improve by remembering their own good thinking (Li 2023)]] | 6 | skim | – | – | – | – | persist | prior art Q3 (confidence-filtered memory; weakest persist rung) |
 | [[Metacognitive myopia as a frame for model bias (Scholten 2024)]] | 6 | skim | – | – | – | – | monitor, control | prior art for the review (bias as missing metacognition) |
+| [[Train reasoning and calibration together or lose both (Yeom 2026)]] | 6 | skim | – | – | – | – | monitor | prior art for the review (self-training eats calibration; joint objective fixes) |
 | [[Models show research taste (Trehan 2026)]] | 7 | deep | ✓ | ✓ | – | – | evaluate | prior art Q1 (method for tests 1 and 2) |
 | [[OMNI - models judge which tasks are interesting (Zhang 2023)]] | 7 | deep | ? | – | – | ? | control, anchor | prior art Q3 (taste picks what to learn; taste is human, not own) |
 | [[Open-ended means novel and learnable to an observer (Hughes 2024)]] | 7 | deep | ? | – | – | ✓ | anchor | prior art Q3 (definition for test 4) |
