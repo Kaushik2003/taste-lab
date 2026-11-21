@@ -1,7 +1,7 @@
 ---
 type: paper
 title: "Metalearning and neuromodulation"
-status: skimmed
+status: read
 arxiv:
 url: https://doi.org/10.1016/S0893-6080(02)00044-8
 doi: 10.1016/S0893-6080(02)00044-8
@@ -23,7 +23,7 @@ links: ["[[Neuromodulators as learning settings]]", "[[Metacognition - watch and
 
 **Why it matters to us:** It gives the "control" arrow of [[Monitoring and control between two levels (Nelson 1990)]] a concrete set of knobs. Our architecture uses this mapping for the controller ([[Neuromodulators as learning settings]]).
 
-Source: bibliographic data and abstract from [researchr](https://researchr.org/publication/Doya02/bibtex) and the [special-issue listing](https://mailman.srv.cs.cmu.edu/pipermail/connectionists/2002-August/020829.html). DOI [10.1016/S0893-6080(02)00044-8](https://doi.org/10.1016/S0893-6080(02)00044-8). **We did not find an open full text.** Everything below past the abstract is [unverified] until someone reads the paper.
+Source: full text read from an open copy of Neural Networks 15(4-6), 495-506 ([mirror PDF](https://fleetwood.dev/papers/doya2002.pdf)), via `pdftotext`. DOI [10.1016/S0893-6080(02)00044-8](https://doi.org/10.1016/S0893-6080(02)00044-8). Earlier abstract-only flags resolved 2026-11-21.
 
 **Words used here:**
 - **Reinforcement learning (RL):** learning from rewards. The learner tries actions and makes rewarded ones more likely.
@@ -43,14 +43,14 @@ The ascending neuromodulator systems carry global signals that regulate learning
 ## Mechanism
 - The theory starts from standard RL. An agent learns value predictions from reward prediction errors.
 - Such learners need meta-parameters set well: learning rate, exploration randomness and discount factor. Doya proposes that the brain sets them dynamically with neuromodulators, and that this is a form of metalearning.
-- The paper builds the mapping from a review of experimental data and theoretical models (abstract). We have not read the specific models it reviews [unverified].
+- The paper builds the mapping from a review of experimental data and theoretical models (Sec. 1). It then walks each neuromodulator against the RL formalism: dopamine against the reward prediction error (Sec. 3.1), serotonin against the discount factor, with a simulated maze task showing how gamma shifts decisions (Sec. 3.2, Fig. 7), noradrenaline against the inverse temperature of action selection (Sec. 3.3), acetylcholine against the learning rate of memory update (Sec. 3.4).
 
 ## Evidence
-- A theory paper. Its support is a review of earlier animal and modelling studies, not a new experiment [unverified: from the abstract's wording "based on the review of experimental data and theoretical models"].
+- A theory paper. Its support is a review of earlier animal and modelling studies plus small simulations of its own (e.g. the discount-factor maze, Fig. 7), not a new experiment. The four mappings are stated explicitly in Sec. 3, items 1-4.
 - It is widely cited in computational neuroscience; we did not check a citation count.
 
 ## Limits / what they didn't show
-- One chemical, one knob is a simplification. Later work (not read here) has argued for more mixed roles, especially for serotonin [unverified].
+- One chemical, one knob is a simplification, and the paper itself says so: serotonin shows "complex, context-dependent functions" beyond the discount factor, and a whole passage covers serotonin-dopamine interactions (both mutually facilitatory and opponent cases, Sec. 3.2). Later work has pushed the mixed-roles view further.
 - It describes how a brain could set its learning settings. It says nothing about who decides what is good (the reward is given), so it has no "taste".
 - No link to language models. Any mapping to a model's learning rate, sampling temperature or planning horizon is our analogy, not the paper's claim.
 
