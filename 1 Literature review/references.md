@@ -32,6 +32,7 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Casey O. Barkan, Sid Black, Oliver Sourbut (2025). *Do Large Language Models Know What They Are Capable Of?*. arXiv preprint. https://arxiv.org/abs/2512.24661
 - Christopher Ackerman (2025). *Evidence for Limited Metacognition in LLMs*. arXiv preprint. https://arxiv.org/abs/2509.21545
 - Chung-En Sun, Ge Yan, Tsui-Wei Weng (2025). *ThinkEdit: Interpretable Weight Editing to Mitigate Overly Short Thinking in Reasoning Models*. EMNLP 2025. https://arxiv.org/abs/2503.22048
+- Clara Colombatto, Sean Rintel, Lev Tankelevitch (2025). *Metacognition and Confidence Dynamics in Advice Taking from Generative AI*. arXiv preprint. https://arxiv.org/abs/2510.26508
 - Dillon Plunkett, Adam Morris, Keerthi Reddy, Jorge Morales (2025). *Self-Interpretability: LLMs Can Describe Complex Internal Processes that Drive Their Decisions*. preprint (v2 10 Nov 2025). https://arxiv.org/abs/2505.17120
 - Haonan Dong, Haoran Ye, Wenhao Zhu, Kehan Jiang, Guojie Song (2025). *Meta-R1: Empowering Large Reasoning Models with Metacognition*. arXiv preprint. https://arxiv.org/abs/2508.17291
 - Haoxi Li, Sikai Bai, Jie Zhang, Song Guo (2025). *CoRE: Enhancing Metacognition with Label-free Self-evaluation in LRMs*. arXiv preprint. https://arxiv.org/abs/2507.06087
@@ -45,21 +46,26 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Ma et al. [unverified: full author list] (2025). *Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens*. EMNLP 2025. https://aclanthology.org/2025.emnlp-main.171/
 - Mantas Mazeika, Xuwang Yin, Rishub Tamirisa, Jaehyuk Lim, Bruce W. Lee, Richard Ren, Long Phan, Norman Mu, Adam Khoja, Oliver Zhang, Dan Hendrycks (2025). *Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs*. preprint (v2). https://arxiv.org/abs/2502.08640
 - Mark Steyvers, Catarina Belem, Padhraic Smyth (2025). *Generalization of Fine-Tuned Uncertainty Communication and Metacognition in Large Language Models*. arXiv preprint. https://arxiv.org/abs/2510.05126
+- Mark Steyvers, Heliodoro Tejeda, Aakriti Kumar, Catarina Belem, Sheer Karny, Xinyue Hu, Lukas Mayer, Padhraic Smyth (2025). *What Large Language Models Know and What People Think They Know*. Nature Machine Intelligence. https://doi.org/10.1038/s42256-024-00976-7
 - Maxime Griot, Coralie Hemptinne, Jean Vanderdonckt, Demet Yuksel (2025). *Large Language Models Lack Essential Metacognition for Reliable Medical Reasoning*. Nature Communications. https://doi.org/10.1038/s41467-024-55628-6
 - Pradyumna Shyama Prasad, Minh Nhat Nguyen (2025). *When Two LLMs Debate, Both Think They'll Win*. arXiv preprint. https://arxiv.org/abs/2505.19184
 - Roy Eisenstadt, Itamar Zimerman, Lior Wolf (2025). *Overclocking LLM Reasoning: Monitoring and Controlling Thinking Path Lengths in LLMs*. arXiv preprint. https://arxiv.org/abs/2506.07240
 - Rui Ha, Rui Pu, Chaozhuo Li, Li Sun, Sen Su (2025). *From Aha Moments to Controllable Thinking: Toward Meta-Cognitive Reasoning in Large Reasoning Models via Decoupled Reasoning and Control*. arXiv preprint. https://arxiv.org/abs/2508.04460
 - Runjin Chen, Andy Arditi, Henry Sleight, Owain Evans, Jack Lindsey (2025). *Persona Vectors: Monitoring and Controlling Character Traits in Language Models*. arXiv preprint. https://arxiv.org/abs/2507.21509
+- S. Fernandes, et al. (2025). *AI Makes You Smarter but None the Wiser: The Disconnect Between Performance and Metacognition*. Computers in Human Behavior. https://doi.org/10.1016/j.chb.2025.108779
+- Samuel G.B. Johnson, Amir-Hossein Karimi, Yoshua Bengio, Nick Chater, Tobias Gerstenberg, Kate Larson, Sydney Levine, Melanie Mitchell, Iyad Rahwan, Bernhard Scholkopf, Igor Grossmann, et al. (2025). *Imagining and Building Wise Machines: The Centrality of AI Metacognition*. Trends in Cognitive Sciences. https://doi.org/10.1016/j.tics.2026.01.002
 - Stefan Szeider (2025). *What Do LLM Agents Do When Left Alone? Evidence of Spontaneous Meta-Cognitive Patterns*. arXiv preprint. https://arxiv.org/abs/2509.21224
 - Tennison Liu, Mihaela van der Schaar (2025). *Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning*. preprint (position paper). https://arxiv.org/abs/2506.05109
 - Thea Aviss (2025). *State Stream Transformer (SST): Emergent Metacognitive Behaviours Through Latent State Persistence*. arXiv preprint. https://arxiv.org/abs/2501.18356
 - Vedant Khandelwal, Francesca Rossi, Keerthiram Murugesan, Erik Miehling, Murray Campbell (2025). *Language Models Coupled with Metacognition Can Outperform Reasoning Models*. arXiv preprint. https://arxiv.org/abs/2508.17959
 - Xiaojian Li, Haoyuan Shi, Rongwu Xu, Wei Xu (2025). *AI Awareness*. arXiv preprint (review). https://arxiv.org/abs/2504.20084
 - Xuandong Zhao, Zhewei Kang, Aosong Feng, Sergey Levine, Dawn Song (2025). *Learning to Reason without External Rewards (INTUITOR)*. arXiv preprint. https://arxiv.org/abs/2505.19590
+- ZhaoBin Li, Mark Steyvers (2025). *Beyond Accuracy: How AI Metacognitive Sensitivity Improves AI-Assisted Decision Making*. arXiv preprint. https://arxiv.org/abs/2507.22365
 - Ziyu Wan, Yunxiang Li, Xiaoyu Wen, Yan Song, Hanjing Wang (2025). *ReMA: Learning to Meta-think for LLMs with Multi-Agent Reinforcement Learning*. NeurIPS 2025. https://arxiv.org/abs/2503.09501
 - Zweiger, Pari, Guo, Akyürek, Kim, Agrawal (MIT) (2025). *SEAL: Self-Adapting Language Models*. NeurIPS 2025. https://arxiv.org/abs/2506.10943
 - Aayush Marasini, Barsat Khadka, Nick Rahimi (2026). *WeightBench: Evaluating Language Models as Weight-Space Programmers*. arXiv preprint. https://arxiv.org/abs/2611.18553
 - Alex Lin Wang, Linus Yifeng Tang, Dami Choi, Neil Chowdhury (2026). *Training Language Models for Introspective Oversight*. arXiv preprint. https://arxiv.org/abs/2611.23365
+- Andrew D. Maynard (2026). *The AI Cognitive Trojan Horse: How Large Language Models May Bypass Human Epistemic Vigilance*. arXiv preprint. https://arxiv.org/abs/2601.07085
 - Anthropic Interpretability (2026). *Emotion Concepts and Their Function in a Large Language Model*. preprint. https://www.anthropic.com/research/emotion-concepts-function
 - Arush Tagade, Shaoheng Zhou, Jiaxin Wen, Shi Feng (2026). *Self-Modeling Interventions can Modulate Emergent Misalignment*. arXiv preprint. https://arxiv.org/abs/2606.23700
 - Bo Li, Taoyong Cui, Bob Zhang, Mengran Li, Chengyang Zhang, Yang Zhang, Pheng Ann Heng, Wanli Ouyang, Zhenfei Yin, Yingcheng Wu, Ling Yang (2026). *WeightCode: Installing New Capabilities into Neural Networks via Weight-Space Programming*. arXiv preprint. https://arxiv.org/abs/2611.25476
