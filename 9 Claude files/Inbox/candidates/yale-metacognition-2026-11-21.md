@@ -314,7 +314,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 
 - [ ] **Could You Be Wrong: Metacognitive Prompts for Improving Human Decision Making Help LLMs Identify Their Own Biases** — Hills · AI (MDPI) 2026 · [paper](https://doi.org/10.3390/ai7010033)
 - [ ] **Metacognitive Sensitivity for Test-Time Dynamic Model Selection** — Trinh et al. · CogInterp Workshop 2026 · [paper](https://openreview.net/pdf?id=wROFSZZXu9)
-- [ ] **MetaGDPO: Alleviating Catastrophic Forgetting with Metacognitive Knowledge Through Group Direct Preference Optimization** — Zhang et al. · AAAI 2026 · [paper](https://ojs.aaai.org/index.php/AAAI/article/view/40777)
+- [x] **MetaGDPO: Alleviating Catastrophic Forgetting with Metacognitive Knowledge Through Group Direct Preference Optimization** — Zhang et al. · AAAI 2026 · [paper](https://ojs.aaai.org/index.php/AAAI/article/view/40777) → [[Metacognitive knowledge guards against forgetting (Zhang 2026)]]
 - [ ] **Pragmatic Metacognitive Prompting Improves LLM Performance on Sarcasm Detection** — Lee et al. · CHum Workshop (ACL) 2025 · [paper](https://aclanthology.org/2025.chum-1.7/)
 - [ ] **Think, Reflect, Create: Metacognitive Learning for Zero-Shot Robotic Planning** — Lin et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2505.14899)
 - [ ] **Meta-Cognitive Prompting: A Comparative Framework for Prompt Engineering in Large Language Models** — Maxwell · ResearchGate 2025 · [paper](https://doi.org/10.13140/RG.2.2.22405.46562)

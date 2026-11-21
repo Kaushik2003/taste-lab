@@ -88,6 +88,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[An explicit meta-level makes reasoning controllable (Dong 2025)]] | 5 | skim | – | – | – | – | monitor, control | prior art G5 (engineered object/meta split) |
 | [[Decoupled reasoning and control beats entangled thinking (Ha 2025)]] | 5 | skim | – | – | – | – | control | prior art G5 (control trained separately via CSPO) |
 | [[Two agents learn to think about thinking (Wan 2025)]] | 5 | deep | – | – | – | – | control | prior art G5 (MARL meta-agent learns oversight) |
+| [[Metacognitive knowledge guards against forgetting (Zhang 2026)]] | 5 | skim | – | – | – | – | consolidation | prior art for the review (forgetting guard for the persist leg) |
 | [[Self-reward sharpens then collapses (He 2026)]] | 6 | deep | – | – | – | ✓ | anchor | threat Q3 |
 | [[Self-reward on code collapses to short code (Jin 2026)]] | 6 | deep | – | – | – | ✓ | evaluate, anchor | threat Q3 |
 | [[Self-reward only within the same test result (Wu 2026)]] | 6 | deep | – | – | – | ✓ | anchor, persist | prior art Q3 |
