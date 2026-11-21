@@ -20,6 +20,8 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[A map of artificial metacognition (Shakarian 2026)]] | 2 | skim | – | – | – | – | monitor, control | prior art section 2 (classical metareasoning lineage) |
 | [[Models name the skills a problem needs (Didolkar 2024)]] | 2 | deep | – | – | – | – | monitor | prior art for the review (declarative metacognitive knowledge: naming own skills) |
 | [[Introspection needs a causal link to count (Comsa 2025)]] | 2 | deep | – | – | ✓ | – | monitor | prior art for the review (the causal-link criterion for introspection) |
+| [[AI awareness as a measurable capacity (Li 2025)]] | 2 | skim | – | – | – | – | monitor, control | prior art for the review (awareness as measurable capacity is now mainstream) |
+| [[Metacognitive prompting cuts theory-of-mind errors (Leer 2023)]] | 2 | skim | – | – | – | – | monitor | prior art for the review (prompted scaffolding, not capacity) |
 | [[Models can report and control their own activations (Ji-An 2025)]] | 3 | deep | – | – | ✓ | – | monitor, control | prior art Q6 |
 | [[Models sometimes notice injected thoughts (Lindsey 2025)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6; threat Q6 (weak in open 8B models) |
 | [[Training LMs to watch themselves (Wang 2026)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6; threat Q3 (warns against training on own verdicts) |
@@ -39,6 +41,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Intrinsic metacognition needs a good lens (Ma 2025)]] | 3 | deep | – | – | – | – | monitor | prior art Q6 (step-level intrinsic metacognition; the lens is the bottleneck) |
 | [[Fine-tuned uncertainty reports transfer across domains (Steyvers 2025)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6 (trained calibrated uncertainty generalizes across domains) |
 | [[Models partly know what they do not know (Yin 2023)]] | 3 | skim | – | – | – | – | monitor | prior art for the review (knowledge boundary; SelfAware) |
+| [[Small models deny sentience and their internals agree (Kaiser 2026)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6 (report-vs-probe consistency across 3 families, 0.6-70B) |
 | [[Emotion directions drive choices in Claude (Anthropic 2026)]] | 4 | deep | – | – | ✓ | – | evaluate | prior art Q1 |
 | [[Hidden good-bad feeling changes choices (Berg 2026)]] | 4 | deep | – | – | ✓ | ? | evaluate, control | prior art Q1 (grounded design); threat Q3 (DPO does not move valence) |
 | [[Steer code readability inside the model (Gao 2026)]] | 4 | deep | – | – | – | – | control | prior art Q2 (baseline arm), Q1 |
@@ -79,6 +82,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[MARS - metacognitive reflection in one cycle (Hou 2026)]] | 6 | skim | – | – | – | – | control | prior art Q2 (metacognitive reflection improves the agent without moving the evaluator) |
 | [[RISE - recursive introspection improves own answers (Qu 2024)]] | 6 | skim | – | – | – | – | control, persist | prior art Q2 (trained recursive self-correction; the evaluator stays fixed) |
 | [[INTUITOR - self-certainty is reward enough to learn reasoning (Zhao 2025)]] | 6 | deep | – | – | – | ✓ | control, persist | prior art Q3 (the intrinsic-reward baseline: self-certainty alone matches RLVR) |
+| [[MoT - models improve by remembering their own good thinking (Li 2023)]] | 6 | skim | – | – | – | – | persist | prior art Q3 (confidence-filtered memory; weakest persist rung) |
 | [[Models show research taste (Trehan 2026)]] | 7 | deep | ✓ | ✓ | – | – | evaluate | prior art Q1 (method for tests 1 and 2) |
 | [[OMNI - models judge which tasks are interesting (Zhang 2023)]] | 7 | deep | ? | – | – | ? | control, anchor | prior art Q3 (taste picks what to learn; taste is human, not own) |
 | [[Open-ended means novel and learnable to an observer (Hughes 2024)]] | 7 | deep | ? | – | – | ✓ | anchor | prior art Q3 (definition for test 4) |
