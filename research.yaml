@@ -35,13 +35,31 @@ queries:
   code_quality:
     - '(abs:"code readability" OR abs:"code quality") AND abs:"language model"'
 
+  world_models:
+    - 'abs:"world model" AND (abs:"reinforcement learning" OR abs:"language model")'
+    - 'abs:"latent dynamics" OR abs:"learned simulator"'
+  intrinsic_motivation:
+    - 'abs:"curiosity-driven" OR (abs:curiosity AND abs:"intrinsic reward")'
+    - 'abs:empowerment AND abs:"reinforcement learning"'
+    - 'abs:"active inference" OR abs:"free energy principle"'
+  open_endedness:
+    - 'abs:"open-endedness" OR abs:"open-ended learning"'
+    - 'abs:"novelty search" OR abs:"quality-diversity"'
+
 # Authors/labs whose new papers always get surfaced
 authors:
   - Lindsey, Jack
+  - Schmidhuber, Juergen
+  - Friston, Karl
+  - LeCun, Yann
+  - Stanley, Kenneth
+  - Pathak, Deepak
+  - Ha, David
+  - Silver, David
+  - Clune, Jeff
   - Zweiger, Adam
   - Khattab, Omar
   - Irie, Kazuki
-  - Clune, Jeff
   - Evans, Owain
   - Hendrycks, Dan
   - Doya, Kenji
@@ -56,3 +74,21 @@ watch_sites:
   - research.google/blog
   - alignmentforum.org
   - jyopari.github.io      # SEAL authors
+
+# Plain-text queries for scripts/fetch_semantic_scholar.py (backfill + adjacent areas).
+# Semantic Scholar has no ti:/abs: syntax; these match title+abstract.
+s2_queries:
+  foundations_backfill:
+    - 'metamemory metacognition monitoring control framework'
+    - 'feeling of knowing judgment of learning confidence'
+    - 'intrinsic motivation curiosity reinforcement learning exploration'
+    - 'world models reinforcement learning latent dynamics'
+    - 'active inference free energy principle action perception'
+    - 'open-ended evolution novelty search'
+    - 'interestingness compression progress artificial curiosity'
+  adjacent_recent:
+    - 'world model language model reasoning planning'
+    - 'self-model neural network representation'
+    - 'intrinsic motivation large language model agents'
+    - 'aesthetic judgment machine taste preference model'
+    - 'continual self-improvement language model'
