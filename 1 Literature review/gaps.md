@@ -46,11 +46,11 @@ Updated 2026-11-20 (six-angle search: 12 papers added; the Stable test now has 3
 | Section | Papers | Read | Note |
 |---|---|---|---|
 | 1 Introduction | 1 | 0 | **Under 2.** Chapados (code style moves while tests hold) supports the testbed choice. |
-| 2 Foundations | 13 | 0 | Fleming and Daw (2017), Cacioli, Koch and Backpropamine added 2026-11-20. Doya note is abstract only. |
-| 3 Monitoring | 14 | 1 | Betley and Plunkett added: self-report follows a fine-tuned change. Rubin 2026 and Zeng 2026 added 2026-11-20. Rubin: the model reports at chance only early in training. Cao: self-reports exist but do not drive retries. |
+| 2 Foundations | 15 | 0 | Fleming and Daw (2017), Cacioli, Koch and Backpropamine added 2026-11-20. Doya note is abstract only. |
+| 3 Monitoring | 19 | 1 | Betley and Plunkett added: self-report follows a fine-tuned change. Rubin 2026 and Zeng 2026 added 2026-11-20. Rubin: the model reports at chance only early in training. Cao: self-reports exist but do not drive retries. |
 | 4 Evaluation signals | 7 | 1 | All signals are correctness signals. Liga: one shared circuit for norm judgments. |
-| 5 Persistent control | 17 | 2 | Best covered. Irie, Nested Learning (wait for your in/out call) and MAGELLAN added. One model now edits itself (Fan); every editor is still judged from outside. |
-| 6 Limits | 14 | 0 | Xu 2024: self-refinement inflates self-scores. Strong on threats; one design that works (hard check plus gate). Kongsilp: a second rise-then-decay case. |
+| 5 Persistent control | 18 | 2 | Best covered. Irie, Nested Learning (wait for your in/out call) and MAGELLAN added. One model now edits itself (Fan); every editor is still judged from outside. |
+| 6 Limits | 15 | 0 | Xu 2024: self-refinement inflates self-scores. Strong on threats; one design that works (hard check plus gate). Kongsilp: a second rise-then-decay case. |
 | 7 Taste & open-endedness | 11 | 0 | Stable test now 3 papers, 2 against (Trhlik, Kovač). Own-model premium: Panickssery, Wataoka. Liang: self-revised values converge. |
 | 8 Synthesis | 0 | 0 | Written in [[outline]]; no papers needed. |
 | 9 Conclusion | 0 | 0 | **Under 2.** No papers needed. |

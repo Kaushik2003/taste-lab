@@ -63,6 +63,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[MAGELLAN - an agent predicts its own learning progress (Gaven 2025)]] | 5 | deep | – | – | ? | ? | monitor, control | prior art Q3 (a hidden-state competence signal picks what to learn; not taste) |
 | [[WeightCode - a model writes programs that edit weights (Li 2026)]] | 5 | skim | – | – | – | – | persist | prior art Q4 (weight programs install capabilities and rerun on new networks) |
 | [[Persona vectors monitor and steer character traits (Chen 2025)]] | 5 | deep | – | – | – | – | monitor, control | threat Q4 (preventative persona steering); a method for a taste vector |
+| [[A survey of self-evolving agents (Gao 2025)]] | 5 | skim | – | – | – | – | control, persist | prior art for the review (the what/when/how/where map of self-evolution) |
 | [[Self-reward sharpens then collapses (He 2026)]] | 6 | deep | – | – | – | ✓ | anchor | threat Q3 |
 | [[Self-reward on code collapses to short code (Jin 2026)]] | 6 | deep | – | – | – | ✓ | evaluate, anchor | threat Q3 |
 | [[Self-reward only within the same test result (Wu 2026)]] | 6 | deep | – | – | – | ✓ | anchor, persist | prior art Q3 |
@@ -77,6 +78,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Rényi crossings track richness loss in self-training (Srivastava 2026)]] | 6 | deep | – | – | – | – | monitor, persist | threat Q3 (richness vs evenness; measurement hygiene for collapse claims) |
 | [[MARS - metacognitive reflection in one cycle (Hou 2026)]] | 6 | skim | – | – | – | – | control | prior art Q2 (metacognitive reflection improves the agent without moving the evaluator) |
 | [[RISE - recursive introspection improves own answers (Qu 2024)]] | 6 | skim | – | – | – | – | control, persist | prior art Q2 (trained recursive self-correction; the evaluator stays fixed) |
+| [[INTUITOR - self-certainty is reward enough to learn reasoning (Zhao 2025)]] | 6 | deep | – | – | – | ✓ | control, persist | prior art Q3 (the intrinsic-reward baseline: self-certainty alone matches RLVR) |
 | [[Models show research taste (Trehan 2026)]] | 7 | deep | ✓ | ✓ | – | – | evaluate | prior art Q1 (method for tests 1 and 2) |
 | [[OMNI - models judge which tasks are interesting (Zhang 2023)]] | 7 | deep | ? | – | – | ? | control, anchor | prior art Q3 (taste picks what to learn; taste is human, not own) |
 | [[Open-ended means novel and learnable to an observer (Hughes 2024)]] | 7 | deep | ? | – | – | ✓ | anchor | prior art Q3 (definition for test 4) |
@@ -88,6 +90,8 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Models recognize and favor their own text (Panickssery 2024)]] | 7 | deep | ✓ | – | ? | – | monitor, evaluate | prior art Q3 (baseline own-model premium) |
 | [[Judges favor familiar text, not their own (Wataoka 2024)]] | 7 | deep | ✓ | – | – | – | evaluate | threat Q3 and the Divergent test (self-preference may be familiarity) |
 | [[Easy-to-process things feel beautiful (Reber 2004)]] | 7 | skim | ? | – | – | – | evaluate | threat Q1 ("good" may mean easy to process) |
+| [[IdeaTaste - models fall short of human research taste (Zhong 2026)]] | 7 | deep | ✓ | – | – | – | evaluate | prior art for the divergent test (26% citation, 18% idea match to human communities) |
+| [[Scientific taste can be trained from community feedback (Tong 2026)]] | 7 | deep | – | ✓ | – | – | evaluate, persist | prior art section 7 (taste is trainable from citations; origin stays human) |
 
 Totals (✓ only), 64 papers: Divergent 5, Stable 3, Grounded 18, Self-reinforcing 13.
 
