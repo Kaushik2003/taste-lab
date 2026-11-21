@@ -53,6 +53,10 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[AI advice inflates confidence in the AI and in oneself (Colombatto 2025)]] | 3 | skim | – | – | – | – | monitor | prior art for the review (advice exposure causally inflates confidence) |
 | [[A less accurate AI with better confidence wins decisions (Li 2025)]] | 3 | deep | – | – | – | – | monitor | prior art Q6 (sensitivity priced as a first-class objective) |
 | [[People over-trust what models know (Steyvers 2025)]] | 3 | deep | – | – | – | – | monitor | prior art for the review (the calibration gap, internal vs perceived) |
+| [[LLM judgments of learning do not predict memory (Huff 2025)]] | 3 | skim | – | – | – | – | monitor | prior art for the review (standard JOL paradigm fails in LLMs) |
+| [[Do models know how much they know (Prato 2024)]] | 3 | skim | – | – | – | – | monitor | prior art for the review (knowledge-scope awareness benchmark) |
+| [[Bias-free measurement of metacognition (Fleming 2014)]] | 3 | deep | – | – | – | – | monitor | foundations (bias / sensitivity / efficiency trichotomy) |
+| [[Meta-d-prime - sensitivity relative to task performance (Maniscalco 2012)]] | 3 | deep | – | – | – | – | monitor | foundations (sensitivity is identifiable only relative to task performance) |
 | [[Emotion directions drive choices in Claude (Anthropic 2026)]] | 4 | deep | – | – | ✓ | – | evaluate | prior art Q1 |
 | [[Hidden good-bad feeling changes choices (Berg 2026)]] | 4 | deep | – | – | ✓ | ? | evaluate, control | prior art Q1 (grounded design); threat Q3 (DPO does not move valence) |
 | [[Steer code readability inside the model (Gao 2026)]] | 4 | deep | – | – | – | – | control | prior art Q2 (baseline arm), Q1 |
