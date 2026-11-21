@@ -142,7 +142,7 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **Quantifying Faithful Confidence Expression in Large Reasoning Models** — Liu et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2606.03969)
 - [ ] **Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs** — Liu et al. · arXiv 2026 · [paper](https://arxiv.org/pdf/2606.32032)
 - [ ] **Metacognition and Uncertainty Communication in Humans and Large Language Models** — Steyvers and Peters · Current Directions in Psychological Science 2025 · [paper](https://doi.org/10.1177/09637214251391158)
-- [ ] **What Large Language Models Know and What People Think They Know** — Steyvers et al. · Nature Machine Intelligence 2025 · [paper](https://doi.org/10.1038/s42256-024-00976-7)
+- [x] **What Large Language Models Know and What People Think They Know** — Steyvers et al. · Nature Machine Intelligence 2025 · [paper](https://doi.org/10.1038/s42256-024-00976-7) → [[People over-trust what models know (Steyvers 2025)]]
 - [ ] **Metacognitive Monitoring: A Human Ability Beyond Generative Artificial Intelligence** — Huff and Ulakci · arXiv 2024 · [paper](https://arxiv.org/pdf/2410.13392)
 - [x] **Large Language Models Lack Essential Metacognition for Reliable Medical Reasoning** — Griot et al. · Nature Communications 2025 · [paper](https://doi.org/10.1038/s41467-024-55628-6) → [[Medical models cannot say what they do not know (Griot 2025)]]
 - [ ] **Quantifying Uncert-AI-nty: Testing the Accuracy of LLMs' Confidence Judgments** — Cash et al. · Memory & Cognition 2026 · [paper](https://doi.org/10.3758/s13421-025-01755-4)
@@ -329,17 +329,17 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 - [ ] **"Can You Tell Me?": Designing Copilots to Support Human Judgement in Online Information Seeking** — Bink et al. · CHIIR 2026 · [paper](https://doi.org/10.1145/3786304.3787866)
 - [ ] **Skeptical Intelligence: Refining Critical Thinking for AI-Powered Innovation** — Ladd and Shrivastava · SSRN 2026 · [paper](https://ssrn.com/abstract=6060134)
 - [ ] **Does My Chatbot Have an Agenda? Understanding Human and AI Agency in Human-Human-like Chatbot Interaction** — Yun et al. · CHI 2026 · [paper](https://doi.org/10.1145/3772318.3791620)
-- [ ] **Metacognition and Confidence Dynamics in Advice Taking from Generative AI** — Colombatto et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2510.26508)
+- [x] **Metacognition and Confidence Dynamics in Advice Taking from Generative AI** — Colombatto et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2510.26508) → [[AI advice inflates confidence in the AI and in oneself (Colombatto 2025)]]
 - [ ] **Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance** — Fan et al. · British Journal of Educational Technology 2025 · [paper](https://doi.org/10.1111/bjet.13544)
-- [ ] **AI Makes You Smarter but None the Wiser: The Disconnect Between Performance and Metacognition** — Fernandes et al. · Computers in Human Behavior 2025 · [paper](https://doi.org/10.1016/j.chb.2025.108779)
+- [x] **AI Makes You Smarter but None the Wiser: The Disconnect Between Performance and Metacognition** — Fernandes et al. · Computers in Human Behavior 2025 · [paper](https://doi.org/10.1016/j.chb.2025.108779) → [[AI use flattens Dunning-Kruger and breaks self-assessment (Fernandes 2025)]]
 - [ ] **Metacognitive Sensitivity: The Key to Calibrating Trust and Optimal Decision Making with AI** — Lee et al. · PNAS Nexus 2025 · [paper](https://doi.org/10.1093/pnasnexus/pgaf133)
-- [ ] **Beyond Accuracy: How AI Metacognitive Sensitivity Improves AI-Assisted Decision Making** — Li and Steyvers · arXiv 2025 · [paper](https://arxiv.org/pdf/2507.22365)
+- [x] **Beyond Accuracy: How AI Metacognitive Sensitivity Improves AI-Assisted Decision Making** — Li and Steyvers · arXiv 2025 · [paper](https://arxiv.org/pdf/2507.22365) → [[A less accurate AI with better confidence wins decisions (Li 2025)]]
 - [ ] **The Importance of Metacognitive Sensitivity in Human-AI Decision-Making** — Li and Steyvers · CogSci 2025 · [paper](https://escholarship.org/uc/item/0fg7g94k)
 - [ ] **Meta-Cognitive Competence and AI-Assisted Decision-Making: Revisiting the Role of Explainable AI and Uncertainty Quantification** — Sass · Philosophy & Technology 2025 · [paper](https://doi.org/10.1007/s13347-025-00948-8)
 - [ ] **Enhancing Critical Thinking in Generative AI Search with Metacognitive Prompts** — Singh et al. · ASIS&T 2025 · [paper](https://doi.org/10.1002/pra2.1287)
 - [ ] **Do You Think GPT Will Be Correct?: Measuring and Improving Generative AI Literacy Through Metacognition Training** — Su et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2501.14235)
 - [ ] **Metacognition and Uncertainty Communication in Humans and Large Language Models** — Steyvers and Peters · Current Directions in Psychological Science 2025 · [paper](https://doi.org/10.1177/09637214251391158)
-- [ ] **What Large Language Models Know and What People Think They Know** — Steyvers et al. · Nature Machine Intelligence 2025 · [paper](https://doi.org/10.1038/s42256-024-00976-7)
+- [x] **What Large Language Models Know and What People Think They Know** — Steyvers et al. · Nature Machine Intelligence 2025 · [paper](https://doi.org/10.1038/s42256-024-00976-7) → [[People over-trust what models know (Steyvers 2025)]]
 - [ ] **Impact of Feedback Timing on Metacognition in AI-Mediated Language Learning** — Nadila et al. · PhD Thesis, HEC Montréal 2024 · [paper](https://doi.org/10.1007/978-3-032-13167-6_10)
 
 ## User Simulation
@@ -387,9 +387,9 @@ Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacogni
 
 ## Risks & Ethics
 
-- [ ] **The AI Cognitive Trojan Horse: How Large Language Models May Bypass Human Epistemic Vigilance** — Maynard · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.07085)
+- [x] **The AI Cognitive Trojan Horse: How Large Language Models May Bypass Human Epistemic Vigilance** — Maynard · arXiv 2026 · [paper](https://arxiv.org/pdf/2601.07085) → [[Honest non-signals bypass epistemic vigilance (Maynard 2026)]]
 - [ ] **Meta-Reflective Capacities, Normative Commitments, and Responsible AI** — Fleig-Goldstein · arXiv 2025 · [paper](https://arxiv.org/abs/2501.01505)
-- [ ] **Imagining and Building Wise Machines: The Centrality of AI Metacognition** — Johnson et al. · Trends in Cognitive Sciences 2025 · [paper](https://doi.org/10.1016/j.tics.2026.01.002)
+- [x] **Imagining and Building Wise Machines: The Centrality of AI Metacognition** — Johnson et al. · Trends in Cognitive Sciences 2025 · [paper](https://doi.org/10.1016/j.tics.2026.01.002) → [[Wise machines need metacognition not just smarts (Johnson 2025)]]
 - [x] **AI Awareness** — Li et al. · arXiv 2025 · [paper](https://arxiv.org/pdf/2504.20084) → [[AI awareness as a measurable capacity (Li 2025)]]
 - [ ] **Human Versus Artificial Social Cognition and Metacognition: The Normative Difference** — Tison and Zawidzki · AI and Ethics 2025 · [paper](https://doi.org/10.1007/s43681-025-00774-w)
 - [ ] **Escalation Risks from Language Models in Military and Diplomatic Decision-Making** — Rivera et al. · FAccT 2024 · [paper](https://dl.acm.org/doi/10.1145/3630106.3658942)

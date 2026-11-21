@@ -23,6 +23,7 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[AI awareness as a measurable capacity (Li 2025)]] | 2 | skim | – | – | – | – | monitor, control | prior art for the review (awareness as measurable capacity is now mainstream) |
 | [[Metacognitive prompting cuts theory-of-mind errors (Leer 2023)]] | 2 | skim | – | – | – | – | monitor | prior art for the review (prompted scaffolding, not capacity) |
 | [[Reasoning models show habits of mind (Dong 2025)]] | 2 | skim | ✓ | – | – | – | monitor | prior art for the review (habit profiles as family signatures) |
+| [[Wise machines need metacognition not just smarts (Johnson 2025)]] | 2 | skim | – | – | – | – | monitor, control | prior art for the review (TiCS position: metacognition is the bottleneck) |
 | [[Models can report and control their own activations (Ji-An 2025)]] | 3 | deep | – | – | ✓ | – | monitor, control | prior art Q6 |
 | [[Models sometimes notice injected thoughts (Lindsey 2025)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6; threat Q6 (weak in open 8B models) |
 | [[Training LMs to watch themselves (Wang 2026)]] | 3 | deep | – | – | ✓ | – | monitor | prior art Q6; threat Q3 (warns against training on own verdicts) |
@@ -49,6 +50,9 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Models are overconfident about their own abilities (Barkan 2025)]] | 3 | skim | – | – | – | – | monitor, control | prior art for the review (monitoring fails, control rule fine) |
 | [[Models track and can be steered in thinking length (Eisenstadt 2025)]] | 3 | skim | – | – | ✓ | – | monitor, control | prior art Q6 (decode-then-steer progress signal) |
 | [[A metacognitive coach lets a fast model beat a reasoner (Khandelwal 2025)]] | 3 | skim | – | – | – | – | monitor, control | prior art for the review (external monitor substitutes for capability) |
+| [[AI advice inflates confidence in the AI and in oneself (Colombatto 2025)]] | 3 | skim | – | – | – | – | monitor | prior art for the review (advice exposure causally inflates confidence) |
+| [[A less accurate AI with better confidence wins decisions (Li 2025)]] | 3 | deep | – | – | – | – | monitor | prior art Q6 (sensitivity priced as a first-class objective) |
+| [[People over-trust what models know (Steyvers 2025)]] | 3 | deep | – | – | – | – | monitor | prior art for the review (the calibration gap, internal vs perceived) |
 | [[Emotion directions drive choices in Claude (Anthropic 2026)]] | 4 | deep | – | – | ✓ | – | evaluate | prior art Q1 |
 | [[Hidden good-bad feeling changes choices (Berg 2026)]] | 4 | deep | – | – | ✓ | ? | evaluate, control | prior art Q1 (grounded design); threat Q3 (DPO does not move valence) |
 | [[Steer code readability inside the model (Gao 2026)]] | 4 | deep | – | – | – | – | control | prior art Q2 (baseline arm), Q1 |
@@ -98,6 +102,8 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[MoT - models improve by remembering their own good thinking (Li 2023)]] | 6 | skim | – | – | – | – | persist | prior art Q3 (confidence-filtered memory; weakest persist rung) |
 | [[Metacognitive myopia as a frame for model bias (Scholten 2024)]] | 6 | skim | – | – | – | – | monitor, control | prior art for the review (bias as missing metacognition) |
 | [[Train reasoning and calibration together or lose both (Yeom 2026)]] | 6 | skim | – | – | – | – | monitor | prior art for the review (self-training eats calibration; joint objective fixes) |
+| [[Honest non-signals bypass epistemic vigilance (Maynard 2026)]] | 6 | skim | – | – | – | – | anchor | prior art for the review (fluency as a counterfeit trust signal) |
+| [[AI use flattens Dunning-Kruger and breaks self-assessment (Fernandes 2025)]] | 6 | skim | – | – | – | – | monitor | prior art for the review (human monitor degrades with AI use) |
 | [[Models show research taste (Trehan 2026)]] | 7 | deep | ✓ | ✓ | – | – | evaluate | prior art Q1 (method for tests 1 and 2) |
 | [[OMNI - models judge which tasks are interesting (Zhang 2023)]] | 7 | deep | ? | – | – | ? | control, anchor | prior art Q3 (taste picks what to learn; taste is human, not own) |
 | [[Open-ended means novel and learnable to an observer (Hughes 2024)]] | 7 | deep | ? | – | – | ✓ | anchor | prior art Q3 (definition for test 4) |
