@@ -1,6 +1,6 @@
 # Yale LLM-metacognition survey list - new candidates (2026-11-21)
 
-Source: github.com/yale-nlp/LLM-Metacognition (companion to [[2026-liu-metacognition-survey]]).
+Source: github.com/yale-nlp/LLM-Metacognition (companion to [[Survey of metacognition in language models (Liu 2026)]]).
 303 entries parsed; 293 not already in the vault. Triage: pick relevance-3 items for notes.
 
 ## Fundamentals
