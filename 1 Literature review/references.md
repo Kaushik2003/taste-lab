@@ -17,7 +17,10 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Grgur Kovač, Rémy Portelas, Masataka Sawayama, Peter Ford Dominey, Pierre-Yves Oudeyer (2024). *Stick to your Role! Stability of Personal Values Expressed in Large Language Models*. PLOS ONE 2024. https://arxiv.org/abs/2402.14846
 - Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, Yarin Gal (2024). *AI models collapse when trained on recursively generated data*. Nature 631, 755-759. https://doi.org/10.1038/s41586-024-07566-y
 - Koki Wataoka, Tsubasa Takahashi, Ryokan Ri (2024). *Self-Preference Bias in LLM-as-a-Judge*. NeurIPS 2024 workshop (arXiv v2 Jun 2025). https://arxiv.org/abs/2410.21819
+- Rodolfo Valiente, Praveen K. Pilly (2024). *Competence-Aware AI Agents with Metacognition for Unknown Situations and Environments (MUSE)*. preprint (v2, Nov 2025). https://arxiv.org/abs/2411.13537
+- Ryan Greenblatt, Carson Denison, Benjamin Wright, Fabien Roger, Monte MacDiarmid, Sam Marks, Johannes Treutlein et al. (2024). *Alignment Faking in Large Language Models*. arXiv preprint. https://arxiv.org/abs/2412.14093
 - Wenda Xu, Guanglei Zhu, Xuandong Zhao, Liangming Pan, Lei Li, William Yang Wang (2024). *Pride and Prejudice: LLM Amplifies Self-Bias in Self-Refinement*. ACL 2024. https://arxiv.org/abs/2402.11436
+- Yuxiao Qu, Tianjun Zhang, Naman Garg, Aviral Kumar (2024). *Recursive Introspection: Teaching Language Model Agents How to Self-Improve (RISE)*. ICML 2024 Workshop. https://arxiv.org/abs/2407.18219
 - Ali Behrouz, Meisam Razaviyayn, Peilin Zhong, Vahab Mirrokni (2025). *Nested Learning: The Illusion of Deep Learning Architectures*. NeurIPS 2025. https://arxiv.org/abs/2512.24695
 - Anqi Zhang, Yulin Chen, Jane Pan, Chen Zhao, Aurojit Panda, Jinyang Li, He He (NYU, NYU Shanghai) (2025). *Reasoning Models Know When They're Right: Probing Hidden States for Self-Verification*. preprint (COLM 2025 [unverified]). https://arxiv.org/abs/2504.05419
 - Chung-En Sun, Ge Yan, Tsui-Wei Weng (2025). *ThinkEdit: Interpretable Weight Editing to Mitigate Overly Short Thinking in Reasoning Models*. EMNLP 2025. https://arxiv.org/abs/2503.22048
@@ -26,6 +29,10 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Jan Betley, Xuchan Bao, Martín Soto, Anna Sztyber-Betley, James Chua, Owain Evans (2025). *Tell me about yourself: LLMs are aware of their learned behaviors*. ICLR 2025. https://arxiv.org/abs/2501.11120
 - Li Ji-An, Hua-Dong Xiong, Robert C. Wilson, Marcelo G. Mattar, Marcus K. Benna (2025). *Language Models Are Capable of Metacognitive Monitoring and Control of Their Internal Activations*. NeurIPS 2025 (main track). https://arxiv.org/abs/2505.13763
 - Loris Gaven, Thomas Carta, Clément Romac, Cédric Colas, Sylvain Lamprier, Olivier Sigaud, Pierre-Yves Oudeyer (2025). *MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces*. ICML 2025 (PMLR 267). https://arxiv.org/abs/2502.07709
+- Mantas Mazeika, Xuwang Yin, Rishub Tamirisa, Jaehyuk Lim, Bruce W. Lee, Richard Ren, Long Phan, Norman Mu, Adam Khoja, Oliver Zhang, Dan Hendrycks (2025). *Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs*. preprint (v2). https://arxiv.org/abs/2502.08640
+- Runjin Chen, Andy Arditi, Henry Sleight, Owain Evans, Jack Lindsey (2025). *Persona Vectors: Monitoring and Controlling Character Traits in Language Models*. arXiv preprint. https://arxiv.org/abs/2507.21509
+- Tennison Liu, Mihaela van der Schaar (2025). *Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning*. preprint (position paper). https://arxiv.org/abs/2506.05109
+- Thea Aviss (2025). *State Stream Transformer (SST): Emergent Metacognitive Behaviours Through Latent State Persistence*. arXiv preprint. https://arxiv.org/abs/2501.18356
 - Zweiger, Pari, Guo, Akyürek, Kim, Agrawal (MIT) (2025). *SEAL: Self-Adapting Language Models*. NeurIPS 2025. https://arxiv.org/abs/2506.10943
 - Aayush Marasini, Barsat Khadka, Nick Rahimi (2026). *WeightBench: Evaluating Language Models as Weight-Space Programmers*. arXiv preprint. https://arxiv.org/abs/2611.18553
 - Alex Lin Wang, Linus Yifeng Tang, Dami Choi, Neil Chowdhury (2026). *Training Language Models for Introspective Oversight*. arXiv preprint. https://arxiv.org/abs/2611.23365
@@ -57,13 +64,18 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Nicolas Chapados, Jean-François Gagné, Nouha Dziri (2026). *Metrics-in-the-Loop: Complexity Feedback Reshapes Agent-Written Code*. arXiv preprint. https://arxiv.org/abs/2611.23817
 - Nicolas Yax, Stefano Palminteri, Pierre-Yves Oudeyer (2026). *LLMs learn different forms of metacognition when trained to predict their own accuracy*. arXiv preprint. https://arxiv.org/abs/2609.33886
 - Niket Patel, Ahmad Rammal, Amaury Hayat, Remi Munos, Julia Kempe (FAIR at Meta; CERMICS ENPC; NYU) (2026). *Learning to Discover Interesting Mathematics*. preprint. https://arxiv.org/abs/2609.28603
+- Paulo Shakarian (2026). *Toward Artificial Metacognition*. AAAI 2026. https://doi.org/10.1609/aaai.v40i48.42135
+- Pranjal Srivastava (2026). *Richness Is Not Evenness: Ordered Rényi Crossings under Self-Training*. arXiv preprint. https://arxiv.org/abs/2611.08892
 - Qi Cao, Yufan Wang, Peijia Qin, Shuhao Zhang, Pengtao Xie (2026). *LLMs Know When They Know, but Do Not Act on It: A Metacognitive Harness for Test-time Scaling*. arXiv preprint. https://arxiv.org/abs/2605.14186
 - Roksana Goworek, Alexander Hickey, Federico Nanni, Martin O'Reilly (2026). *Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers*. arXiv preprint. https://arxiv.org/abs/2611.21449
+- Sabrina Tang, Nikolai Vo, Carson Murillo, Chira Sukumarnpiti, Sarah Wilson (2026). *Safety Side Effects of Preventative Persona Steering: An Empirical Audit*. arXiv preprint. https://arxiv.org/abs/2611.17620
 - Shashwat Singh, Tal Linzen, Shauli Ravfogel (2026). *Can LLMs Introspect? A Reality Check*. COLM 2026 (per arXiv comment). https://arxiv.org/abs/2605.26242
 - Siqi Zeng, Andre N. Assis, Rowan Wang (2026). *Evaluating and Improving LLM Self-Modeling*. EMNLP 2026. https://arxiv.org/abs/2608.30980
 - Sirisilp Kongsilp (2026). *Learning through Discernment: when a small language model learns from user feedback on the job, and when it decays*. arXiv preprint. https://arxiv.org/abs/2611.23716
 - Subham Kundu (2026). *Same Fix, Different Weights: Replicating Weight-Space Programming with Claude*. arXiv preprint. https://arxiv.org/abs/2611.20953
 - Takehi, Teoh, Zhang, Khattab (MIT CSAIL) (2026). *Weight-Space Programming (WSP)*. blog / preprint. https://rikiyat.github.io/blog/weight-space-programming/
+- Timothy Rupprecht et al. (2026). *Human Cognition in Machines: A Unified Perspective of World Models*. preprint (survey). https://arxiv.org/abs/2604.16592
 - Vincent Karpf, Joseph Reth, Eike Gerhardt, Audrey Wang, Anna Butz, Jiehao Xing, Jialing Song, Larry Callahan (2026). *Metacognitive Steering: Learning the Structure of Scientific Judgment*. preprint. https://arxiv.org/abs/2609.16245
 - Xiaolong Jin, Xuandong Zhao, Wenbo Guo, Xiangyu Zhang, Dawn Song (Purdue, UC Berkeley, UC Santa Barbara) (2026). *When Do Intrinsic Rewards Work for Code Reasoning? A Comprehensive Study*. arXiv preprint. https://arxiv.org/abs/2606.20881
+- Xinmeng Hou, Peiliang Gong, Bohao Qu, Wuqi Wang, Qing Guo, Yang Liu (2026). *Learn Like Humans: Use Meta-cognitive Reflection for Efficient Self-Improvement (MARS)*. arXiv preprint. https://arxiv.org/abs/2601.11974
 - Yiran Wu, Andrew Zhao, Yurui Chang, Qingyun Wu, Xuan Feng (Penn State, Microsoft Research, AG2AI) (2026). *Beyond Binary Verifiable Rewards: Behavioral Self-Rewarding for SWE Agents*. arXiv preprint. https://arxiv.org/abs/2610.12598
