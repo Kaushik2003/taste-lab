@@ -96,6 +96,7 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Jingqi Tong, Mingzhe Li, Hangcheng Li, Yongzhuo Yang, Yurong Mou, Weijie Ma, Hongji Chen, Xiaoran Liu, Qinyuan Cheng, Ming Zhang, Qiguang Chen, Weifeng Ge, Qipeng Guo et al. (2026). *AI Can Learn Scientific Taste*. arXiv preprint. https://arxiv.org/abs/2603.14473
 - Jon-Paul Cacioli (2026). *The Metacognitive Monitoring Battery: A Cross-Domain Benchmark for LLM Self-Monitoring*. arXiv preprint. https://arxiv.org/abs/2604.15702
 - Junru Hu, Cheng Tang, Wei Li, Hongze Zhu, Chun-Mei Feng, Qi Zhang, Yirong Chen, Ming Hu (2026). *Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations*. arXiv preprint. https://arxiv.org/abs/2611.09382
+- Lanxue Zhang, Yuqiang Xie, Fang Fang, Fanglong Dong, Rui Liu, Yanan Cao (2026). *MetaGDPO: Alleviating Catastrophic Forgetting with Metacognitive Knowledge Through Group Direct Preference Optimization*. AAAI 2026. https://ojs.aaai.org/index.php/AAAI/article/view/40777
 - Matteo Fischetti (2026). *Just sort it! The LP behind rank-one anti-loop edits*. . https://arxiv.org/abs/2611.21432
 - Minghe Zhang, Xuetao Kang, Yifei Ming, Yanfei Chen, Han Yu, Yufan Zhuang, Chen-Yu Lee (2026). *GUARD: Stabilizing Recursive Self-Improvement with Regret Guidance*. arXiv preprint. https://arxiv.org/abs/2611.23476
 - Nick Jiang, Isaac Kauvar, Jack Lindsey (2026). *The Value Axis: Language Models Encode Whether They're on the Right Track*. preprint. https://arxiv.org/abs/2606.17056
