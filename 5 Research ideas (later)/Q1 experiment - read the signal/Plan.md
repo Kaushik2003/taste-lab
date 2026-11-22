@@ -3,38 +3,28 @@ type: experiment
 id: exp01
 thread: Q1
 status: spec
-compute: 1–2× A100/H100 for 8B, 4× for 32B
 tags: [type/experiment, question/Q1, status/spec]
-links: ["[[Q1 Does the model sense code quality]]"]
+links: ["[[Q1 Does the model sense code quality]]", "[[08-synthesis]]"]
 ---
 
 # exp01: Valence probe vs. code readability
 
-## Question
-Does an internal valence signal track code readability, beyond cheap confounds?
+## Status and maintained specification
 
-## Hypothesis + kill criterion
-ρ(valence, expert readability) ≥ 0.4 after partialling out length, perplexity, and comment ratio. **Kill:** ρ < 0.2 in two model families.
+**Proposed specification only. Execution remains parked.** The maintained protocol is now [Section 8.1 of the literature review](../../1%20Literature%20review/08-synthesis.md#81-q1-protocol-readable-signal-causal-use-then-a-decision), also at [[08-synthesis]]. It separates blind readability prediction (Stage A), fixed-text causal choice checks (Stage B), and the later Q2 selection experiment.
 
-## Setup
-- **Models:** Qwen3.x-8B-Instruct (primary), Llama-3.x-8B (replication), Qwen 32B if stage A passes.
-- **Data:** ~50 problems (HumanEval+/MBPP+/LiveCodeBench easy-medium). Sample 16 solutions per problem at T=1.0 and keep 8 that **pass all tests**. Add 2 deliberately "sloppy but correct" variants per problem (bad names, nesting, dead code) as known-bad anchors.
-- **Readability labels:** blind pairwise ranking by 3 raters (you + 2 friends), plus an automated proxy (cognitive complexity, naming score) as secondary. Don't rely on an LLM judge alone because it shares the model's biases.
-- **Valence directions:** replicate the emotion-concept extraction. Contrast prompts for positive vs. negative valence emotions (satisfaction/delight vs. disgust/frustration), take mean activation differences per layer, and pick the layer by held-out separability.
-- **Readout:** project the model's activations *while reading* each solution (prompt: "Here is a solution: …") onto the valence direction. Average over solution tokens.
-- **Controls (from [[Models do not report injected pain (Ferrara 2026)]] OWMI):** random direction matched in norm; perplexity; length; a shuffled-label probe.
+This pointer replaces the older short plan rather than maintaining two conflicting protocols. The old three-rater, approximately 400-judgment estimate was not a powered design. The new proposal uses at least five blind raters, problem-level splits and uncertainty, length/log-perplexity/comment baselines, supervised input-only and readability comparators, and norm- plus disruption-matched causal controls. The approximately 50-problem run is a pilot; the confirmatory sample needs a power simulation.
 
-## Plan
-- [ ] A1. Generate and filter solutions, build sloppy anchors (1 day)
-- [ ] A2. Collect rankings, get ~400 pairwise judgments (2–3 days, the human part)
-- [ ] A3. Extract valence directions, sanity-check on emotion text (1 day)
-- [ ] A4. Readout + partial correlations + controls (1 day)
-- [ ] A5. Also ask the model verbally "which do you prefer?" and compare to the probe, as a first look at the grounded test
-- [ ] B. If ρ passes: causal check. Steer +valence while reading solution X and see whether its stated preference for X rises.
+The original Q1 hypothesis (partial correlation at least 0.4) and stop line (below 0.2 in two families) are distinguished from the stricter incremental/random-direction criteria and interval-based rules proposed in Section 8.1. Those proposals, checkpoint choices, task counts and rater feasibility still need a research-owner decision before execution. No compute allocation or experiment run is approved by this specification.
+
+## Next action
+
+Review Section 8.1 and settle its pre-registration choices when experiments resume. Do not generate candidates, recruit raters or run interventions while Q1 is parked.
 
 ## Log
-<!-- dated entries -->
+
+- 2026-11-22: Consolidated the protocol in Section 8.1 of the literature review. Replaced the stale short plan with this pointer; no experiment, training or compute purchase was performed.
 
 ## Results
 
-## What it means for the thread
+No results yet.

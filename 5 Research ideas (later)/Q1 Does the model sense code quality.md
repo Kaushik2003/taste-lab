@@ -5,7 +5,7 @@ id: Q1
 status: parked
 owner: harshit
 created: 2026-11-19
-updated: 2026-11-20
+updated: 2026-11-22
 tags: [type/question, question/Q1, status/parked]
 links: ["[[Metacognition - watch and control yourself]]", "[[Four tests for own taste]]"]
 ---
@@ -15,7 +15,7 @@ links: ["[[Metacognition - watch and control yourself]]", "[[Four tests for own 
 > **In short**
 > - **Question:** Does the model have an inner good-or-bad signal that agrees with people about which code is easy to read?
 > - **Where it stands:** Parked while we write the literature review (from 2026-11-20). We have no data yet. A decision waits for Harshit (see below).
-> - **Next step:** Run stage A of the Question 1 experiment on one 8B model, with about 50 problems.
+> - **Next step:** Review the proposed protocol in [[08-synthesis]], Section 8.1. Execution remains parked; about 50 problems is a pilot, not a powered confirmatory study.
 > - **Role:** a go/no-go check. If the signal does not track code quality, we stop early. We do not build a readability paper on it. The metacognition step (the model reads its own signal) is in [[Q6 Can the model read and use its own signal]].
 >
 > **A decision waits for you: a stricter stop rule.** A stop rule says which result makes us drop this question.
@@ -90,8 +90,7 @@ A stricter rule waits for Harshit's decision (see "In short" and the "proposed" 
 ## Next action
 *What to do next.*
 
-Run stage A of [[5 Research ideas (later)/Q1 experiment - read the signal/Plan|the Question 1 experiment (read the signal)]] on Qwen3.x-8B.
-Use about 50 problems, with 8 solutions for each problem that pass all tests.
+Review the maintained proposed protocol in [[08-synthesis]], Section 8.1, linked from [[5 Research ideas (later)/Q1 experiment - read the signal/Plan|exp01]]. Resolve exact checkpoints, confirmatory sample size, rater feasibility and proposed decision rules before execution resumes. The approximately 50-problem plan is a pilot; Q1 remains parked.
 
 ## Log
 - 2026-11-19: created. Pivot: the "grounded" test uses a probe readout first, with trained self-report as a later step.
@@ -104,3 +103,4 @@ Use about 50 problems, with 8 solutions for each problem that pass all tests.
 - 2026-11-20: rewritten in plain English (same facts).
 - 2026-11-20: on the user's instruction, this question is now a go/no-go check only. Reason: the work had moved toward readability probes and away from metacognition. The model-reads-itself step moved to [[Q6 Can the model read and use its own signal]].
 - 2026-11-20: parked on the user's instruction. The current goal is the literature review, not experiments.
+- 2026-11-22: Added the maintained Section 8.1 protocol and replaced exp01's conflicting short plan with a pointer. This specifies blind multi-rater labels, leakage controls, baselines, matched-strength causal checks and uncertainty-aware decisions. Stricter stop rules remain proposals; no experiment was activated.

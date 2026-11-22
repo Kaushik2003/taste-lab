@@ -116,6 +116,7 @@ Purpose: distinguish existing quality readouts, self-judged training, model-side
 - Irie and Nested Learning: source-linked skimmed notes exist; learned update machinery is prior art, not missing verification.
 - G5: longer-term architecture agenda, not a demonstrated contribution of the readability experiment.
 - Q1 gates this candidate evaluator; Q2 precedes Q3. Tests constrain observed functional behavior rather than proving full correctness equivalence.
+- Section 8.1 specifies the proposed Q1 protocol: blind five-rater rankings, problem-held-out baselines, fixed-text matched-strength causal checks and separate support/negative/inconclusive outcomes. Experiments remain parked; design cutoffs still need review.
 
 ## 9. Conclusion
 
