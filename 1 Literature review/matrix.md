@@ -122,17 +122,18 @@ One row per paper. Test columns: ✓ = the paper tests or directly informs that 
 | [[Easy-to-process things feel beautiful (Reber 2004)]] | 7 | skim | ? | – | – | – | evaluate | threat Q1 ("good" may mean easy to process) |
 | [[IdeaTaste - models fall short of human research taste (Zhong 2026)]] | 7 | deep | ✓ | – | – | – | evaluate | prior art for the divergent test (26% citation, 18% idea match to human communities) |
 | [[Scientific taste can be trained from community feedback (Tong 2026)]] | 7 | deep | – | ✓ | – | – | evaluate, persist | prior art section 7 (taste is trainable from citations; origin stays human) |
+| [[Self-rewarding language models judge and train themselves (Yuan 2024)]] | 5 | deep | – | – | – | ? | evaluate, persist | prior art for self-judged quality training; verbal rubric, not activation-level taste |
+| [[Human preference is weakly readable from hidden states (Kirin 2026)]] | 4 | deep | – | – | ? | – | monitor, evaluate | prior art for quality-related activation readouts; corrected v3 only, not causal self-use |
 
-Totals (✓ only), 64 papers: Divergent 5, Stable 3, Grounded 18, Self-reinforcing 13.
+Totals (✓ only), 120 papers: Divergent 8, Stable 7, Grounded 26, Self-reinforcing 14.
 
 ## Reading the matrix
 
-- **Update 2026-11-20.** 15 rows added (13 new notes, plus Ji-An and Lindsey, which were missing). Stable is still the least covered test (1 paper) and Divergent is next (2). All 5 new grounded rows test behavior or injected states, and 2 of them (Yax, Lindsey at small scale) weaken the positive claims. Q3 gains one more threat (Shumailov) and two pieces of prior art for anchors (GUARD, Hughes). Q4 now has a direct threat: audited weight patching mostly fails (WeightBench).
-- **Update 2026-11-20 (scout, 11 rows).** Divergent goes from 2 to 3 papers, but the new one (Liang) goes against the test: values that agents revise themselves converge. Stable stays at 1. Q3 gains two more threats (Kongsilp, Tagade). Q4 changes most: Fan shows a model editing its own weights after reading its own hidden states, so the novelty claim moves from "self-edit" to "self-edit judged by the model's own taste". 8 of the 11 rows come from abstracts only.
-- **Update 2026-11-20 (six-angle search, 12 rows).** Stable goes from 1 to 3 papers, and both new ones go against the test: preferences move with task context, and with chat topic and length when the model plays a persona (Trhlik, Kovač). Divergent goes from 3 to 5: models favor their own text (Panickssery), but that may be familiarity, not taste (Wataoka). Q3 gains a direct threat: over rounds of self-refinement, self-scores rise faster than true quality (Xu). Grounded gains the first self-report of an evaluation, not a behavior (Plunkett). The controller gap narrows: a hidden-state competence signal picks what an agent learns (MAGELLAN).
+Reconciled 22 November 2026. There were 118 paper rows before this pass and 120 after adding Yuan and corrected Kirin. Counts above are computed from the current rows, not inherited from an earlier search batch. A checkmark means the paper tests or informs a criterion, not that the full criterion has been satisfied; partial entries are excluded from checkmark totals.
 
-- **Stable is the least covered test.** Only [[Models show research taste (Trehan 2026)]] measures it, with one model, 80 pairs and one sample per order. Divergent is close behind (2 papers, both behavioral). Neither has any internal-signal paper, so tests 1 and 2 rest on our own experiments.
-- **Q3 has the most threats (5):** He, Jin, Zhou, Berg and Zatuchin. Its only prior art for a working loop (Wu, Patel, SEAL) uses an external or frozen signal, never the model's own activations.
-- **Q5 has the most prior art (6 papers), which is why it was killed.** All six put a direction into weights; none take the direction from the model's own evaluation. That missing piece now sits in Q3, not Q5.
-- **Grounded is well covered, but mostly by negative or method papers.** Singh, Ferrara and Arditi all show self-report does not follow the internal state. The positive grounded results (Anthropic, Berg, Jiang, Xu) are causal steering of choice, not self-report, which is the version of test 3 we should claim.
-- **Q1 is the most cited thread (prior art in 7 rows, threat in 3).** It is the gating experiment, and no paper tests an internal signal on passing-but-different code.
+- Stability is thinly covered, but not by only one paper. Several rows concern persona/context changes or reusable behaviors rather than readability stability itself.
+- MAGELLAN is an explicit precedent for hidden-state-informed learning control. Its competence/progress signal must not be erased by a claim that internal monitoring never guides learning.
+- Fan chooses a direct edit from its own hidden states; graded answers evaluate retention. Edit proposal is not edit evaluation.
+- Yuan is prior art for own verbal quality judgments driving training. Kirin v3 is prior art for preference readout, with correction and non-causal limits.
+- Irie and Nested Learning have source-linked skimmed notes with selected full-text checks. Runtime learned updates are distinct from self-evaluated persistent quality changes.
+- The bounded contribution and closest-prior-art comparison are maintained in [[08-synthesis]]. Paper counts do not establish novelty, and no combination of checkmarks proves self-originated taste.

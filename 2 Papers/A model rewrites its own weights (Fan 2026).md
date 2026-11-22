@@ -58,7 +58,7 @@ A large enough language model can diagnose its own failure, rewrite the weights 
 ## Relevance to taste-lab
 **Relevance 3. Threat to a novelty claim, and prior art for the persist step.**
 - **Persist:** this closes most of the gap in [[Models that change their own weights]]. A model now reads its own states, picks a direction itself, writes it into its weights and gates it. Section 8 says "the self-chosen direction does not exist". That is no longer true.
-- **What is still open:** the evaluation. Every edit here is judged by external correctness. No paper yet uses the model's own preference (taste) to decide what to write, on a quality the tests do not measure. Our claim must move to that point.
+- **What is still open:** the evaluation. Every edit here is judged by external correctness. Own verbal quality preferences already guide DPO in [[Self-rewarding language models judge and train themselves (Yuan 2024)]]. The proposed distinction is causal activation-level readability evaluation guiding selection and learning among test-matched programs; see [[08-synthesis]].
 - **Grounded test:** the model names the layer and direction it changed. That is a self-report tied to a weight change, which `gaps.md` says does not exist [unverified: the paper does not test whether later self-reports follow the edit].
 - **Anchor:** paired tests plus withdrawal is a non-regression gate, like [[GUARD - a gate stops self-edits from breaking things (Zhang 2026)]].
 

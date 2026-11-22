@@ -120,3 +120,8 @@ Auto-compiled from `2 Papers/` frontmatter for the lit review export. Verify aut
 - Xiaolong Jin, Xuandong Zhao, Wenbo Guo, Xiangyu Zhang, Dawn Song (Purdue, UC Berkeley, UC Santa Barbara) (2026). *When Do Intrinsic Rewards Work for Code Reasoning? A Comprehensive Study*. arXiv preprint. https://arxiv.org/abs/2606.20881
 - Xinmeng Hou, Peiliang Gong, Bohao Qu, Wuqi Wang, Qing Guo, Yang Liu (2026). *Learn Like Humans: Use Meta-cognitive Reflection for Efficient Self-Improvement (MARS)*. arXiv preprint. https://arxiv.org/abs/2601.11974
 - Yiran Wu, Andrew Zhao, Yurui Chang, Qingyun Wu, Xuan Feng (Penn State, Microsoft Research, AG2AI) (2026). *Beyond Binary Verifiable Rewards: Behavioral Self-Rewarding for SWE Agents*. arXiv preprint. https://arxiv.org/abs/2610.12598
+
+## Closest-prior-art additions (22 November 2026)
+
+- Weizhe Yuan et al. (2024). *Self-Rewarding Language Models*. Full text v3. https://arxiv.org/html/2401.10020v3
+- Jan Kirin (2026). *Reading Human Preference from Looped Transformer Internal States*. Corrected v3, 18 November 2026; earlier versions had a different title and superseded results. https://arxiv.org/abs/2604.09870v3
