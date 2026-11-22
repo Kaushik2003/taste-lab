@@ -37,7 +37,7 @@ The angle:
 Open these:
 - [[outline|The plan of the review]]: 9 sections and the papers in each one.
 - [[matrix|The paper table]]: which paper covers which part.
-- [[gaps|What nobody has done yet]] (14 gaps, updated 21 November)
+- [[gaps|Scoped research questions and prior-art limits]] (updated 22 November)
 - [[08-synthesis|Section 8, Synthesis]]: where the whole argument comes together. Read this first if you read one section.
 - First drafts that wait for your review: [[03-monitoring|Section 3, Monitoring]] and [[05-persistent-control|Section 5, Persistent control]]. Each ends with a list of open doubts.
 
@@ -84,7 +84,7 @@ The field has 5 parts. Each note gives a short summary and its papers.
 4. [[Field map - Limits of self-learning|Why self-training often fails]]
 5. [[Field map - Taste and new ideas|Taste and new ideas]]
 
-What nobody has done yet: [[Gaps in the field|Gap table]]
+Research questions and prior-art limits: [[Gaps in the field|Gap table]]
 
 ## 6. Your own ideas
 
