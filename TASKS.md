@@ -29,10 +29,10 @@ Our goal now: **finish the literature review (first full draft written on 24 Nov
   You asked for help with the writing. The plan: Claude asks short questions, you answer in rough words (chat is fine), Claude turns your answers into text, and you correct it. Then these three sections carry your argument in your voice. The statement on AI use will say that Claude helped.
   *Done when:* you answer the questions in the chat of 24 November, or ask Claude to ask them again.
 
-- [ ] **Decide whether Claude shortens the abstract for the IEEE version.**
-  The abstract has about 320 words. IEEE journals ask for 150 to 250. Claude did not cut it, because that changes your text.
-  File: [[00-title-and-abstract]]. PDF: `1 Literature review/export/Literature review - full paper (IEEE).pdf`.
-  *Done when:* you say "shorten it" or "keep it".
+- [ ] **Read the short version (12 pages) and say if something you need was cut.**
+  You asked for 10 to 12 pages. Claude cut the text from about 19,400 to 10,200 words and the sources from 169 to 75. The findings, the seven tables and the closing question stay; second examples and side studies went.
+  PDF: `1 Literature review/export/Literature review - full paper (IEEE).pdf`. The long text is in `1 Literature review/Long version (23 pages)/`.
+  *Done when:* you say "fine" or name what to put back.
 
 - [ ] **Add the author names and say where the review goes.**
   The title page says "[add names]". Claude does not know the reader (a course, a supervisor, a journal).

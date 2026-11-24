@@ -12,8 +12,7 @@ What changes against the plain build, because the IEEE style needs it:
   - section numbers I, II, ... and A, B, ...; cross-references follow them
   - every table has a number and a caption above it; tables float
   - headings, title, and table captions in title case
-The wording of the review itself comes from the section files. The only added
-words are the captions and lead-in sentences in TABLES below.
+The wording of the review comes from the section files.
 
 Usage: python3 scripts/build_review_ieee.py [--no-pdf]
 """
@@ -41,34 +40,16 @@ def P(w):
 
 # One entry per table, in order of appearance. "head" is a header cell used to
 # check that the entry still matches the table. "num" is the number the table
-# has in the section files, if any. Tables without a number get a caption here
-# and a lead-in sentence, because a floating table needs a reference in the text.
+# has in the section files; its caption is the "**Table N.** ..." line above it.
 TABLES = [
-    dict(head="Question", label="rq", wide=False, cols=["l", L, "c"],
-         caption="The six research questions and the sections that answer them",
-         after="The review answers six questions, one per main section.",
-         add=" \x02rq\x02 lists them."),
-    dict(head="Depth of reading", num="1", wide=False, cols=["l", "r", L, "r"]),
-    dict(head="What this review adds", num="4", wide=True, cols=[P(r"0.20\textwidth"), L, L]),
-    dict(head="Simpler explanation it removes", label="controls", wide=True,
-         cols=[P(r"0.27\textwidth"), L, P(r"0.25\textwidth")],
-         caption="Ten controls for a claim that a model monitors itself",
-         after="The set is our synthesis; no single paper uses all ten.",
-         add=" \x02controls\x02 lists the controls."),
-    dict(head="Who proposes the change", num="2", wide=True, cols=[P(r"0.25\textwidth"), L, L, "l"]),
-    dict(head="Previous instrument", num="3", wide=True, cols=["l", L, P(r"0.30\textwidth")]),
-    dict(head="Strongest evidence", label="loop", wide=True, cols=["l", L, L, L],
-         caption="The loop, step by step: what exists and what is missing",
-         after="## 9.1 The loop, step by step\n",
-         add="\n\x02loop\x02 shows where each step of the loop stands.\n"),
-    dict(head="State of the evidence", label="tests", wide=False, cols=["l", L],
-         caption="Current evidence for each of the four tests",
-         replace=("The current evidence for each test is as follows.",
-                  "\x02tests\x02 gives the current evidence for each test.")),
-    dict(head="It does not", label="outcomes", wide=False, cols=[P(r"0.20\columnwidth"), L, L],
-         caption="The four possible outcomes of the first question",
-         after="The question has four possible outcomes, and each is informative.",
-         add=" \x02outcomes\x02 lists them."),
+    dict(head="Question", num="1", wide=False, cols=["l", L, "c"]),
+    dict(head="What this review adds", num="2", wide=True, cols=[P(r"0.20\textwidth"), L, L]),
+    dict(head="Simpler explanation it removes", num="3", wide=True,
+         cols=[P(r"0.27\textwidth"), L, P(r"0.25\textwidth")]),
+    dict(head="Who proposes the change", num="4", wide=True, cols=[P(r"0.25\textwidth"), L, L, "l"]),
+    dict(head="Previous instrument", num="5", wide=True, cols=["l", L, P(r"0.20\textwidth"), L]),
+    dict(head="Strongest evidence", num="6", wide=True, cols=["l", L, L, L]),
+    dict(head="It does not", num="7", wide=False, cols=[P(r"0.20\columnwidth"), L, L]),
 ]
 
 # Venue strings in the notes that need a hand-made IEEE form.
