@@ -16,27 +16,38 @@ Our goal now: **finish the literature review (first full draft written on 24 Nov
 
 ## For you
 
-- [ ] **Read the full review once, from start to end.**
-  It is written: 10 sections, about 17,000 words, 147 references. You must be able to explain each section in two sentences, because your name goes on it.
-  Open [[Literature review - full paper]], or the Word and PDF files in the folder `1 Literature review/export`. Start with the abstract, Section 9 and Section 10 (20 minutes); they hold the argument.
-  *Done when:* you tell Claude what to change, or "review OK".
+- [ ] **Settle the rules on AI use with your supervisor or course, before you hand anything in.**
+  An AI wrote the review, and you have read few of the sources. An independent check says this is the first problem: many universities treat undisclosed AI-written work as misconduct. The review now ends with a draft "Statement on the use of AI". Adapt it to the rule you are given.
+  See [[2026-11-24 independent critique of the review]], point 1.
+  *Done when:* you know the rule, and the statement in the review matches it.
 
-- [ ] **Add the author names and check where the review goes.**
-  The title page says "[add names]". Claude does not know the author list, the reader (a course, a supervisor, a journal) or a length limit. If there is a length limit, tell Claude and it will cut.
+- [ ] **Tell Claude which papers you read in full.**
+  On 24 November you told Claude that you have read the papers and can defend the review. The review still says that 7 of 137 papers were read in full, because that is what the notes record. Give Claude your list, so that the method section and the statement on AI use say what is true.
+  *Done when:* you give Claude the list (titles or first authors are enough).
+
+- [ ] **Answer Claude's questions for Sections 1, 9 and 10, in your own words.**
+  You asked for help with the writing. The plan: Claude asks short questions, you answer in rough words (chat is fine), Claude turns your answers into text, and you correct it. Then these three sections carry your argument in your voice. The statement on AI use will say that Claude helped.
+  *Done when:* you answer the questions in the chat of 24 November, or ask Claude to ask them again.
+
+- [ ] **Decide whether Claude shortens the abstract for the IEEE version.**
+  The abstract has about 320 words. IEEE journals ask for 150 to 250. Claude did not cut it, because that changes your text.
+  File: [[00-title-and-abstract]]. PDF: `1 Literature review/export/Literature review - full paper (IEEE).pdf`.
+  *Done when:* you say "shorten it" or "keep it".
+
+- [ ] **Add the author names and say where the review goes.**
+  The title page says "[add names]". Claude does not know the reader (a course, a supervisor, a journal).
   *Done when:* you give Claude the names and the destination.
 
-- [ ] **Read the starred papers in the reading guide.**
-  The review cites 147 sources and you have read few of them. The guide lists the ones you need to defend the review: 11 starred papers, about 3 hours.
-  Open [[Reading guide for 24 November]].
-  *Done when:* you can say one sentence per starred paper.
-
-- [ ] **Say "commit" so Claude can save the work in git.**
-  Nothing from 23 and 24 November is committed: the review, 17 new paper notes, the reports and the build script exist only as files on this laptop. Claude tried to commit and the tool's safety check stopped it, because you had not asked for a commit.
-  *Done when:* you say "commit" (and "push" if you also want it on GitHub).
+- [ ] **Say "commit" so Claude can save today's changes in git.**
+  You committed the first draft yourself. Everything since then (the style pass, the answer to the critique, the figure) is not committed.
+  Also: your commit put the folder `writing-guide` in git. It holds copies of published papers. Tell Claude to take it out of git before you push to a public place.
+  *Done when:* you say "commit".
 
 ## For Claude
 
-- [ ] Check every claim marked "abstract only" in the review against the full paper (13 places), and the author lists that still say "et al." in the references. *Waits for:* nothing; next session.
+- [ ] Apply the fixes from [[2026-11-24 independent critique of the review]]: cite Zhang, Yuan and Zhang 2026 and four other close works, add the missing classic papers, fix the abstract, quote or reword eight phrases, fix the references. *Waits for:* your choice of fixes.
+- [ ] Finish the critique's open points: evidence-quality column in [[matrix]], author lists that still say "et al.", years of Johnson and Lindsey, a plagiarism-tool run. See [[2026-11-24 response to the critique]].
+- [ ] Check every claim marked "abstract only", "summary only" or "not extracted" in the review against the full paper (18 places), and the author lists that still say "et al." in the references. *Waits for:* nothing; next session.
 - [ ] Apply your changes to the review after you read it. *Waits for:* your reading.
 - [ ] Write notes for the gap-check finds still without notes (end of [[Reading list]]).
 - [ ] Bring [[gaps]], [[matrix]], [[outline]] and [[HOME]] in line with the new review (they still describe the old code-readability plan in places).
@@ -51,6 +62,8 @@ These were research tasks. They wait until the review is done.
 
 ## Done
 
+- [x] 2026-11-24: You told Claude you have read the papers and can defend the review. Claude declined to rewrite the text to lower an AI-detector score, and ran a wording check against the sources instead.
+- [x] 2026-11-24: Claude revised the review with your writing guides and answered the independent critique: Sections 3 to 8 rewritten as prose in the past tense, three overclaims corrected, 22 classic and related sources added, a section on related surveys, Figure 1, and a statement on AI use. Details: [[2026-11-24 response to the critique]].
 - [x] 2026-11-24: You said "go". Claude wrote the whole review and exported it to Word and PDF. Decisions used: the full idea is an open agenda with its eight problems stated; a taste of a model's own is a possibility, not a prediction; the closing question is "when a model's weights change after deployment, do its preferences move, and does its self-monitoring change?". Claude kept its rewrite of sections 1 to 3 and built on it. The old code-readability synthesis is kept in [[Parked - old synthesis and study protocol]].
 - [x] 2026-11-24: Claude read in full, at your request: the Sleep paper, the paper on self-distillation and lost doubt (Kim 2026), and six papers on whether a model notices its own change. Notes are in `2 Papers`.
 - [x] 2026-11-24: You chose the direction: the full idea (a model that edits itself by its own judgment and may develop taste) is the frame of the review; the first research question is "do direct weight edits move a model's preferences?". Claude checked that question: one close paper (Fafuła 2026, one edit shifts disposition), none on a sequence of edits. See [[2026-11-23 gap check]].

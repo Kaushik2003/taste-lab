@@ -24,6 +24,7 @@ ORDER = [
     "03-monitoring.md", "03b-self-models-and-world-models.md",
     "04-evaluation-signals.md", "05-persistent-control.md", "06-limits.md",
     "07-taste-and-open-endedness.md", "08-synthesis.md", "09-conclusion.md",
+    "10-statement-on-ai-use.md",
 ]
 OUT_NAME = "Literature review - full paper"
 
@@ -54,8 +55,60 @@ EXTRA = {
         title="ParetoRSI-Gym: Can AI Agents Improve Language Models Across Multiple Domains?", venue="arXiv preprint", url="https://arxiv.org/abs/2610.34386"),
     "WangZ 2026": dict(sur="Wang", n=3, year="2026", authors="Zhaojia Wang et al.",
         title="Can LLMs Write Backdoors? An Empirical Security Study of Weight-Space Programming", venue="arXiv preprint", url="https://arxiv.org/abs/2611.17395"),
+    "Guo 2017": dict(sur="Guo", n=4, year="2017", authors="Chuan Guo, Geoff Pleiss, Yu Sun, Kilian Q. Weinberger",
+        title="On Calibration of Modern Neural Networks", venue="ICML 2017", url="https://arxiv.org/abs/1706.04599"),
+    "Kuhn 2023": dict(sur="Kuhn", n=3, year="2023", authors="Lorenz Kuhn, Yarin Gal, Sebastian Farquhar",
+        title="Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation", venue="ICLR 2023", url="https://arxiv.org/abs/2302.09664"),
+    "Song 2025": dict(sur="Song", n=3, year="2025", authors="Siyuan Song, Jennifer Hu, Kyle Mahowald",
+        title="Language Models Fail to Introspect About Their Knowledge of Language", venue="arXiv preprint", url="https://arxiv.org/abs/2503.07513"),
+    "Naphade 2026": dict(sur="Naphade", n=4, year="2026", authors="Atharv Naphade, Samarth Bhargav, Sean Lim, Mcnair Shah",
+        title="Me, Myself, and π: Evaluating and Explaining LLM Introspection", venue="arXiv preprint", url="https://arxiv.org/abs/2603.20276"),
+    "Petrova 2026": dict(sur="Petrova", n=3, year="2026", authors="Nora Petrova, John Burden, Jerome Wynne",
+        title="MetaLoop: Benchmarking the Full Metacognitive Loop in LLMs", venue="NeurIPS 2026 (poster; preprint not yet available)", url="https://neurips.cc/virtual/2026/poster/139348"),
+    "Schmidhuber 2003": dict(sur="Schmidhuber", n=1, year="2003", authors="Jürgen Schmidhuber",
+        title="Gödel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements", venue="arXiv preprint", url="https://arxiv.org/abs/cs/0309048"),
+    "Sun 2019": dict(sur="Sun", n=3, year="2019", authors="Yu Sun, Xiaolong Wang, Zhuang Liu, et al.",
+        title="Test-Time Training with Self-Supervision for Generalization under Distribution Shifts", venue="ICML 2020", url="https://arxiv.org/abs/1909.13231"),
+    "Meng 2022a": dict(sur="Meng", n=4, year="2022", authors="Kevin Meng, David Bau, Alex Andonian, Yonatan Belinkov",
+        title="Locating and Editing Factual Associations in GPT", venue="NeurIPS 2022", url="https://arxiv.org/abs/2202.05262"),
+    "Meng 2022b": dict(sur="Meng", n=3, year="2022", authors="Kevin Meng, Arnab Sen Sharma, Alex Andonian, et al.",
+        title="Mass-Editing Memory in a Transformer", venue="ICLR 2023", url="https://arxiv.org/abs/2210.07229"),
+    "Ilharco 2022": dict(sur="Ilharco", n=3, year="2022", authors="Gabriel Ilharco, Marco Tulio Ribeiro, Mitchell Wortsman, et al.",
+        title="Editing Models with Task Arithmetic", venue="ICLR 2023", url="https://arxiv.org/abs/2212.04089"),
+    "Turner 2023": dict(sur="Turner", n=3, year="2023", authors="Alexander Matt Turner, Lisa Thiergart, Gavin Leech, et al.",
+        title="Steering Language Models With Activation Engineering", venue="arXiv preprint", url="https://arxiv.org/abs/2308.10248"),
+    "Panickssery 2023": dict(sur="Panickssery", n=3, year="2023", authors="Nina Panickssery, Nick Gabrieli, Julian Schulz, et al.",
+        title="Steering Llama 2 via Contrastive Activation Addition", venue="arXiv preprint", url="https://arxiv.org/abs/2312.06681"),
+    "Zou 2023": dict(sur="Zou", n=3, year="2023", authors="Andy Zou, Long Phan, Sarah Chen, et al.",
+        title="Representation Engineering: A Top-Down Approach to AI Transparency", venue="arXiv preprint", url="https://arxiv.org/abs/2310.01405"),
+    "Zelikman 2023": dict(sur="Zelikman", n=4, year="2023", authors="Eric Zelikman, Eliana Lorch, Lester Mackey, Adam Tauman Kalai",
+        title="Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation", venue="arXiv preprint", url="https://arxiv.org/abs/2310.02304"),
+    "Zhang 2025b": dict(sur="Zhang", n=3, year="2025", authors="Jenny Zhang, Shengran Hu, Cong Lu, et al.",
+        title="Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents", venue="arXiv preprint", url="https://arxiv.org/abs/2505.22954"),
+    "ZhangJ 2026": dict(sur="Zhang", n=3, year="2026", authors="Jiang Zhang, Bing Yuan, Qian Zhang",
+        title="Self-Reference in Large Language Models: The Introspection Threshold for Recursive Self-Improvement", venue="arXiv preprint", url="https://arxiv.org/abs/2607.04277"),
+    "Ren 2026": dict(sur="Ren", n=3, year="2026", authors="Zhe Ren, Yimeng Chen, Dandan Guo, et al.",
+        title="Self-Improvements in Modern Agentic Systems: A Survey", venue="arXiv preprint", url="https://arxiv.org/abs/2607.13104"),
+    "Yang 2026": dict(sur="Yang", n=3, year="2026", authors="Haoyan Yang, Mario Xerri, Solha Park, et al.",
+        title="Self-Improvement of Large Language Models: A Technical Overview and Future Outlook", venue="arXiv preprint", url="https://arxiv.org/abs/2603.25681"),
+    "Omohundro 2008": dict(sur="Omohundro", n=1, year="2008", authors="Stephen M. Omohundro",
+        title="The Basic AI Drives", venue="Proceedings of the First Conference on Artificial General Intelligence (AGI 2008)", url=""),
+    "Everitt 2016": dict(sur="Everitt", n=4, year="2016", authors="Tom Everitt, Daniel Filan, Mayank Daswani, Marcus Hutter",
+        title="Self-Modification of Policy and Utility Function in Rational Agents", venue="AGI 2016", url="https://arxiv.org/abs/1605.03142"),
+    "Nisbett 1977": dict(sur="Nisbett", sur2="Wilson", n=2, year="1977", authors="Richard E. Nisbett, Timothy D. Wilson",
+        title="Telling More Than We Can Know: Verbal Reports on Mental Processes", venue="Psychological Review 84(3), 231-259", url="https://doi.org/10.1037/0033-295X.84.3.231"),
+    "Koriat 1997": dict(sur="Koriat", n=1, year="1997", authors="Asher Koriat",
+        title="Monitoring One's Own Knowledge During Study: A Cue-Utilization Approach to Judgments of Learning", venue="Journal of Experimental Psychology: General 126(4), 349-370", url="https://doi.org/10.1037/0096-3445.126.4.349"),
     "Liu 2026b": dict(sur="Liu", n=3, year="2026", authors="Mingda Liu, Zhenghan Zhu, Ze'an Miao, et al.",
         title="Norm Anchors Make Model Edits Last", venue="arXiv preprint", url="https://arxiv.org/abs/2602.02543"),
+}
+
+
+# Notes whose file name or frontmatter does not give the right first author or title.
+OVERRIDE = {
+    "Emotion directions drive choices in Claude (Anthropic 2026)": dict(sur="Sofroniew", n=3, authors="Sofroniew et al. (Anthropic)"),
+    "WSP - a model reads and edits weights (Takehi 2026)": dict(title="Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights", venue="Blog post, MIT CSAIL, 2 November 2026", n=4),
+    "Self-rewarding language models judge and train themselves (Yuan 2024)": dict(n=7, authors="Weizhe Yuan, Richard Yuanzhe Pang, Kyunghyun Cho, Xian Li, Sainbayar Sukhbaatar, Jing Xu, Jason Weston", url="https://arxiv.org/abs/2401.10020"),
 }
 
 
@@ -97,6 +150,7 @@ def load_notes():
         notes[p.stem] = dict(sur=m.group(1), sur2=sur2, n=n, year=m.group(2),
                              authors=authors or m.group(1), title=meta.get("title", "") or p.stem,
                              venue=meta.get("venue", ""), url=url)
+        notes[p.stem].update(OVERRIDE.get(p.stem, {}))
     return notes
 
 
@@ -240,6 +294,14 @@ def to_html(text):
             out.append("<li>%s</li>" % inline(m.group(3))); i += 1; continue
         close_list(stack)
         if ln.startswith("<!--"):
+            i += 1; continue
+        m = re.match(r"^!\[(.*)\]\((.+)\)$", ln)
+        if m:
+            import base64
+            img = REV / m.group(2)
+            data = base64.b64encode(img.read_bytes()).decode()
+            out.append('<p style="text-align:center"><img src="data:image/png;base64,%s" width="640"></p><p><b>%s</b>%s</p>'
+                       % (data, inline(m.group(1).split(".")[0] + "."), inline(m.group(1).split(".", 1)[1])))
             i += 1; continue
         out.append("<p>%s</p>" % inline(ln)); i += 1
     close_list(stack)
