@@ -8,7 +8,7 @@ links: ["[[HOME]]", "[[outline]]", "[[matrix]]"]
 # Tasks
 
 This is the only list of open work. Claude updates it at the end of each session.
-Our goal now: **write the literature review by 24 November 2026.** No experiments for now.
+Our goal now: **finish the literature review (first full draft written on 24 November 2026).** No experiments for now.
 
 - **For you:** only you can do these. Each task says what to do and when it is done.
 - **For Claude:** Claude does these. Some need your "yes" first.
@@ -16,46 +16,30 @@ Our goal now: **write the literature review by 24 November 2026.** No experiment
 
 ## For you
 
-- [ ] **Read the papers under "Read this week" on [[HOME]].**
-  First the 3 new ones: the 2026 metacognition survey (Liu), the model trained to watch itself (Wang) and WeightBench (Marasini).
-  Also the new one from today's scout: a model that rewrites its own weights (Fan 2026). It changed section 5 and gap 1.
-  Then, if you have time, the 2 left from last week: models that report their own activations (Ji-An) and the introspection checks (Singh).
-  After each one, tell Claude your opinion in one or two sentences. Claude saves it in the paper note.
-  You ticked the Value Axis paper: tell Claude your opinion of it too.
-  *Done when:* you tick the 4 new ones on HOME.
+- [ ] **Read the full review once, from start to end.**
+  It is written: 10 sections, about 17,000 words, 147 references. You must be able to explain each section in two sentences, because your name goes on it.
+  Open [[Literature review - full paper]], or the Word and PDF files in the folder `1 Literature review/export`. Start with the abstract, Section 9 and Section 10 (20 minutes); they hold the argument.
+  *Done when:* you tell Claude what to change, or "review OK".
 
-- [ ] **Read the two section drafts and their open doubts.**
-  Section 3 [[03-monitoring]] and section 5 [[05-persistent-control]] are first drafts, built from paper notes only.
-  Each ends with a list of open doubts. Say which doubts matter and whether the main line of each section is right.
-  *Done when:* you tell Claude "draft OK" or what to change, for each section.
+- [ ] **Add the author names and check where the review goes.**
+  The title page says "[add names]". Claude does not know the author list, the reader (a course, a supervisor, a journal) or a length limit. If there is a length limit, tell Claude and it will cut.
+  *Done when:* you give Claude the names and the destination.
 
-- [ ] **Decide if older self-modifying networks are in the review.**
-  Section 5 now cites one language model that edits its own weights (Fan 2026). Older networks also learn to rewrite their own weights (Irie 2022, Nested Learning 2025).
-  The notes now exist: Claude's search wrote them on 2026-11-20 before you decided ([[SRWM - a weight matrix that rewrites itself (Irie 2022)]], [[Nested Learning - a model that learns its own update rule (Behrouz 2025)]]). Both change themselves by a learned rule, with no judgment of good and bad.
-  If "in", section 5 gets one more paragraph. If "out", Claude removes the two notes and the review says why in one sentence.
-  *Done when:* you say "in" or "out".
+- [ ] **Read the starred papers in the reading guide.**
+  The review cites 147 sources and you have read few of them. The guide lists the ones you need to defend the review: 11 starred papers, about 3 hours.
+  Open [[Reading guide for 24 November]].
+  *Done when:* you can say one sentence per starred paper.
 
-- [ ] **Check the new main gap.**
-  Today's scout found a model that edits its own weights after it reads its own hidden states (Fan 2026).
-  So Claude changed gap 1: the gap is now "no model edits itself by its own judgment of good and bad". Section 5, the outline and the paper table now say this too.
-  Open [[gaps]] (first row) and section 5.2 in [[05-persistent-control]].
-  *Done when:* you tell Claude "new gap OK" or how to change it.
-
-- [ ] **Decide what the Stable test means.**
-  Two new papers show that a model's preferences move when the task context changes (37% of cases) or when it plays a persona. Rewording moves them much less (10%).
-  So "stable across context" may be too strict. The other choice: stable across wording only, and accept that fine-grained taste depends on context.
-  See the Stable row in [[gaps]] and [[Task context moves model preferences (Trhlik 2026)]].
-  *Done when:* you tell Claude "across context" or "across wording only".
-
-- [ ] **Pick the next sections to draft.**
-  Due date is 24 November. Claude suggests section 2 "Foundations" (6 notes now) and section 6 "Limits" next, then 4 and 7.
-  *Done when:* you tell Claude the order.
+- [ ] **Say "commit" so Claude can save the work in git.**
+  Nothing from 23 and 24 November is committed: the review, 17 new paper notes, the reports and the build script exist only as files on this laptop. Claude tried to commit and the tool's safety check stopped it, because you had not asked for a commit.
+  *Done when:* you say "commit" (and "push" if you also want it on GitHub).
 
 ## For Claude
 
-- [ ] Search for papers on world models and propose where they fit in the [[outline]]. World models were added to the scope on 2026-11-20. Two likely links: a self-model (the meta level's model of the object level), and a model that predicts the effect of a self-edit before it writes the edit. Then ask you to confirm the placement.
-- [ ] Add one paragraph on older self-modifying networks to section 5, or remove the Irie and Nested Learning notes. *Waits for:* your "in or out" decision above.
-- [ ] Draft the next sections. *Waits for:* your choice of order.
+- [ ] Check every claim marked "abstract only" in the review against the full paper (13 places), and the author lists that still say "et al." in the references. *Waits for:* nothing; next session.
+- [ ] Apply your changes to the review after you read it. *Waits for:* your reading.
+- [ ] Write notes for the gap-check finds still without notes (end of [[Reading list]]).
+- [ ] Bring [[gaps]], [[matrix]], [[outline]] and [[HOME]] in line with the new review (they still describe the old code-readability plan in places).
 - [ ] Add a safety check to the daily scout script before it runs every hour. *Waits for:* your "yes".
 
 ## Later (after the review)
@@ -67,6 +51,11 @@ These were research tasks. They wait until the review is done.
 
 ## Done
 
+- [x] 2026-11-24: You said "go". Claude wrote the whole review and exported it to Word and PDF. Decisions used: the full idea is an open agenda with its eight problems stated; a taste of a model's own is a possibility, not a prediction; the closing question is "when a model's weights change after deployment, do its preferences move, and does its self-monitoring change?". Claude kept its rewrite of sections 1 to 3 and built on it. The old code-readability synthesis is kept in [[Parked - old synthesis and study protocol]].
+- [x] 2026-11-24: Claude read in full, at your request: the Sleep paper, the paper on self-distillation and lost doubt (Kim 2026), and six papers on whether a model notices its own change. Notes are in `2 Papers`.
+- [x] 2026-11-24: You chose the direction: the full idea (a model that edits itself by its own judgment and may develop taste) is the frame of the review; the first research question is "do direct weight edits move a model's preferences?". Claude checked that question: one close paper (Fafuła 2026, one edit shifts disposition), none on a sequence of edits. See [[2026-11-23 gap check]].
+- [x] 2026-11-24: These older tasks are closed by the new direction: the "Read this week" list (replaced by today's guide), the open doubts of sections 3 and 5, older self-modifying networks (in, one paragraph), the new main gap (replaced by the gap check), the Stable test (the review reports the evidence: wording moves 10% of preferences, task context 37%), the section order (all sections are written together), world models (a section of their own in the review).
+- [x] 2026-11-23: Claude checked whether your idea is a real gap: 2 search rounds, 8 new notes, verdict in [[2026-11-23 gap check]].
 - [x] 2026-11-20: Claude searched 6 new angles and wrote 12 notes (8 at the top score). [[outline]], [[gaps]] and [[matrix]] are updated. Report: [[2026-11-20 angles]].
 - [x] 2026-11-20: You checked the [[outline]]: it is OK for now.
 - [x] 2026-11-20: You set the scope: metacognition, models that change their own weights, model taste, and now **world models** too.

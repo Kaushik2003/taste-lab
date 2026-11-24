@@ -1,5 +1,7 @@
 # Lit review outline: Metacognition in Reasoning Models
 
+> **Update 2026-11-24.** The review is now written as one paper: [[Literature review - full paper]] (built by `scripts/build_review.py` from the section files). It has 10 sections. The paper's numbers differ from the file names: 1 Introduction (`01`), 2 Foundations (`02`), 3 Monitoring and control of reasoning (`03`), 4 Self-models and world models (`03b`, new), 5 Evaluation signals (`04`), 6 Changes that persist in the weights (`05`), 7 Limits (`06`), 8 Preferences and taste (`07`), 9 Synthesis and open problems (`08`), 10 Conclusion (`09`). The code-readability study is no longer the frame; see [[2026-11-23 direction critique]]. The lists below are the older plan and are kept for the record.
+
 Due 2026-11-24. Papers are placed by the `section:` field in their notes, deep tier first. The spine is the loop from the charter: monitor → evaluate → control → persist, with an anchor against collapse. Section 8 is where the pieces meet.
 
 ## 1. Introduction

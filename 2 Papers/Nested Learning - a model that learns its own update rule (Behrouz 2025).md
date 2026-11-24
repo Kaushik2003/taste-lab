@@ -61,3 +61,6 @@ Common optimizers (such as Adam and momentum) can be read as memories that compr
 
 ## Harshit's notes
 <!-- yours -->
+
+## Log
+- 2026-11-24: read again at the user's request (abstract, Sec. 1.1, Sec. 7.3, Sec. 10). Two additions. (1) Sec. 1.1: the paper compares a deployed Transformer to a patient who cannot form new long-term memories; context never reaches the long-term weights. The authors treat only the "online" stage of memory consolidation here and leave the "offline" (sleep) stage, which their later paper covers: [[Sleep - a model consolidates memories into its weights (Behrouz 2026)]]. (2) Sec. 7.3: the multi-speed memory blocks can be initialized from the MLP blocks of a pre-trained Transformer, so the approach can start from an existing model, not only from scratch. Earlier model in the same line: [[Titans - a memory that learns from surprise at test time (Behrouz 2025)]].

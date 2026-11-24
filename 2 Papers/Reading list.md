@@ -72,7 +72,7 @@ Scored 2 (relevant, read if time allows):
 - [ ] Self-Rewarded RL for Better-Structured Medical Explanations — 2611.24650 (sections 6 and 7: self-reward aimed at style, not correctness)
 - [ ] SpeCal: Spectral Calibration for Unsupervised RLVR — 2611.20691 (section 6: which self-rewards to trust)
 - [ ] Did I See It or Think It? Reality monitoring in vision-language models — 2611.09014 (section 3: concept injection vs image content)
-- [ ] Tree-Ising: Repairing LMs with bit-level edits — 2611.14210 (section 5: an optimizer replaces the WSP agent, like Fischetti)
+- [x] Tree-Ising: Repairing LMs with bit-level edits — 2611.14210 → [[A cheap optimizer beats the agent's weight repair (Salloum 2026)]]
 - [ ] What Does WSP Add to Diffusion Editing? — 2611.22228 (section 5: preregistered, no advantage over a strong baseline)
 - [ ] WSP for Vision Language Model Repair — 2611.23615 (section 5: agent restores planted faults to exact values)
 - [ ] Can LLMs Write Backdoors? WSP security study — 2611.17395 (section 6: risk of weight self-edits)
@@ -81,3 +81,33 @@ Scored 2 (relevant, read if time allows):
 Scored 1 (WSP applications and side topics): 2611.20566 (WSP for computational biology), 2611.09376 (WSP for robot policies), 2611.21958 (WSP for a tractor controller), 2611.13758 (WSP for EEG and ECG), 2611.20174 (WSP for tabular models), 2611.12954 (Physics2Weight), 2611.10089 (META-IR), 2611.14382 (learning by thinking), 2611.10445 (DiSARM interestingness), 2611.15172 (model vocabulary on Stack Exchange), 2611.17834 (PaperCritic), 2611.10110 (homeopathic learning), 2611.11172 (synthetic-data feedback loop), 2611.10450 (recovering edited knowledge).
 
 Scored 0: 2611.23106, 2611.23445, 2611.14387, 2611.11881, 2611.10831.
+
+## Gap check of 2026-11-23 (abstracts; see [[2026-11-23 gap check]])
+Notes written: [[Models predict edit effects without a self advantage (Kocabay 2026)]], [[Many sequential weight edits cause sudden forgetting (Gupta 2024)]], [[A few edits can collapse a model (Yang 2024)]], [[Self-modifying prompts keep the same core values (Stroganov 2026)]], [[Self-predictions are generic, not privileged (Blandfort 2026)]], [[A hidden-state probe as critic in RL (Choi 2026)]], [[A cheap optimizer beats the agent's weight repair (Salloum 2026)]], [[Self-written tests miss real regressions (Guo 2026)]].
+
+Scored 2, no note yet:
+- [ ] Value Drifts: tracing value alignment during post-training — 2510.26707 (section 7: SFT sets values; taste over time)
+- [ ] SWIFT: intrinsic rewards from hidden states for best-of-N — 2505.12225 (section 4: hidden-state reward)
+- [ ] Q-Probe — 2402.14688 (section 4: linear probe reweights candidates)
+- [x] Introspecting Alignment Shifts (DAIA) — 2608.04347 → [[Adapters report side effects of fine-tuning (Yoshida 2026)]] (section 3: reporting fine-tuning side effects)
+- [ ] Verify by Doing — 2611.15276 (section 6: internal signal for selection, fixed weights)
+- [ ] Recursa — 2611.04035; MASS — 2610.12176; ParetoRSI-Gym — 2610.34386 (section 5: recursive self-improvement without direct self-edits)
+- [ ] Keel: frontier model rewrites a VLM's weights — 2611.25257 (section 5: another loop fix)
+- [ ] Autonomous Parameter Surgery — 2611.27920 (section 6: backdoors by weight edits)
+- [ ] Rebuilding ROME — 2403.07175; spectral sequential editing — 2601.11042 (section 6: fixes for sequential-edit collapse)
+- [x] Abliteration Is Not a Scalpel — 2607.17427 → [[One weight edit shifts a model's disposition (Fafuła 2026)]] (score 3; closest work to the first project: one weight edit shifts disposition)
+- [ ] Norm Anchors Make Model Edits Last — 2602.02543 (section 6: cause of and fix for sequential-edit collapse)
+
+## Search of 2026-11-24: does a model notice its own change? (read 2026-11-24; see round 4 of [[2026-11-23 gap check]])
+- [x] Open-Weight Masked Introspection — 2608.20569 → [[Models cannot tell a real internal change from a fake one (Ferrara 2026)]] (score 3; section 3: 78,000 measurements, no model's report separates a real internal change from a sham beyond chance; one faint signal in confidence)
+- [x] Learning to Interpret Weight Differences (Diff Interpretation Tuning) — 2510.05092 → [[A trained adapter lets a model describe its weight change (Goel 2025)]] (score 3; sections 3 and 5: a trained adapter lets a fine-tuned model describe its own weight change)
+- [x] Identifying Introspection From the Inside — 2610.07186 → [[Self-report becomes faithful when preferences sit early (Atkinson 2026)]] (score 2; section 3: faithful self-report from decision training, tied to preference representations)
+- [x] Mechanisms of Introspective Awareness (Macar et al., arXiv 2603.21396) → [[Refusal hides a real injection-detection ability (Macar 2026)]] (score 2; section 3: abliteration raises injected-concept detection from 10.8% to 63.8%)
+
+## Links from Harshit, 2026-11-24 (all four read)
+- [x] Titans: Learning to Memorize at Test Time — 2501.00663 → [[Titans - a memory that learns from surprise at test time (Behrouz 2025)]]
+- [x] Nested Learning — 2512.24695 → [[Nested Learning - a model that learns its own update rule (Behrouz 2025)]] (note existed; log line added)
+- [x] The sleep framework (Google Research blog, 27 Oct 2026; paper arXiv 2606.03979) → [[Sleep - a model consolidates memories into its weights (Behrouz 2026)]]. The paper itself is still to read.
+- [x] DeepCrossAttention — 2502.06785 (score 0, no note). Read abstract, introduction and conclusion: it replaces the plain sum in residual connections with learned, input-dependent weights over earlier layers, and reaches the same language-model quality up to 3 times faster. It is an architecture paper from the same Google group; it has nothing on memory, self-change, metacognition or preferences.
+- [x] Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs? — 2603.24472 → [[Self-distillation removes expressed doubt and hurts reasoning (Kim 2026)]] (read 2026-11-24; found through the Sleep paper)
+- [ ] Kim et al. 2026, the earlier paper that defines "epistemic verbalization" (cited inside 2603.24472; title and arXiv ID not yet looked up)

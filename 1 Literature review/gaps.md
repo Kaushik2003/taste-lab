@@ -1,5 +1,7 @@
 # Gaps & patterns
 
+> **Update 2026-11-24.** The current list of open problems is Section 9.6 of [[Literature review - full paper]], with the checks behind it in [[2026-11-23 gap check]]. The "bounded contribution" below belongs to the older code-readability plan and is kept for the record.
+
 Updated 2026-11-22. Coverage: 120 matrix rows (118 existing plus Yuan 2024 and corrected Kirin 2026). Notes mix skimmed and fuller reads; the old aggregate of 64 papers / 4 read is obsolete. Read status is recorded per note, not re-audited here.
 
 **Bounded contribution.** We propose to test whether a causally validated activation-level evaluation readout can guide output selection and subsequent self-training for readability among programs matched on observed test outcomes, with held-out audits of quality and drift. See [[08-synthesis]] for the closest-prior-art comparison. The entries below are scoped research questions, not universal absence proofs.
